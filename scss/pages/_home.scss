@@ -1,0 +1,473 @@
+@media (min-width: 0em) {
+    #landing {
+        width: 100%;
+        height: 100vh;
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .swiper-container {
+                height: 100%;
+                width: 100%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+
+                .landing-content {
+                    position: absolute;
+                    width: 100%;
+                    max-width: 1200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    padding: $padding-lg;
+                    z-index: 2;
+
+                    h1 {
+                        color: white;
+                        font-size: $font-size-lg * 2;
+                        margin-bottom: $margin-md;
+                        position: relative;
+                        font-family: $font-one;
+                    }
+
+                    p {
+                        color: $gray-200;
+                        margin-bottom: $margin-md;
+                    }
+
+                    a {
+                        margin: 0;
+                        border-radius: 0;
+                        padding: 10px 30px;
+                        border-bottom: 2px solid $primary;
+                    }
+                }
+
+                & .swiper-wrapper {
+                    display: flex;
+                    position: relative;
+                    z-index: 1;
+
+                    .swiper-slide {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                    }
+
+                    .swiper-landing-1 {
+                        background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/tulsa.jpg) center / cover;
+                    }
+
+                    .swiper-landing-2 {
+                        background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/tulsanight1.jpeg) center / cover;
+                    }
+
+                    .swiper-landing-3 {
+                        background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/tulsastock1.jpeg) center / cover;
+                    }
+
+                }
+            }
+
+            .swiper-slide-active {
+                .landing-content {
+                    h1 {
+                        opacity: 0;
+                        animation: fadeUp 1s ease-in-out forwards;
+                    }
+
+                    p {
+                        animation: fadeUp 1s ease-in-out forwards;
+                        animation-delay: .5s;
+                        opacity: 0;
+                    }
+
+                    a {
+                        opacity: 0;
+                        animation: fadeUp 1s ease-in-out forwards;
+                        animation-delay: 1.2s;
+                    }
+                }
+            }
+        }
+    }
+
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    #intro {
+        width: 100%;
+        background-color: $gray-100;
+
+        .container {
+            padding: $padding-lg $padding-md;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+
+            .heading {
+                text-align: center;
+                margin-bottom: $margin-lg;
+
+                h2 {
+                    margin-bottom: $margin-md;
+                }
+
+                p {
+                    line-height: 1.5;
+                }
+            }
+
+            .service-items {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+                grid-gap: 1rem;
+
+                .service-item {
+                    width: 100%;
+                    padding: $padding-lg;
+                    border: 1px solid $primary-light;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                    min-height: 250px;
+                    box-shadow: $box-shadow;
+                    background-color: white;
+
+                    img {
+                        margin: 0;
+                        margin-bottom: $margin-md;
+                    }
+
+                    h4 {
+                        color: $primary;
+                        margin-bottom: $margin-md;
+                    }
+
+                    p {
+                        color: $gray-700;
+                        margin-bottom: $margin-md;
+                        line-height: 1.5;
+                    }
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+
+                .service-item:hover {
+                    width: 100%;
+                    padding: $padding-lg;
+                    border: 1px solid $primary;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                    transition: all .8s;
+                    background-color: $primary;
+
+                    img {
+                        margin-bottom: $margin-md;
+
+                    }
+
+                    h4 {
+                        color: $primary;
+                        margin-bottom: $margin-md;
+                        color: white;
+                    }
+
+                    p {
+                        color: $gray-700;
+                        color: white;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        background-color: $white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    #pitch {
+        width: 100%;
+
+        .container {
+            padding-top: $padding-lg;
+            width: 100%;
+            display: grid;
+            grid-template-rows: max-content max-content;
+            background-color: $dark-div-bg;
+            color: white;
+
+            .text-content {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: $padding-lg $padding-md;
+
+                span {
+                    color: $green;
+                    margin-bottom: $margin-sm;
+                }
+
+                h4 {
+                    margin-bottom: $margin-md;
+                    font-size: $font-size-lg * 1.5;
+                }
+
+                p {
+                    margin-bottom: $margin-lg;
+                    color: $gray-400;
+                    line-height: 1.5;
+                    font-size: $font-size-sm * 1.1;
+                }
+
+                .item-grid {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(270, 1fr));
+                    grid-gap: 1.5rem;
+
+                    .item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        flex-direction: column;
+                        font-size: $font-size-sm;
+
+                        p {
+                            margin-bottom: $margin-sm;
+                            color: $green;
+                        }
+
+                        span {
+                            margin-bottom: $margin-sm;
+                            color: $gray-300;
+                        }
+
+                        img {
+                            margin: 0;
+                            margin-bottom: $margin-sm;
+                        }
+                    }
+                }
+            }
+
+            .pitch-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+                place-items: center;
+
+                .grid-item {
+                    height: 200px;
+                    width: 100%;
+                }
+
+                .grid-item-1 {
+                    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/tulsa.jpg) center / cover;
+                }
+
+                .grid-item-2 {
+                    background-color: $danger;
+                }
+
+                .grid-item-3 {
+                    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/tulsa2.jpg) center / cover;
+                }
+
+                .grid-item-4 {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+
+    #portfolio {
+        width: 100%;
+
+        .container {
+            padding: $padding-xl $padding-md;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+
+            h2 {
+                margin-bottom: $margin-md;
+                position: relative;
+                text-align: center;
+                width: max-content;
+            }
+
+            p {
+                text-align: center;
+                color: $gray-800;
+                margin-bottom: $margin-md;
+            }
+
+            .tabs-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                max-width: 1200px;
+                margin: auto;
+
+                h4 {
+                    color: $primary;
+                    margin-bottom: $margin-md;
+                }
+
+                .tabs {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    place-items: center;
+                    width: 100%;
+                    max-height: 125px;
+                    text-align: center;
+                    grid-gap: 1rem;
+
+                    a {
+                        width: 100%;
+                        background-color: white;
+                        margin: 0;
+                        color: black;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1rem;
+
+                        &.tabActive {
+                            opacity: 1;
+                            animation: fadeTab .5s forwards;
+                        }
+                    }
+                }
+            }
+
+            .panel {
+                padding: $padding-lg 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .items {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    grid-gap: 1rem;
+                    place-items: center;
+
+                    .item {
+                        position: relative;
+                        display: grid;
+                        grid-template-rows: 40% auto;
+                        height: 400px;
+                        width: 100%;
+                        box-shadow: $box-shadow;
+
+                        .img {
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .body {
+                            padding: $padding-md;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            flex-direction: column;
+
+                            .tag {
+                                background-color: $primary;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 5px 25px;
+                                border-radius: 2rem;
+                                margin-bottom: $margin-sm;
+
+                                p {
+                                    color: white;
+                                    margin: 0;
+                                    font-size: $font-size-sm;
+                                }
+                            }
+
+                            p {
+                                text-align: left;
+                            }
+
+                            a {
+                                color: $primary;
+                                position: absolute;
+                                bottom: $margin-md;
+                                left: $margin-md;
+                            }
+                        }
+                    }
+                }
+
+                .tab-content {
+                    display: none;
+
+                    &.active-content {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        @keyframes fadeTab {
+            from {
+                background-color: unset;
+            }
+
+            to {
+                background-color: $primary;
+                color: white;
+            }
+        }
+    }
+}
