@@ -317,6 +317,7 @@
 
     #portfolio {
         width: 100%;
+        background-color: $gray-100;
 
         .container {
             padding: $padding-xl $padding-md;
@@ -389,9 +390,10 @@
                 align-items: center;
 
                 .items {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                    grid-gap: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
                     place-items: center;
 
                     .item {
@@ -399,7 +401,8 @@
                         display: grid;
                         grid-template-rows: 40% auto;
                         height: 400px;
-                        width: 100%;
+                        width: 95%;
+                        max-width: 325px;
                         box-shadow: $box-shadow;
 
                         .img {
@@ -467,6 +470,101 @@
             to {
                 background-color: $primary;
                 color: white;
+            }
+        }
+    }
+
+    #about {
+        width: 100%;
+
+        .container {
+            padding: $padding-lg $padding-md;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: auto;
+
+            .heading {
+                margin-bottom: $margin-lg;
+            }
+
+            .profile-container {
+                width: 100%;
+                display: grid;
+                grid-template-rows: max-content max-content;
+                place-items: center;
+
+                .about-img {
+                    position: relative;
+                    z-index: 2;
+                    display: flex;
+                    justify-content: center;
+                    height: 250px;
+                    width: 250px;
+                    margin-bottom: $margin-md;
+
+                    &::after {
+                        content: '';
+                        background-color: $white;
+                        width: 75px;
+                        height: 75px;
+                        border-radius: 50%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0rem;
+                        z-index: 2;
+                        box-shadow: $box-shadow;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: 1;
+                        border-radius: 50%;
+                        box-shadow: $box-shadow;
+                    }
+                }
+
+                .about-content {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                    font-size: $h5-font-size;
+
+                    h3 {
+                        margin-bottom: $margin-md;
+                    }
+
+                    &>div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: $margin-lg;
+
+                        span {
+                            color: $primary;
+                            text-transform: uppercase;
+                            font-size: $font-size-base
+                        }
+
+                        .line {
+                            width: 20px;
+                            height: 2px;
+                            background-color: $primary;
+                            margin-right: .3rem;
+                        }
+                    }
+
+                    p {
+                        line-height: 1.5;
+                        color: $gray-700;
+                    }
+                }
             }
         }
     }

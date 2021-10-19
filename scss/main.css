@@ -1282,6 +1282,7 @@ html, body {
   }
   #portfolio {
     width: 100%;
+    background-color: #f8f9fa;
   }
   #portfolio .container {
     padding: 4rem 1rem;
@@ -1383,11 +1384,17 @@ html, body {
             align-items: center;
   }
   #portfolio .container .panel .items {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     place-items: center;
   }
   #portfolio .container .panel .items .item {
@@ -1397,7 +1404,8 @@ html, body {
     -ms-grid-rows: 40% auto;
         grid-template-rows: 40% auto;
     height: 400px;
-    width: 100%;
+    width: 95%;
+    max-width: 325px;
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
@@ -1477,6 +1485,122 @@ html, body {
       background-color: #fc653c;
       color: white;
     }
+  }
+  #about {
+    width: 100%;
+  }
+  #about .container {
+    padding: 2rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+  }
+  #about .container .heading {
+    margin-bottom: 2rem;
+  }
+  #about .container .profile-container {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: max-content max-content;
+        grid-template-rows: -webkit-max-content -webkit-max-content;
+        grid-template-rows: max-content max-content;
+    place-items: center;
+  }
+  #about .container .profile-container .about-img {
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 1rem;
+  }
+  #about .container .profile-container .about-img::after {
+    content: '';
+    background-color: #fff;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0rem;
+    z-index: 2;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  #about .container .profile-container .about-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 1;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  #about .container .profile-container .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  #about .container .profile-container .about-content h3 {
+    margin-bottom: 1rem;
+  }
+  #about .container .profile-container .about-content > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2rem;
+  }
+  #about .container .profile-container .about-content > div span {
+    color: #fc653c;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  #about .container .profile-container .about-content > div .line {
+    width: 20px;
+    height: 2px;
+    background-color: #fc653c;
+    margin-right: .3rem;
+  }
+  #about .container .profile-container .about-content p {
+    line-height: 1.5;
+    color: #495057;
   }
 }
 /*# sourceMappingURL=main.css.map */
