@@ -87,10 +87,6 @@
 
         & li:nth-child(1) {
           margin-top: 3em;
-
-          a {
-            color: $primary;
-          }
         }
 
         &.is-active {
@@ -254,6 +250,7 @@
       height: 100%;
       max-width: 1200px;
       margin: auto;
+      position: relative;
 
       & p {
         display: block;
@@ -339,6 +336,7 @@
     }
 
     & nav {
+      position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center;
