@@ -59,7 +59,7 @@
         align-items: center;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        background-color: $dark-div-bg;
+        background-color: $primary;
         list-style: none;
 
         & li {
@@ -141,7 +141,7 @@
   }
 
   header {
-    position: fixed;
+    position: absolute;
     z-index: 5;
     width: 100vw;
     height: 80px;

@@ -48,12 +48,12 @@ var swiper = new Swiper(".landingSwiper", {
     loop: true,
     effect: "fade",
     autoplay: {
-        delay: 4000,
+        delay: 4500,
         disableOnInteraction: false,
     },
     pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+         type: "fraction",
     },
     navigation: {
         nextEl: ".swiper-button-next",
