@@ -507,7 +507,7 @@
 
                     &::after {
                         content: '';
-                        background-color: $white;
+                        background: url(/assets/RLOGO1-01.svg) center / cover;
                         width: 75px;
                         height: 75px;
                         border-radius: 50%;
@@ -516,6 +516,7 @@
                         left: 0rem;
                         z-index: 2;
                         box-shadow: $box-shadow;
+
                     }
 
                     img {
@@ -563,6 +564,154 @@
                     p {
                         line-height: 1.5;
                         color: $gray-700;
+                    }
+                }
+            }
+        }
+    }
+
+    #packages {
+        width: 100%;
+        background-color: $gray-100;
+
+        .container {
+            padding: $padding-lg $padding-md;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .heading {
+                width: 100%;
+                text-align: center;
+                margin-bottom: $margin-lg;
+
+                h2 {
+                    margin-bottom: $margin-md;
+                }
+            }
+
+            .packages-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-gap: 1rem;
+
+                .p-item {
+                    text-align: center;
+                    box-shadow: $box-shadow;
+                    display: flex;
+                    justify-self: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+
+                    .p-item-header {
+                        margin-bottom: $margin-md;
+                        display: flex;
+                        justify-self: center;
+                        align-items: center;
+                        flex-direction: column;
+                        padding: .6rem;
+                        width: 100%;
+                        background-color: $black;
+                        color: white;
+                        & :nth-child(1){
+                            margin-bottom: $margin-md;
+                            color: $gray-300;
+                        }
+                        & :nth-child(2){
+                            margin-bottom: $margin-md;
+                        }
+
+                    }
+                    .p-item-header-1 {
+                         & :nth-child(3){
+                            position: relative;
+                            font-size: $font-size-lg * 2;
+                            &::before {
+                                content: '$';
+                                position: absolute;
+                                left: -.5rem;
+                                top: 0;
+                                color: white;
+                                font-size: $font-size-sm;
+                            }
+                            &::after {
+                                content: '/MO';
+                                position: absolute;
+                                bottom: .3rem;
+                                font-size: $font-size-sm;
+                            }
+                        }
+                    }
+                    .p-item-header-2 {
+                         & :nth-child(3){
+                            position: relative;
+                            font-size: $font-size-lg * 2;
+                            &::before {
+                                content: '$';
+                                position: absolute;
+                                left: -.5rem;
+                                top: 0;
+                                color: white;
+                                font-size: $font-size-sm;
+                            }
+                            &::after {
+                                content: '/YR';
+                                position: absolute;
+                                bottom: .3rem;
+                                font-size: $font-size-sm;
+                            }
+                        }
+                    }
+                     .p-item-header-3 {
+                         & :nth-child(3){
+                            position: relative;
+                            font-size: $font-size-lg * 2;
+                            &::before {
+                                content: '$';
+                                position: absolute;
+                                left: -.5rem;
+                                top: 0;
+                                color: white;
+                                font-size: $font-size-sm;
+                            }
+                            &::after {
+                                content: '/??';
+                                position: absolute;
+                                bottom: .3rem;
+                                font-size: $font-size-sm;
+                            }
+                        }
+                    }
+
+                    .items {
+                        width: max-content;
+                        list-style: none;
+                        padding: 1rem;
+
+                        .item {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            width: 100%;
+
+                            img {
+                                margin: 0;
+                                justify-self: center;
+                                align-self: end;
+                                width: 1rem;
+                                margin-right: .2rem;
+                            }
+
+                            &>div {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                            }
+                        }
                     }
                 }
             }
