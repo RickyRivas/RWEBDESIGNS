@@ -68,15 +68,15 @@
                     }
 
                     .swiper-landing-1 {
-                        background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/tulsa.jpg) center / cover;
+                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsa.jpg) center / cover;
                     }
 
                     .swiper-landing-2 {
-                        background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/tulsanight1.jpeg) center / cover;
+                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsanight1.jpeg) center / cover;
                     }
 
                     .swiper-landing-3 {
-                        background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/tulsastock1.jpeg) center / cover;
+                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsastock1.jpeg) center / cover;
                     }
 
                 }
@@ -134,6 +134,7 @@
                 h2 {
                     margin-bottom: $margin-md;
                     color: $text-color;
+                    position: relative;
                 }
 
                 p {
@@ -550,7 +551,7 @@
                         margin-bottom: $margin-lg;
 
                         span {
-                            color: $primary;
+                            color: $red;
                             text-transform: uppercase;
                             font-size: $font-size-base
                         }
@@ -558,7 +559,7 @@
                         .line {
                             width: 20px;
                             height: 2px;
-                            background-color: $primary;
+                            background-color: $red;
                             margin-right: .3rem;
                         }
                     }
@@ -608,7 +609,7 @@
                     flex-direction: column;
                     width: 100%;
                     .card-heading {
-                        background-color: $black;
+                        background-color: $primary;
                         width: 100%;
                         padding: 1rem;
                         color: white;

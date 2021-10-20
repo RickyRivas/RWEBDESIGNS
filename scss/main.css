@@ -655,7 +655,7 @@ html, body {
     position: relative;
     width: 100vw;
     padding: 2em;
-    background: #000;
+    background: #2d2d2d;
     z-index: 9999;
   }
   .footer .footer-container {
@@ -1013,16 +1013,16 @@ html, body {
             flex-direction: column;
   }
   #landing .container .swiper-container .swiper-wrapper .swiper-landing-1 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/tulsa.jpg) center/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/tulsa.jpg) center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/tulsa.jpg) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/tulsa.jpg) center/cover;
   }
   #landing .container .swiper-container .swiper-wrapper .swiper-landing-2 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/tulsanight1.jpeg) center/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/tulsanight1.jpeg) center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/tulsanight1.jpeg) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/tulsanight1.jpeg) center/cover;
   }
   #landing .container .swiper-container .swiper-wrapper .swiper-landing-3 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/tulsastock1.jpeg) center/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/tulsastock1.jpeg) center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/tulsastock1.jpeg) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/tulsastock1.jpeg) center/cover;
   }
   #landing .container .swiper-slide-active .landing-content h1 {
     opacity: 0;
@@ -1084,6 +1084,7 @@ html, body {
   #intro .container .heading h2 {
     margin-bottom: 1rem;
     color: #4e4e4e;
+    position: relative;
   }
   #intro .container .heading p {
     line-height: 1.5;
@@ -1587,14 +1588,14 @@ html, body {
     margin-bottom: 2rem;
   }
   #about .container .profile-container .about-content > div span {
-    color: #2d2d2d;
+    color: #ef2e2d;
     text-transform: uppercase;
     font-size: 1rem;
   }
   #about .container .profile-container .about-content > div .line {
     width: 20px;
     height: 2px;
-    background-color: #2d2d2d;
+    background-color: #ef2e2d;
     margin-right: .3rem;
   }
   #about .container .profile-container .about-content p {
@@ -1655,7 +1656,7 @@ html, body {
     width: 100%;
   }
   #packages .container .packages-grid .p-item .card-heading {
-    background-color: #000;
+    background-color: #2d2d2d;
     width: 100%;
     padding: 1rem;
     color: white;
