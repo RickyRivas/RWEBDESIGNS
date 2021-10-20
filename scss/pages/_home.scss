@@ -205,36 +205,6 @@
                         text-decoration: none;
                     }
                 }
-
-                .service-item-1 {
-                    position: relative;
-
-                    &::after {
-                        content: '';
-                        width: 2rem;
-                        height: 4rem;
-                        background-color: $white;
-                        position: absolute;
-                        bottom: -2rem;
-                        right: 0;
-                        z-index: 2;
-                    }
-                }
-
-                .service-item-2 {
-                    position: relative;
-
-                    &::after {
-                        content: '';
-                        width: 2rem;
-                        height: 4rem;
-                        background-color: $white;
-                        position: absolute;
-                        bottom: -2rem;
-                        left: 0;
-                        z-index: 2;
-                    }
-                }
             }
         }
     }
@@ -423,9 +393,8 @@
                         position: relative;
                         display: grid;
                         grid-template-rows: 40% auto;
-                        height: 400px;
-                        width: 95%;
-                        max-width: 325px;
+                        height: 418px;
+                        width: 300px;
                         box-shadow: $box-shadow;
 
                         .img {
@@ -959,38 +928,6 @@
 
                     a {
                         text-decoration: none;
-                    }
-                }
-
-                .service-item-1 {
-                    position: relative;
-
-                    &::after {
-                        content: '';
-                        width: 2rem;
-                        height: 4rem;
-                        background-color: $white;
-                        position: absolute;
-                        bottom: -2rem;
-                        right: 0;
-                        z-index: 2;
-                        display: none;
-                    }
-                }
-
-                .service-item-2 {
-                    position: relative;
-
-                    &::after {
-                        content: '';
-                        width: 2rem;
-                        height: 4rem;
-                        background-color: $white;
-                        position: absolute;
-                        bottom: -2rem;
-                        left: 0;
-                        z-index: 2;
-                        display: none;
                     }
                 }
             }
@@ -1572,9 +1509,9 @@
                         position: relative;
                         display: grid;
                         grid-template-rows: 40% auto;
-                        height: 400px;
+                        height: 450px;
                         width: 95%;
-                        max-width: 325px;
+                        max-width: 350px;
                         box-shadow: $box-shadow;
 
                         .img {
