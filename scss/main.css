@@ -653,8 +653,7 @@ html, body {
 @media (min-width: 0em) {
   footer {
     width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/tulsanight1.jpeg) center/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/tulsanight1.jpeg) center/cover;
+    background: #2d2d2d;
     padding-top: 4rem;
   }
   footer .container {
@@ -666,6 +665,7 @@ html, body {
     color: white;
     max-width: 1200px;
     margin: auto;
+    margin-bottom: 1rem;
   }
   footer .container .col {
     display: -webkit-box;
@@ -674,17 +674,17 @@ html, body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 200px;
-    text-align: center;
+    height: 175px;
     padding: 0 1rem;
     font-weight: lighter;
+    width: 100%;
   }
   footer .container .col p {
     color: #ced4da;
@@ -692,12 +692,15 @@ html, body {
   footer .container .col h2 {
     margin-bottom: 1rem;
     font-weight: lighter;
+    font-size: 1rem;
   }
   footer .container .col ul {
     list-style: none;
   }
   footer .container .col ul li {
     margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: #ced4da;
   }
   footer .container .col ul a {
     color: #ced4da;
@@ -758,11 +761,14 @@ html, body {
   }
   footer .site-credit p {
     text-transform: uppercase;
-    color: #ef2e2d;
+    color: #dee2e6;
   }
 }
 
 @media (min-width: 1024px) {
+  footer {
+    padding-top: 2rem;
+  }
   footer .container {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;

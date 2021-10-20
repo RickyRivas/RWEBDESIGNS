@@ -1,7 +1,7 @@
 @media (min-width: 0em) {
   footer {
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(/assets/tulsanight1.jpeg) center / cover;
+    background: $primary;
     padding-top: $padding-lg * 2;
 
 
@@ -12,27 +12,32 @@
       color: white;
       max-width: 1200px;
       margin: auto;
+      margin-bottom: $margin-md;
 
       .col {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
-        height: 200px;
-        text-align: center;
+        height: 175px;
+        // text-align: center;
         padding: 0 $padding-md;
         font-weight: lighter;
+        width: 100%;
         p {
            color: $gray-400;
         }
         h2 {
           margin-bottom: $margin-md;
           font-weight: lighter;
+          font-size: $font-size-base
         }
         ul {
           list-style: none;
           li {
             margin-bottom: $margin-sm;
+            font-size: $font-size-sm;
+            color: $gray-400;
           }
           a {
             color: $gray-400;
@@ -73,13 +78,14 @@
 
       p {
         text-transform: uppercase;
-        color: $danger;
+        color: $gray-300;
       }
     }
   }
 }
 @media (min-width: 1024px){
   footer {
+    padding-top: $padding-lg;
     .container {
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
