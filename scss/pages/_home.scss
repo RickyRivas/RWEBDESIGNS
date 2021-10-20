@@ -133,10 +133,12 @@
 
                 h2 {
                     margin-bottom: $margin-md;
+                    color: $text-color;
                 }
 
                 p {
                     line-height: 1.5;
+                    color: $gray-700;
                 }
             }
 
@@ -220,13 +222,13 @@
 
     #pitch {
         width: 100%;
+        background-color: $brown-div-bg;
 
         .container {
             padding-top: $padding-lg;
             width: 100%;
             display: grid;
             grid-template-rows: max-content max-content;
-            background-color: $dark-div-bg;
             color: white;
 
             .text-content {
@@ -238,7 +240,7 @@
                 padding: $padding-lg $padding-md;
 
                 span {
-                    color: $green;
+                    color: $gray-500;
                     margin-bottom: $margin-sm;
                 }
 
@@ -270,7 +272,7 @@
 
                         p {
                             margin-bottom: $margin-sm;
-                            color: $green;
+                            color: $gray-500;
                         }
 
                         span {

@@ -125,7 +125,7 @@ html, body {
     text-decoration: none;
   }
   header nav .nav-links li a:hover {
-    color: #ef2e2d;
+    color: #2d2d2d;
     -webkit-transition: color .5s;
     transition: color .5s;
   }
@@ -133,7 +133,7 @@ html, body {
     margin-top: 3em;
   }
   header nav .nav-links li:nth-child(1) a {
-    color: #ef2e2d;
+    color: #2d2d2d;
   }
   header nav .nav-links.is-active {
     -webkit-transform: translate(0%);
@@ -863,7 +863,7 @@ html, body {
 .btn {
   cursor: pointer;
   padding: 15px 30px;
-  background-color: #ef2e2d;
+  background-color: #2d2d2d;
   border: 0;
   color: white;
   text-decoration: none;
@@ -877,7 +877,7 @@ html, body {
 }
 
 .btn-primary {
-  background-color: #ef2e2d;
+  background-color: #2d2d2d;
 }
 
 .btn-success {
@@ -885,7 +885,7 @@ html, body {
 }
 
 .btn-danger {
-  background-color: #dc3545;
+  background-color: #ef2e2d;
 }
 
 .btn-info {
@@ -988,7 +988,7 @@ html, body {
     margin: 0;
     border-radius: 0;
     padding: 10px 30px;
-    border-bottom: 2px solid #ef2e2d;
+    border-bottom: 2px solid #2d2d2d;
   }
   #landing .container .swiper-container .swiper-wrapper {
     display: -webkit-box;
@@ -1083,9 +1083,11 @@ html, body {
   }
   #intro .container .heading h2 {
     margin-bottom: 1rem;
+    color: #4e4e4e;
   }
   #intro .container .heading p {
     line-height: 1.5;
+    color: #495057;
   }
   #intro .container .service-items {
     width: 100%;
@@ -1098,7 +1100,7 @@ html, body {
   #intro .container .service-items .service-item {
     width: 100%;
     padding: 2rem;
-    border: 1px solid #fed6ca;
+    border: 1px solid #e9ecef;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1123,7 +1125,7 @@ html, body {
     margin-bottom: 1rem;
   }
   #intro .container .service-items .service-item h4 {
-    color: #ef2e2d;
+    color: #2d2d2d;
     margin-bottom: 1rem;
   }
   #intro .container .service-items .service-item p {
@@ -1137,7 +1139,7 @@ html, body {
   #intro .container .service-items .service-item:hover {
     width: 100%;
     padding: 2rem;
-    border: 1px solid #ef2e2d;
+    border: 1px solid #2d2d2d;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1154,13 +1156,13 @@ html, body {
     text-align: center;
     -webkit-transition: all .8s;
     transition: all .8s;
-    background-color: #ef2e2d;
+    background-color: #2d2d2d;
   }
   #intro .container .service-items .service-item:hover img {
     margin-bottom: 1rem;
   }
   #intro .container .service-items .service-item:hover h4 {
-    color: #ef2e2d;
+    color: #2d2d2d;
     margin-bottom: 1rem;
     color: white;
   }
@@ -1175,6 +1177,7 @@ html, body {
   }
   #pitch {
     width: 100%;
+    background-color: #2d2d2d;
   }
   #pitch .container {
     padding-top: 2rem;
@@ -1184,7 +1187,6 @@ html, body {
     -ms-grid-rows: max-content max-content;
         grid-template-rows: -webkit-max-content -webkit-max-content;
         grid-template-rows: max-content max-content;
-    background-color: #172933;
     color: white;
   }
   #pitch .container .text-content {
@@ -1204,7 +1206,7 @@ html, body {
     padding: 2rem 1rem;
   }
   #pitch .container .text-content span {
-    color: #5aa26e;
+    color: #adb5bd;
     margin-bottom: 0.5rem;
   }
   #pitch .container .text-content h4 {
@@ -1244,7 +1246,7 @@ html, body {
   }
   #pitch .container .text-content .item-grid .item p {
     margin-bottom: 0.5rem;
-    color: #5aa26e;
+    color: #adb5bd;
   }
   #pitch .container .text-content .item-grid .item span {
     margin-bottom: 0.5rem;
@@ -1269,13 +1271,13 @@ html, body {
     background: url(/assets/GDWPMSC15.jpg) center/cover;
   }
   #pitch .container .pitch-grid .grid-item-2 {
-    background-color: #dc3545;
+    background-color: #ef2e2d;
   }
   #pitch .container .pitch-grid .grid-item-3 {
     background: url(/assets/Clay_Mockup___14_.jpg) center/cover;
   }
   #pitch .container .pitch-grid .grid-item-4 {
-    background-color: #ef2e2d;
+    background-color: #2d2d2d;
   }
   #portfolio {
     width: 100%;
@@ -1330,7 +1332,7 @@ html, body {
     margin: auto;
   }
   #portfolio .container .tabs-container h4 {
-    color: #ef2e2d;
+    color: #2d2d2d;
     margin-bottom: 1rem;
   }
   #portfolio .container .tabs-container .tabs {
@@ -1431,7 +1433,7 @@ html, body {
             flex-direction: column;
   }
   #portfolio .container .panel .items .item .body .tag {
-    background-color: #ef2e2d;
+    background-color: #2d2d2d;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1454,7 +1456,7 @@ html, body {
     text-align: left;
   }
   #portfolio .container .panel .items .item .body a {
-    color: #ef2e2d;
+    color: #2d2d2d;
     position: absolute;
     bottom: 1rem;
     left: 1rem;
@@ -1585,14 +1587,14 @@ html, body {
     margin-bottom: 2rem;
   }
   #about .container .profile-container .about-content > div span {
-    color: #ef2e2d;
+    color: #2d2d2d;
     text-transform: uppercase;
     font-size: 1rem;
   }
   #about .container .profile-container .about-content > div .line {
     width: 20px;
     height: 2px;
-    background-color: #ef2e2d;
+    background-color: #2d2d2d;
     margin-right: .3rem;
   }
   #about .container .profile-container .about-content p {
