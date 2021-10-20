@@ -297,7 +297,7 @@
                 }
 
                 .grid-item-1 {
-                    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/tulsa.jpg) center / cover;
+                    background: url(/assets/GDWPMSC15.jpg) center / cover;
                 }
 
                 .grid-item-2 {
@@ -305,7 +305,7 @@
                 }
 
                 .grid-item-3 {
-                    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/tulsa2.jpg) center / cover;
+                    background: url(/assets/Clay_Mockup___14_.jpg) center / cover;
                 }
 
                 .grid-item-4 {
@@ -468,7 +468,7 @@
             }
 
             to {
-                background-color: $primary;
+                background-color: $black;
                 color: white;
             }
         }

@@ -125,7 +125,7 @@ html, body {
     text-decoration: none;
   }
   header nav .nav-links li a:hover {
-    color: #fc653c;
+    color: #ef2e2d;
     -webkit-transition: color .5s;
     transition: color .5s;
   }
@@ -133,7 +133,7 @@ html, body {
     margin-top: 3em;
   }
   header nav .nav-links li:nth-child(1) a {
-    color: #fc653c;
+    color: #ef2e2d;
   }
   header nav .nav-links.is-active {
     -webkit-transform: translate(0%);
@@ -655,7 +655,7 @@ html, body {
     position: relative;
     width: 100vw;
     padding: 2em;
-    background: #172933;
+    background: #000;
     z-index: 9999;
   }
   .footer .footer-container {
@@ -776,6 +776,11 @@ html, body {
   .footer .site-credit p {
     text-transform: uppercase;
   }
+  .footer .site-credit img {
+    width: 5rem;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -858,7 +863,7 @@ html, body {
 .btn {
   cursor: pointer;
   padding: 15px 30px;
-  background-color: #fc653c;
+  background-color: #ef2e2d;
   border: 0;
   color: white;
   text-decoration: none;
@@ -872,7 +877,7 @@ html, body {
 }
 
 .btn-primary {
-  background-color: #fc653c;
+  background-color: #ef2e2d;
 }
 
 .btn-success {
@@ -983,7 +988,7 @@ html, body {
     margin: 0;
     border-radius: 0;
     padding: 10px 30px;
-    border-bottom: 2px solid #fc653c;
+    border-bottom: 2px solid #ef2e2d;
   }
   #landing .container .swiper-container .swiper-wrapper {
     display: -webkit-box;
@@ -1118,7 +1123,7 @@ html, body {
     margin-bottom: 1rem;
   }
   #intro .container .service-items .service-item h4 {
-    color: #fc653c;
+    color: #ef2e2d;
     margin-bottom: 1rem;
   }
   #intro .container .service-items .service-item p {
@@ -1132,7 +1137,7 @@ html, body {
   #intro .container .service-items .service-item:hover {
     width: 100%;
     padding: 2rem;
-    border: 1px solid #fc653c;
+    border: 1px solid #ef2e2d;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1149,13 +1154,13 @@ html, body {
     text-align: center;
     -webkit-transition: all .8s;
     transition: all .8s;
-    background-color: #fc653c;
+    background-color: #ef2e2d;
   }
   #intro .container .service-items .service-item:hover img {
     margin-bottom: 1rem;
   }
   #intro .container .service-items .service-item:hover h4 {
-    color: #fc653c;
+    color: #ef2e2d;
     margin-bottom: 1rem;
     color: white;
   }
@@ -1261,18 +1266,16 @@ html, body {
     width: 100%;
   }
   #pitch .container .pitch-grid .grid-item-1 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/tulsa.jpg) center/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/tulsa.jpg) center/cover;
+    background: url(/assets/GDWPMSC15.jpg) center/cover;
   }
   #pitch .container .pitch-grid .grid-item-2 {
     background-color: #dc3545;
   }
   #pitch .container .pitch-grid .grid-item-3 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/tulsa2.jpg) center/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/tulsa2.jpg) center/cover;
+    background: url(/assets/Clay_Mockup___14_.jpg) center/cover;
   }
   #pitch .container .pitch-grid .grid-item-4 {
-    background-color: #fc653c;
+    background-color: #ef2e2d;
   }
   #portfolio {
     width: 100%;
@@ -1327,7 +1330,7 @@ html, body {
     margin: auto;
   }
   #portfolio .container .tabs-container h4 {
-    color: #fc653c;
+    color: #ef2e2d;
     margin-bottom: 1rem;
   }
   #portfolio .container .tabs-container .tabs {
@@ -1428,7 +1431,7 @@ html, body {
             flex-direction: column;
   }
   #portfolio .container .panel .items .item .body .tag {
-    background-color: #fc653c;
+    background-color: #ef2e2d;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1451,7 +1454,7 @@ html, body {
     text-align: left;
   }
   #portfolio .container .panel .items .item .body a {
-    color: #fc653c;
+    color: #ef2e2d;
     position: absolute;
     bottom: 1rem;
     left: 1rem;
@@ -1467,7 +1470,7 @@ html, body {
       background-color: unset;
     }
     to {
-      background-color: #fc653c;
+      background-color: #000;
       color: white;
     }
   }
@@ -1476,7 +1479,7 @@ html, body {
       background-color: unset;
     }
     to {
-      background-color: #fc653c;
+      background-color: #000;
       color: white;
     }
   }
@@ -1582,14 +1585,14 @@ html, body {
     margin-bottom: 2rem;
   }
   #about .container .profile-container .about-content > div span {
-    color: #fc653c;
+    color: #ef2e2d;
     text-transform: uppercase;
     font-size: 1rem;
   }
   #about .container .profile-container .about-content > div .line {
     width: 20px;
     height: 2px;
-    background-color: #fc653c;
+    background-color: #ef2e2d;
     margin-right: .3rem;
   }
   #about .container .profile-container .about-content p {
