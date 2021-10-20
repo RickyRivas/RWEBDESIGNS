@@ -105,16 +105,8 @@
       text-align: center;
       font-weight: 100;
       font-size: .8em;
-
-      & a {
-        text-decoration: none;
-        color: currentColor;
-        cursor: pointer;
-      }
-
-      & .credit {
+      p {
         text-transform: uppercase;
-        color: $primary;
       }
     }
   }

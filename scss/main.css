@@ -773,14 +773,8 @@ html, body {
     font-weight: 100;
     font-size: .8em;
   }
-  .footer .site-credit a {
-    text-decoration: none;
-    color: currentColor;
-    cursor: pointer;
-  }
-  .footer .site-credit .credit {
+  .footer .site-credit p {
     text-transform: uppercase;
-    color: #fc653c;
   }
 }
 
