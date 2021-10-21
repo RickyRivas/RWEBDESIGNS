@@ -23,7 +23,7 @@
 
     & nav {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       background-color: transparent;
       box-shadow: none;
@@ -36,12 +36,24 @@
         color: black;
         font-size: 1.2em;
       }
-      .logo{
-        width: 4rem;
-        height: 4rem;
+
+      .logo-wrapper {
         position: absolute;
-        top: 1rem;
         left: 1rem;
+        top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 5rem;
+        }
+
+        p {
+          color: white;
+          text-transform: uppercase;
+          display: none;
+        }
       }
 
 
@@ -152,7 +164,7 @@
 
     & nav {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       background-color: transparent;
       box-shadow: none;
@@ -161,7 +173,24 @@
       padding: 0.5em;
       width: 100%;
 
+      .logo-wrapper {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+        img {
+          width: 5rem;
+        }
+
+        p {
+          color: white;
+          text-transform: uppercase;
+          display: none;
+        }
+      }
 
       .nav-links {
         margin: 0;
@@ -239,7 +268,7 @@
 
     & nav {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       background-color: transparent;
       box-shadow: none;
@@ -252,12 +281,24 @@
       margin: auto;
       position: relative;
 
-      & p {
-        display: block;
-        color: black;
-        font-size: 1.2em;
-      }
+      .logo-wrapper {
+        position: absolute;
+        left: 2rem;
+        top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+        img {
+          width: 5rem;
+        }
+
+        p {
+          color: white;
+          text-transform: uppercase;
+          display: none;
+        }
+      }
 
       .nav-links {
         margin: 0;
@@ -279,13 +320,8 @@
         & li {
           opacity: 1;
           padding: .5em;
-          text-align: right;
-          width: 90%;
-          font-weight: unset;
-          display: flex;
-          justify-content: flex-end;
-          align-items: flex-end;
-          font-size: 1em;
+          width: max-content;
+          font-size: $font-weight-base * 2;
 
           & a {
             color: White;
@@ -338,7 +374,7 @@
     & nav {
       position: relative;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       background-color: transparent;
       box-shadow: none;
@@ -350,7 +386,24 @@
       max-width: 1200px;
       margin: auto;
 
+       .logo-wrapper {
+        position: absolute;
+        left: 2rem;
+        top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+        img {
+          width: 5rem;
+        }
+
+        p {
+          color: white;
+          text-transform: uppercase;
+          display: none;
+        }
+      }
       .nav-links {
         margin: 0;
         position: relative;
@@ -377,7 +430,6 @@
           display: flex;
           justify-content: flex-end;
           align-items: flex-end;
-          font-size: 1em;
 
           & a {
             color: white;

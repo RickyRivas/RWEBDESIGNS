@@ -45,10 +45,11 @@ navOverlay.addEventListener('click', () => {
 var swiper = new Swiper(".landingSwiper", {
     spaceBetween: 0,
     centeredSlides: true,
+    speed: 1000,
     loop: true,
-    effect: "fade",
+    parallax: true,
     autoplay: {
-        delay: 4500,
+        delay: 5000,
         disableOnInteraction: false,
     },
     pagination: {
@@ -58,7 +59,7 @@ var swiper = new Swiper(".landingSwiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-    },
+    }
 });
 
 
