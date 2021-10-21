@@ -76,11 +76,11 @@ const tabLinks = document.querySelectorAll('#tab-link');
 //     tabLink.classList.toggle('tabActive');
 // }
 
-// const deactivateTab = () => {
-//     tabLinks.forEach(tabLink => {
-//         tabLink.classList.remove('tabActive')
-//     })
-// }
+const deactivateTab = () => {
+    tabLinks.forEach(tabLink => {
+        tabLink.classList.remove('tabActive')
+    })
+}
 
 // tabLinks.forEach(tabLink => {
 //     tabLink.addEventListener('click', () => {
@@ -125,6 +125,8 @@ const sortItems = () => {
         tabLink.addEventListener('click', () => {
             //All
             if (tabLink == tabLinks[0]) {
+                deactivateTab();
+                tabLinks[0].classList.toggle('tabActive')
                 portCards.forEach(portcard => {
                     const filteredCard = portcard;
                     if (filteredCard.classList.contains('all')) {
@@ -140,6 +142,8 @@ const sortItems = () => {
             }
             // Landing Page
             if (tabLink == tabLinks[1]) {
+                deactivateTab();
+                tabLinks[1].classList.toggle('tabActive')
                 portCards.forEach(portcard => {
                     const filteredCard = portcard;
                     if (filteredCard.classList.contains('lp')) {
@@ -155,6 +159,8 @@ const sortItems = () => {
             }
             // 5-pager
             if (tabLink == tabLinks[2]) {
+                deactivateTab();
+                tabLinks[2].classList.toggle('tabActive')
                 portCards.forEach(portcard => {
                     const filteredCard = portcard;
                     if (filteredCard.classList.contains('5p')) {
@@ -170,6 +176,8 @@ const sortItems = () => {
             }
             // Custom
             if (tabLink == tabLinks[3]) {
+                deactivateTab();
+                tabLinks[3].classList.toggle('tabActive')
                 portCards.forEach(portcard => {
                     const filteredCard = portcard;
                     if (filteredCard.classList.contains('custom')) {
