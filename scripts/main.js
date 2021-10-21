@@ -54,7 +54,7 @@ var swiper = new Swiper(".landingSwiper", {
     },
     pagination: {
         el: ".swiper-pagination",
-         type: "fraction",
+        type: "fraction",
     },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -64,53 +64,129 @@ var swiper = new Swiper(".landingSwiper", {
 
 
 const tabLinks = document.querySelectorAll('#tab-link');
-const tabContents = document.querySelectorAll('#tabcontent');
+// const tabContents = document.querySelectorAll('#tabcontent');
 
-tabContents.forEach(tabContent => {
-    if (tabContent.classList.contains('active-content')){
-        tabContent.style.display = 'block';
-     }
-})
+// tabContents.forEach(tabContent => {
+//     if (tabContent.classList.contains('active-content')){
+//         tabContent.style.display = 'block';
+//      }
+// })
 
-const activateTab = (tabLink) => {
-    tabLink.classList.toggle('tabActive');
-}
+// const activateTab = (tabLink) => {
+//     tabLink.classList.toggle('tabActive');
+// }
 
-const deactivateTab = () => {
+// const deactivateTab = () => {
+//     tabLinks.forEach(tabLink => {
+//         tabLink.classList.remove('tabActive')
+//     })
+// }
+
+// tabLinks.forEach(tabLink => {
+//     tabLink.addEventListener('click', () => {
+//         deactivateTab();
+//         activateTab(tabLink);
+//         showTabContent(tabLink)
+//     })
+// })
+
+// const showTabContent = (tabLink) => {
+//     const tabLinkIndex = tabLink;
+//     if (tabLinkIndex.classList.contains('tabActive') && tabLinkIndex == tabLinks[0]) {
+//         tabContents.forEach(tabContent => {
+//             tabContent.classList.remove('active-content')
+//         })
+//         tabContents[0].classList.add('active-content');
+//     } else if (tabLinkIndex.classList.contains('tabActive') && tabLinkIndex == tabLinks[1]) {
+//         tabContents.forEach(tabContent => {
+//             tabContent.classList.remove('active-content')
+//         })
+//         tabContents[1].classList.add('active-content')
+//     } else if (tabLinkIndex.classList.contains('tabActive') && tabLinkIndex == tabLinks[2]) {
+//         tabContents.forEach(tabContent => {
+//             tabContent.classList.remove('active-content')
+//         })
+//         tabContents[2].classList.add('active-content')
+//     } else if (tabLinkIndex.classList.contains('tabActive') && tabLinkIndex == tabLinks[3]) {
+//          tabContents.forEach(tabContent => {
+//             tabContent.classList.remove('active-content')
+//         })
+//         tabContents[3].classList.add('active-content')
+//     }
+// }
+
+// Updated 
+// all, 5p, lp, custom
+const portCards = document.querySelectorAll('.port-card');
+
+const sortItems = () => {
     tabLinks.forEach(tabLink => {
-        tabLink.classList.remove('tabActive')
+
+        tabLink.addEventListener('click', () => {
+            //All
+            if (tabLink == tabLinks[0]) {
+                portCards.forEach(portcard => {
+                    const filteredCard = portcard;
+                    if (filteredCard.classList.contains('all')) {
+                        filteredCard.classList.add('active-content')
+                        portCards.forEach(portcard => {
+                            const removePortCard = portcard;
+                            if (!removePortCard.classList.contains('all')) {
+                                removePortCard.classList.remove('active-content');
+                            }
+                        })
+                    }
+                })
+            }
+            // Landing Page
+            if (tabLink == tabLinks[1]) {
+                portCards.forEach(portcard => {
+                    const filteredCard = portcard;
+                    if (filteredCard.classList.contains('lp')) {
+                        filteredCard.classList.add('active-content')
+                        portCards.forEach(portcard => {
+                            const removePortCard = portcard;
+                            if (!removePortCard.classList.contains('lp')) {
+                                removePortCard.classList.remove('active-content');
+                            }
+                        })
+                    }
+                })
+            }
+            // 5-pager
+            if (tabLink == tabLinks[2]) {
+                portCards.forEach(portcard => {
+                    const filteredCard = portcard;
+                    if (filteredCard.classList.contains('5p')) {
+                        filteredCard.classList.add('active-content')
+                        portCards.forEach(portcard => {
+                            const removePortCard = portcard;
+                            if (!removePortCard.classList.contains('5p')) {
+                                removePortCard.classList.remove('active-content');
+                            }
+                        })
+                    }
+                })
+            }
+            // Custom
+            if (tabLink == tabLinks[3]) {
+                portCards.forEach(portcard => {
+                    const filteredCard = portcard;
+                    if (filteredCard.classList.contains('custom')) {
+                        filteredCard.classList.add('active-content')
+                        portCards.forEach(portcard => {
+                            const removePortCard = portcard;
+                            if (!removePortCard.classList.contains('custom')) {
+                                removePortCard.classList.remove('active-content');
+                            }
+                        })
+                    }
+                })
+            }
+            const displayAmount = document.querySelector('.display-amount');
+            let currentlyActiveItems = document.querySelectorAll('.active-content');
+            displayAmount.textContent = currentlyActiveItems.length + ' Items are being shown.';
+        })
     })
 }
-
-tabLinks.forEach(tabLink => {
-    tabLink.addEventListener('click', () => {
-        deactivateTab();
-        activateTab(tabLink);
-        showTabContent(tabLink)
-    })
-})
-
-const showTabContent = (tabLink) => {
-    const tabLinkIndex = tabLink;
-    if (tabLinkIndex.classList.contains('tabActive') && tabLinkIndex == tabLinks[0]) {
-        tabContents.forEach(tabContent => {
-            tabContent.classList.remove('active-content')
-        })
-        tabContents[0].classList.add('active-content');
-    } else if (tabLinkIndex.classList.contains('tabActive') && tabLinkIndex == tabLinks[1]) {
-        tabContents.forEach(tabContent => {
-            tabContent.classList.remove('active-content')
-        })
-        tabContents[1].classList.add('active-content')
-    } else if (tabLinkIndex.classList.contains('tabActive') && tabLinkIndex == tabLinks[2]) {
-        tabContents.forEach(tabContent => {
-            tabContent.classList.remove('active-content')
-        })
-        tabContents[2].classList.add('active-content')
-    } else if (tabLinkIndex.classList.contains('tabActive') && tabLinkIndex == tabLinks[3]) {
-         tabContents.forEach(tabContent => {
-            tabContent.classList.remove('active-content')
-        })
-        tabContents[3].classList.add('active-content')
-    }
-}
+sortItems();

@@ -449,6 +449,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
 
                 .items {
                     display: flex;
@@ -457,13 +458,16 @@
                     flex-wrap: wrap;
                     place-items: center;
 
-                    .item {
+                    .port-card{
                         position: relative;
                         display: grid;
                         grid-template-rows: 40% auto;
                         height: 418px;
                         width: 300px;
                         box-shadow: $box-shadow;
+                        transition: all .5s;
+                        display: none;
+                        margin-bottom: 1rem;
 
                         .img {
                             img {
@@ -509,14 +513,12 @@
                                 left: $margin-md;
                             }
                         }
-                    }
-                }
-
-                .tab-content {
-                    display: none;
-
-                    &.active-content {
+                        &.active-content {
                         display: block;
+                    }
+                    }
+                    .port-card.active-content {
+                        transition: all 1s;
                     }
                 }
             }
