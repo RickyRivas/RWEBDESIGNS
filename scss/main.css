@@ -1427,22 +1427,21 @@ html, body {
             align-items: center;
     padding: 1rem;
     position: relative;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  #portfolio .container .tabs-container .tabs a p {
+    margin: 0;
+    margin-right: 0.5rem;
+    color: black;
   }
   #portfolio .container .tabs-container .tabs a.tabActive {
     opacity: 1;
     background-color: black;
     color: white;
   }
-  #portfolio .container .tabs-container .tabs a span {
-    position: absolute;
-    top: 50%;
-    right: 0rem;
-    bottom: 0;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+  #portfolio .container .tabs-container .tabs a.tabActive p {
+    color: white;
   }
   #portfolio .container .panel {
     padding: 2rem 0;
@@ -1459,19 +1458,15 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
   }
   #portfolio .container .panel .items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 1rem;
+    width: 100%;
     place-items: center;
   }
   #portfolio .container .panel .items .port-card {
@@ -1488,8 +1483,8 @@ html, body {
     transition: all .5s;
     display: none;
     margin-bottom: 1rem;
-    -webkit-animation: fadeCard .3s forwards;
-            animation: fadeCard .3s forwards;
+    -webkit-animation: fadeCard 1s ease forwards;
+            animation: fadeCard 1s ease forwards;
   }
   #portfolio .container .panel .items .port-card .img img {
     width: 100%;
@@ -1498,9 +1493,11 @@ html, body {
        object-fit: cover;
   }
   #portfolio .container .panel .items .port-card .body {
-    padding: 1rem;
+    padding: 0.5rem;
     width: 100%;
-    height: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2712,6 +2709,8 @@ html, body {
     display: grid;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
     place-items: center;
     width: 100%;
     max-height: 125px;
@@ -2734,11 +2733,18 @@ html, body {
         -ms-flex-align: center;
             align-items: center;
     padding: 1rem;
+    position: relative;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  #portfolio .container .tabs-container .tabs a p {
+    margin: 0;
+    margin-right: 0.5rem;
   }
   #portfolio .container .tabs-container .tabs a.tabActive {
     opacity: 1;
-    -webkit-animation: fadeTab .5s forwards;
-            animation: fadeTab .5s forwards;
+    background-color: black;
+    color: white;
   }
   #portfolio .container .panel {
     padding: 2rem 0;
@@ -2751,20 +2757,23 @@ html, body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
   }
   #portfolio .container .panel .items {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    place-items: center;
   }
   #portfolio .container .panel .items .item {
     position: relative;
@@ -2773,7 +2782,6 @@ html, body {
     -ms-grid-rows: 40% auto;
         grid-template-rows: 40% auto;
     height: 450px;
-    width: 95%;
     max-width: 350px;
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -2787,7 +2795,9 @@ html, body {
   #portfolio .container .panel .items .item .body {
     padding: 1rem;
     width: 100%;
-    height: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2830,30 +2840,6 @@ html, body {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
-  }
-  #portfolio .container .panel .tab-content {
-    display: none;
-  }
-  #portfolio .container .panel .tab-content.active-content {
-    display: block;
-  }
-  @-webkit-keyframes fadeTab {
-    from {
-      background-color: unset;
-    }
-    to {
-      background-color: #000;
-      color: white;
-    }
-  }
-  @keyframes fadeTab {
-    from {
-      background-color: unset;
-    }
-    to {
-      background-color: #000;
-      color: white;
-    }
   }
   #about {
     width: 100%;

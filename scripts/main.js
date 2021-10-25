@@ -64,63 +64,14 @@ var swiper = new Swiper(".landingSwiper", {
 
 
 const tabLinks = document.querySelectorAll('#tab-link');
-// const tabContents = document.querySelectorAll('#tabcontent');
 
-// tabContents.forEach(tabContent => {
-//     if (tabContent.classList.contains('active-content')){
-//         tabContent.style.display = 'block';
-//      }
-// })
-
-// const activateTab = (tabLink) => {
-//     tabLink.classList.toggle('tabActive');
-// }
-
-const deactivateTab = () => {
-    tabLinks.forEach(tabLink => {
-        tabLink.classList.remove('tabActive')
-    })
-}
-
-// tabLinks.forEach(tabLink => {
-//     tabLink.addEventListener('click', () => {
-//         deactivateTab();
-//         activateTab(tabLink);
-//         showTabContent(tabLink)
-//     })
-// })
-
-// const showTabContent = (tabLink) => {
-//     const tabLinkIndex = tabLink;
-//     if (tabLinkIndex.classList.contains('tabActive') && tabLinkIndex == tabLinks[0]) {
-//         tabContents.forEach(tabContent => {
-//             tabContent.classList.remove('active-content')
-//         })
-//         tabContents[0].classList.add('active-content');
-//     } else if (tabLinkIndex.classList.contains('tabActive') && tabLinkIndex == tabLinks[1]) {
-//         tabContents.forEach(tabContent => {
-//             tabContent.classList.remove('active-content')
-//         })
-//         tabContents[1].classList.add('active-content')
-//     } else if (tabLinkIndex.classList.contains('tabActive') && tabLinkIndex == tabLinks[2]) {
-//         tabContents.forEach(tabContent => {
-//             tabContent.classList.remove('active-content')
-//         })
-//         tabContents[2].classList.add('active-content')
-//     } else if (tabLinkIndex.classList.contains('tabActive') && tabLinkIndex == tabLinks[3]) {
-//          tabContents.forEach(tabContent => {
-//             tabContent.classList.remove('active-content')
-//         })
-//         tabContents[3].classList.add('active-content')
-//     }
-// }
-
-// Updated 
-// all, 5p, lp, custom
 const portCards = document.querySelectorAll('.port-card');
 
 const allTab = document.querySelector('.link-1 span');
 const cardsWithAllTag = document.querySelectorAll('.all');
+cardsWithAllTag.forEach(card => {
+    card.style.display = 'block';
+})
 allTab.textContent = `(${cardsWithAllTag.length})`
 
 const landTab = document.querySelector('.link-2 span');
@@ -139,9 +90,17 @@ const sortItems = () => {
     tabLinks.forEach(tabLink => {
 
         tabLink.addEventListener('click', () => {
-            const currentlyActiveTag = document.querySelector('.tabActive');
-            currentlyActiveTag.classList.toggle('tabActive');
-            tabLink.classList.toggle('tabActive');
+
+            const currentlyActiveTab = document.querySelector('.tabActive');
+
+            if (tabLink == currentlyActiveTab) {
+                return;
+            }
+
+            currentlyActiveTab.classList.remove('tabActive');
+
+            tabLink.classList.add('tabActive');
+
             if (tabLink == tabLinks[0]) {
                 cardsWithAllTag.forEach(card => {
                     card.style.display = 'block';
@@ -151,8 +110,7 @@ const sortItems = () => {
                         link.style.display = 'none';
                     }
                 })
-            }
-            else if(tabLink == tabLinks[1]) {
+            } else if (tabLink == tabLinks[1]) {
                 cardsWithLandTag.forEach(card => {
                     card.style.display = 'block';
                 })
@@ -161,8 +119,7 @@ const sortItems = () => {
                         link.style.display = 'none';
                     }
                 })
-            }
-            else if (tabLink == tabLinks[2]) {
+            } else if (tabLink == tabLinks[2]) {
                 cardsWithFiveTag.forEach(card => {
                     card.style.display = 'block'
                 });
@@ -171,8 +128,7 @@ const sortItems = () => {
                         card.style.display = 'none';
                     }
                 })
-            }
-            else if (tabLink == tabLinks[3]) {
+            } else if (tabLink == tabLinks[3]) {
                 cardsWithCustomTag.forEach(card => {
                     card.style.display = 'block';
                 })

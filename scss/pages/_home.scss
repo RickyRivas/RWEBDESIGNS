@@ -426,7 +426,7 @@
                     grid-gap: 1rem;
 
                     a {
-                         width: 100%;
+                        width: 100%;
                         background-color: white;
                         margin: 0;
                         color: black;
@@ -436,19 +436,21 @@
                         align-items: center;
                         padding: 1rem;
                         position: relative;
+                        transition: all .3s;
+
+                        p {
+                            margin: 0;
+                            margin-right: $margin-sm;
+                            color: black;
+                        }
 
                         &.tabActive {
                             opacity: 1;
                             background-color: black;
                             color: white;
-                        }
-                        & span {
-                            position: absolute;
-                            top:  50%;
-                            right: 0rem;    
-                            bottom: 0;
-                            transform: translate(-50%, -50%);
-                            height: max-content;
+                            p {
+                                color: white;
+                            }
                         }
                     }
                 }
@@ -460,15 +462,16 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                width: 100%;
 
                 .items {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-wrap: wrap;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+                    grid-gap: 1rem;
+                    width: 100%;
                     place-items: center;
 
-                    .port-card{
+                    .port-card {
                         position: relative;
                         display: grid;
                         grid-template-rows: 40% auto;
@@ -478,7 +481,7 @@
                         transition: all .5s;
                         display: none;
                         margin-bottom: 1rem;
-                        animation: fadeCard .3s forwards;
+                        animation: fadeCard 1s ease forwards;
 
                         .img {
                             img {
@@ -489,9 +492,9 @@
                         }
 
                         .body {
-                            padding: $padding-md;
+                            padding: $padding-sm;
                             width: 100%;
-                            height: 100%;
+                            height: max-content;
                             display: flex;
                             justify-content: flex-start;
                             align-items: flex-start;
@@ -524,20 +527,24 @@
                                 left: $margin-md;
                             }
                         }
+
                         &.active-content {
-                        display: block;
+                            display: block;
+                        }
                     }
-                    }
+
                     .port-card.active-content {
                         transition: all 1s;
                     }
                 }
             }
         }
+
         @keyframes fadeCard {
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
@@ -1545,11 +1552,13 @@
                 .tabs {
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
+                    grid-template-rows: 1fr;
                     place-items: center;
                     width: 100%;
                     max-height: 125px;
                     text-align: center;
                     grid-gap: 1rem;
+
 
                     a {
                         width: 100%;
@@ -1561,10 +1570,18 @@
                         justify-content: center;
                         align-items: center;
                         padding: 1rem;
+                        position: relative;
+                        transition: all .3s;
+
+                        p {
+                            margin: 0;
+                            margin-right: $margin-sm;
+                        }
 
                         &.tabActive {
                             opacity: 1;
-                            animation: fadeTab .5s forwards;
+                            background-color: black;
+                            color: white;
                         }
                     }
                 }
@@ -1575,20 +1592,22 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                width: 100%;
+                max-width: 1300px;
+                margin: auto;
 
                 .items {
+                    width: 100%;
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: flex-start;
                     flex-wrap: wrap;
-                    place-items: center;
 
                     .item {
                         position: relative;
                         display: grid;
                         grid-template-rows: 40% auto;
                         height: 450px;
-                        width: 95%;
                         max-width: 350px;
                         box-shadow: $box-shadow;
 
@@ -1603,7 +1622,7 @@
                         .body {
                             padding: $padding-md;
                             width: 100%;
-                            height: 100%;
+                            height: max-content;
                             display: flex;
                             justify-content: flex-start;
                             align-items: flex-start;
@@ -1638,25 +1657,6 @@
                         }
                     }
                 }
-
-                .tab-content {
-                    display: none;
-
-                    &.active-content {
-                        display: block;
-                    }
-                }
-            }
-        }
-
-        @keyframes fadeTab {
-            from {
-                background-color: unset;
-            }
-
-            to {
-                background-color: $black;
-                color: white;
             }
         }
     }
