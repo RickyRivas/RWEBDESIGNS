@@ -426,7 +426,7 @@
                     grid-gap: 1rem;
 
                     a {
-                        width: 100%;
+                         width: 100%;
                         background-color: white;
                         margin: 0;
                         color: black;
@@ -435,10 +435,20 @@
                         justify-content: center;
                         align-items: center;
                         padding: 1rem;
+                        position: relative;
 
                         &.tabActive {
                             opacity: 1;
-                            animation: fadeTab .5s forwards;
+                            background-color: black;
+                            color: white;
+                        }
+                        & span {
+                            position: absolute;
+                            top:  50%;
+                            right: 0rem;    
+                            bottom: 0;
+                            transform: translate(-50%, -50%);
+                            height: max-content;
                         }
                     }
                 }
@@ -468,6 +478,7 @@
                         transition: all .5s;
                         display: none;
                         margin-bottom: 1rem;
+                        animation: fadeCard .3s forwards;
 
                         .img {
                             img {
@@ -523,15 +534,12 @@
                 }
             }
         }
-
-        @keyframes fadeTab {
+        @keyframes fadeCard {
             from {
-                background-color: unset;
+                opacity: 0;
             }
-
             to {
-                background-color: $black;
-                color: white;
+                opacity: 1;
             }
         }
     }

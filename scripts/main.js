@@ -119,81 +119,69 @@ const deactivateTab = () => {
 // all, 5p, lp, custom
 const portCards = document.querySelectorAll('.port-card');
 
+const allTab = document.querySelector('.link-1 span');
+const cardsWithAllTag = document.querySelectorAll('.all');
+allTab.textContent = `(${cardsWithAllTag.length})`
+
+const landTab = document.querySelector('.link-2 span');
+const cardsWithLandTag = document.querySelectorAll('.lp');
+landTab.textContent = ` (${cardsWithLandTag.length}) `
+
+const fiveTab = document.querySelector('.link-3 span');
+const cardsWithFiveTag = document.querySelectorAll('.five');
+fiveTab.textContent = `(${cardsWithFiveTag.length})`;
+
+const customTab = document.querySelector('.link-4 span');
+const cardsWithCustomTag = document.querySelectorAll('.custom');
+customTab.textContent = `(${cardsWithCustomTag.length})`
+
 const sortItems = () => {
     tabLinks.forEach(tabLink => {
 
         tabLink.addEventListener('click', () => {
-            //All
+            const currentlyActiveTag = document.querySelector('.tabActive');
+            currentlyActiveTag.classList.toggle('tabActive');
+            tabLink.classList.toggle('tabActive');
             if (tabLink == tabLinks[0]) {
-                deactivateTab();
-                tabLinks[0].classList.toggle('tabActive')
-                portCards.forEach(portcard => {
-                    const filteredCard = portcard;
-                    if (filteredCard.classList.contains('all')) {
-                        filteredCard.classList.add('active-content')
-                        portCards.forEach(portcard => {
-                            const removePortCard = portcard;
-                            if (!removePortCard.classList.contains('all')) {
-                                removePortCard.classList.remove('active-content');
-                            }
-                        })
+                cardsWithAllTag.forEach(card => {
+                    card.style.display = 'block';
+                });
+                portCards.forEach(link => {
+                    if (!link.classList.contains('all')) {
+                        link.style.display = 'none';
                     }
                 })
             }
-            // Landing Page
-            if (tabLink == tabLinks[1]) {
-                deactivateTab();
-                tabLinks[1].classList.toggle('tabActive')
-                portCards.forEach(portcard => {
-                    const filteredCard = portcard;
-                    if (filteredCard.classList.contains('lp')) {
-                        filteredCard.classList.add('active-content')
-                        portCards.forEach(portcard => {
-                            const removePortCard = portcard;
-                            if (!removePortCard.classList.contains('lp')) {
-                                removePortCard.classList.remove('active-content');
-                            }
-                        })
+            else if(tabLink == tabLinks[1]) {
+                cardsWithLandTag.forEach(card => {
+                    card.style.display = 'block';
+                })
+                portCards.forEach(link => {
+                    if (!link.classList.contains('lp')) {
+                        link.style.display = 'none';
                     }
                 })
             }
-            // 5-pager
-            if (tabLink == tabLinks[2]) {
-                deactivateTab();
-                tabLinks[2].classList.toggle('tabActive')
-                portCards.forEach(portcard => {
-                    const filteredCard = portcard;
-                    if (filteredCard.classList.contains('5p')) {
-                        filteredCard.classList.add('active-content')
-                        portCards.forEach(portcard => {
-                            const removePortCard = portcard;
-                            if (!removePortCard.classList.contains('5p')) {
-                                removePortCard.classList.remove('active-content');
-                            }
-                        })
+            else if (tabLink == tabLinks[2]) {
+                cardsWithFiveTag.forEach(card => {
+                    card.style.display = 'block'
+                });
+                portCards.forEach(card => {
+                    if (!card.classList.contains('five')) {
+                        card.style.display = 'none';
                     }
                 })
             }
-            // Custom
-            if (tabLink == tabLinks[3]) {
-                deactivateTab();
-                tabLinks[3].classList.toggle('tabActive')
-                portCards.forEach(portcard => {
-                    const filteredCard = portcard;
-                    if (filteredCard.classList.contains('custom')) {
-                        filteredCard.classList.add('active-content')
-                        portCards.forEach(portcard => {
-                            const removePortCard = portcard;
-                            if (!removePortCard.classList.contains('custom')) {
-                                removePortCard.classList.remove('active-content');
-                            }
-                        })
+            else if (tabLink == tabLinks[3]) {
+                cardsWithCustomTag.forEach(card => {
+                    card.style.display = 'block';
+                })
+                portCards.forEach(card => {
+                    if (!card.classList.contains('custom')) {
+                        card.style.display = 'none'
                     }
                 })
             }
-            const displayAmount = document.querySelector('.display-amount');
-            let currentlyActiveItems = document.querySelectorAll('.active-content');
-            displayAmount.textContent = currentlyActiveItems.length + ' Items are being shown.';
         })
     })
 }

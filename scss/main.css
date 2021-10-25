@@ -1426,11 +1426,23 @@ html, body {
         -ms-flex-align: center;
             align-items: center;
     padding: 1rem;
+    position: relative;
   }
   #portfolio .container .tabs-container .tabs a.tabActive {
     opacity: 1;
-    -webkit-animation: fadeTab .5s forwards;
-            animation: fadeTab .5s forwards;
+    background-color: black;
+    color: white;
+  }
+  #portfolio .container .tabs-container .tabs a span {
+    position: absolute;
+    top: 50%;
+    right: 0rem;
+    bottom: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   #portfolio .container .panel {
     padding: 2rem 0;
@@ -1476,6 +1488,8 @@ html, body {
     transition: all .5s;
     display: none;
     margin-bottom: 1rem;
+    -webkit-animation: fadeCard .3s forwards;
+            animation: fadeCard .3s forwards;
   }
   #portfolio .container .panel .items .port-card .img img {
     width: 100%;
@@ -1537,22 +1551,20 @@ html, body {
     -webkit-transition: all 1s;
     transition: all 1s;
   }
-  @-webkit-keyframes fadeTab {
+  @-webkit-keyframes fadeCard {
     from {
-      background-color: unset;
+      opacity: 0;
     }
     to {
-      background-color: #000;
-      color: white;
+      opacity: 1;
     }
   }
-  @keyframes fadeTab {
+  @keyframes fadeCard {
     from {
-      background-color: unset;
+      opacity: 0;
     }
     to {
-      background-color: #000;
-      color: white;
+      opacity: 1;
     }
   }
   #about {
