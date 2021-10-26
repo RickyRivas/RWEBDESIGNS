@@ -16,6 +16,25 @@ navOverlay.addEventListener('click', () => {
     body.classList.toggle('body-fixed');
     navOverlay.classList.toggle('is-active');
 })
+setTimeout(() => {
+    modalUno.style.display = 'block';
+    body.classList.toggle('body-fixed');
+}, 2000);
+// Popup Modal
+const modalUno = document.querySelector('.modal-uno-base');
+const modalTriggerUno = document.querySelector('#modal-trigger-uno');
+const closeModalUno = document.querySelector('#close-modal-uno');
+const modalUnoOverlay = document.querySelector('.modal-overlay');
+modalUno.style.display = 'none';
+
+modalUnoOverlay.addEventListener('click', () => {
+    modalUno.style.display = 'none';
+    body.classList.remove('body-fixed');
+})
+closeModalUno.addEventListener('click', () => {
+    modalUno.style.display = 'none'
+    body.classList.remove('body-fixed');
+});
 // Color theme toggle
 // const themeToggle = document.querySelector('.theme-toggle');
 // const prefersDarkTheme = window.matchMedia("(prefers-color-scheme: dark)");

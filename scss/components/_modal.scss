@@ -1,0 +1,73 @@
+@media (min-width: 0em) {
+    .modal-uno-base {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .modal-overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .7);
+            z-index: 777;
+        }
+
+        .modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 95%;
+            height: 250px;
+            max-width: 500px;
+            background-color: white;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            z-index: 778;
+            place-items: center;
+            animation: fadeIn .5s ease-in;
+
+            .modal-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                padding: $padding-sm;
+                background-color: $gray-100;
+                #close-modal-uno {
+                    width: max-content;
+                    padding: $padding-sm;
+                }
+            }
+
+            .modal-content {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 $padding-sm;
+            }
+
+            .modal-footer {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: $padding-sm 0;
+                background-color: $gray-100;
+            }
+        }
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
