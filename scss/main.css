@@ -1427,8 +1427,6 @@ html, body {
             align-items: center;
     padding: 1rem;
     position: relative;
-    -webkit-transition: all .3s;
-    transition: all .3s;
   }
   #portfolio .container .tabs-container .tabs a p {
     margin: 0;
@@ -1479,12 +1477,10 @@ html, body {
     width: 300px;
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    -webkit-transition: all .5s;
-    transition: all .5s;
     display: none;
     margin-bottom: 1rem;
-    -webkit-animation: fadeCard 1s ease forwards;
-            animation: fadeCard 1s ease forwards;
+    -webkit-animation: fadeCard .2s ease-in-out forwards;
+            animation: fadeCard .2s ease-in-out forwards;
   }
   #portfolio .container .panel .items .port-card .img img {
     width: 100%;
@@ -2734,8 +2730,6 @@ html, body {
             align-items: center;
     padding: 1rem;
     position: relative;
-    -webkit-transition: all .3s;
-    transition: all .3s;
   }
   #portfolio .container .tabs-container .tabs a p {
     margin: 0;
@@ -3272,7 +3266,7 @@ html, body {
 
 @media (min-width: 0em) {
   #contact-landing {
-    width: 100%;
+    width: 100vw;
     height: 500px;
     padding: 2rem;
     border-bottom: 1px solid #2d2d2d;
@@ -3308,7 +3302,7 @@ html, body {
     width: 100%;
   }
   #contact-grid {
-    width: 100%;
+    width: 100vw;
     background-color: #f8f9fa;
   }
   #contact-grid .container {

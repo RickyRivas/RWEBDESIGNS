@@ -436,7 +436,6 @@
                         align-items: center;
                         padding: 1rem;
                         position: relative;
-                        transition: all .3s;
 
                         p {
                             margin: 0;
@@ -478,10 +477,10 @@
                         height: 418px;
                         width: 300px;
                         box-shadow: $box-shadow;
-                        transition: all .5s;
+                        // transition: all .5s;
                         display: none;
                         margin-bottom: 1rem;
-                        animation: fadeCard 1s ease forwards;
+                        animation: fadeCard .2s ease-in-out forwards;
 
                         .img {
                             img {
@@ -1571,8 +1570,6 @@
                         align-items: center;
                         padding: 1rem;
                         position: relative;
-                        transition: all .3s;
-
                         p {
                             margin: 0;
                             margin-right: $margin-sm;
