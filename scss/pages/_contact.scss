@@ -1,7 +1,7 @@
 @media (min-width: 0em) {
     #contact-landing {
         width: 100vw;
-        height: 500px;
+        height: 250px;
         padding: $padding-lg;
         border-bottom: 1px solid $primary;
         background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/assets/tulsanight1.jpeg) center / cover;
@@ -240,7 +240,24 @@
             }
         }
     }
-
+ #contact-footer {
+     width: 100%;
+     padding: $padding-lg $padding-md;
+     height: 400px;
+     background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(/assets/tulsanight1.jpeg) center /cover;
+     .container {
+        color: white;
+        font-weight: lighter;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $font-size-lg;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+     }
+ }
 }
 @media (min-width: 768px){
       #contact-landing {
@@ -275,7 +292,7 @@
 @media (min-width: 1024px){
          #contact-landing {
         width: 100%;
-        height: 700px;
+        height: 300px;
         padding: $padding-lg;
         border-bottom: 1px solid $primary;
         background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/assets/tulsa2.jpg) center / cover;
@@ -331,6 +348,7 @@
                     justify-content: center;
                     align-items: center;
                     margin-bottom: $margin-md;
+                    box-shadow: unset;
                 }
 
 
@@ -491,7 +509,7 @@
                     justify-content: center;
                     align-items: center;
                     margin-bottom: $margin-lg;
-                    box-shadow: $box-shadow;
+                    box-shadow: unset;
                 }
 
                 .item {

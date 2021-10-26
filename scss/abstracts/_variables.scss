@@ -19,7 +19,7 @@ $grays: ("100": $gray-100,
     "700": $gray-700,
     "800": $gray-800,
     "900": $gray-900);
-
+$gold-gradient: linear-gradient( to right #5e3d04, #fef272);
 // Color pallet
 $blue: #0d6efd;
 $indigo: #6610f2;
@@ -31,8 +31,8 @@ $yellow: #ffc107;
 $green: #5aa26e;
 $teal: #20c997;
 $cyan: #0dcaf0;
-$brown: #c1a38b;
-
+$brown: #2d2d2d;
+$gold: #bc9366;
 
 $colors: ("blue": $blue,
     "indigo": $indigo,
@@ -48,7 +48,7 @@ $colors: ("blue": $blue,
     "gray": $gray-600,
     "gray-dark": $gray-800);
 // theme-color-variables
-$primary: #2d2d2d;
+$primary: $brown;
 $primary-light: $gray-200;
 $secondary: $red;
 $success: $green;
