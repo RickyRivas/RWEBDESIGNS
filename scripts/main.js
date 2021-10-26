@@ -27,10 +27,10 @@ const closeModalUno = document.querySelector('#close-modal-uno');
 const modalUnoOverlay = document.querySelector('.modal-overlay');
 modalUno.style.display = 'none';
 
-modalUnoOverlay.addEventListener('click', () => {
-    modalUno.style.display = 'none';
-    body.classList.remove('body-fixed');
-})
+// modalUnoOverlay.addEventListener('click', () => {
+//     modalUno.style.display = 'none';
+//     body.classList.remove('body-fixed');
+// })
 closeModalUno.addEventListener('click', () => {
     modalUno.style.display = 'none'
     body.classList.remove('body-fixed');
