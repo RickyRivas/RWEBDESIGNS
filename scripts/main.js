@@ -47,7 +47,6 @@ var swiper = new Swiper(".landingSwiper", {
     centeredSlides: true,
     speed: 1000,
     loop: true,
-    parallax: true,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
