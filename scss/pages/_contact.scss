@@ -4,6 +4,7 @@
         height: 500px;
         padding: $padding-lg;
         border-bottom: 1px solid $primary;
+        background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(/assets/tulsa2.jpg) center / cover;
 
         .container {
             display: flex;
@@ -13,9 +14,12 @@
             text-align: center;
             width: 100%;
             height: 100%;
+            color: white;
 
             h1 {
                 margin-bottom: $margin-md;
+            } p {
+                color: $gray-200;
             }
         }
     }
