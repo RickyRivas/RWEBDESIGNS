@@ -77,8 +77,9 @@
       }
 
       p {
-        text-transform: uppercase;
+        // text-transform: uppercase;
         color: $gray-300;
+        font-weight: lighter;
       }
     }
   }
