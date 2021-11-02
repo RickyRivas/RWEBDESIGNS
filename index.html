@@ -19,7 +19,6 @@
     <link rel="icon" type='image/png' href="/assets/RLOGO1-01.svg">
     <!-- Styles -->
     <link href='scss/main.css' rel='stylesheet'>
-    <link href="/scss/swiper-bundle.min.css" rel='stylesheet'>
     <!-- Fontshare Font -->
     <!-- Title -->
     <title>R Web Designs | Tulsa Web Design and Development</title>
@@ -61,14 +60,43 @@
                     <h2>R Web Designs</h2>
                     <!-- <button id='close-modal-uno' class='btn btn-dark'>X</button> -->
                 </div>
-                <div class="modal-content">Our Website is currently undergoing development. Contact us by following the
-                    link below. Thank you.</div>
-                <div class="modal-footer">
-                    <a href='contact.html' class='btn btn-primary'>Contact Us</a>
+                <div class="modal-content">
+                    <p>Our website is currently undergoing a redesign. Contact us by filling out the form below. Looking
+                        forward to working with you!</p>
+                    <form id='form' name="contact" method="POST" data-netlify="true">
+                        <div class='form-heading'>
+                            <h2>Contact Us</h2>
+                        </div>
+                        <label>
+                            <p>Your Name* </p><input type="text" name="name" />
+                        </label>
+                        <label>
+                            <p>Email Address* </p><input type="text" name="email" />
+                        </label>
+                        <!-- <label>
+                            <p>Choose Service*</p>
+                            <select name="service-type">
+                                <option value="Standard">Standard Cleaning</option>
+                                <option value="Organizing">Organizing</option>
+                                <option value="Grocery Pickup">Grocery Pickup</option>
+                            </select>
+                        </label> -->
+
+                        <label class='message-label'>
+                            <p>Message: </p>
+                            <textarea type="text" name="message"></textarea>
+                        </label>
+                        <p>
+                            <button class='btn-primary btn' type="submit">Request Quote</button>
+                        </p>
+                    </form>
                 </div>
+                <!-- <div class="modal-footer">
+                    <a href='contact.html' class='btn btn-primary'>Contact Us</a>
+                </div> -->
             </div>
         </div>
-        <!-- Modal End-->
+        <!-- Modal End -->
         <!-- Landing Start-->
         <section id='landing'>
             <div class='container'>
@@ -202,93 +230,68 @@
                 </div>
                 <div class='tabs-container'>
                     <h4>Select a category</h4>
-                    <div class='tabs'>
-                        <a id='tab-link' class='btn link-1 tabActive'>
-                            <p>All</p> <span> </span>
-                        </a>
-                        <a id='tab-link' class='btn link-2'>
-                            <p>Landing Page</p><span></span>
-                        </a>
-                        <a id='tab-link' class='btn link-3'>
-                            <p>5-Pagers</p><span></span>
-                        </a>
-                        <a id='tab-link' class='btn link-4'>
-                            <p>Custom</p><span></span>
-                        </a>
-                    </div>
+                    <ul class='tabs'>
+                        <li>
+                            <button class='tab btn' data-tab-target=".all">All Websites</button>
+                        </li>
+                        <li>
+                            <button class='tab btn' data-tab-target=".landing-card">Landing Pages</button>
+                        <li>
+                            <button class='tab btn' data-tab-target=".five">5 Pages</button>
+                        </li>
+                        <li>
+                            <button class='tab btn' data-tab-target=".custom">Custom Projects</button>
+                        </li>
+                    </ul>
                 </div>
                 <div class='panel'>
-                    <div class='items'>
-                        <!-- Item -->
-                        <div class='port-card all five'>
-                            <div class='img'>
-                                <img src='assets/p1.jpg' alt='' class=''>
+                    <div class="swiper swiper-container-port">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide all five" data-tab-slide="">
+                                <!-- Item -->
+                                <div class='port-card'>
+                                    <div class='img'>
+                                        <img src='assets/p1.jpg' alt='' class=''>
+                                    </div>
+                                    <div class='body'>
+                                        <div class='tag'>
+                                            <p>5-pages</p>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet consectetu dr, adipisicing elit. Hic
+                                            doloremque ea,
+                                            provident sit voluptate consequatur reiciendis voluptatem fuga
+                                            ipsam
+                                            voluptates.
+                                        </p>
+                                        <div>
+                                            <a>Live Link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Item -->
                             </div>
-                            <div class='body'>
-                                <div class='tag'>
-                                    <p>5-pages</p>
+                            <div class="swiper-slide all custom" data-tab-slide=''>
+                                <!-- Item -->
+                                <div class='port-card'>
+                                    <div class='img'>
+                                        <img src='assets/p1.jpg' alt='' class=''>
+                                    </div>
+                                    <div class='body'>
+                                        <div class='tag'>
+                                            <p>5-pages</p>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet consectetu dr, adipisicing elit. Hic
+                                            doloremque ea,
+                                            provident sit voluptate consequatur reiciendis voluptatem fuga
+                                            ipsam
+                                            voluptates.
+                                        </p>
+                                        <div>
+                                            <a>Live Link</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic doloremque ea,
-                                    provident sit voluptate consequatur reiciendis voluptatem fuga ipsam
-                                    voluptates.
-                                </p>
-                                <div>
-                                    <a>Live Link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item 2-->
-                        <div class='port-card all lp'>
-                            <div class='img'>
-                                <img src='assets/tulsastock1.jpeg' alt='' class=''>
-                            </div>
-                            <div class='body'>
-                                <div class='tag'>
-                                    <p>Landing Page</p>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic doloremque ea,
-                                    provident sit voluptate consequatur reiciendis voluptatem fuga ipsam
-                                    voluptates.
-                                </p>
-                                <div>
-                                    <a>Live Link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item 2-->
-                        <div class='port-card all custom'>
-                            <div class='img'>
-                                <img src='assets/tulsastock.jpg' alt='' class=''>
-                            </div>
-                            <div class='body'>
-                                <div class='tag'>
-                                    <p>Custom</p>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic doloremque ea,
-                                    provident sit voluptate consequatur reiciendis voluptatem fuga ipsam
-                                    voluptates.
-                                </p>
-                                <div>
-                                    <a>Live Link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item 2-->
-                        <div class='port-card all custom'>
-                            <div class='img'>
-                                <img src='assets/tulsanight1.jpeg' alt='' class=''>
-                            </div>
-                            <div class='body'>
-                                <div class='tag'>
-                                    <p>Custom</p>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic doloremque ea,
-                                    provident sit voluptate consequatur reiciendis voluptatem fuga ipsam
-                                    voluptates.
-                                </p>
-                                <div>
-                                    <a>Live Link</a>
-                                </div>
+                                <!-- Item -->
                             </div>
                         </div>
                     </div>

@@ -21,23 +21,26 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 95%;
-            height: 250px;
+            height: max-content;
             max-width: 500px;
             background-color: white;
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             z-index: 778;
             place-items: center;
             animation: fadeIn .5s ease-in;
 
             .modal-header {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
                 width: 100%;
                 height: 100%;
                 padding: $padding-sm;
                 background-color: $gray-100;
+
                 #close-modal-uno {
                     width: max-content;
                     padding: $padding-sm;
@@ -47,9 +50,78 @@
             .modal-content {
                 width: 100%;
                 display: flex;
+                height: max-content;
                 justify-content: center;
                 align-items: center;
-                padding: 0 $padding-sm;
+                flex-direction: column;
+                padding: $padding-sm;
+                text-align: center;
+                p {
+                    margin-bottom: $margin-md;
+                }
+
+                form {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 90%;
+                    box-shadow: $box-shadow;
+                    padding: $padding-md;
+                    background-color: white;
+
+                    .form-heading {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $gray-100;
+                        width: 100%;
+                        padding: $padding-sm;
+                        margin-bottom: $margin-sm;
+                    }
+
+                    label {
+                        width: 100%;
+                        margin-bottom: $margin-sm;
+
+                        p {
+                            margin-bottom: $margin-sm;
+                        }
+
+                        input[type='text'] {
+                            width: 100%;
+                            border-radius: unset;
+                            padding: $padding-sm;
+                            border: 1px solid $gray-200;
+                        }
+
+                        textarea {
+                            width: 100%;
+                            width: 100%;
+                            border-radius: unset;
+                            padding: $padding-sm;
+                            border: 1px solid $gray-200;
+                            resize: none
+                        }
+
+                        select {
+                            width: 100%;
+                            padding: $padding-sm;
+                            border: 1px solid $gray-200;
+                            // A reset of styles, including removing the default dropdown arrow
+                            appearance: none;
+                            // Additional resets for further consistency
+                            margin: 0;
+                            width: 100%;
+                            font-family: inherit;
+                            font-size: inherit;
+                            cursor: inherit;
+                            line-height: inherit;
+                            color: black;
+                            background-color: white;
+                        }
+                    }
+                }
             }
 
             .modal-footer {
@@ -63,10 +135,12 @@
         }
     }
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }

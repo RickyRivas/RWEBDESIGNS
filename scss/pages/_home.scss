@@ -423,33 +423,40 @@
                     max-height: 125px;
                     text-align: center;
                     grid-gap: 1rem;
+                    list-style: none;
 
-                    a {
+                    li {
                         width: 100%;
-                        background-color: white;
-                        margin: 0;
-                        color: black;
-                        height: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 1rem;
-                        position: relative;
 
-                        p {
+                        button {
+                            width: 100%;
+                            background-color: white;
                             margin: 0;
-                            margin-right: $margin-sm;
                             color: black;
-                        }
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 1rem;
+                            position: relative;
 
-                        &.tabActive {
-                            opacity: 1;
-                            background-color: black;
-                            color: white;
                             p {
+                                margin: 0;
+                                margin-right: $margin-sm;
+                                color: black;
+                            }
+
+                            &.tab-active {
+                                opacity: 1;
+                                background-color: black;
                                 color: white;
+
+                                p {
+                                    color: white;
+                                }
                             }
                         }
+
                     }
                 }
             }
@@ -459,94 +466,92 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                flex-direction: column;
                 width: 100%;
 
-                .items {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-                    grid-gap: 1rem;
+                .swiper-container-port {
                     width: 100%;
-                    place-items: center;
 
-                    .port-card {
-                        position: relative;
-                        display: grid;
-                        grid-template-rows: 40% auto;
-                        height: 418px;
-                        width: 300px;
-                        box-shadow: $box-shadow;
-                        // transition: all .5s;
-                        display: none;
-                        margin-bottom: 1rem;
-                        animation: fadeCard .2s ease-in-out forwards;
+                    .swiper-wrapper {
+                        width: 100%;
 
-                        .img {
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                object-fit: cover;
-                            }
-                        }
+                        .swiper-slide {
+                            width: max-content !important;
 
-                        .body {
-                            padding: $padding-sm;
-                            width: 100%;
-                            height: max-content;
-                            display: flex;
-                            justify-content: flex-start;
-                            align-items: flex-start;
-                            flex-direction: column;
+                            .port-card {
+                                position: relative;
+                                display: grid;
+                                grid-template-rows: 40% auto;
+                                height: 418px;
+                                width: 300px;
+                                box-shadow: $box-shadow;
+                                transition: all .5s;
+                                margin-bottom: 1rem;
 
-                            .tag {
-                                background-color: $primary;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                padding: 5px 25px;
-                                border-radius: 2rem;
-                                margin-bottom: $margin-sm;
+                                .img {
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
 
-                                p {
-                                    color: white;
-                                    margin: 0;
-                                    font-size: $font-size-sm;
+                                .body {
+                                    padding: $padding-sm;
+                                    width: 100%;
+                                    height: max-content;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    flex-direction: column;
+
+                                    .tag {
+                                        background-color: $primary;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 5px 25px;
+                                        border-radius: 2rem;
+                                        margin-bottom: $margin-sm;
+
+                                        p {
+                                            color: white;
+                                            margin: 0;
+                                            font-size: $font-size-sm;
+                                        }
+                                    }
+
+                                    p {
+                                        text-align: left;
+                                    }
+
+                                    a {
+                                        color: $primary;
+                                        position: absolute;
+                                        bottom: $margin-md;
+                                        left: $margin-md;
+                                    }
+                                }
+
+                                &.active {
+                                    display: block;
                                 }
                             }
 
-                            p {
-                                text-align: left;
+                            &.swiper-slide[data-tab-slide] {
+                                display: none;
+                                visibility: hidden;
                             }
 
-                            a {
-                                color: $primary;
-                                position: absolute;
-                                bottom: $margin-md;
-                                left: $margin-md;
+                            &.selected[data-tab-slide] {
+                                display: flex;
+                                visibility: visible;
                             }
                         }
-
-                        &.active-content {
-                            display: block;
-                        }
-                    }
-
-                    .port-card.active-content {
-                        transition: all 1s;
                     }
                 }
             }
         }
 
-        @keyframes fadeCard {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
     }
 
     #about {
@@ -1502,156 +1507,6 @@
 
                 .grid-item-4 {
                     background-color: $primary;
-                }
-            }
-        }
-    }
-
-    #portfolio {
-        width: 100%;
-        background-color: $gray-100;
-
-        .container {
-            padding: $padding-xl $padding-md;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-
-            h2 {
-                margin-bottom: $margin-md;
-                position: relative;
-                text-align: center;
-                width: max-content;
-                text-transform: uppercase;
-            }
-
-            p {
-                text-align: center;
-                color: $gray-800;
-                margin-bottom: $margin-md;
-            }
-
-            .tabs-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                width: 100%;
-                max-width: 1200px;
-                margin: auto;
-
-                h4 {
-                    color: $primary;
-                    margin-bottom: $margin-md;
-                }
-
-                .tabs {
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    grid-template-rows: 1fr;
-                    place-items: center;
-                    width: 100%;
-                    max-height: 125px;
-                    text-align: center;
-                    grid-gap: 1rem;
-
-
-                    a {
-                        width: 100%;
-                        background-color: white;
-                        margin: 0;
-                        color: black;
-                        height: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 1rem;
-                        position: relative;
-                        p {
-                            margin: 0;
-                            margin-right: $margin-sm;
-                        }
-
-                        &.tabActive {
-                            opacity: 1;
-                            background-color: black;
-                            color: white;
-                        }
-                    }
-                }
-            }
-
-            .panel {
-                padding: $padding-lg 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                max-width: 1300px;
-                margin: auto;
-
-                .items {
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-                    flex-wrap: wrap;
-
-                    .item {
-                        position: relative;
-                        display: grid;
-                        grid-template-rows: 40% auto;
-                        height: 450px;
-                        max-width: 350px;
-                        box-shadow: $box-shadow;
-
-                        .img {
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                object-fit: cover;
-                            }
-                        }
-
-                        .body {
-                            padding: $padding-md;
-                            width: 100%;
-                            height: max-content;
-                            display: flex;
-                            justify-content: flex-start;
-                            align-items: flex-start;
-                            flex-direction: column;
-
-                            .tag {
-                                background-color: $primary;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                padding: 5px 25px;
-                                border-radius: 2rem;
-                                margin-bottom: $margin-sm;
-
-                                p {
-                                    color: white;
-                                    margin: 0;
-                                    font-size: $font-size-sm;
-                                }
-                            }
-
-                            p {
-                                text-align: left;
-                            }
-
-                            a {
-                                color: $primary;
-                                position: absolute;
-                                bottom: $margin-md;
-                                left: $margin-md;
-                            }
-                        }
-                    }
                 }
             }
         }
