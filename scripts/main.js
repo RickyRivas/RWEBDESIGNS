@@ -45,12 +45,12 @@ var swiper = new Swiper(".swiper-container-port", {
     },
 });
 //Popup Modal
-const modalUno = document.querySelector('.modal-uno-base');
-const modalTriggerUno = document.querySelector('#modal-trigger-uno');
-const closeModalUno = document.querySelector('#close-modal-uno');
-const modalUnoOverlay = document.querySelector('.modal-overlay');
+// const modalUno = document.querySelector('.modal-uno-base');
+// const modalTriggerUno = document.querySelector('#modal-trigger-uno');
+// const closeModalUno = document.querySelector('#close-modal-uno');
+// const modalUnoOverlay = document.querySelector('.modal-overlay');
 // modalUno.style.display = 'none';
-body.classList.add('body-fixed');
+// body.classList.add('body-fixed');
 
 // modalUnoOverlay.addEventListener('click', () => {
 //     modalUno.style.display = 'none';
@@ -100,7 +100,7 @@ var swiper = new Swiper(".landingSwiper", {
         type: "fraction",
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-next",
+        prevEl: ".swiper-prev",
     }
 });

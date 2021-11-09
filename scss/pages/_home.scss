@@ -5,7 +5,7 @@
 
     #landing {
         width: 100vw;
-        height: 625px;
+        height: 650px;
 
         .container {
             width: 100vw;
@@ -13,6 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
 
             .swiper-container {
                 height: 100%;
@@ -47,7 +48,7 @@
                     }
 
                     p {
-                        color: $gray-200;
+                        color: $gray-400;
                         margin-bottom: $margin-md;
                     }
 
@@ -84,26 +85,17 @@
                     }
 
                     .swiper-landing-1 {
-                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsa.jpg) center / cover;
+                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img01L.png) 65% 50% / cover;
                     }
 
                     .swiper-landing-2 {
-                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsanight1.jpeg) center / cover;
-                    }
-
-                    .swiper-landing-3 {
                         background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsastock1.jpeg) center / cover;
                     }
 
-                }
+                    .swiper-landing-3 {
+                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/bgimg02L.png) 40% 50% / cover;
+                    }
 
-                .swiper-pagination {
-                    z-index: 2;
-                    color: white;
-                }
-
-                .swiper-button-next {
-                    z-index: 2;
                 }
             }
 
@@ -126,6 +118,78 @@
                         animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
                         animation-delay: 1.9s;
                     }
+                }
+            }
+
+            .controller {
+                position: absolute;
+                bottom: 1rem;
+                left: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .swiper-next {
+                    // position: absolute;
+                    // top: 50%;
+                    // right: .5rem;
+                    z-index: 10;
+                    background-color: #ffffff33;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: $padding-sm;
+                    width: max-content;
+                    border-radius: 50%;
+
+                    img {
+                        margin: 0;
+                        width: 1rem;
+                    }
+                }
+
+                .swiper-prev {
+                    // position: absolute;
+                    // top: 50%;
+                    // left: .5rem;
+                    z-index: 10;
+                    background-color: #ffffff33;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: $padding-sm;
+                    width: max-content;
+                    border-radius: 50%;
+                    margin-right: $margin-md;
+
+                    img {
+                        margin: 0;
+                        width: 1rem;
+                    }
+                }
+            }
+
+            .swiper-pagination,
+            .pagination-fraction {
+                position: absolute;
+                right: 1rem;
+                bottom: 1rem;
+                width: max-content;
+                z-index: 10;
+                color: white;
+                left: unset;
+
+                .swiper-pagination-current {
+                    font-weight: bolder;
+                    font-size: $font-size-lg * 2;
+                    color: transparent;
+                    -webkit-text-stroke: 0.5px #fff;
+                }
+
+                .swiper-pagination-total {
+                    font-weight: bolder;
+                    font-size: $font-size-lg * 1.4;
+                    color: white;
                 }
             }
         }
@@ -896,7 +960,7 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    padding: 0 $padding-lg;
+                    padding: 0 $padding-xl;
                     z-index: 2;
 
                     h1 {
@@ -946,26 +1010,83 @@
                     }
 
                     .swiper-landing-1 {
-                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsa.jpg) center / cover;
+                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img01L.png) center / cover;
                     }
 
                     .swiper-landing-2 {
-                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsanight1.jpeg) center / cover;
-                    }
-
-                    .swiper-landing-3 {
                         background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsastock1.jpeg) center / cover;
                     }
 
+                    .swiper-landing-3 {
+                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/bgimg02L.png) center / cover;
+                    }
+                }
+            }
+
+            .controller {
+                position: unset;
+
+                .swiper-next {
+                    position: absolute;
+                    top: 50%;
+                    right: .5rem;
+                    z-index: 10;
+                    background-color: #ffffff33;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: $padding-sm;
+                    width: max-content;
+                    border-radius: 50%;
+
+                    img {
+                        margin: 0;
+                        width: 1rem;
+                    }
                 }
 
-                .swiper-pagination {
-                    z-index: 2;
+                .swiper-prev {
+                    position: absolute;
+                    top: 50%;
+                    left: .5rem;
+                    z-index: 10;
+                    background-color: #ffffff33;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: $padding-sm;
+                    width: max-content;
+                    border-radius: 50%;
+                    margin-right: $margin-md;
+
+                    img {
+                        margin: 0;
+                        width: 1rem;
+                    }
+                }
+            }
+
+            .swiper-pagination,
+            .pagination-fraction {
+                position: absolute;
+                right: 1rem;
+                bottom: 1rem;
+                width: max-content;
+                z-index: 10;
+                color: white;
+                left: unset;
+
+                .swiper-pagination-current {
+                    font-weight: bolder;
+                    font-size: $font-size-lg * 2;
+                    color: transparent;
+                    -webkit-text-stroke: 0.5px #fff;
+                }
+
+                .swiper-pagination-total {
+                    font-weight: bolder;
+                    font-size: $font-size-lg * 1.4;
                     color: white;
-                }
-
-                .swiper-button-next {
-                    z-index: 2;
                 }
             }
         }
@@ -1387,15 +1508,15 @@
                     }
 
                     .swiper-landing-1 {
-                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsa.jpg) center / cover;
+                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img01L.png) center / cover;
                     }
 
                     .swiper-landing-2 {
-                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsanight1.jpeg) center / cover;
+                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsastock1.jpeg) center / cover;
                     }
 
                     .swiper-landing-3 {
-                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsastock1.jpeg) center / cover;
+                        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/bgimg02L.png) center / cover;
                     }
 
                 }
