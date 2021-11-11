@@ -221,30 +221,15 @@
                 text-align: center;
                 margin-bottom: $margin-lg;
 
-                &>div {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-bottom: .2rem;
-
-                    p {
-                        color: $secondary;
-                        text-transform: uppercase;
-                        font-size: $font-size-sm;
-                    }
-
-                    span {
-                        background-color: $secondary;
-                        width: 20px;
-                        height: 1px;
-                        margin-right: 2px;
-                    }
+                span {
+                    color: $gray-500;
                 }
 
                 h2 {
                     margin-bottom: $margin-md;
                     position: relative;
                     text-transform: uppercase;
+                    font-size: $font-size-base * 2;
                 }
 
                 p {
@@ -580,6 +565,7 @@
                     }
                 }
             }
+
             .bio {
                 width: 100%;
                 display: flex;
@@ -587,17 +573,20 @@
                 align-items: center;
                 flex-direction: column;
                 text-align: center;
+
                 h4 {
                     color: white;
                     font-size: $font-size-base * 1.2;
                     margin-bottom: $margin-sm;
                 }
+
                 span {
                     font-size: $font-size-base * .8;
                     color: $text-color;
                     text-transform: uppercase;
                     margin-bottom: $margin-md;
                 }
+
                 p {
                     color: $gray-400;
                     line-height: 1.5;
@@ -613,6 +602,8 @@
         .container {
             padding: $padding-lg $padding-md;
             width: 100%;
+            max-width: 1200px;
+            margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -623,30 +614,15 @@
                 text-align: center;
                 margin-bottom: $margin-lg;
 
-                &>div {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-bottom: .2rem;
 
-                    p {
-                        color: $secondary;
-                        text-transform: uppercase;
-                        font-size: $font-size-sm;
-                        margin: 0;
-                    }
-
-                    span {
-                        background-color: $secondary;
-                        width: 20px;
-                        height: 1px;
-                        margin-right: 2px;
-                    }
+                span {
+                    color: $gray-500
                 }
 
                 h2 {
                     margin-bottom: $margin-md;
                     text-transform: uppercase;
+                    font-size: $font-size-base * 2;
                 }
             }
 
@@ -983,10 +959,15 @@
                 text-align: center;
                 margin-bottom: $margin-lg;
 
+                span {
+                    color: $gray-500;
+                }
+
                 h2 {
                     margin-bottom: $margin-md;
                     position: relative;
                     text-transform: uppercase;
+                    font-size: $font-size-base * 2;
                 }
 
                 p {
@@ -1145,7 +1126,8 @@
             }
         }
     }
-     #about {
+
+    #about {
         width: 100%;
         background-color: #01131C;
 
@@ -1219,6 +1201,7 @@
                     }
                 }
             }
+
             .bio {
                 width: 100%;
                 display: flex;
@@ -1226,17 +1209,20 @@
                 align-items: flex-start;
                 flex-direction: column;
                 text-align: left;
+
                 h4 {
                     color: white;
                     font-size: $font-size-base * 1.2;
                     margin-bottom: $margin-sm;
                 }
+
                 span {
                     font-size: $font-size-base * .8;
                     color: $text-color;
                     text-transform: uppercase;
                     margin-bottom: $margin-md;
                 }
+
                 p {
                     color: $gray-400;
                     line-height: 1.5;
@@ -1244,6 +1230,7 @@
             }
         }
     }
+
     #packages {
         width: 100%;
         background-color: $gray-100;
@@ -1261,11 +1248,18 @@
                 text-align: center;
                 margin-bottom: $margin-lg;
 
+
+                span {
+                    color: $gray-500
+                }
+
                 h2 {
                     margin-bottom: $margin-md;
                     text-transform: uppercase;
+                    font-size: $font-size-base * 2;
                 }
             }
+
 
             .packages-grid {
                 display: grid;
@@ -1612,7 +1606,8 @@
             }
         }
     }
-  #about {
+
+    #about {
         width: 100%;
         background-color: #01131C;
 
@@ -1686,6 +1681,7 @@
                     }
                 }
             }
+
             .bio {
                 width: 100%;
                 display: flex;
@@ -1693,17 +1689,20 @@
                 align-items: flex-start;
                 flex-direction: column;
                 text-align: left;
+
                 h4 {
                     color: white;
                     font-size: $font-size-base * 1.2;
                     margin-bottom: $margin-sm;
                 }
+
                 span {
                     font-size: $font-size-base * .8;
                     color: $text-color;
                     text-transform: uppercase;
                     margin-bottom: $margin-md;
                 }
+
                 p {
                     color: $gray-400;
                     line-height: 1.5;
@@ -1711,6 +1710,7 @@
             }
         }
     }
+
     #packages {
         width: 100%;
         background-color: $gray-100;
@@ -1723,16 +1723,23 @@
             align-items: center;
             flex-direction: column;
 
-            .heading {
+             .heading {
                 width: 100%;
                 text-align: center;
                 margin-bottom: $margin-lg;
 
+
+                span {
+                    color: $gray-500
+                }
+
                 h2 {
                     margin-bottom: $margin-md;
                     text-transform: uppercase;
+                    font-size: $font-size-base * 2;
                 }
             }
+
 
             .packages-grid {
                 display: flex;
