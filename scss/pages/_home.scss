@@ -235,6 +235,7 @@
                 p {
                     line-height: 1.5;
                     color: $gray-700;
+                    font-size: $font-size-base;
                 }
             }
 
@@ -271,6 +272,7 @@
                         color: $gray-700;
                         margin-bottom: $margin-md;
                         line-height: 1.5;
+                        font-size: $font-size-base;
                     }
 
                     a {
@@ -302,7 +304,7 @@
                 margin-bottom: $margin-md;
 
                 span {
-                    color: $gray-400;
+                    color: $gray-500;
                     margin-bottom: $margin-sm;
                 }
 
@@ -331,7 +333,8 @@
                 p {
                     line-height: 2;
                     margin-bottom: $margin-md;
-                    color: $text-color
+                    color: $gray-700;
+                    font-size: $font-size-base;
                 }
 
                 ul {
@@ -358,6 +361,7 @@
                         p {
                             margin: 0;
                             color: #000;
+                            font-size: $font-size-base;
                         }
                     }
                 }
@@ -405,7 +409,8 @@
                 margin-bottom: $margin-md;
 
                 span {
-                    color: $gray-400;
+                    color: $gray-500;
+                    font-size: $font-size-base;
                 }
 
                 h2 {
@@ -416,6 +421,8 @@
 
                 p {
                     line-height: 1.5;
+                    color: $gray-700;
+                    font-size: $font-size-base;
                 }
             }
 
@@ -532,6 +539,7 @@
                 p {
                     color: $text-color;
                     margin-bottom: $margin-md;
+                    font-size: $font-size-base;
                 }
 
                 strong {
@@ -608,6 +616,7 @@
                 p {
                     color: $gray-400;
                     line-height: 1.5;
+                    font-size: $font-size-base * .9;
                 }
             }
         }
@@ -634,13 +643,20 @@
 
 
                 span {
-                    color: $gray-500
+                    color: $gray-500;
+                    font-size: $font-size-base;
                 }
 
                 h2 {
                     margin-bottom: $margin-md;
                     text-transform: uppercase;
                     font-size: $font-size-base * 2;
+                }
+
+                p {
+                    color: $gray-700;
+                    line-height: 1.5;
+                    font-size: $font-size-base;
                 }
             }
 
@@ -1061,7 +1077,7 @@
                 margin-bottom: unset;
 
                 span {
-                    color: $gray-400;
+                    color: $gray-500;
                     margin-bottom: $margin-sm;
                     text-align: center;
                 }
@@ -1165,7 +1181,7 @@
                 margin-bottom: $margin-md;
 
                 span {
-                    color: $gray-400;
+                    color: $gray-500;
                 }
 
                 h2 {
@@ -1294,7 +1310,6 @@
                 width: 100%;
 
                 p {
-                    color: $text-color;
                     margin-bottom: $margin-md;
                 }
 
@@ -2054,7 +2069,7 @@
                 margin-bottom: unset;
 
                 span {
-                    color: $gray-400;
+                    color: $gray-500;
                     margin-bottom: $margin-sm;
                     text-align: center;
                 }

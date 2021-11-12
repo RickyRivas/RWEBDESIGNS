@@ -2191,6 +2191,7 @@ button.swiper-pagination-bullet {
   #intro .container .heading p {
     line-height: 1.5;
     color: #495057;
+    font-size: 1rem;
   }
   #intro .container .service-items {
     width: 100%;
@@ -2235,6 +2236,7 @@ button.swiper-pagination-bullet {
     color: #495057;
     margin-bottom: 1rem;
     line-height: 1.5;
+    font-size: 1rem;
   }
   #intro .container .service-items .service-item a {
     text-decoration: none;
@@ -2278,7 +2280,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
   }
   #pitch .container .line span {
-    color: #ced4da;
+    color: #adb5bd;
     margin-bottom: 0.5rem;
   }
   #pitch .container .line > div {
@@ -2312,7 +2314,8 @@ button.swiper-pagination-bullet {
   #pitch .container .main-content p {
     line-height: 2;
     margin-bottom: 1rem;
-    color: #666666;
+    color: #495057;
+    font-size: 1rem;
   }
   #pitch .container .main-content ul {
     width: 100%;
@@ -2354,6 +2357,7 @@ button.swiper-pagination-bullet {
   #pitch .container .main-content ul li p {
     margin: 0;
     color: #000;
+    font-size: 1rem;
   }
   #pitch .container .main-content .btns {
     width: 100%;
@@ -2408,7 +2412,8 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
   }
   #portfolio .container .heading span {
-    color: #ced4da;
+    color: #adb5bd;
+    font-size: 1rem;
   }
   #portfolio .container .heading h2 {
     font-size: 2rem;
@@ -2417,6 +2422,8 @@ button.swiper-pagination-bullet {
   }
   #portfolio .container .heading p {
     line-height: 1.5;
+    color: #495057;
+    font-size: 1rem;
   }
   #portfolio .container .portSwiper {
     width: 100%;
@@ -2565,6 +2572,7 @@ button.swiper-pagination-bullet {
   #about .container .heading p {
     color: #666666;
     margin-bottom: 1rem;
+    font-size: 1rem;
   }
   #about .container .heading strong {
     color: white;
@@ -2670,6 +2678,7 @@ button.swiper-pagination-bullet {
   #about .container .bio p {
     color: #ced4da;
     line-height: 1.5;
+    font-size: 0.9rem;
   }
   #packages {
     width: 100%;
@@ -2701,11 +2710,17 @@ button.swiper-pagination-bullet {
   }
   #packages .container .heading span {
     color: #adb5bd;
+    font-size: 1rem;
   }
   #packages .container .heading h2 {
     margin-bottom: 1rem;
     text-transform: uppercase;
     font-size: 2rem;
+  }
+  #packages .container .heading p {
+    color: #495057;
+    line-height: 1.5;
+    font-size: 1rem;
   }
   #packages .container .packages-grid {
     display: -ms-grid;
@@ -3197,7 +3212,7 @@ button.swiper-pagination-bullet {
     margin-bottom: unset;
   }
   #pitch .container .line span {
-    color: #ced4da;
+    color: #adb5bd;
     margin-bottom: 0.5rem;
     text-align: center;
   }
@@ -3322,7 +3337,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
   }
   #portfolio .container .heading span {
-    color: #ced4da;
+    color: #adb5bd;
   }
   #portfolio .container .heading h2 {
     font-size: 2rem;
@@ -3475,7 +3490,6 @@ button.swiper-pagination-bullet {
     width: 100%;
   }
   #about .container .heading p {
-    color: #666666;
     margin-bottom: 1rem;
   }
   #about .container .heading strong {
@@ -4410,7 +4424,7 @@ button.swiper-pagination-bullet {
     margin-bottom: unset;
   }
   #pitch .container .line span {
-    color: #ced4da;
+    color: #adb5bd;
     margin-bottom: 0.5rem;
     text-align: center;
   }
