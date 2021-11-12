@@ -27,7 +27,7 @@
                 .landing-content {
                     position: absolute;
                     width: 100%;
-                    max-width: 1200px;
+                    max-width: 700px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -41,10 +41,10 @@
 
                     h1 {
                         color: white;
-                        font-size: $font-size-lg * 1.5;
+                        font-size: $font-size-base * 2;
                         margin-bottom: $margin-md;
                         position: relative;
-                        font-family: $font-one;
+                        text-transform: uppercase;
                     }
 
                     p {
@@ -209,7 +209,6 @@
 
     #intro {
         width: 100%;
-        background-color: $gray-100;
 
         .container {
             padding: $padding-lg $padding-md;
@@ -244,18 +243,18 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
                 grid-gap: 1rem;
+                place-items: center;
 
                 .service-item {
                     width: 100%;
                     padding: $padding-lg;
-                    border: 1px solid $primary-light;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
                     text-align: center;
                     min-height: 250px;
-                    box-shadow: $box-shadow;
+                    background-color: $light-bg;
 
                     img {
                         margin: 0;
@@ -391,7 +390,7 @@
 
     #portfolio {
         width: 100%;
-        background-color: $gray-100;
+        // background-color: $gray-100;
 
         .container {
             width: 100%;
@@ -435,13 +434,14 @@
                     display: flex;
 
                     .swiper-slide {
-                        background-color: $gray-200;
+                        background-color: $light-bg;
                         width: 100%;
                         max-width: 500px;
                         display: grid;
                         grid-template-rows: auto 1fr;
                         grid-gap: 1rem;
                         padding-bottom: $padding-lg;
+                        box-shadow: $box-shadow;
 
                         .graphic {
                             width: 100%;
@@ -489,20 +489,20 @@
             }
 
             .controller {
-                width: auto;
-                height: auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                height: max-content;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: .5rem;
                 z-index: 2;
+                transform: translateY(-50%);
 
                 div {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     padding: $padding-md;
-                    background-color: $gray-200;
-                    margin-top: -20%;
+                    background-color: $light-bg;
+                    cursor: pointer;
 
                     img {
                         margin: 0;
@@ -667,12 +667,12 @@
 
                 .p-item {
                     text-align: center;
-                    box-shadow: $box-shadow;
                     display: flex;
                     justify-self: center;
                     align-items: center;
                     flex-direction: column;
                     width: 100%;
+                    background-color: $light-bg;
 
                     .card-heading {
                         background-color: $primary;
@@ -807,42 +807,16 @@
         height: 90vh;
 
         .container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
             .swiper-container {
-                height: 100%;
-                width: 100%;
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0;
 
                 .landing-content {
-                    position: absolute;
-                    width: 100%;
-                    max-width: 1200px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    flex-direction: column;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    padding: 0 $padding-xl;
-                    z-index: 2;
 
                     h1 {
                         color: white;
-                        font-size: $font-size-lg * 2;
+                        font-size: $font-size-base * 2;
                         margin-bottom: $margin-md;
                         position: relative;
-                        font-family: $font-one;
                     }
 
                     p {
@@ -902,7 +876,7 @@
                 .swiper-next {
                     position: absolute;
                     top: 50%;
-                    right: .5rem;
+                    right: 1rem;
                     z-index: 10;
                     background-color: #ffffff33;
                     display: flex;
@@ -921,7 +895,7 @@
                 .swiper-prev {
                     position: absolute;
                     top: 50%;
-                    left: .5rem;
+                    left: 1rem;
                     z-index: 10;
                     background-color: #ffffff33;
                     display: flex;
@@ -980,74 +954,29 @@
     }
 
     #intro {
-        width: 100%;
-        background-color: $gray-100;
-
         .container {
-            padding: $padding-lg $padding-md;
-            width: 100%;
-            max-width: 1200px;
-            margin: auto;
-
             .heading {
-                text-align: center;
-                margin-bottom: $margin-lg;
-
                 span {
-                    color: $gray-500;
                 }
-
                 h2 {
-                    margin-bottom: $margin-md;
-                    position: relative;
-                    text-transform: uppercase;
-                    font-size: $font-size-base * 2;
                 }
-
                 p {
-                    line-height: 1.5;
-                    color: $gray-700;
                 }
             }
 
             .service-items {
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-                grid-gap: 1rem;
 
                 .service-item {
-                    width: 100%;
-                    padding: $padding-lg;
-                    border: 1px solid $primary-light;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    text-align: center;
-                    min-height: 250px;
-                    box-shadow: $box-shadow;
-                    background-color: white;
-
                     img {
-                        margin: 0;
-                        margin-bottom: $margin-md;
                     }
 
                     h4 {
-                        color: $primary;
-                        margin-bottom: $margin-md;
-                        text-transform: uppercase;
                     }
 
                     p {
-                        color: $gray-700;
-                        margin-bottom: $margin-md;
-                        line-height: 1.5;
                     }
 
                     a {
-                        text-decoration: none;
                     }
                 }
             }
@@ -1162,8 +1091,6 @@
     }
 
     #portfolio {
-        width: 100%;
-        background-color: $gray-100;
 
         .container {
             width: 100%;
@@ -1204,8 +1131,6 @@
                     display: flex;
 
                     .swiper-slide {
-                        background-color: $gray-200;
-                        width: 100%;
                         max-width: unset;
                         display: grid;
                         grid-template-rows: 1fr;
@@ -1264,19 +1189,9 @@
             .controller {
                 width: auto;
                 height: auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 z-index: 2;
 
                 div {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: $padding-md;
-                    background-color: $gray-200;
-                    margin-top: -20%;
-
                     img {
                         margin: 0;
                     }
@@ -1429,7 +1344,6 @@
 
                 .p-item {
                     text-align: center;
-                    box-shadow: $box-shadow;
                     display: flex;
                     justify-self: center;
                     align-items: center;
@@ -1568,42 +1482,16 @@
         height: 768px;
 
         .container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
             .swiper-container {
-                height: 100%;
-                width: 100%;
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0;
 
                 .landing-content {
-                    position: absolute;
-                    width: 100%;
-                    max-width: 700px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    flex-direction: column;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    padding: 0;
-                    z-index: 2;
 
                     h1 {
                         color: white;
-                        font-size: $font-size-lg * 2;
+                        font-size: $font-size-base * 2;
                         margin-bottom: $margin-md;
                         position: relative;
-                        font-family: $font-one;
                     }
 
                     p {
@@ -1911,7 +1799,6 @@
 
                 .p-item {
                     text-align: center;
-                    box-shadow: $box-shadow;
                     display: flex;
                     justify-self: center;
                     align-items: center;
