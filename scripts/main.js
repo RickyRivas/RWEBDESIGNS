@@ -29,20 +29,6 @@ tabs.forEach(tab => {
         targets.forEach(target => target.classList.add('selected'));
     })
 })
-var swiper = new Swiper(".swiper-container-port", {
-    spaceBetween: 10,
-    centeredSlides: true,
-    freeMode: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev"
-    },
-});
-
 // Color theme toggle
 // const themeToggle = document.querySelector('.theme-toggle');
 // const prefersDarkTheme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -86,4 +72,13 @@ var swiper = new Swiper(".landingSwiper", {
         nextEl: ".swiper-next",
         prevEl: ".swiper-prev",
     }
+});
+var swiper = new Swiper(" .portSwiper", {
+    spaceBetween: 20,
+    autoplay: true,
+    pagination: false,
+    navigation: {
+        nextEl: ".swiper-next-port",
+        prevEl: ".swiper-prev-port"
+    },
 });
