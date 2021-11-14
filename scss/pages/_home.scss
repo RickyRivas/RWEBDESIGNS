@@ -266,13 +266,11 @@
                         margin-bottom: $margin-md;
                         text-transform: uppercase;
                         background: url('https://media0.giphy.com/media/l6ls23VtnBKS2EtDWq/giphy.gif?cid=ecf05e47lehylnd3k3a1b55pke4ll20otx5pdnumvhgdhniw&rid=giphy.gif&ct=g');
-                        background-repeat: repeat, no-repeat;
                         -webkit-background-clip: text;
                         background-clip: text;
                         -webkit-text-fill-color: transparent;
                         font-size: $font-size-lg * 3;
                     }
-// <iframe src="https://giphy.com/embed/aaMe7xemWlR8LwZqyn" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/kaleidadope-gradient-aura-serene-aaMe7xemWlR8LwZqyn">via GIPHY</a></p>
                     p {
                         color: $gray-700;
                         margin-bottom: $margin-md;

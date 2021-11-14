@@ -2217,7 +2217,6 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
     text-transform: uppercase;
     background: url("https://media0.giphy.com/media/l6ls23VtnBKS2EtDWq/giphy.gif?cid=ecf05e47lehylnd3k3a1b55pke4ll20otx5pdnumvhgdhniw&rid=giphy.gif&ct=g");
-    background-repeat: repeat, no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
