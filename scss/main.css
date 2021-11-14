@@ -1502,41 +1502,31 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 0em) {
-  footer {
+  #footer {
     width: 100%;
     background: #2d2d2d;
     padding-top: 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    z-index: 9000;
-    position: relative;
   }
-  footer .container {
+  #footer .container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     place-items: center;
-    color: white;
     width: 100%;
-    height: 100%;
     max-width: 1200px;
     grid-gap: 1rem;
     margin: auto;
     margin-bottom: 1rem;
   }
-  footer .container .col {
+  #footer .container .col {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1550,28 +1540,25 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
     padding: 0 1rem;
     font-weight: lighter;
     width: 100%;
   }
-  footer .container .col p {
+  #footer .container .col p {
     color: #adb5bd;
     font-size: 14px;
   }
-  footer .container .col h2 {
+  #footer .container .col h2 {
     margin-bottom: 1rem;
     font-weight: lighter;
     font-size: 16px;
     text-transform: uppercase;
     color: #fff;
   }
-  footer .container .col ul {
+  #footer .container .col ul {
     list-style: none;
   }
-  footer .container .col ul li {
+  #footer .container .col ul li {
     margin-bottom: 0.5rem;
     color: #adb5bd;
     display: -webkit-box;
@@ -1584,18 +1571,18 @@ button.swiper-pagination-bullet {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  footer .container .col ul a {
+  #footer .container .col ul a {
     color: #adb5bd;
     text-decoration: none;
     font-size: 14px;
   }
-  footer .container .col img {
+  #footer .container .col img {
     width: 1rem;
     height: 1rem;
     margin-right: .5rem;
     opacity: 60%;
   }
-  footer .container .col .business-hours li {
+  #footer .container .col .business-hours li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1606,7 +1593,7 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
   }
-  footer .site-credit {
+  #footer .site-credit {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1624,18 +1611,17 @@ button.swiper-pagination-bullet {
     color: #fff;
     padding: 1rem;
     text-align: center;
-    position: relative;
   }
-  footer .site-credit img {
+  #footer .site-credit img {
     width: 4rem;
     margin-bottom: 1rem;
   }
-  footer .site-credit p {
+  #footer .site-credit p {
     text-transform: uppercase;
     color: #adb5bd;
     font-size: 14px;
   }
-  footer .site-credit a {
+  #footer .site-credit a {
     color: #fff;
     text-decoration: none;
   }
@@ -2234,7 +2220,7 @@ button.swiper-pagination-bullet {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-blend-mode: overlay, overlay, overlay, normal;
+    background-blend-mode: overlay, overlay, normal;
     font-size: 1.875rem;
   }
   #intro .container .service-items .service-item p {
