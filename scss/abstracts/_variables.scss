@@ -119,5 +119,4 @@ $light-bg: #f4f4f4;
 // font
 $font-one: 'Boska', serif;
 //
-$gradient-bg-one: linear-gradient(0deg, rgb(63, 63, 63),rgb(83, 83, 83)),linear-gradient(45deg, rgb(152, 29, 95) 0%, rgb(152, 29, 95) 25%,rgb(167, 52, 79) 25%, rgb(167, 52, 79) 44%,rgb(183, 74, 63) 44%, rgb(183, 74, 63) 48%,rgb(198, 97, 46) 48%, rgb(198, 97, 46) 60%,rgb(214, 119, 30) 60%, rgb(214, 119, 30) 66%,rgb(229, 142, 14) 66%, rgb(229, 142, 14) 100%),linear-gradient(135deg, rgb(152, 29, 95) 0%, rgb(152, 29, 95) 25%,rgb(167, 52, 79) 25%, rgb(167, 52, 79) 44%,rgb(183, 74, 63) 44%, rgb(183, 74, 63) 48%,rgb(198, 97, 46) 48%, rgb(198, 97, 46) 60%,rgb(214, 119, 30) 60%, rgb(214, 119, 30) 66%,rgb(229, 142, 14) 66%, rgb(229, 142, 14) 100%); 
-$gradient-bg-one-blend: overlay,overlay,normal;
+$gradient-bg-one: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);

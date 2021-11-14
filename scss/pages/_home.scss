@@ -229,6 +229,12 @@
                     position: relative;
                     text-transform: uppercase;
                     font-size: $font-size-base * 2;
+                    background: $gradient-bg-one;
+                    background-size: 400% 400%;
+                    animation: gradient 15s ease infinite;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
 
                 p {
@@ -265,12 +271,9 @@
                         color: $primary;
                         margin-bottom: $margin-md;
                         text-transform: uppercase;
-                        background: url('https://media0.giphy.com/media/l6ls23VtnBKS2EtDWq/giphy.gif?cid=ecf05e47lehylnd3k3a1b55pke4ll20otx5pdnumvhgdhniw&rid=giphy.gif&ct=g');
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        font-size: $font-size-lg * 3;
+                        font-size: 1.2rem;
                     }
+
                     p {
                         color: $gray-700;
                         margin-bottom: $margin-md;
@@ -331,6 +334,12 @@
                     text-transform: uppercase;
                     font-size: $font-size-base * 2;
                     margin-bottom: $margin-md;
+                    background: $gradient-bg-one;
+                    background-size: 400% 400%;
+                    animation: gradient 15s ease infinite;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
 
                 p {
@@ -420,6 +429,12 @@
                     font-size: $font-size-base * 2;
                     text-transform: uppercase;
                     margin-bottom: $margin-md;
+                    background: $gradient-bg-one;
+                    background-size: 400% 400%;
+                    animation: gradient 15s ease infinite;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
 
                 p {
@@ -550,6 +565,12 @@
                     color: white;
                     font-size: $font-size-base * 2;
                     margin-bottom: $margin-md;
+                    background: $gradient-bg-one;
+                    background-size: 400% 400%;
+                    animation: gradient 15s ease infinite;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
 
@@ -655,6 +676,12 @@
                     margin-bottom: $margin-md;
                     text-transform: uppercase;
                     font-size: $font-size-base * 2;
+                    background: $gradient-bg-one;
+                    background-size: 400% 400%;
+                    animation: gradient 15s ease infinite;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
 
                 p {

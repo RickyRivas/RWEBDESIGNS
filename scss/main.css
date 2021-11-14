@@ -2173,6 +2173,13 @@ button.swiper-pagination-bullet {
     position: relative;
     text-transform: uppercase;
     font-size: 2rem;
+    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   #intro .container .heading p {
     line-height: 1.5;
@@ -2216,11 +2223,7 @@ button.swiper-pagination-bullet {
     color: #2d2d2d;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    background: url("https://media0.giphy.com/media/l6ls23VtnBKS2EtDWq/giphy.gif?cid=ecf05e47lehylnd3k3a1b55pke4ll20otx5pdnumvhgdhniw&rid=giphy.gif&ct=g");
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 3.75rem;
+    font-size: 1.2rem;
   }
   #intro .container .service-items .service-item p {
     color: #495057;
@@ -2300,6 +2303,13 @@ button.swiper-pagination-bullet {
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 1rem;
+    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   #pitch .container .main-content p {
     line-height: 2;
@@ -2408,6 +2418,13 @@ button.swiper-pagination-bullet {
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   #portfolio .container .heading p {
     line-height: 1.5;
@@ -2568,6 +2585,13 @@ button.swiper-pagination-bullet {
     color: white;
     font-size: 2rem;
     margin-bottom: 1rem;
+    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   #about .container .profile {
     display: -webkit-box;
@@ -2706,6 +2730,13 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
     text-transform: uppercase;
     font-size: 2rem;
+    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   #packages .container .heading p {
     color: #495057;
