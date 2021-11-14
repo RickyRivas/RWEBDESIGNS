@@ -2216,12 +2216,12 @@ button.swiper-pagination-bullet {
     color: #2d2d2d;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    background: linear-gradient(0deg, #3f3f3f, #535353), linear-gradient(45deg, #981d5f 0%, #981d5f 25%, #a7344f 25%, #a7344f 44%, #b74a3f 44%, #b74a3f 48%, #c6612e 48%, #c6612e 60%, #d6771e 60%, #d6771e 66%, #e58e0e 66%, #e58e0e 100%), linear-gradient(135deg, #981d5f 0%, #981d5f 25%, #a7344f 25%, #a7344f 44%, #b74a3f 44%, #b74a3f 48%, #c6612e 48%, #c6612e 60%, #d6771e 60%, #d6771e 66%, #e58e0e 66%, #e58e0e 100%);
+    background: url("https://media0.giphy.com/media/l6ls23VtnBKS2EtDWq/giphy.gif?cid=ecf05e47lehylnd3k3a1b55pke4ll20otx5pdnumvhgdhniw&rid=giphy.gif&ct=g");
+    background-repeat: repeat, no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-blend-mode: overlay, overlay, normal;
-    font-size: 1.875rem;
+    font-size: 3.75rem;
   }
   #intro .container .service-items .service-item p {
     color: #495057;
