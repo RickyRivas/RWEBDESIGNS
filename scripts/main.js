@@ -76,6 +76,7 @@ var swiper = new Swiper(".landingSwiper", {
 var swiper = new Swiper(" .portSwiper", {
     spaceBetween: 20,
     speed: 1500,
+    loop: true,
     autoplay: true,
     pagination: false,
     navigation: {
@@ -83,3 +84,4 @@ var swiper = new Swiper(" .portSwiper", {
         prevEl: ".swiper-prev-port"
     },
 });
+

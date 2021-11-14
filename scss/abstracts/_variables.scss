@@ -118,5 +118,6 @@ $brown-div-bg: #2d2d2d;
 $light-bg: #f4f4f4;
 // font
 $font-one: 'Boska', serif;
-// h2 psuedo background
-$psuedo-bg: linear-gradient(to right,#ed5034 0%,#ed5034 74%,rgba(255,255,255,0) 74%,rgba(255,255,255,0) 87%,#ed5034 87%);
+//
+$gradient-bg-one: linear-gradient(0deg, rgb(63, 63, 63),rgb(83, 83, 83)),linear-gradient(45deg, rgb(152, 29, 95) 0%, rgb(152, 29, 95) 25%,rgb(167, 52, 79) 25%, rgb(167, 52, 79) 44%,rgb(183, 74, 63) 44%, rgb(183, 74, 63) 48%,rgb(198, 97, 46) 48%, rgb(198, 97, 46) 60%,rgb(214, 119, 30) 60%, rgb(214, 119, 30) 66%,rgb(229, 142, 14) 66%, rgb(229, 142, 14) 100%),linear-gradient(135deg, rgb(152, 29, 95) 0%, rgb(152, 29, 95) 25%,rgb(167, 52, 79) 25%, rgb(167, 52, 79) 44%,rgb(183, 74, 63) 44%, rgb(183, 74, 63) 48%,rgb(198, 97, 46) 48%, rgb(198, 97, 46) 60%,rgb(214, 119, 30) 60%, rgb(214, 119, 30) 66%,rgb(229, 142, 14) 66%, rgb(229, 142, 14) 100%); 
+$gradient-bg-one-blend: overlay, overlay, overlay, normal;

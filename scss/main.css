@@ -2220,7 +2220,7 @@ button.swiper-pagination-bullet {
             flex-direction: column;
     text-align: center;
     min-height: 250px;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
   }
   #intro .container .service-items .service-item img {
     margin: 0;
@@ -2230,6 +2230,12 @@ button.swiper-pagination-bullet {
     color: #2d2d2d;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    background: linear-gradient(0deg, #3f3f3f, #535353), linear-gradient(45deg, #981d5f 0%, #981d5f 25%, #a7344f 25%, #a7344f 44%, #b74a3f 44%, #b74a3f 48%, #c6612e 48%, #c6612e 60%, #d6771e 60%, #d6771e 66%, #e58e0e 66%, #e58e0e 100%), linear-gradient(135deg, #981d5f 0%, #981d5f 25%, #a7344f 25%, #a7344f 44%, #b74a3f 44%, #b74a3f 48%, #c6612e 48%, #c6612e 60%, #d6771e 60%, #d6771e 66%, #e58e0e 66%, #e58e0e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-blend-mode: overlay, overlay, overlay, normal;
+    font-size: 1.875rem;
   }
   #intro .container .service-items .service-item p {
     color: #495057;
@@ -4356,6 +4362,30 @@ button.swiper-pagination-bullet {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 

@@ -254,7 +254,7 @@
                     flex-direction: column;
                     text-align: center;
                     min-height: 250px;
-                    background-color: $light-bg;
+                    background-color: $gray-100;
 
                     img {
                         margin: 0;
@@ -265,6 +265,12 @@
                         color: $primary;
                         margin-bottom: $margin-md;
                         text-transform: uppercase;
+                        background: $gradient-bg-one;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-blend-mode: $gradient-bg-one-blend;
+                        font-size: $font-size-lg * 1.5;
                     }
 
                     p {
@@ -956,28 +962,23 @@
     #intro {
         .container {
             .heading {
-                span {
-                }
-                h2 {
-                }
-                p {
-                }
+                span {}
+
+                h2 {}
+
+                p {}
             }
 
             .service-items {
 
                 .service-item {
-                    img {
-                    }
+                    img {}
 
-                    h4 {
-                    }
+                    h4 {}
 
-                    p {
-                    }
+                    p {}
 
-                    a {
-                    }
+                    a {}
                 }
             }
         }
@@ -2068,5 +2069,19 @@
         opacity: 1;
         -webkit-transform: translateY(0);
         transform: translateY(0);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
     }
 }
