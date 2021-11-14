@@ -2234,10 +2234,10 @@ button.swiper-pagination-bullet {
   #intro .container .service-items .service-item a {
     text-decoration: none;
   }
-  #pitch {
+  #info {
     width: 100%;
   }
-  #pitch .container {
+  #info .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2256,7 +2256,7 @@ button.swiper-pagination-bullet {
     max-width: 1200px;
     margin: auto;
   }
-  #pitch .container .line {
+  #info .container .line {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2272,16 +2272,16 @@ button.swiper-pagination-bullet {
             flex-direction: column;
     margin-bottom: 1rem;
   }
-  #pitch .container .line span {
+  #info .container .line span {
     color: #adb5bd;
     margin-bottom: 0.5rem;
   }
-  #pitch .container .line > div {
+  #info .container .line > div {
     width: 1px;
     height: 40px;
     background-color: #ced4da;
   }
-  #pitch .container .main-content {
+  #info .container .main-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2299,7 +2299,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     margin-bottom: 1rem;
   }
-  #pitch .container .main-content h2 {
+  #info .container .main-content h2 {
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -2311,13 +2311,13 @@ button.swiper-pagination-bullet {
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  #pitch .container .main-content p {
+  #info .container .main-content p {
     line-height: 2;
     margin-bottom: 1rem;
     color: #495057;
     font-size: 1rem;
   }
-  #pitch .container .main-content ul {
+  #info .container .main-content ul {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2335,7 +2335,7 @@ button.swiper-pagination-bullet {
     padding: 0 2rem;
     margin-bottom: 1rem;
   }
-  #pitch .container .main-content ul li {
+  #info .container .main-content ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2347,19 +2347,19 @@ button.swiper-pagination-bullet {
             align-items: center;
     height: 100%;
   }
-  #pitch .container .main-content ul li img {
+  #info .container .main-content ul li img {
     width: 1rem;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     margin-right: 0.5rem;
   }
-  #pitch .container .main-content ul li p {
+  #info .container .main-content ul li p {
     margin: 0;
     color: #000;
     font-size: 1rem;
   }
-  #pitch .container .main-content .btns {
+  #info .container .main-content .btns {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2371,17 +2371,93 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
   }
-  #pitch .container .graphic {
+  #info .container .graphic {
     width: 100%;
     max-width: 350px;
     height: 450px;
     position: relative;
   }
-  #pitch .container .graphic img {
+  #info .container .graphic img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  #pitch {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #pitch .container {
+    width: 100%;
+    height: 20rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/tulsastock1.jpeg) center 10%/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/tulsastock1.jpeg) center 10%/cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #pitch .container h2 {
+    color: #e9ecef;
+    text-align: center;
+    font-size: 1.7rem;
+    max-width: 600px;
+  }
+  #pitch .boxes {
+    width: 100%;
+    max-width: 1000px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 0 1rem;
+  }
+  #pitch .boxes .box {
+    width: 100%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  #pitch .boxes .box h4 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
   }
   #portfolio {
     width: 100%;
@@ -2620,6 +2696,20 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
     position: relative;
+    z-index: 1;
+  }
+  #about .container .profile .wrap::before {
+    position: absolute;
+    content: '';
+    width: 101%;
+    height: 101%;
+    z-index: -1;
+    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 8s ease infinite;
+            animation: gradient 8s ease infinite;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
   }
   #about .container .profile .wrap img {
     width: 100%;
@@ -3060,10 +3150,10 @@ button.swiper-pagination-bullet {
   #landing .container .social-media img {
     width: 1.5rem;
   }
-  #pitch {
+  #info {
     width: 100%;
   }
-  #pitch .container {
+  #info .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3085,7 +3175,7 @@ button.swiper-pagination-bullet {
     max-width: 1200px;
     margin: auto;
   }
-  #pitch .container .line {
+  #info .container .line {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3102,17 +3192,17 @@ button.swiper-pagination-bullet {
     height: 100%;
     margin-bottom: unset;
   }
-  #pitch .container .line span {
+  #info .container .line span {
     color: #adb5bd;
     margin-bottom: 0.5rem;
     text-align: center;
   }
-  #pitch .container .line > div {
+  #info .container .line > div {
     width: 1px;
     height: 550px;
     background-color: #ced4da;
   }
-  #pitch .container .main-content {
+  #info .container .main-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3131,18 +3221,18 @@ button.swiper-pagination-bullet {
     height: 100%;
     margin: 0 1rem;
   }
-  #pitch .container .main-content h2 {
+  #info .container .main-content h2 {
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  #pitch .container .main-content p {
+  #info .container .main-content p {
     line-height: 2;
     margin-bottom: 1rem;
     color: #6c757d;
     font-size: 1rem;
   }
-  #pitch .container .main-content ul {
+  #info .container .main-content ul {
     width: 100%;
     display: -ms-grid;
     display: grid;
@@ -3154,7 +3244,7 @@ button.swiper-pagination-bullet {
     padding: 0 0.5rem;
     margin-bottom: 1rem;
   }
-  #pitch .container .main-content ul li {
+  #info .container .main-content ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3166,19 +3256,19 @@ button.swiper-pagination-bullet {
             align-items: center;
     height: 100%;
   }
-  #pitch .container .main-content ul li img {
+  #info .container .main-content ul li img {
     width: 1rem;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     margin-right: 0.5rem;
   }
-  #pitch .container .main-content ul li p {
+  #info .container .main-content ul li p {
     margin: 0;
     color: #000;
     line-height: 1.5;
   }
-  #pitch .container .main-content .btns {
+  #info .container .main-content .btns {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3190,14 +3280,92 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
   }
-  #pitch .container .graphic {
+  #info .container .graphic {
     width: 300px;
   }
-  #pitch .container .graphic img {
+  #info .container .graphic img {
     max-width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  #pitch {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #pitch .container {
+    width: 100%;
+    height: 500px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/tulsastock1.jpeg) center 10%/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/tulsastock1.jpeg) center 10%/cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #pitch .container h2 {
+    color: #e9ecef;
+    text-align: center;
+    font-size: 1.7rem;
+    max-width: 600px;
+  }
+  #pitch .boxes {
+    width: 100%;
+    max-width: 1000px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    padding: 0 1rem;
+  }
+  #pitch .boxes .box {
+    width: 100%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  #pitch .boxes .box h4 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
   }
   #portfolio .container {
     width: 100%;
@@ -3712,10 +3880,10 @@ button.swiper-pagination-bullet {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/bgimg02L.png) center/cover;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/bgimg02L.png) center/cover;
   }
-  #pitch {
+  #info {
     width: 100%;
   }
-  #pitch .container {
+  #info .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3737,7 +3905,7 @@ button.swiper-pagination-bullet {
     max-width: 1200px;
     margin: auto;
   }
-  #pitch .container .line {
+  #info .container .line {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3754,17 +3922,17 @@ button.swiper-pagination-bullet {
     height: 100%;
     margin-bottom: unset;
   }
-  #pitch .container .line span {
+  #info .container .line span {
     color: #ced4da;
     margin-bottom: 0.5rem;
     text-align: center;
   }
-  #pitch .container .line > div {
+  #info .container .line > div {
     width: 1px;
     height: 550px;
     background-color: #ced4da;
   }
-  #pitch .container .main-content {
+  #info .container .main-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3783,18 +3951,18 @@ button.swiper-pagination-bullet {
     height: 100%;
     margin: 0 1rem;
   }
-  #pitch .container .main-content h2 {
+  #info .container .main-content h2 {
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  #pitch .container .main-content p {
+  #info .container .main-content p {
     line-height: 2;
     margin-bottom: 1rem;
     color: #6c757d;
     font-size: 0.9rem;
   }
-  #pitch .container .main-content ul {
+  #info .container .main-content ul {
     width: 100%;
     display: -ms-grid;
     display: grid;
@@ -3806,7 +3974,7 @@ button.swiper-pagination-bullet {
     padding: 0 0.5rem;
     margin-bottom: 1rem;
   }
-  #pitch .container .main-content ul li {
+  #info .container .main-content ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3818,19 +3986,19 @@ button.swiper-pagination-bullet {
             align-items: center;
     height: 100%;
   }
-  #pitch .container .main-content ul li img {
+  #info .container .main-content ul li img {
     width: 1rem;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     margin-right: 0.5rem;
   }
-  #pitch .container .main-content ul li p {
+  #info .container .main-content ul li p {
     margin: 0;
     color: #000;
     line-height: 1.5;
   }
-  #pitch .container .main-content .btns {
+  #info .container .main-content .btns {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3842,11 +4010,11 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
   }
-  #pitch .container .graphic {
+  #info .container .graphic {
     width: 100%;
     max-width: 300px;
   }
-  #pitch .container .graphic img {
+  #info .container .graphic img {
     max-width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -4185,10 +4353,10 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 1200px) {
-  #pitch {
+  #info {
     width: 100%;
   }
-  #pitch .container {
+  #info .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4210,7 +4378,7 @@ button.swiper-pagination-bullet {
     max-width: 1200px;
     margin: auto;
   }
-  #pitch .container .line {
+  #info .container .line {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4227,17 +4395,17 @@ button.swiper-pagination-bullet {
     height: 100%;
     margin-bottom: unset;
   }
-  #pitch .container .line span {
+  #info .container .line span {
     color: #adb5bd;
     margin-bottom: 0.5rem;
     text-align: center;
   }
-  #pitch .container .line > div {
+  #info .container .line > div {
     width: 1px;
     height: 550px;
     background-color: #ced4da;
   }
-  #pitch .container .main-content {
+  #info .container .main-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4256,18 +4424,18 @@ button.swiper-pagination-bullet {
     height: 100%;
     margin: 0 1rem;
   }
-  #pitch .container .main-content h2 {
+  #info .container .main-content h2 {
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  #pitch .container .main-content p {
+  #info .container .main-content p {
     line-height: 2;
     margin-bottom: 1rem;
     color: #6c757d;
     font-size: 0.9rem;
   }
-  #pitch .container .main-content ul {
+  #info .container .main-content ul {
     width: 100%;
     display: -ms-grid;
     display: grid;
@@ -4279,7 +4447,7 @@ button.swiper-pagination-bullet {
     padding: 0 0.5rem;
     margin-bottom: 1rem;
   }
-  #pitch .container .main-content ul li {
+  #info .container .main-content ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4291,19 +4459,19 @@ button.swiper-pagination-bullet {
             align-items: center;
     height: 100%;
   }
-  #pitch .container .main-content ul li img {
+  #info .container .main-content ul li img {
     width: 1rem;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     margin-right: 0.5rem;
   }
-  #pitch .container .main-content ul li p {
+  #info .container .main-content ul li p {
     margin: 0;
     color: #000;
     line-height: 1.5;
   }
-  #pitch .container .main-content .btns {
+  #info .container .main-content .btns {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4315,13 +4483,13 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
   }
-  #pitch .container .graphic {
+  #info .container .graphic {
     width: 100%;
     max-width: 300px;
     height: 100%;
     position: relative;
   }
-  #pitch .container .graphic img {
+  #info .container .graphic img {
     max-width: 100%;
     height: 100%;
     -o-object-fit: cover;
