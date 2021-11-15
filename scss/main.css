@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+body.dark--mode .container {
+  background-color: #000;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
