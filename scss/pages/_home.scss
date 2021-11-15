@@ -279,7 +279,7 @@
                         color: $gray-700;
                         margin-bottom: $margin-md;
                         line-height: 1.5;
-                        font-size: $font-size-base;
+                        font-size: $font-size-sm;
                     }
 
                     a {
@@ -288,6 +288,26 @@
                 }
             }
         }
+    }
+      //dark
+    body.dark--mode #intro {
+        background-color: $dark-background-lg-one;
+         span, p {
+             color: $dark-mode-para-text !important;
+         }
+         .service-item {
+             background-color: $dark-mode-background-sm !important;
+             box-shadow: $dark-mode-shadow-one !important;
+             h4 {
+                 color: white !important;
+             }
+             a {
+                 box-shadow: $dark-mode-shadow-one;
+                 &:hover {
+                     background-color: $dark-button-hover-bg;
+                 }
+             }
+         }
     }
 
     #info {

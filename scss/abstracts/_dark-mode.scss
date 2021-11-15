@@ -1,4 +1,10 @@
-
-body.dark--mode .container {
-    background-color: $black;
-}
+//divs
+$dark-background-lg-one: #181818;
+$dark-mode-background-sm: #212121;
+//font
+$dark-mode-para-text: #aaaaaa;
+//shadows
+// right down spread blur color
+$dark-mode-shadow-one: 0px 1px 15px 1px $gray-700;
+// buttons
+$dark-button-hover-bg: rgba(255, 255, 255, 0.1);
