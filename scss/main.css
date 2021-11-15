@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-html, body {
+html {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
 }
@@ -1903,7 +1903,7 @@ button.swiper-pagination-bullet {
   }
   #landing {
     width: 100vw;
-    height: 650px;
+    height: 38rem;
   }
   #landing .container {
     width: 100vw;
@@ -2212,6 +2212,7 @@ button.swiper-pagination-bullet {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    height: 100%;
     min-height: 250px;
     background-color: #f8f9fa;
   }
@@ -2345,7 +2346,9 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   #info .container .main-content ul li img {
     width: 1rem;
@@ -2414,12 +2417,20 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0.5rem;
   }
   #pitch .container h2 {
     color: #e9ecef;
     text-align: center;
     font-size: 1.7rem;
     max-width: 600px;
+    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   #pitch .boxes {
     width: 100%;
@@ -2985,7 +2996,7 @@ button.swiper-pagination-bullet {
 @media (min-width: 768px) {
   #landing {
     width: 100%;
-    height: 90vh;
+    height: 44rem;
   }
   #landing .container .swiper-container .landing-content h1 {
     color: white;
@@ -3254,7 +3265,6 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100%;
   }
   #info .container .main-content ul li img {
     width: 1rem;
@@ -3812,7 +3822,7 @@ button.swiper-pagination-bullet {
 @media (min-width: 1024px) {
   #landing {
     width: 100%;
-    height: 768px;
+    height: 35rem;
   }
   #landing .container .swiper-container .landing-content h1 {
     color: white;
@@ -3948,7 +3958,6 @@ button.swiper-pagination-bullet {
             flex-direction: column;
     text-align: left;
     width: 100%;
-    height: 100%;
     margin: 0 1rem;
   }
   #info .container .main-content h2 {
@@ -3984,7 +3993,6 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100%;
   }
   #info .container .main-content ul li img {
     width: 1rem;
@@ -4457,7 +4465,6 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100%;
   }
   #info .container .main-content ul li img {
     width: 1rem;
