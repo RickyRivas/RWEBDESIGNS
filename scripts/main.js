@@ -75,7 +75,7 @@ var swiper = new Swiper(".landingSwiper", {
 });
 var swiper = new Swiper(" .portSwiper", {
     spaceBetween: 20,
-    speed: 1500,
+    speed: 1000,
     loop: true,
     autoplay: true,
     pagination: false,

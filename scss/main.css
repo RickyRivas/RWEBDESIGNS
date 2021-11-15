@@ -1214,7 +1214,7 @@ button.swiper-pagination-bullet {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    font-size: 800;
+    font-size: 0.875rem;
   }
   header nav .nav-links li a {
     color: White;
@@ -1647,6 +1647,7 @@ button.swiper-pagination-bullet {
   margin: 0.5rem;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 0.875rem;
 }
 
 .btn:hover {
@@ -2349,6 +2350,7 @@ button.swiper-pagination-bullet {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
+    font-size: 0.875rem;
   }
   #info .container .main-content ul li img {
     width: 1rem;
@@ -2360,7 +2362,6 @@ button.swiper-pagination-bullet {
   #info .container .main-content ul li p {
     margin: 0;
     color: #000;
-    font-size: 1rem;
   }
   #info .container .main-content .btns {
     width: 100%;
@@ -2458,12 +2459,16 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 2rem;
+    padding: 2rem 1rem;
     text-align: center;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  #pitch .boxes .box img {
+    width: 2rem;
+    margin-bottom: 1rem;
   }
   #pitch .boxes .box h4 {
     margin-bottom: 1rem;
@@ -2605,7 +2610,7 @@ button.swiper-pagination-bullet {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  #portfolio .container .controller div {
+  #portfolio .container .controller .swiper-prev-port {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2615,15 +2620,128 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1rem;
-    background-color: #f4f4f4;
+    background-color: #dee2e6;
     cursor: pointer;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
   }
-  #portfolio .container .controller div img {
-    margin: 0;
+  #portfolio .container .controller .swiper-prev-port .left {
+    width: 40px !important;
+    height: 2px;
+    background-color: #495057;
+    position: relative;
+    z-index: 3;
   }
-  #portfolio .container .controller div:hover {
-    background-color: #ced4da;
+  #portfolio .container .controller .swiper-prev-port .left::after {
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    -webkit-transform-origin: 0%;
+            transform-origin: 0%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #portfolio .container .controller .swiper-prev-port .left::before {
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    -webkit-transform-origin: 0%;
+            transform-origin: 0%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #portfolio .container .controller .swiper-prev-port::before {
+    position: absolute;
+    width: 100%;
+    content: '';
+    height: 100%;
+    background-color: black;
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
+  }
+  #portfolio .container .controller .swiper-prev-port:hover .left {
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+    background-color: #B7A440;
+  }
+  #portfolio .container .controller .swiper-prev-port:hover::before {
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  #portfolio .container .controller .swiper-next-port {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #dee2e6;
+    cursor: pointer;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  #portfolio .container .controller .swiper-next-port .right {
+    width: 40px !important;
+    height: 2px;
+    background-color: #495057;
+    position: relative;
+  }
+  #portfolio .container .controller .swiper-next-port .right::after {
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    right: 0;
+    -webkit-transform-origin: 100%;
+            transform-origin: 100%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #portfolio .container .controller .swiper-next-port .right::before {
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    right: 0;
+    -webkit-transform-origin: 100%;
+            transform-origin: 100%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #portfolio .container .controller .swiper-next-port::before {
+    position: absolute;
+    width: 100%;
+    content: '';
+    height: 100%;
+    background-color: black;
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
+  }
+  #portfolio .container .controller .swiper-next-port:hover .right {
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+    background-color: #B7A440;
+  }
+  #portfolio .container .controller .swiper-next-port:hover::before {
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   #about {
     width: 100%;
@@ -2965,6 +3083,7 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .items .item img {
     margin: 0;
@@ -3007,7 +3126,7 @@ button.swiper-pagination-bullet {
   #landing .container .swiper-container .landing-content p {
     color: #e9ecef;
     margin-bottom: 1rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   #landing .container .swiper-container .landing-content > div {
     display: -webkit-box;
@@ -3365,7 +3484,6 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 2rem;
     text-align: center;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -3791,6 +3909,7 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .items .item img {
     margin: 0;
@@ -3833,7 +3952,7 @@ button.swiper-pagination-bullet {
   #landing .container .swiper-container .landing-content p {
     color: #e9ecef;
     margin-bottom: 1rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   #landing .container .swiper-container .landing-content > div {
     display: -webkit-box;
