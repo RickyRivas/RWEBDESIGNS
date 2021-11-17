@@ -670,7 +670,7 @@
                         transform: translateX(101%);
                     }
 
-                    &:hover {
+                    &.pressedControl{
                         .left {
                             transition: all 1000ms;
                             background-color: #B7A440;
@@ -733,7 +733,7 @@
                         transform: translateX(-101%);
                     }
 
-                    &:hover {
+                    &.pressedControl {
                         .right {
                             transition: all 1000ms;
                             background-color: #B7A440;
@@ -1446,8 +1446,7 @@
                             justify-content: center;
                             align-items: center;
 
-                            img {
-                            }
+                            img {}
                         }
 
                         .text {
@@ -1940,7 +1939,8 @@
             }
         }
     }
-  #portfolio {
+
+    #portfolio {
 
         .container {
             width: 100%;
@@ -1996,8 +1996,7 @@
                             justify-content: center;
                             align-items: center;
 
-                            img {
-                            }
+                            img {}
                         }
 
                         .text {
@@ -2049,6 +2048,7 @@
             }
         }
     }
+
     #about {
         width: 100%;
         background-color: #01131C;

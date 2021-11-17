@@ -2683,12 +2683,12 @@ button.swiper-pagination-bullet {
     -webkit-transform: translateX(101%);
             transform: translateX(101%);
   }
-  #portfolio .container .controller .swiper-prev-port:hover .left {
+  #portfolio .container .controller .swiper-prev-port.pressedControl .left {
     -webkit-transition: all 1000ms;
     transition: all 1000ms;
     background-color: #B7A440;
   }
-  #portfolio .container .controller .swiper-prev-port:hover::before {
+  #portfolio .container .controller .swiper-prev-port.pressedControl::before {
     -webkit-transition: all 1000ms;
     transition: all 1000ms;
     -webkit-transform: translateX(0);
@@ -2749,12 +2749,12 @@ button.swiper-pagination-bullet {
     -webkit-transform: translateX(-101%);
             transform: translateX(-101%);
   }
-  #portfolio .container .controller .swiper-next-port:hover .right {
+  #portfolio .container .controller .swiper-next-port.pressedControl .right {
     -webkit-transition: all 1000ms;
     transition: all 1000ms;
     background-color: #B7A440;
   }
-  #portfolio .container .controller .swiper-next-port:hover::before {
+  #portfolio .container .controller .swiper-next-port.pressedControl::before {
     -webkit-transition: all 1000ms;
     transition: all 1000ms;
     -webkit-transform: translateX(0);

@@ -80,3 +80,13 @@ var swiper = new Swiper(" .portSwiper", {
         prevEl: ".swiper-prev-port"
     },
 });
+let swiperActiveControl = document.querySelector('.controller .pressedControl');
+let swiperPortControls = document.querySelectorAll('.control');
+
+swiperPortControls.forEach(control => {
+    control.addEventListener('click', () => {
+        document.querySelector('.controller .pressedControl').classList.remove('pressedControl')
+        control.classList.add('pressedControl')
+    })
+
+})
