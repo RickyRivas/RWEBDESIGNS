@@ -2057,8 +2057,6 @@ button.swiper-pagination-bullet {
             align-items: center;
   }
   #landing .container .controller .swiper-next {
-    z-index: 10;
-    background-color: #ffffff33;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2068,20 +2066,52 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0.5rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    border-radius: 50%;
+    background-color: #ffffff33;
     cursor: pointer;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
   }
-  #landing .container .controller .swiper-next img {
-    margin: 0;
-    width: 1rem;
+  #landing .container .controller .swiper-next .right {
+    width: 30px !important;
+    height: 2px;
+    background-color: white;
+    position: relative;
+  }
+  #landing .container .controller .swiper-next .right::after {
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    right: 0;
+    -webkit-transform-origin: 100%;
+            transform-origin: 100%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #landing .container .controller .swiper-next .right::before {
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    right: 0;
+    -webkit-transform-origin: 100%;
+            transform-origin: 100%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #landing .container .controller .swiper-next::before {
+    position: absolute;
+    width: 100%;
+    content: '';
+    height: 100%;
+    background-color: #495057;
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
   }
   #landing .container .controller .swiper-prev {
-    z-index: 10;
-    background-color: #ffffff33;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2091,17 +2121,52 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0.5rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    border-radius: 50%;
-    margin-right: 1rem;
+    background-color: #ffffff33;
+    padding: 1rem;
     cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    margin-right: 0.5rem;
   }
-  #landing .container .controller .swiper-prev img {
-    margin: 0;
-    width: 1rem;
+  #landing .container .controller .swiper-prev .left {
+    width: 30px !important;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+  }
+  #landing .container .controller .swiper-prev .left::after {
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    -webkit-transform-origin: 0%;
+            transform-origin: 0%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #landing .container .controller .swiper-prev .left::before {
+    content: '';
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    -webkit-transform-origin: 0%;
+            transform-origin: 0%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #landing .container .controller .swiper-prev::before {
+    position: absolute;
+    width: 100%;
+    content: '';
+    height: 100%;
+    background-color: #495057;
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
   }
   #landing .container .swiper-pagination,
   #landing .container .pagination-fraction {
@@ -2128,7 +2193,7 @@ button.swiper-pagination-bullet {
     font-size: 1.75rem;
     color: white;
   }
-  #landing .social-media {
+  #landing .container .social-media {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2144,7 +2209,7 @@ button.swiper-pagination-bullet {
     bottom: 1rem;
     display: none;
   }
-  #landing .social-media img {
+  #landing .container .social-media img {
     width: 2rem;
   }
   #intro {
@@ -2159,12 +2224,27 @@ button.swiper-pagination-bullet {
   #intro .container .heading {
     text-align: center;
     margin-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #intro .container .heading span {
     color: #adb5bd;
   }
   #intro .container .heading h2 {
-    margin-bottom: 1rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     position: relative;
     text-transform: uppercase;
     font-size: 2rem;
@@ -2175,6 +2255,7 @@ button.swiper-pagination-bullet {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
   }
   #intro .container .heading p {
     line-height: 1.5;
@@ -2252,6 +2333,7 @@ button.swiper-pagination-bullet {
   }
   #info {
     width: 100%;
+    overflow: hidden;
   }
   #info .container {
     display: -webkit-box;
@@ -2399,99 +2481,21 @@ button.swiper-pagination-bullet {
     height: 450px;
     position: relative;
   }
+  #info .container .graphic::before {
+    content: '';
+    left: 2rem;
+    top: 2rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(/assets/dot.png) repeat;
+    z-index: -1;
+  }
   #info .container .graphic img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  #pitch {
-    width: 100%;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #pitch .container {
-    width: 100%;
-    height: 20rem;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/assets/bgimg02L.png) center 10%/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/bgimg02L.png) center 10%/cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0.5rem;
-  }
-  #pitch .container h2 {
-    color: #e9ecef;
-    text-align: center;
-    font-size: 1.7rem;
-    max-width: 600px;
-    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
-    background-size: 400% 400%;
-    -webkit-animation: gradient 15s ease infinite;
-            animation: gradient 15s ease infinite;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  #pitch .boxes {
-    width: 100%;
-    max-width: 1000px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1rem;
-    padding: 0 1rem;
-  }
-  #pitch .boxes .box {
-    width: 100%;
-    background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 2rem 1rem;
-    text-align: center;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  }
-  #pitch .boxes .box img {
-    width: 2rem;
-    margin-bottom: 1rem;
-  }
-  #pitch .boxes .box h4 {
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    text-transform: uppercase;
   }
   #portfolio {
     width: 100%;
@@ -3196,51 +3200,12 @@ button.swiper-pagination-bullet {
     top: 50%;
     right: 1rem;
     z-index: 10;
-    background-color: #ffffff33;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0.5rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    border-radius: 50%;
-  }
-  #landing .container .controller .swiper-next img {
-    margin: 0;
-    width: 1rem;
   }
   #landing .container .controller .swiper-prev {
     position: absolute;
     top: 50%;
     left: 1rem;
     z-index: 10;
-    background-color: #ffffff33;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0.5rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    border-radius: 50%;
-    margin-right: 1rem;
-  }
-  #landing .container .controller .swiper-prev img {
-    margin: 0;
-    width: 1rem;
   }
   #landing .container .swiper-pagination,
   #landing .container .pagination-fraction {
@@ -3423,87 +3388,6 @@ button.swiper-pagination-bullet {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  #pitch {
-    width: 100%;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #pitch .container {
-    width: 100%;
-    height: 500px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/assets/423.png) center/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/423.png) center/cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #pitch .container h2 {
-    color: #e9ecef;
-    text-align: center;
-    font-size: 1.7rem;
-    max-width: 600px;
-  }
-  #pitch .boxes {
-    width: 100%;
-    max-width: 1000px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    grid-gap: 1rem;
-    padding: 0 0.5rem;
-  }
-  #pitch .boxes .box {
-    width: 100%;
-    background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 1rem;
-  }
-  #pitch .boxes .box h4 {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-  }
-  #pitch .boxes .box p {
-    font-size: 0.875rem;
-  }
   #portfolio .container {
     width: 100%;
     max-width: 1200px;
@@ -3604,17 +3488,6 @@ button.swiper-pagination-bullet {
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text a {
     margin: 0;
-  }
-  #portfolio .container .controller {
-    width: auto;
-    height: auto;
-    z-index: 2;
-  }
-  #portfolio .container .controller div img {
-    margin: 0;
-  }
-  #portfolio .container .controller div:hover {
-    background-color: #ced4da;
   }
   #about {
     width: 100%;
@@ -4237,17 +4110,6 @@ button.swiper-pagination-bullet {
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text a {
     margin: 0;
-  }
-  #portfolio .container .controller {
-    width: auto;
-    height: auto;
-    z-index: 2;
-  }
-  #portfolio .container .controller div img {
-    margin: 0;
-  }
-  #portfolio .container .controller div:hover {
-    background-color: #ced4da;
   }
   #about {
     width: 100%;

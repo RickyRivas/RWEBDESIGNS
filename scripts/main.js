@@ -74,6 +74,7 @@ var swiper = new Swiper(" .portSwiper", {
     speed: 1000,
     loop: true,
     autoplay: true,
+    disableOnInteraction: true,
     pagination: false,
     navigation: {
         nextEl: ".swiper-next-port",
@@ -86,5 +87,4 @@ swiperPortControls.forEach(control => {
         document.querySelector('.controller .pressedControl').classList.remove('pressedControl')
         control.classList.add('pressedControl')
     })
-
 })
