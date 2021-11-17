@@ -563,21 +563,20 @@
                         width: 100%;
                         max-width: 500px;
                         display: grid;
-                        grid-template-rows: auto 1fr;
+                        grid-template-rows: 1fr 1fr;
                         grid-gap: 1rem;
                         padding-bottom: $padding-lg;
                         box-shadow: $box-shadow;
 
                         .graphic {
                             width: 100%;
-                            padding: $padding-sm 0;
+                            padding: $padding-md;
                             display: flex;
                             justify-content: center;
                             align-items: center;
 
                             img {
-                                width: 100%;
-                                max-width: 250px;
+                                max-width: 100%;
                                 height: 100%;
                                 object-fit: cover;
                             }
@@ -601,7 +600,7 @@
                             }
 
                             p {
-                                color: $text-color;
+                                color: $gray-600;
                                 margin-bottom: $margin-md;
                             }
 
@@ -1433,26 +1432,21 @@
                     display: flex;
 
                     .swiper-slide {
+                        width: 100%;
                         max-width: unset;
                         display: grid;
-                        grid-template-rows: 1fr;
-                        grid-template-columns: 1fr 1fr;
                         grid-gap: 1rem;
+                        grid-template-rows: auto 1fr;
                         padding-bottom: $padding-lg;
                         padding-top: $padding-lg;
 
                         .graphic {
                             width: 100%;
-                            padding: $padding-sm 0;
                             display: flex;
                             justify-content: center;
                             align-items: center;
 
                             img {
-                                width: 100%;
-                                max-width: 300px;
-                                height: 100%;
-                                object-fit: cover;
                             }
                         }
 
@@ -1946,7 +1940,115 @@
             }
         }
     }
+  #portfolio {
 
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: $padding-lg $padding-md;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .heading {
+                width: 100%;
+                text-align: center;
+                margin-bottom: $margin-md;
+
+                span {
+                    color: $gray-500;
+                }
+
+                h2 {
+                    font-size: $font-size-base * 2;
+                    text-transform: uppercase;
+                    margin-bottom: $margin-md;
+                }
+
+                p {
+                    line-height: 1.5;
+                }
+            }
+
+            .portSwiper {
+                width: 100%;
+                height: auto;
+
+                .swiper-wrapper {
+                    width: 100%;
+                    display: flex;
+
+                    .swiper-slide {
+                        width: 100%;
+                        max-width: unset;
+                        display: grid;
+                        grid-gap: 0rem;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 1fr;
+                        padding-bottom: $padding-lg;
+                        padding-top: $padding-lg;
+
+                        .graphic {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                            }
+                        }
+
+                        .text {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            padding: $padding-md;
+
+                            h3 {
+                                margin-bottom: $margin-sm;
+                                font-size: $font-size-base * 1.3;
+                                text-transform: uppercase;
+                            }
+
+                            span {
+                                font-size: $font-size-base * .7;
+                                margin-bottom: $margin-md;
+                            }
+
+                            p {
+                                color: $text-color;
+                                margin-bottom: $margin-md;
+                            }
+
+                            a {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .controller {
+                width: auto;
+                height: auto;
+                z-index: 2;
+
+                div {
+                    img {
+                        margin: 0;
+                    }
+
+                    &:hover {
+                        background-color: $gray-400;
+                    }
+                }
+            }
+        }
+    }
     #about {
         width: 100%;
         background-color: #01131C;
