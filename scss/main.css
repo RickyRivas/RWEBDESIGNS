@@ -2505,8 +2505,8 @@ button.swiper-pagination-bullet {
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     grid-gap: 1rem;
     max-width: 1200px;
     margin: auto;
