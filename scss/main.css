@@ -2497,6 +2497,53 @@ button.swiper-pagination-bullet {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  #features {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  #features .container {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    place-items: center;
+  }
+  #features .container .item {
+    width: 100%;
+    max-width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem 0.5rem;
+    text-align: center;
+    background-color: #f3f3f3;
+  }
+  #features .container .item img {
+    max-width: 100%;
+    height: 250px;
+  }
+  #features .container .item h4 {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  #features .container .item p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
   #portfolio {
     width: 100%;
   }
