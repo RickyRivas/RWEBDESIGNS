@@ -2055,6 +2055,7 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    z-index: 3;
   }
   #landing .container .controller .swiper-next {
     display: -webkit-box;
@@ -2133,7 +2134,6 @@ button.swiper-pagination-bullet {
     height: 2px;
     background-color: #fff;
     position: relative;
-    z-index: 3;
   }
   #landing .container .controller .swiper-prev .left::after {
     content: '';
@@ -2290,7 +2290,7 @@ button.swiper-pagination-bullet {
     text-align: center;
     height: 100%;
     min-height: 250px;
-    background-color: #f8f9fa;
+    background-color: #f3f3f3;
   }
   #intro .container .service-items .service-item img {
     margin: 0;
@@ -2499,16 +2499,16 @@ button.swiper-pagination-bullet {
   }
   #features {
     width: 100%;
-    padding: 0 1rem;
+    padding: 1rem;
   }
   #features .container {
     width: 100%;
+    max-width: 1200px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     grid-gap: 1rem;
-    max-width: 1200px;
     margin: auto;
     place-items: center;
   }
@@ -2603,7 +2603,7 @@ button.swiper-pagination-bullet {
     display: flex;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide {
-    background-color: #f4f4f4;
+    background-color: #f3f3f3;
     width: 100%;
     max-width: 500px;
     display: -ms-grid;
@@ -3051,7 +3051,7 @@ button.swiper-pagination-bullet {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    background-color: #f4f4f4;
+    background-color: #f3f3f3;
   }
   #packages .container .packages-grid .p-item .card-heading {
     background-color: #2d2d2d;
