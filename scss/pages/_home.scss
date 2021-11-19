@@ -7,7 +7,7 @@
         .container {
             .swiper-container {
 
-                background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsanight1.jpeg) 65% 50% / cover !important;
+                background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/paidimg01.jpg) 65% 50% / cover !important;
             }
         }
     }
@@ -32,7 +32,7 @@
                 justify-content: center;
                 align-items: center;
                 padding: 0;
-                background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsastock1.jpeg) 65% 50% / cover;
+                background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/assets/paidimg01.jpg) 65% 50% / cover;
 
                 .landing-content {
                     position: absolute;
@@ -550,6 +550,7 @@
                 padding: $padding-lg $padding-sm;
                 text-align: center;
                 background-color: #f3f3f3;
+                height: 100%;
 
                 img {
                     max-width: 100%;
@@ -1333,9 +1334,9 @@
                         align-items: center;
 
                         img {
-                            width: 1.5rem;
+                            width: 1.3rem;
                             align-self: flex-start;
-                            margin: .5rem .5rem 0 0;
+                            margin: .2rem .5rem 0 0;
                         }
 
                         p {
@@ -1867,7 +1868,7 @@
                         img {
                             width: 1.5rem;
                             align-self: flex-start;
-                            margin: .5rem .5rem 0 0;
+                            margin: 0rem .5rem 0 0;
                         }
 
                         p {
@@ -2352,12 +2353,6 @@
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
-
-                        img {
-                            width: 1.5rem;
-                            align-self: flex-start;
-                            margin: .5rem .5rem 0 0;
-                        }
 
                         p {
                             margin: 0;

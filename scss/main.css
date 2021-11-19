@@ -1903,8 +1903,8 @@ button.swiper-pagination-bullet {
     position: fixed;
   }
   body.dark--mode #landing .container .swiper-container {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/tulsanight1.jpeg) 65% 50%/cover !important;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/tulsanight1.jpeg) 65% 50%/cover !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/paidimg01.jpg) 65% 50%/cover !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/paidimg01.jpg) 65% 50%/cover !important;
   }
   #landing {
     width: 100vw;
@@ -1938,8 +1938,8 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/tulsastock1.jpeg) 65% 50%/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/tulsastock1.jpeg) 65% 50%/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/assets/paidimg01.jpg) 65% 50%/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/paidimg01.jpg) 65% 50%/cover;
   }
   #landing .container .swiper-container .landing-content {
     position: absolute;
@@ -2531,6 +2531,7 @@ button.swiper-pagination-bullet {
     padding: 2rem 0.5rem;
     text-align: center;
     background-color: #f3f3f3;
+    height: 100%;
   }
   #features .container .item img {
     max-width: 100%;
@@ -3403,10 +3404,10 @@ button.swiper-pagination-bullet {
             align-items: center;
   }
   #info .container .main-content ul li img {
-    width: 1.5rem;
+    width: 1.3rem;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin: .5rem .5rem 0 0;
+    margin: .2rem .5rem 0 0;
   }
   #info .container .main-content ul li p {
     margin: 0;
@@ -4025,7 +4026,7 @@ button.swiper-pagination-bullet {
     width: 1.5rem;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin: .5rem .5rem 0 0;
+    margin: 0rem .5rem 0 0;
   }
   #info .container .main-content ul li p {
     margin: 0;
@@ -4595,12 +4596,6 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  #info .container .main-content ul li img {
-    width: 1.5rem;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    margin: .5rem .5rem 0 0;
   }
   #info .container .main-content ul li p {
     margin: 0;
