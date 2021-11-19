@@ -811,7 +811,15 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 0em) {
   #theme--switch {
-    background-color: none;
+    background-color: transparent;
+    outline: none;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    border: 0;
+  }
+  #theme--switch img {
+    margin: 0;
   }
 }
 
@@ -828,7 +836,7 @@ button.swiper-pagination-bullet {
   }
   header {
     position: absolute;
-    z-index: 5;
+    z-index: 9999;
     width: 100vw;
   }
   header .is-active {
@@ -2219,7 +2227,7 @@ button.swiper-pagination-bullet {
     width: 2rem;
   }
   #intro {
-    width: 100%;
+    width: 100vw;
   }
   #intro .container {
     padding: 2rem 1rem;
@@ -2254,7 +2262,7 @@ button.swiper-pagination-bullet {
     position: relative;
     text-transform: uppercase;
     font-size: 2rem;
-    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+    background: linear-gradient(-45deg, #A58861, #bc9366, #A58861, #202020);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2408,7 +2416,7 @@ button.swiper-pagination-bullet {
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 1rem;
-    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+    background: linear-gradient(-45deg, #A58861, #bc9366, #A58861, #202020);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2586,7 +2594,7 @@ button.swiper-pagination-bullet {
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+    background: linear-gradient(-45deg, #A58861, #bc9366, #A58861, #202020);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2637,7 +2645,6 @@ button.swiper-pagination-bullet {
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .graphic img {
     max-width: 100%;
-    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -2865,7 +2872,7 @@ button.swiper-pagination-bullet {
     color: white;
     font-size: 2rem;
     margin-bottom: 1rem;
-    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+    background: linear-gradient(-45deg, #A58861, #bc9366, #A58861, #202020);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2908,7 +2915,7 @@ button.swiper-pagination-bullet {
     width: 101%;
     height: 101%;
     z-index: -1;
-    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+    background: linear-gradient(-45deg, #A58861, #bc9366, #A58861, #202020);
     background-size: 400% 400%;
     -webkit-animation: gradient 8s ease infinite;
             animation: gradient 8s ease infinite;
@@ -3024,7 +3031,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
     text-transform: uppercase;
     font-size: 2rem;
-    background: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+    background: linear-gradient(-45deg, #A58861, #bc9366, #A58861, #202020);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;

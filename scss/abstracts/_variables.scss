@@ -33,6 +33,7 @@ $teal: #20c997;
 $cyan: #0dcaf0;
 $brown: #2d2d2d;
 $gold: #bc9366;
+$dark-gold: #A58861;
 
 $colors: ("blue": $blue,
     "indigo": $indigo,
@@ -119,4 +120,4 @@ $light-bg: #f3f3f3;
 // font
 $font-one: 'Boska', serif;
 //
-$gradient-bg-one: linear-gradient(-45deg, #776838, #CCB755, #E5D367, #202020);
+$gradient-bg-one: linear-gradient(-45deg, #A58861, $gold, $dark-gold, #202020);

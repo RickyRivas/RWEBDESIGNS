@@ -1,6 +1,12 @@
 @media (min-width: 0em) {
-    #theme--switch {
-        background-color: none;
-
+     #theme--switch {
+        background-color: transparent;
+        outline: none;
+        width: max-content;
+        border: 0;
+        // color: #a4a4a4;
+        img {
+            margin: 0;
+        }
     }
 }

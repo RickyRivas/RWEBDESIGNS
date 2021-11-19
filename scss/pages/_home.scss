@@ -287,7 +287,7 @@
     }
 
     #intro {
-        width: 100%;
+        width: 100vw;
 
         .container {
             padding: $padding-lg $padding-md;
@@ -637,7 +637,6 @@
 
                             img {
                                 max-width: 100%;
-                                height: 100%;
                                 object-fit: cover;
                             }
                         }
@@ -2272,8 +2271,8 @@
 
 @media (min-width: 1200px) {
     #landing {
-        .container {
 
+        .container {
             .swiper-container {
                 .landing-content {
                     h1 {}
