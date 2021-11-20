@@ -399,6 +399,24 @@
         }
     }
 
+    body.dark--mode #info {
+        background-color: $dark-background-lg-two;
+
+        span,
+        p {
+            color: $dark-mode-para-text !important;
+        }
+
+
+        a {
+            box-shadow: none;
+
+            &:hover {
+                background-color: $dark-button-hover-bg;
+            }
+        }
+    }
+
     #info {
         width: 100%;
         overflow: hidden;
@@ -524,6 +542,33 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                }
+            }
+        }
+    }
+
+    body.dark--mode #features {
+        background-color: $dark-background-lg-one;
+
+        span,
+        p {
+            color: $dark-mode-para-text !important;
+        }
+
+        .container {
+            .item {
+                background-color: $dark-mode-background-sm !important;
+
+                h4 {
+                    color: white !important;
+                }
+
+                a {
+                    box-shadow: none;
+
+                    &:hover {
+                        background-color: $dark-button-hover-bg;
+                    }
                 }
             }
         }
@@ -846,6 +891,37 @@
         }
     }
 
+    body.dark--mode #portfolio {
+        background-color: $dark-background-lg-two;
+
+        span,
+        p {
+            color: $dark-mode-para-text !important;
+        }
+
+
+        a {
+            box-shadow: none;
+
+            &:hover {
+                background-color: $dark-button-hover-bg;
+            }
+        }
+
+
+        .portSwiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    background-color: $dark-mode-background-sm;
+                    h3 {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+    }
+
     #about {
         width: 100%;
         background-color: #01131C;
@@ -971,7 +1047,38 @@
             }
         }
     }
+  body.dark--mode #packages {
+        background-color: $dark-background-lg-one;
 
+        span,
+        p {
+            color: $dark-mode-para-text !important;
+        }
+
+        .container {
+            .packages-grid {
+                .p-item {
+                    background-color: $dark-mode-background-sm;
+                       a {
+                    box-shadow: none;
+
+                    &:hover {
+                        background-color: $dark-button-hover-bg;
+                    }
+                }
+                }
+            }
+               a {
+                    box-shadow: none;
+                    background-color: $primary;
+                    color: white;
+
+                    &:hover {
+                        background-color: $dark-button-hover-bg;
+                    }
+                }
+        }
+    }
     #packages {
         width: 100%;
         background-color: $gray-100;

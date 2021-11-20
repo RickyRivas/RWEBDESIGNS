@@ -2345,6 +2345,20 @@ button.swiper-pagination-bullet {
   body.dark--mode #intro .service-item a:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
+  body.dark--mode #info {
+    background-color: #1e1e1e;
+  }
+  body.dark--mode #info span,
+  body.dark--mode #info p {
+    color: #aaaaaa !important;
+  }
+  body.dark--mode #info a {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  body.dark--mode #info a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
   #info {
     width: 100%;
     overflow: hidden;
@@ -2511,6 +2525,26 @@ button.swiper-pagination-bullet {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  body.dark--mode #features {
+    background-color: #181818;
+  }
+  body.dark--mode #features span,
+  body.dark--mode #features p {
+    color: #aaaaaa !important;
+  }
+  body.dark--mode #features .container .item {
+    background-color: #212121 !important;
+  }
+  body.dark--mode #features .container .item h4 {
+    color: white !important;
+  }
+  body.dark--mode #features .container .item a {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  body.dark--mode #features .container .item a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
   }
   #features {
     width: 100%;
@@ -2848,6 +2882,26 @@ button.swiper-pagination-bullet {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+  body.dark--mode #portfolio {
+    background-color: #1e1e1e;
+  }
+  body.dark--mode #portfolio span,
+  body.dark--mode #portfolio p {
+    color: #aaaaaa !important;
+  }
+  body.dark--mode #portfolio a {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  body.dark--mode #portfolio a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  body.dark--mode #portfolio .portSwiper .swiper-wrapper .swiper-slide {
+    background-color: #212121;
+  }
+  body.dark--mode #portfolio .portSwiper .swiper-wrapper .swiper-slide h3 {
+    color: white;
+  }
   #about {
     width: 100%;
     background-color: #01131C;
@@ -3017,6 +3071,32 @@ button.swiper-pagination-bullet {
     color: #ced4da;
     line-height: 1.5;
     font-size: 0.9rem;
+  }
+  body.dark--mode #packages {
+    background-color: #181818;
+  }
+  body.dark--mode #packages span,
+  body.dark--mode #packages p {
+    color: #aaaaaa !important;
+  }
+  body.dark--mode #packages .container .packages-grid .p-item {
+    background-color: #212121;
+  }
+  body.dark--mode #packages .container .packages-grid .p-item a {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  body.dark--mode #packages .container .packages-grid .p-item a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  body.dark--mode #packages .container a {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: #2d2d2d;
+    color: white;
+  }
+  body.dark--mode #packages .container a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
   }
   #packages {
     width: 100%;
