@@ -2526,36 +2526,57 @@ button.swiper-pagination-bullet {
     margin: auto;
     place-items: center;
   }
-  #features .container .item {
-    width: 100%;
-    max-width: 350px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  #features .container .heading {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 2rem 0.5rem;
     text-align: center;
+    background-color: transparent !important;
+    color: white;
+  }
+  #features .container .heading h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    background: linear-gradient(-45deg, #A58861, #bc9366, #A58861, #202020);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+            animation: gradient 15s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #features .container .item {
+    width: 100%;
+    max-width: 350px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 50% auto;
+        grid-template-rows: 50% auto;
     background-color: #f3f3f3;
     height: 100%;
+    position: relative;
   }
-  #features .container .item img {
-    max-width: 100%;
-    height: 250px;
+  #features .container .item .header img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-  #features .container .item h4 {
+  #features .container .item .body {
+    padding: 2rem 1rem;
+  }
+  #features .container .item .body h4 {
     margin-bottom: 0.5rem;
     text-transform: uppercase;
   }
-  #features .container .item p {
+  #features .container .item .body p {
     font-size: 0.875rem;
     margin-bottom: 1rem;
   }
