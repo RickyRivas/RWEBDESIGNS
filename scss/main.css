@@ -2304,7 +2304,7 @@ button.swiper-pagination-bullet {
     text-align: center;
     height: 100%;
     min-height: 250px;
-    background-color: #f3f3f3;
+    background-color: #ececec;
   }
   #intro .container .service-items .service-item img {
     margin: 0;
@@ -2348,6 +2348,7 @@ button.swiper-pagination-bullet {
   #info {
     width: 100%;
     overflow: hidden;
+    background-color: #f8f8f8;
   }
   #info .container {
     display: -webkit-box;
@@ -2559,7 +2560,7 @@ button.swiper-pagination-bullet {
     display: grid;
     -ms-grid-rows: 50% auto;
         grid-template-rows: 50% auto;
-    background-color: #f3f3f3;
+    background-color: #ececec;
     height: 100%;
     position: relative;
   }
@@ -2582,6 +2583,7 @@ button.swiper-pagination-bullet {
   }
   #portfolio {
     width: 100%;
+    background-color: #f8f8f8;
   }
   #portfolio .container {
     width: 100%;
@@ -2639,7 +2641,7 @@ button.swiper-pagination-bullet {
     display: flex;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide {
-    background-color: #f3f3f3;
+    background-color: #ececec;
     width: 100%;
     max-width: 500px;
     display: -ms-grid;
@@ -3086,7 +3088,7 @@ button.swiper-pagination-bullet {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    background-color: #f3f3f3;
+    background-color: #ececec;
   }
   #packages .container .packages-grid .p-item .card-heading {
     background-color: #2d2d2d;
@@ -3159,7 +3161,6 @@ button.swiper-pagination-bullet {
     position: absolute;
     left: -.5rem;
     top: 0;
-    color: white;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2)::after {
@@ -3837,7 +3838,6 @@ button.swiper-pagination-bullet {
     position: absolute;
     left: -.5rem;
     top: 0;
-    color: white;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2)::after {
@@ -4470,7 +4470,6 @@ button.swiper-pagination-bullet {
     position: absolute;
     left: -.5rem;
     top: 0;
-    color: white;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2)::after {

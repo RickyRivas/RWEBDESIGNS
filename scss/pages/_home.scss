@@ -402,6 +402,7 @@
     #info {
         width: 100%;
         overflow: hidden;
+        background-color: $light-mode-div-bg;
 
         .container {
             display: flex;
@@ -606,7 +607,7 @@
 
     #portfolio {
         width: 100%;
-        // background-color: $gray-100;
+        background-color: $light-mode-div-bg;
 
         .container {
             width: 100%;
@@ -1109,7 +1110,6 @@
                                 position: absolute;
                                 left: -.5rem;
                                 top: 0;
-                                color: white;
                                 font-size: $font-size-sm;
                             }
 
@@ -1722,7 +1722,6 @@
                                 position: absolute;
                                 left: -.5rem;
                                 top: 0;
-                                color: white;
                                 font-size: $font-size-sm;
                             }
 
@@ -2260,7 +2259,6 @@
                                 position: absolute;
                                 left: -.5rem;
                                 top: 0;
-                                color: white;
                                 font-size: $font-size-sm;
                             }
 
