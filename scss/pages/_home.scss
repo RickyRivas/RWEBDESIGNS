@@ -532,7 +532,34 @@
         width: 100%;
         padding: $padding-md;
 
+        .heading {
+            width: 100%;
+            text-align: center;
+            margin-bottom: $margin-md;
 
+            span {
+                color: $gray-500;
+                font-size: $font-size-base;
+            }
+
+            h2 {
+                font-size: $font-size-base * 2;
+                text-transform: uppercase;
+                margin-bottom: $margin-md;
+                background: $gradient-bg-one;
+                background-size: 400% 400%;
+                animation: gradient 15s ease infinite;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            p {
+                line-height: 1.5;
+                color: $gray-700;
+                font-size: $font-size-base;
+            }
+        }
 
         .container {
             width: 100%;
@@ -542,27 +569,6 @@
             grid-gap: 1rem;
             margin: auto;
             place-items: center;
-
-            .heading {
-                display: flex !important;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                background-color: transparent !important;
-                color: white;
-
-                h2 {
-                    font-size: $font-size-base * 2;
-                    text-transform: uppercase;
-                    margin-bottom: $margin-md;
-                    background: $gradient-bg-one;
-                    background-size: 400% 400%;
-                    animation: gradient 15s ease infinite;
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
 
             .item {
                 width: 100%;
