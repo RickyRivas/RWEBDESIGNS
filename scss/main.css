@@ -928,12 +928,12 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.3s ease-in;
@@ -942,12 +942,12 @@ button.swiper-pagination-bullet {
     transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
     background-color: #2d2d2d;
     list-style: none;
+    padding: 2rem;
   }
   header nav .nav-links li {
     opacity: 1;
     padding: .5em 1em;
     text-align: center;
-    width: 90%;
     font-weight: unset;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -958,23 +958,62 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    position: relative;
+    text-transform: uppercase;
+    overflow: hidden;
   }
   header nav .nav-links li a {
     color: white;
     text-decoration: none;
   }
-  header nav .nav-links li a:hover {
-    color: #2d2d2d;
-    -webkit-transition: color .5s;
-    transition: color .5s;
+  header nav .nav-links li::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    position: absolute;
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
+  }
+  header nav .nav-links li:hover::after {
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
   header nav .nav-links li:nth-child(1) {
-    margin-top: 3em;
+    margin-top: -3em;
   }
   header nav .nav-links.is-active {
     -webkit-transform: translate(0%);
             transform: translate(0%);
+  }
+  header nav .nav-links .social-media {
+    position: absolute;
+    left: 1rem;
+    top: 45%;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav .nav-links .social-media img {
+    width: 1.5rem;
+    margin-bottom: 1rem;
   }
   header .navlinks-overlay {
     position: fixed;
@@ -1017,6 +1056,9 @@ button.swiper-pagination-bullet {
     height: 10vh;
     padding: 0.5em;
     width: 100%;
+  }
+  header nav .nav-links li {
+    font-size: 1.5rem;
   }
 }
 
@@ -1108,6 +1150,9 @@ button.swiper-pagination-bullet {
   header nav .nav-links li:nth-child(1) {
     margin-top: 0em;
     border-bottom: none;
+  }
+  header nav .nav-links .social-media {
+    display: none;
   }
 }
 
