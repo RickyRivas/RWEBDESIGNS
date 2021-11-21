@@ -845,10 +845,10 @@ button.swiper-pagination-bullet {
   #theme--switch:focus {
     outline: none;
   }
-  #theme--switch:checked {
+  body.dark--mode #theme--switch {
     border-color: #bc9366;
   }
-  #theme--switch:checked::after {
+  body.dark--mode #theme--switch::after {
     -webkit-transform: translatex(20px);
             transform: translatex(20px);
     background: url(/assets/sun.svg) center/cover;

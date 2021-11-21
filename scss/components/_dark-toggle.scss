@@ -29,14 +29,13 @@
         &:focus {
             outline: none;
         }
-
-        &:checked {
+    }
+    body.dark--mode #theme--switch {
             border-color: $gold;
 
             &::after {
                 transform: translatex(20px);
                  background: url(/assets/sun.svg) center / cover;
             }
-        }
     }
 }
