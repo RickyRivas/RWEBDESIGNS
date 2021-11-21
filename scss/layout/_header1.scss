@@ -5,9 +5,7 @@
   }
 
   .hamburger {
-    display: block;
-    box-shadow: none;
-    z-index: 100;
+    z-index: 9999;
   }
 
   header {
@@ -15,10 +13,9 @@
     z-index: 9999;
     width: 100vw;
 
-
     & .is-active {
       box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-      z-index: 100;
+      z-index: 9999;
     }
 
     & nav {
@@ -47,12 +44,6 @@
 
         img {
           width: 5rem;
-        }
-
-        p {
-          color: white;
-          text-transform: uppercase;
-          display: none;
         }
       }
 
@@ -137,118 +128,21 @@
 }
 
 @media (min-width: 768px) {
-  body {
-    overflow-x: hidden;
-    position: relative;
-  }
-
-  .hamburger{
-    display: block;
-    box-shadow: none;
-    z-index: 100;
-  }
-
   header {
-    position: absolute;
-    z-index: 5;
-    width: 100vw;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    & .is-active {
-      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-      z-index: 100;
-    }
-
     & nav {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      background-color: transparent;
-      box-shadow: none;
-      border: 0;
-      height: 8vh;
+      height: 10vh;
       padding: 0.5em;
       width: 100%;
-
-      .logo-wrapper {
-        position: absolute;
-        left: 1rem;
-        top: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-          width: 5rem;
-        }
-
-        p {
-          color: white;
-          text-transform: uppercase;
-          display: none;
-        }
-      }
-
       .nav-links {
-        margin: 0;
-        position: fixed;
-        z-index: 100;
-        right: 0px;
-        height: 100vh;
-        width: 80%;
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-        background-color: $dark-div-bg;
-        list-style: none;
-
-        & li {
-          opacity: 1;
-          padding: .5em 1em;
-          text-align: right;
-          width: 90%;
-          font-weight: unset;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 1.2em;
-
-          & a {
-            color: white;
-            text-decoration: none;
-          }
-
-        }
-
-        & li:nth-child(1) {
-          margin-top: 3em;
-        }
-
-        &.is-active {
-          transform: translate(0%);
-        }
       }
     }
   }
 }
 
 @media (min-width: 1024px) {
-  body {
-    overflow-x: hidden;
-    position: relative;
-  }
-
   .hamburger {
     display: none !important;
     box-shadow: none;
-    z-index: 100;
   }
 
   header {
@@ -272,38 +166,22 @@
       align-items: center;
       background-color: transparent;
       box-shadow: none;
-      border: 0;
       padding: 0 1em;
       width: 100%;
-      z-index: 1000;
       height: 100%;
       max-width: 1200px;
       margin: auto;
       position: relative;
 
       .logo-wrapper {
-        position: absolute;
-        left: 2rem;
-        top: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
         img {
           width: 5rem;
-        }
-
-        p {
-          color: white;
-          text-transform: uppercase;
-          display: none;
         }
       }
 
       .nav-links {
         margin: 0;
         position: relative;
-        z-index: 100;
         right: unset;
         height: auto;
         top: unset;
@@ -322,22 +200,11 @@
           padding: .5em;
           width: max-content;
           font-size: $font-size-sm;
-
-          & a {
-            color: White;
-            text-decoration: none;
-          }
-
-
         }
 
         & li:nth-child(1) {
           margin-top: 0em;
           border-bottom: none;
-        }
-
-        &.is-active {
-          transform: translate(0%);
         }
       }
     }
@@ -345,17 +212,6 @@
 }
 
 @media (min-width: 1200px) {
-  body {
-    overflow-x: hidden;
-    position: relative;
-  }
-
-  .hamburger.hamburger--squeeze {
-    display: none;
-    box-shadow: none;
-    z-index: 100;
-  }
-
   header {
     z-index: 5;
     position: absolute;
@@ -370,81 +226,16 @@
       box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
       z-index: 100;
     }
-
     & nav {
-      position: relative;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      background-color: transparent;
-      box-shadow: none;
-      border: 0;
-      padding: 0;
-      width: 100%;
-      z-index: 1000;
-      height: 100%;
-      max-width: 1200px;
-      margin: auto;
-
       .logo-wrapper {
-        position: absolute;
         left: 2rem;
         top: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
         img {
           width: 5rem;
         }
-
-        p {
-          color: white;
-          text-transform: uppercase;
-          display: none;
-        }
       }
-
       .nav-links {
-        margin: 0;
-        position: relative;
-        z-index: 100;
-        right: unset;
-        height: auto;
-        top: unset;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        transform: unset;
-        transition: unset;
-        background-color: transparent;
-        list-style: none;
-        width: auto;
-
         & li {
-          opacity: 1;
-          padding: .5em;
-          text-align: right;
-          width: 90%;
-          font-weight: unset;
-          display: flex;
-          justify-content: flex-end;
-          align-items: flex-end;
-
-          & a {
-            color: white;
-            text-decoration: none;
-          }
-
-        }
-
-        & li:nth-child(1) {
-          margin-top: 0em;
-        }
-
-        &.is-active {
-          transform: translate(0%);
         }
       }
     }
@@ -457,7 +248,7 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
-  z-index: 20;
+  z-index: inherit;
   background-color: transparent;
   border: 0;
   z-index: 9999;
@@ -477,7 +268,7 @@
       content: '';
       left: 0;
       position: absolute;
-      width:  100%;
+      width: 100%;
       height: 100%;
       background: #fff;
       transition: all .5s ease-in-out;
