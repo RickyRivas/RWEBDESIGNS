@@ -375,6 +375,7 @@
     }
 
     body.dark--mode #intro {
+        transition: all 200ms ease-in;
         background-color: $dark-background-lg-one;
 
         span,
@@ -384,9 +385,11 @@
 
         .service-item {
             background-color: $dark-mode-background-sm !important;
+             transition: all 200ms ease-in;
 
             h4 {
                 color: white !important;
+                 transition: all 200ms ease-in;
             }
 
             a {
@@ -394,6 +397,7 @@
 
                 &:hover {
                     background-color: $dark-button-hover-bg;
+                     transition: all 200ms ease-in;
                 }
             }
         }
@@ -526,6 +530,7 @@
                 max-width: 350px;
                 height: 450px;
                 position: relative;
+                z-index: 2;
 
                 &::before {
                     content: '';
@@ -913,6 +918,7 @@
             .swiper-wrapper {
                 .swiper-slide {
                     background-color: $dark-mode-background-sm;
+
                     h3 {
                         color: white;
                     }
@@ -1047,7 +1053,8 @@
             }
         }
     }
-  body.dark--mode #packages {
+
+    body.dark--mode #packages {
         background-color: $dark-background-lg-one;
 
         span,
@@ -1059,26 +1066,29 @@
             .packages-grid {
                 .p-item {
                     background-color: $dark-mode-background-sm;
-                       a {
-                    box-shadow: none;
 
-                    &:hover {
-                        background-color: $dark-button-hover-bg;
+                    a {
+                        box-shadow: none;
+
+                        &:hover {
+                            background-color: $dark-button-hover-bg;
+                        }
                     }
-                }
                 }
             }
-               a {
-                    box-shadow: none;
-                    background-color: $primary;
-                    color: white;
 
-                    &:hover {
-                        background-color: $dark-button-hover-bg;
-                    }
+            a {
+                box-shadow: none;
+                background-color: $primary;
+                color: white;
+
+                &:hover {
+                    background-color: $dark-button-hover-bg;
                 }
+            }
         }
     }
+
     #packages {
         width: 100%;
         background-color: $gray-100;
@@ -1254,6 +1264,39 @@
                                 justify-content: center;
                                 align-items: center;
                                 flex-direction: column;
+                            }
+                        }
+                    }
+
+                    a {
+                        position: relative;
+                        overflow: hidden;
+
+                        &::before {
+                            top: 0;
+                            left: 0;
+                            position: absolute;
+                            width: 100%;
+                            content: '';
+                            height: 100%;
+                            background-color: black;
+                            transform: translateX(101%);
+                            z-index: -1;
+                        }
+
+                        &:hover {
+                            color: white;
+                            transition: color 500ms ease;
+
+                            &::before {
+                                position: absolute;
+                                width: 100%;
+                                content: '';
+                                height: 100%;
+                                background-color: black;
+                                transform: translateX(0%);
+                                transition: all 400ms ease-in;
+                                z-index: -1;
                             }
                         }
                     }
