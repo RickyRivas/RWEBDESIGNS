@@ -1,13 +1,15 @@
 // Regular Button
 .btn {
     cursor: pointer;
-    padding: 15px 30px;
+    padding: 15px 40px;
     border: 0;
     color: white;
     text-decoration: none;
     margin: $margin-sm;
     box-shadow: $box-shadow;
     font-size: $font-size-sm;
+    border-radius: .5rem;
+
     &:hover{
         opacity: .8;
     }

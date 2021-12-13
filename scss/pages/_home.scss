@@ -346,6 +346,7 @@
                     height: 100%;
                     min-height: 250px;
                     background-color: $light-bg;
+                    border-radius: .5rem;
 
                     img {
                         margin: 0;
@@ -632,9 +633,12 @@
                 background-color: $light-bg;
                 height: 100%;
                 position: relative;
+                border-radius: .5rem;
 
                 .header {
+                  
                     img {
+                        border-radius: .5rem .5rem 0 0;
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
@@ -708,6 +712,7 @@
                 .swiper-wrapper {
                     width: 100%;
                     display: flex;
+                    background-color: transparent;
 
                     .swiper-slide {
                         background-color: $light-bg;
@@ -717,7 +722,8 @@
                         grid-template-rows: 1fr 1fr;
                         grid-gap: 1rem;
                         padding-bottom: $padding-lg;
-                        box-shadow: $box-shadow;
+                        // box-shadow: $box-shadow;
+                        border-radius: .5rem;
 
                         .graphic {
                             width: 100%;
@@ -1098,7 +1104,7 @@
         background-color: $gray-100;
 
         .container {
-            padding: $padding-lg $padding-md;
+            padding: $padding-lg 0;
             width: 100%;
             max-width: 1200px;
             margin: auto;
@@ -1111,6 +1117,7 @@
                 width: 100%;
                 text-align: center;
                 margin-bottom: $margin-lg;
+                padding: 0 $padding-sm;
 
 
                 span {
@@ -1141,21 +1148,25 @@
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
                 grid-gap: 1rem;
+                width: 100%;
 
                 .p-item {
+                    width: 85%;
+                    max-width: 450px;
                     text-align: center;
                     display: flex;
                     justify-self: center;
                     align-items: center;
                     flex-direction: column;
-                    width: 100%;
                     background-color: $light-bg;
+                    border-radius: .5rem;
 
                     .card-heading {
                         background-color: $light-black;
                         width: 100%;
                         padding: 1rem;
                         color: white;
+                        border-radius: .5rem .5rem 0 0 ;
                     }
 
                     .pricing {
@@ -1247,20 +1258,20 @@
                         width: max-content;
                         list-style: none;
                         padding: 1rem;
-
+                        
                         .item {
                             display: flex;
                             justify-content: flex-start;
                             align-items: center;
                             width: 100%;
-                            font-size: $font-size-sm;
+                            font-size: $font-size-base;
 
                             img {
                                 margin: 0;
                                 justify-self: center;
                                 align-self: end;
                                 width: 1rem;
-                                margin-right: .2rem;
+                                margin-right: $margin-sm;
                             }
 
                             &>div {
@@ -1275,33 +1286,15 @@
                     a {
                         position: relative;
                         overflow: hidden;
-
-                        &::before {
-                            top: 0;
-                            left: 0;
-                            position: absolute;
-                            width: 100%;
-                            content: '';
-                            height: 100%;
-                            background-color: black;
-                            transform: translateX(101%);
-                            z-index: -1;
-                        }
-
+                        border: 2px solid black;
+                        background-color: transparent;
+                        border-radius: .5rem;
+                        transition: all .5s ease-in-out;
+                        width: 80%;
+                        margin-bottom: $margin-md;
                         &:hover {
+                            background-color: black;
                             color: white;
-                            transition: color 500ms ease;
-
-                            &::before {
-                                position: absolute;
-                                width: 100%;
-                                content: '';
-                                height: 100%;
-                                background-color: black;
-                                transform: translateX(0%);
-                                transition: all 400ms ease-in;
-                                z-index: -1;
-                            }
                         }
                     }
                 }
@@ -2322,7 +2315,6 @@
                     align-items: center;
                     flex-direction: column;
                     width: 100%;
-                    max-width: 350px;
 
                     .card-heading {
                         width: 100%;
