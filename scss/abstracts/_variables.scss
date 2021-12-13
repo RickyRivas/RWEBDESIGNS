@@ -23,6 +23,7 @@ $grays: ("100": $gray-100,
 $gold-gradient: linear-gradient( to right #5e3d04, #fef272);
 // Color pallet
 $blue: #0d6efd;
+$dark-blue: #0333a0;
 $indigo: #6610f2;
 $purple: #6f42c1;
 $pink: #d63384;
@@ -50,7 +51,7 @@ $colors: ("blue": $blue,
     "gray": $gray-600,
     "gray-dark": $gray-800);
 // theme-color-variables
-$primary: #ff1a3c;
+$primary: $dark-blue;
 $primary-light: $gray-200;
 $secondary: $red;
 $success: $green;
@@ -122,4 +123,4 @@ $light-mode-div-bg: #f8f8f8;
 // font
 $font-one: 'Boska', serif;
 //
-$gradient-bg-one: linear-gradient(-45deg, #A58861, $gold, $dark-gold, #202020);
+$gradient-bg-one: linear-gradient(-45deg, $light-black, $dark-blue, #202020);
