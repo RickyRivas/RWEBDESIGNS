@@ -13,7 +13,7 @@
     z-index: 9999;
     width: 100vw;
 
-    & .is-active {
+    &.is-active {
       box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
       z-index: 9999;
     }
@@ -62,7 +62,7 @@
         align-items: flex-end;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        background-color: $primary;
+        background-color: $light-black;
         list-style: none;
         padding: 2rem;
 
@@ -278,8 +278,8 @@
 /* burger css */
 .hamburger {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 52px;
+  height: 52px;
   cursor: pointer;
   z-index: inherit;
   background-color: transparent;
@@ -290,7 +290,7 @@
   align-items: center;
 
   & .hamburger-inner {
-    width: 30px;
+    width: 52px;
     height: 2px;
     position: absolute;
     transition: all .5s ease-in-out;
