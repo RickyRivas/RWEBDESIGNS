@@ -936,10 +936,8 @@ button.swiper-pagination-bullet {
             align-items: flex-end;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.3s ease-in;
-    transition: -webkit-transform 0.3s ease-in;
-    transition: transform 0.3s ease-in;
-    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     background-color: #222;
     list-style: none;
     padding: 2rem;
@@ -1190,7 +1188,7 @@ button.swiper-pagination-bullet {
 /* burger css */
 .hamburger {
   position: relative;
-  width: 52px;
+  width: 40px;
   height: 52px;
   cursor: pointer;
   z-index: inherit;
@@ -1209,7 +1207,7 @@ button.swiper-pagination-bullet {
 }
 
 .hamburger .hamburger-inner {
-  width: 52px;
+  width: 40px;
   height: 2px;
   position: absolute;
   -webkit-transition: all .5s ease-in-out;
@@ -2040,7 +2038,6 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
   }
   #intro .container .service-items .service-item h4 {
-    color: #0333a0;
     margin-bottom: 1rem;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -2053,6 +2050,7 @@ button.swiper-pagination-bullet {
   }
   #intro .container .service-items .service-item a {
     text-decoration: none;
+    background-color: #222;
   }
   body.dark--mode #intro {
     -webkit-transition: all 200ms ease-in;
@@ -2240,6 +2238,9 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #info .container .main-content .btns a {
+    background-color: #222;
   }
   #info .container .graphic {
     width: 100%;
@@ -2473,6 +2474,7 @@ button.swiper-pagination-bullet {
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text a {
     margin: 0;
+    background-color: #222;
   }
   #portfolio .container .controller {
     height: -webkit-max-content;
@@ -2506,7 +2508,7 @@ button.swiper-pagination-bullet {
   #portfolio .container .controller .swiper-prev-port .left {
     width: 40px !important;
     height: 2px;
-    background-color: #495057;
+    background-color: black;
     position: relative;
     z-index: 3;
   }
@@ -2546,7 +2548,7 @@ button.swiper-pagination-bullet {
   #portfolio .container .controller .swiper-prev-port.pressedControl .left {
     -webkit-transition: all 1000ms;
     transition: all 1000ms;
-    background-color: #B7A440;
+    background-color: white;
   }
   #portfolio .container .controller .swiper-prev-port.pressedControl::before {
     -webkit-transition: all 1000ms;
@@ -2573,7 +2575,7 @@ button.swiper-pagination-bullet {
   #portfolio .container .controller .swiper-next-port .right {
     width: 40px !important;
     height: 2px;
-    background-color: #495057;
+    background-color: black;
     position: relative;
   }
   #portfolio .container .controller .swiper-next-port .right::after {
@@ -2612,7 +2614,7 @@ button.swiper-pagination-bullet {
   #portfolio .container .controller .swiper-next-port.pressedControl .right {
     -webkit-transition: all 1000ms;
     transition: all 1000ms;
-    background-color: #B7A440;
+    background-color: white;
   }
   #portfolio .container .controller .swiper-next-port.pressedControl::before {
     -webkit-transition: all 1000ms;
@@ -2909,7 +2911,7 @@ button.swiper-pagination-bullet {
     background-color: #ececec;
   }
   #packages .container .packages-grid .p-item .card-heading {
-    background-color: #0333a0;
+    background-color: #222;
     width: 100%;
     padding: 1rem;
     color: white;
@@ -3613,7 +3615,6 @@ button.swiper-pagination-bullet {
     width: 100%;
   }
   #packages .container .packages-grid .p-item .card-heading {
-    background-color: #0333a0;
     width: 100%;
     padding: 1rem;
     color: white;
@@ -4239,7 +4240,6 @@ button.swiper-pagination-bullet {
     max-width: 350px;
   }
   #packages .container .packages-grid .p-item .card-heading {
-    background-color: #0333a0;
     width: 100%;
     padding: 1rem;
     color: white;

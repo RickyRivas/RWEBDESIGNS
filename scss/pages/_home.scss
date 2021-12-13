@@ -353,7 +353,6 @@
                     }
 
                     h4 {
-                        color: $primary;
                         margin-bottom: $margin-md;
                         text-transform: uppercase;
                         font-size: 1.2rem;
@@ -368,6 +367,7 @@
 
                     a {
                         text-decoration: none;
+                        background-color: $light-black;
                     }
                 }
             }
@@ -385,11 +385,11 @@
 
         .service-item {
             background-color: $dark-mode-background-sm !important;
-             transition: all 200ms ease-in;
+            transition: all 200ms ease-in;
 
             h4 {
                 color: white !important;
-                 transition: all 200ms ease-in;
+                transition: all 200ms ease-in;
             }
 
             a {
@@ -397,7 +397,7 @@
 
                 &:hover {
                     background-color: $dark-button-hover-bg;
-                     transition: all 200ms ease-in;
+                    transition: all 200ms ease-in;
                 }
             }
         }
@@ -522,6 +522,9 @@
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
+                    a {
+                        background-color: $light-black;
+                    }
                 }
             }
 
@@ -753,6 +756,7 @@
 
                             a {
                                 margin: 0;
+                                background-color: $light-black;
                             }
                         }
                     }
@@ -780,7 +784,7 @@
                     .left {
                         width: 40px !important;
                         height: 2px;
-                        background-color: $gray-700;
+                        background-color: black;
                         position: relative;
                         z-index: 3;
 
@@ -820,7 +824,7 @@
                     &.pressedControl {
                         .left {
                             transition: all 1000ms;
-                            background-color: #B7A440;
+                            background-color: white;
                         }
 
                         &::before {
@@ -843,7 +847,7 @@
                     .right {
                         width: 40px !important;
                         height: 2px;
-                        background-color: $gray-700;
+                        background-color: black;
                         position: relative;
 
 
@@ -883,7 +887,7 @@
                     &.pressedControl {
                         .right {
                             transition: all 1000ms;
-                            background-color: #B7A440;
+                            background-color: white;
                         }
 
                         &::before {
@@ -1148,7 +1152,7 @@
                     background-color: $light-bg;
 
                     .card-heading {
-                        background-color: $primary;
+                        background-color: $light-black;
                         width: 100%;
                         padding: 1rem;
                         color: white;
@@ -1789,7 +1793,6 @@
                     width: 100%;
 
                     .card-heading {
-                        background-color: $primary;
                         width: 100%;
                         padding: 1rem;
                         color: white;
@@ -2322,7 +2325,6 @@
                     max-width: 350px;
 
                     .card-heading {
-                        background-color: $primary;
                         width: 100%;
                         padding: 1rem;
                         color: white;
