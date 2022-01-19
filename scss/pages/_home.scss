@@ -297,11 +297,13 @@
 
             .heading {
                 text-align: center;
-                margin-bottom: $margin-lg;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                max-width: 700px;
+                margin: auto;
+                margin-bottom: $margin-lg;
 
                 span {
                     color: $gray-500;
@@ -345,7 +347,7 @@
                     text-align: center;
                     height: 100%;
                     min-height: 250px;
-                    background-color: $light-bg;
+                    background-color: $light-mode-div-bg;
                     border-radius: .5rem;
 
                     img {
@@ -631,7 +633,7 @@
                 max-width: 350px;
                 display: grid;
                 grid-template-rows: 50% auto;
-                background-color: $light-bg;
+                background-color: $light-mode-div-bg;
                 height: 100%;
                 position: relative;
                 border-radius: .5rem;
@@ -681,6 +683,7 @@
                 width: 100%;
                 text-align: center;
                 margin-bottom: $margin-md;
+                max-width: 700px;
 
                 span {
                     color: $gray-500;
@@ -715,14 +718,13 @@
                     background-color: transparent;
 
                     .swiper-slide {
-                        background-color: $light-bg;
+                        background-color: $light-mode-div-bg;
                         width: 100%;
                         max-width: 500px;
                         display: grid;
                         grid-template-rows: auto 1fr;
                         grid-gap: .5rem;
-                        padding-bottom: $padding-lg;
-                        // box-shadow: $box-shadow;
+                        padding-bottom: 2.2rem;
                         border-radius: .5rem;
 
                         .graphic {
@@ -732,6 +734,7 @@
                             justify-content: center;
                             align-items: center;
                             padding: 1rem;
+
                             img {
                                 max-width: 100%;
                                 object-fit: cover;
@@ -749,9 +752,11 @@
                             h2 {
                                 margin-bottom: $margin-md;
                             }
+
                             h3 {
                                 margin-bottom: .5rem;
                             }
+
                             p:nth-of-type(1) {
                                 margin-bottom: $margin-md;
                                 line-height: normal;
@@ -775,14 +780,16 @@
                                 background-color: #a4a4a4;
                                 margin: .5rem 0;
                             }
+
                             .flex {
                                 display: flex;
-                                     a {
-                                margin: 0;
-                                margin-right: .5rem;
-                                text-decoration: none;
-                                color: black;
-                            }
+
+                                a {
+                                    margin: 0;
+                                    margin-right: .5rem;
+                                    text-decoration: none;
+                                    color: black;
+                                }
 
                                 img {
                                     width: .8rem;
@@ -1142,6 +1149,7 @@
                 text-align: center;
                 margin-bottom: $margin-lg;
                 padding: 0 $padding-sm;
+                max-width: 700px;
 
 
                 span {
@@ -1648,8 +1656,7 @@
                             }
 
 
-                            p {
-                            }
+                            p {}
 
                             a {
                                 margin: 0;
@@ -2148,9 +2155,11 @@
 
                         .graphic {
                             width: 100%;
+                            height: 100%;
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            padding: $padding-lg;
 
                             img {}
                         }
@@ -2158,7 +2167,7 @@
                         .text {
                             width: 100%;
                             display: flex;
-                            justify-content:flex-start;
+                            justify-content: flex-start;
                             align-items: flex-start;
                             flex-direction: column;
                             padding: $padding-md;
@@ -2168,8 +2177,7 @@
                                 text-transform: uppercase;
                             }
 
-                            p {
-                            }
+                            p {}
 
                             a {
                                 margin: 0;
