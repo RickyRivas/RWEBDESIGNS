@@ -523,6 +523,7 @@
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
+
                     a {
                         background-color: $light-black;
                     }
@@ -636,7 +637,7 @@
                 border-radius: .5rem;
 
                 .header {
-                  
+
                     img {
                         border-radius: .5rem .5rem 0 0;
                         width: 100%;
@@ -700,7 +701,6 @@
 
                 p {
                     line-height: 1.5;
-                    color: $gray-700;
                     font-size: $font-size-base;
                 }
             }
@@ -719,19 +719,19 @@
                         width: 100%;
                         max-width: 500px;
                         display: grid;
-                        grid-template-rows: 1fr 1fr;
-                        grid-gap: 1rem;
+                        grid-template-rows: auto 1fr;
+                        grid-gap: .5rem;
                         padding-bottom: $padding-lg;
                         // box-shadow: $box-shadow;
                         border-radius: .5rem;
 
                         .graphic {
                             width: 100%;
-                            padding: $padding-md;
+                            height: max-content;
                             display: flex;
                             justify-content: center;
                             align-items: center;
-
+                            padding: 1rem;
                             img {
                                 max-width: 100%;
                                 object-fit: cover;
@@ -744,25 +744,49 @@
                             justify-content: center;
                             align-items: flex-start;
                             flex-direction: column;
-                            padding: $padding-md;
+                            padding: 0 $padding-md;
 
                             h2 {
-                                margin-bottom: $margin-sm;
+                                margin-bottom: $margin-md;
+                            }
+                            h3 {
+                                margin-bottom: .5rem;
+                            }
+                            p:nth-of-type(1) {
+                                margin-bottom: $margin-md;
+                                line-height: normal;
                             }
 
-                            span {
-                                font-size: $font-size-base * .7;
-                                margin-bottom: $margin-md;
+                            h4 {
+                                line-height: 2;
+                                text-transform: uppercase;
+                                font-size: .7rem;
+                                color: #a4a4a4;
+                                letter-spacing: 2px;
                             }
 
                             p {
-                                color: $gray-600;
-                                margin-bottom: $margin-md;
+                                line-height: 2;
                             }
 
-                            a {
+                            .line {
+                                width: 100%;
+                                height: 1px;
+                                background-color: #a4a4a4;
+                                margin: .5rem 0;
+                            }
+                            .flex {
+                                display: flex;
+                                     a {
                                 margin: 0;
-                                background-color: $light-black;
+                                margin-right: .5rem;
+                                text-decoration: none;
+                                color: black;
+                            }
+
+                                img {
+                                    width: .8rem;
+                                }
                             }
                         }
                     }
@@ -1166,7 +1190,7 @@
                         width: 100%;
                         padding: 1rem;
                         color: white;
-                        border-radius: .5rem .5rem 0 0 ;
+                        border-radius: .5rem .5rem 0 0;
                     }
 
                     .pricing {
@@ -1258,7 +1282,7 @@
                         width: max-content;
                         list-style: none;
                         padding: 1rem;
-                        
+
                         .item {
                             display: flex;
                             justify-content: flex-start;
@@ -1292,6 +1316,7 @@
                         transition: all .5s ease-in-out;
                         width: 80%;
                         margin-bottom: $margin-md;
+
                         &:hover {
                             background-color: black;
                             color: white;
@@ -1618,19 +1643,12 @@
                             padding: $padding-md;
 
                             h3 {
-                                margin-bottom: $margin-sm;
                                 font-size: $font-size-base * 1.3;
                                 text-transform: uppercase;
                             }
 
-                            span {
-                                font-size: $font-size-base * .7;
-                                margin-bottom: $margin-md;
-                            }
 
                             p {
-                                color: $text-color;
-                                margin-bottom: $margin-md;
                             }
 
                             a {
@@ -2126,7 +2144,7 @@
                         grid-template-columns: 1fr 1fr;
                         grid-template-rows: 1fr;
                         padding-bottom: $padding-lg;
-                        padding-top: $padding-lg;
+                        padding-top: $padding-md;
 
                         .graphic {
                             width: 100%;
@@ -2140,25 +2158,17 @@
                         .text {
                             width: 100%;
                             display: flex;
-                            justify-content: center;
+                            justify-content:flex-start;
                             align-items: flex-start;
                             flex-direction: column;
                             padding: $padding-md;
 
                             h3 {
-                                margin-bottom: $margin-sm;
                                 font-size: $font-size-base * 1.3;
                                 text-transform: uppercase;
                             }
 
-                            span {
-                                font-size: $font-size-base * .7;
-                                margin-bottom: $margin-md;
-                            }
-
                             p {
-                                color: $text-color;
-                                margin-bottom: $margin-md;
                             }
 
                             a {

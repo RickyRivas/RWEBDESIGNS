@@ -19,7 +19,7 @@ html {
 
 @media screen and (min-width: 1000px) {
   html {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -2404,7 +2404,6 @@ button.swiper-pagination-bullet {
   }
   #portfolio .container .heading p {
     line-height: 1.5;
-    color: #495057;
     font-size: 1rem;
   }
   #portfolio .container .portSwiper {
@@ -2424,15 +2423,17 @@ button.swiper-pagination-bullet {
     max-width: 500px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    grid-gap: 1rem;
+    -ms-grid-rows: auto 1fr;
+        grid-template-rows: auto 1fr;
+    grid-gap: .5rem;
     padding-bottom: 2rem;
     border-radius: .5rem;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .graphic {
     width: 100%;
-    padding: 1rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2442,6 +2443,7 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 1rem;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .graphic img {
     max-width: 100%;
@@ -2463,22 +2465,47 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 1rem;
+    padding: 0 1rem;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text h2 {
-    margin-bottom: 0.5rem;
-  }
-  #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text span {
-    font-size: 0.7rem;
     margin-bottom: 1rem;
+  }
+  #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text h3 {
+    margin-bottom: .5rem;
+  }
+  #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text p:nth-of-type(1) {
+    margin-bottom: 1rem;
+    line-height: normal;
+  }
+  #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text h4 {
+    line-height: 2;
+    text-transform: uppercase;
+    font-size: .7rem;
+    color: #a4a4a4;
+    letter-spacing: 2px;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text p {
-    color: #6c757d;
-    margin-bottom: 1rem;
+    line-height: 2;
   }
-  #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text a {
+  #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text .line {
+    width: 100%;
+    height: 1px;
+    background-color: #a4a4a4;
+    margin: .5rem 0;
+  }
+  #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text .flex a {
     margin: 0;
-    background-color: #222;
+    margin-right: .5rem;
+    text-decoration: none;
+    color: black;
+  }
+  #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text .flex img {
+    width: .8rem;
   }
   #portfolio .container .controller {
     height: -webkit-max-content;
@@ -3401,17 +3428,8 @@ button.swiper-pagination-bullet {
     padding: 1rem;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text h3 {
-    margin-bottom: 0.5rem;
     font-size: 1.3rem;
     text-transform: uppercase;
-  }
-  #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text span {
-    font-size: 0.7rem;
-    margin-bottom: 1rem;
-  }
-  #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text p {
-    color: #adb5bd;
-    margin-bottom: 1rem;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text a {
     margin: 0;
@@ -3983,7 +4001,7 @@ button.swiper-pagination-bullet {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .graphic {
     width: 100%;
@@ -4002,9 +4020,9 @@ button.swiper-pagination-bullet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -4015,17 +4033,8 @@ button.swiper-pagination-bullet {
     padding: 1rem;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text h3 {
-    margin-bottom: 0.5rem;
     font-size: 1.3rem;
     text-transform: uppercase;
-  }
-  #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text span {
-    font-size: 0.7rem;
-    margin-bottom: 1rem;
-  }
-  #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text p {
-    color: #adb5bd;
-    margin-bottom: 1rem;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text a {
     margin: 0;
