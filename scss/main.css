@@ -2954,6 +2954,8 @@ button.swiper-pagination-bullet {
             flex-direction: column;
     background-color: #f8f8f8;
     border-radius: .5rem;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #packages .container .packages-grid .p-item .card-heading {
     background-color: #222;
