@@ -70,11 +70,13 @@ var swiper = new Swiper(".landingSwiper", {
     }
 });
 var swiper = new Swiper(" .portSwiper", {
-    spaceBetween: 20,
+    spaceBetween: 30,
     speed: 1000,
     loop: true,
     autoplay: true,
+     slidesPerView: 'auto',
     disableOnInteraction: true,
+    centeredSlides: true,
     pagination: false,
     navigation: {
         nextEl: ".swiper-next-port",

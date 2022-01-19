@@ -347,8 +347,9 @@
                     text-align: center;
                     height: 100%;
                     min-height: 250px;
-                    background-color: $light-mode-div-bg;
+                    background-color: #f8f8f8;
                     border-radius: .5rem;
+                    box-shadow: $box-shadow;
 
                     img {
                         margin: 0;
@@ -371,6 +372,7 @@
                     a {
                         text-decoration: none;
                         background-color: $light-black;
+                        color: white;
                     }
                 }
             }
@@ -427,7 +429,7 @@
     #info {
         width: 100%;
         overflow: hidden;
-        background-color: $light-mode-div-bg;
+        background-color: $prime-gray;
 
         .container {
             display: flex;
@@ -633,10 +635,11 @@
                 max-width: 350px;
                 display: grid;
                 grid-template-rows: 50% auto;
-                background-color: $light-mode-div-bg;
-                height: 100%;
+                background-color: #f8f8f8;
                 position: relative;
                 border-radius: .5rem;
+                box-shadow: $box-shadow;
+
 
                 .header {
 
@@ -667,13 +670,13 @@
 
     #portfolio {
         width: 100%;
-        background-color: $light-mode-div-bg;
+        // background-color: $light-mode-div-bg;
 
         .container {
             width: 100%;
             max-width: 1200px;
             margin: auto;
-            padding: $padding-lg $padding-md;
+            padding: $padding-lg 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -684,6 +687,7 @@
                 text-align: center;
                 margin-bottom: $margin-md;
                 max-width: 700px;
+                padding: 0 1rem;
 
                 span {
                     color: $gray-500;
@@ -716,16 +720,19 @@
                     width: 100%;
                     display: flex;
                     background-color: transparent;
+                    padding: 1.5rem 0;
 
                     .swiper-slide {
-                        background-color: $light-mode-div-bg;
-                        width: 100%;
+                        background-color: #f8f8f8;
+                        width: 90%;
                         max-width: 500px;
                         display: grid;
                         grid-template-rows: auto 1fr;
                         grid-gap: .5rem;
                         padding-bottom: 2.2rem;
                         border-radius: .5rem;
+                        box-shadow: $box-shadow;
+
 
                         .graphic {
                             width: 100%;
@@ -806,17 +813,19 @@
                 grid-template-columns: 1fr 1fr;
                 grid-gap: .5rem;
                 z-index: 2;
-                transform: translateY(-50%);
+                margin-top: -50px;
 
                 .swiper-prev-port {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: $gray-300;
+                    background-color: white;
                     cursor: pointer;
                     padding: 1.5rem;
                     overflow: hidden;
                     position: relative;
+                    box-shadow: $box-shadow;
+
 
                     .left {
                         width: 40px !important;
@@ -875,11 +884,12 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: $gray-300;
+                    background-color: white;
                     cursor: pointer;
                     padding: $padding-md;
                     position: relative;
                     overflow: hidden;
+                    box-shadow: $box-shadow;
 
                     .right {
                         width: 40px !important;
@@ -1052,7 +1062,7 @@
 
                         a {
                             padding: .5rem;
-                            background-color: $dark-blue;
+                            background-color: $primary;
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -1132,7 +1142,6 @@
 
     #packages {
         width: 100vw;
-        background-color: $gray-100;
 
         .container {
             padding: $padding-lg 0;
@@ -1190,7 +1199,7 @@
                     justify-self: center;
                     align-items: center;
                     flex-direction: column;
-                    background-color: $light-bg;
+                    background-color: $prime-gray;
                     border-radius: .5rem;
 
                     .card-heading {
@@ -1463,6 +1472,7 @@
             }
 
             .service-items {
+                grid-gap: 2rem;
 
                 .service-item {
                     img {}
@@ -1769,7 +1779,6 @@
     }
 
     #packages {
-        background-color: $gray-100;
 
         .container {
             padding: $padding-lg $padding-md;
@@ -2291,7 +2300,6 @@
     }
 
     #packages {
-        background-color: $gray-100;
 
         .container {
             padding: $padding-lg $padding-md;

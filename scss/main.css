@@ -422,7 +422,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: #0333a0;
+  background: #ff1f1f;
 }
 
 .swiper-pagination-vertical.swiper-pagination-bullets,
@@ -1401,7 +1401,7 @@ button.swiper-pagination-bullet {
 }
 
 .btn-primary {
-  background-color: #0333a0;
+  background-color: #ff1f1f;
 }
 
 .btn-success {
@@ -1733,7 +1733,7 @@ button.swiper-pagination-bullet {
             flex-direction: column;
   }
   #landing .container .swiper-container .landing-content > div :nth-child(2) {
-    border: 3px solid #0333a0;
+    border: 3px solid #ff1f1f;
     color: white;
     background-color: transparent;
   }
@@ -1992,7 +1992,7 @@ button.swiper-pagination-bullet {
     position: relative;
     text-transform: uppercase;
     font-size: 2rem;
-    background: linear-gradient(-45deg, #222, orangered, #202020);
+    background: linear-gradient(-45deg, #222, #ff1f1f, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2036,6 +2036,8 @@ button.swiper-pagination-bullet {
     min-height: 250px;
     background-color: #f8f8f8;
     border-radius: .5rem;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #intro .container .service-items .service-item img {
     margin: 0;
@@ -2055,6 +2057,7 @@ button.swiper-pagination-bullet {
   #intro .container .service-items .service-item a {
     text-decoration: none;
     background-color: #222;
+    color: white;
   }
   body.dark--mode #intro {
     -webkit-transition: all 200ms ease-in;
@@ -2170,7 +2173,7 @@ button.swiper-pagination-bullet {
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 1rem;
-    background: linear-gradient(-45deg, #222, orangered, #202020);
+    background: linear-gradient(-45deg, #222, #ff1f1f, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2306,7 +2309,7 @@ button.swiper-pagination-bullet {
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    background: linear-gradient(-45deg, #222, orangered, #202020);
+    background: linear-gradient(-45deg, #222, #ff1f1f, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2338,9 +2341,10 @@ button.swiper-pagination-bullet {
     -ms-grid-rows: 50% auto;
         grid-template-rows: 50% auto;
     background-color: #f8f8f8;
-    height: 100%;
     position: relative;
     border-radius: .5rem;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #features .container .item .header img {
     border-radius: .5rem .5rem 0 0;
@@ -2362,13 +2366,12 @@ button.swiper-pagination-bullet {
   }
   #portfolio {
     width: 100%;
-    background-color: #f8f8f8;
   }
   #portfolio .container {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2388,6 +2391,7 @@ button.swiper-pagination-bullet {
     text-align: center;
     margin-bottom: 1rem;
     max-width: 700px;
+    padding: 0 1rem;
   }
   #portfolio .container .heading span {
     color: #adb5bd;
@@ -2397,7 +2401,7 @@ button.swiper-pagination-bullet {
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    background: linear-gradient(-45deg, #222, orangered, #202020);
+    background: linear-gradient(-45deg, #222, #ff1f1f, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2419,10 +2423,11 @@ button.swiper-pagination-bullet {
     display: -ms-flexbox;
     display: flex;
     background-color: transparent;
+    padding: 1.5rem 0;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide {
     background-color: #f8f8f8;
-    width: 100%;
+    width: 90%;
     max-width: 500px;
     display: -ms-grid;
     display: grid;
@@ -2431,6 +2436,8 @@ button.swiper-pagination-bullet {
     grid-gap: .5rem;
     padding-bottom: 2.2rem;
     border-radius: .5rem;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .graphic {
     width: 100%;
@@ -2520,8 +2527,7 @@ button.swiper-pagination-bullet {
         grid-template-columns: 1fr 1fr;
     grid-gap: .5rem;
     z-index: 2;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    margin-top: -50px;
   }
   #portfolio .container .controller .swiper-prev-port {
     display: -webkit-box;
@@ -2533,11 +2539,13 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #dee2e6;
+    background-color: white;
     cursor: pointer;
     padding: 1.5rem;
     overflow: hidden;
     position: relative;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #portfolio .container .controller .swiper-prev-port .left {
     width: 40px !important;
@@ -2600,11 +2608,13 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #dee2e6;
+    background-color: white;
     cursor: pointer;
     padding: 1rem;
     position: relative;
     overflow: hidden;
+    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #portfolio .container .controller .swiper-next-port .right {
     width: 40px !important;
@@ -2723,7 +2733,7 @@ button.swiper-pagination-bullet {
     color: white;
     font-size: 2rem;
     margin-bottom: 1rem;
-    background: linear-gradient(-45deg, #222, orangered, #202020);
+    background: linear-gradient(-45deg, #222, #ff1f1f, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2766,7 +2776,7 @@ button.swiper-pagination-bullet {
     width: 101%;
     height: 101%;
     z-index: -1;
-    background: linear-gradient(-45deg, #222, orangered, #202020);
+    background: linear-gradient(-45deg, #222, #ff1f1f, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 8s ease infinite;
             animation: gradient 8s ease infinite;
@@ -2799,7 +2809,7 @@ button.swiper-pagination-bullet {
   }
   #about .container .profile .wrap .social a {
     padding: .5rem;
-    background-color: #0333a0;
+    background-color: #ff1f1f;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2866,7 +2876,7 @@ button.swiper-pagination-bullet {
   body.dark--mode #packages .container a {
     -webkit-box-shadow: none;
             box-shadow: none;
-    background-color: #0333a0;
+    background-color: #ff1f1f;
     color: white;
   }
   body.dark--mode #packages .container a:hover {
@@ -2874,7 +2884,6 @@ button.swiper-pagination-bullet {
   }
   #packages {
     width: 100vw;
-    background-color: #f8f9fa;
   }
   #packages .container {
     padding: 2rem 0;
@@ -2910,7 +2919,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
     text-transform: uppercase;
     font-size: 2rem;
-    background: linear-gradient(-45deg, #222, orangered, #202020);
+    background: linear-gradient(-45deg, #222, #ff1f1f, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2946,7 +2955,7 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #ececec;
+    background-color: #f8f8f8;
     border-radius: .5rem;
   }
   #packages .container .packages-grid .p-item .card-heading {
@@ -3121,7 +3130,7 @@ button.swiper-pagination-bullet {
             flex-direction: row;
   }
   #landing .container .swiper-container .landing-content > div :nth-child(2) {
-    border: 3px solid #0333a0;
+    border: 3px solid #ff1f1f;
     color: white;
     background-color: transparent;
   }
@@ -3207,6 +3216,9 @@ button.swiper-pagination-bullet {
   }
   #landing .container .social-media img {
     width: 1.5rem;
+  }
+  #intro .container .service-items {
+    grid-gap: 2rem;
   }
   #info {
     width: 100%;
@@ -3572,9 +3584,6 @@ button.swiper-pagination-bullet {
     color: #ced4da;
     line-height: 1.5;
   }
-  #packages {
-    background-color: #f8f9fa;
-  }
   #packages .container {
     padding: 2rem 1rem;
     width: 100%;
@@ -3782,7 +3791,7 @@ button.swiper-pagination-bullet {
             flex-direction: row;
   }
   #landing .container .swiper-container .landing-content > div :nth-child(2) {
-    border: 3px solid #0333a0;
+    border: 3px solid #ff1f1f;
     color: white;
     background-color: transparent;
   }
@@ -4179,9 +4188,6 @@ button.swiper-pagination-bullet {
   #about .container .bio p {
     color: #ced4da;
     line-height: 1.5;
-  }
-  #packages {
-    background-color: #f8f9fa;
   }
   #packages .container {
     padding: 2rem 1rem;

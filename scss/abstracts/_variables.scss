@@ -36,7 +36,7 @@ $cyan: #0dcaf0;
 $brown: #2d2d2d;
 $gold: #bc9366;
 $dark-gold: #A58861;
-
+ $prime-gray: #f8f8f8;
 $colors: ("blue": $blue,
     "indigo": $indigo,
     "purple": $purple,
@@ -51,7 +51,7 @@ $colors: ("blue": $blue,
     "gray": $gray-600,
     "gray-dark": $gray-800);
 // theme-color-variables
-$primary: $dark-blue;
+$primary: #ff1f1f;
 $primary-light: $gray-200;
 $secondary: $red;
 $success: $green;
@@ -123,4 +123,4 @@ $light-mode-div-bg: #f8f8f8;
 // font
 $font-one: 'Boska', serif;
 //
-$gradient-bg-one: linear-gradient(-45deg, $light-black, orangered, #202020);
+$gradient-bg-one: linear-gradient(-45deg, $light-black, #ff1f1f, black)
