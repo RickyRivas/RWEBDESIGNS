@@ -911,7 +911,7 @@ button.swiper-pagination-bullet {
             align-items: center;
   }
   header nav .logo-wrapper img {
-    width: 5rem;
+    width: 7rem;
   }
   header nav .nav-links {
     margin: 0;
@@ -1108,7 +1108,7 @@ button.swiper-pagination-bullet {
     position: relative;
   }
   header nav .logo-wrapper img {
-    width: 5rem;
+    width: 8rem;
   }
   header nav .nav-links {
     margin: 0;
@@ -1179,9 +1179,6 @@ button.swiper-pagination-bullet {
   header nav .logo-wrapper {
     left: 2rem;
     top: 1rem;
-  }
-  header nav .logo-wrapper img {
-    width: 5rem;
   }
 }
 
