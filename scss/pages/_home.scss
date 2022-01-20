@@ -32,7 +32,7 @@
                 justify-content: center;
                 align-items: center;
                 padding: 0;
-                background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/assets/paidimg01.jpg) 30% 50% / cover;
+                background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/assets/img01L.png) 30% 50% / cover;
 
                 .landing-content {
                     position: absolute;
@@ -431,6 +431,7 @@
         overflow: hidden;
         background-color: $prime-gray;
 
+
         .container {
             display: flex;
             justify-content: center;
@@ -590,7 +591,7 @@
 
     #features {
         width: 100%;
-        padding: $padding-md;
+        padding: $padding-lg $padding-md;
 
         .heading {
             width: 100%;

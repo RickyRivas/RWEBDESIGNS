@@ -8,7 +8,7 @@
 
 html {
   font-size: 16px;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'General Sans', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
@@ -422,7 +422,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: #ff1f1f;
+  background: #d00000;
 }
 
 .swiper-pagination-vertical.swiper-pagination-bullets,
@@ -1398,7 +1398,7 @@ button.swiper-pagination-bullet {
 }
 
 .btn-primary {
-  background-color: #ff1f1f;
+  background-color: #d00000;
 }
 
 .btn-success {
@@ -1677,8 +1677,8 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/assets/paidimg01.jpg) 30% 50%/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/paidimg01.jpg) 30% 50%/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/assets/img01L.png) 30% 50%/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img01L.png) 30% 50%/cover;
   }
   #landing .container .swiper-container .landing-content {
     position: absolute;
@@ -1730,7 +1730,7 @@ button.swiper-pagination-bullet {
             flex-direction: column;
   }
   #landing .container .swiper-container .landing-content > div :nth-child(2) {
-    border: 3px solid #ff1f1f;
+    border: 3px solid #d00000;
     color: white;
     background-color: transparent;
   }
@@ -2291,7 +2291,7 @@ button.swiper-pagination-bullet {
   }
   #features {
     width: 100%;
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
   #features .heading {
     width: 100%;
@@ -2806,7 +2806,7 @@ button.swiper-pagination-bullet {
   }
   #about .container .profile .wrap .social a {
     padding: .5rem;
-    background-color: #ff1f1f;
+    background-color: #d00000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2873,7 +2873,7 @@ button.swiper-pagination-bullet {
   body.dark--mode #packages .container a {
     -webkit-box-shadow: none;
             box-shadow: none;
-    background-color: #ff1f1f;
+    background-color: #d00000;
     color: white;
   }
   body.dark--mode #packages .container a:hover {
@@ -3129,7 +3129,7 @@ button.swiper-pagination-bullet {
             flex-direction: row;
   }
   #landing .container .swiper-container .landing-content > div :nth-child(2) {
-    border: 3px solid #ff1f1f;
+    border: 3px solid #d00000;
     color: white;
     background-color: transparent;
   }
@@ -3790,7 +3790,7 @@ button.swiper-pagination-bullet {
             flex-direction: row;
   }
   #landing .container .swiper-container .landing-content > div :nth-child(2) {
-    border: 3px solid #ff1f1f;
+    border: 3px solid #d00000;
     color: white;
     background-color: transparent;
   }
