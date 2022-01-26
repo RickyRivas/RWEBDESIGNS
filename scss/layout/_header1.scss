@@ -22,14 +22,14 @@
 
     & nav {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
       background-color: transparent;
       box-shadow: none;
       border: 0;
-      padding: 0.5em;
+      padding: 1rem;
       width: 100%;
-      height: 7vh;
+      height: 5rem;
 
       & p {
         color: black;
@@ -37,15 +37,12 @@
       }
 
       .logo-wrapper {
-        position: absolute;
-        left: 1rem;
-        top: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
 
         img {
-          width: 7rem;
+          width: 8rem;
         }
       }
 
@@ -124,6 +121,9 @@
           }
         }
       }
+      #nav-cta {
+        display: none;
+      }
     }
 
     .navlinks-overlay {
@@ -183,7 +183,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10rem;
+    height: 7rem;
     width: 100vw;
 
     & .is-active {
@@ -193,14 +193,13 @@
 
     & nav {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
       background-color: transparent;
       box-shadow: none;
       padding: 0 1em;
       width: 100%;
       height: 100%;
-      max-width: 1200px;
       margin: auto;
       position: relative;
 
@@ -241,6 +240,11 @@
           display: none;
         }
       }
+      #nav-cta {
+        display: block;
+        background-color: white;
+        color: black;
+      }
     }
   }
 }
@@ -253,7 +257,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
+    height: 7rem;
     width: 100vw;
 
     & .is-active {

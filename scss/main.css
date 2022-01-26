@@ -879,9 +879,9 @@ button.swiper-pagination-bullet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -889,18 +889,15 @@ button.swiper-pagination-bullet {
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 0;
-    padding: 0.5em;
+    padding: 1rem;
     width: 100%;
-    height: 7vh;
+    height: 5rem;
   }
   header nav p {
     color: black;
     font-size: 1.2em;
   }
   header nav .logo-wrapper {
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -912,7 +909,7 @@ button.swiper-pagination-bullet {
             align-items: center;
   }
   header nav .logo-wrapper img {
-    width: 7rem;
+    width: 8rem;
   }
   header nav .nav-links {
     margin: 0;
@@ -1014,6 +1011,9 @@ button.swiper-pagination-bullet {
     width: 1.5rem;
     margin-bottom: 1rem;
   }
+  header nav #nav-cta {
+    display: none;
+  }
   header .navlinks-overlay {
     position: fixed;
     top: 0;
@@ -1080,7 +1080,7 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 10rem;
+    height: 7rem;
     width: 100vw;
   }
   header .is-active {
@@ -1092,9 +1092,9 @@ button.swiper-pagination-bullet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1104,7 +1104,6 @@ button.swiper-pagination-bullet {
     padding: 0 1em;
     width: 100%;
     height: 100%;
-    max-width: 1200px;
     margin: auto;
     position: relative;
   }
@@ -1153,6 +1152,11 @@ button.swiper-pagination-bullet {
   header nav .nav-links .social-media {
     display: none;
   }
+  header nav #nav-cta {
+    display: block;
+    background-color: white;
+    color: black;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1169,7 +1173,7 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 5rem;
+    height: 7rem;
     width: 100vw;
   }
   header .is-active {
@@ -1651,6 +1655,7 @@ button.swiper-pagination-bullet {
   }
 }
 
+/** @format */
 @media (min-width: 0em) {
   .body-fixed {
     position: fixed;
@@ -1687,8 +1692,8 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/assets/img01L.png) 30% 50%/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img01L.png) 30% 50%/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/assets/paidimg01.jpg) 30% 50%/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/paidimg01.jpg) 30% 50%/cover;
   }
   #landing .container .swiper-container .landing-content {
     position: absolute;
@@ -1774,8 +1779,8 @@ button.swiper-pagination-bullet {
     opacity: 0;
     -webkit-animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
             animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
-    -webkit-animation-delay: .9s;
-            animation-delay: .9s;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
   }
   #landing .container .swiper-slide-active.swiper-slide .landing-content p {
     -webkit-animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
@@ -1829,7 +1834,7 @@ button.swiper-pagination-bullet {
     position: relative;
   }
   #landing .container .controller .swiper-next .right::after {
-    content: '';
+    content: "";
     width: 15px;
     height: 2px;
     background-color: inherit;
@@ -1841,7 +1846,7 @@ button.swiper-pagination-bullet {
             transform: rotate(45deg);
   }
   #landing .container .controller .swiper-next .right::before {
-    content: '';
+    content: "";
     width: 15px;
     height: 2px;
     background-color: inherit;
@@ -1855,7 +1860,7 @@ button.swiper-pagination-bullet {
   #landing .container .controller .swiper-next::before {
     position: absolute;
     width: 100%;
-    content: '';
+    content: "";
     height: 100%;
     background-color: #495057;
     -webkit-transform: translateX(-101%);
@@ -1885,7 +1890,7 @@ button.swiper-pagination-bullet {
     position: relative;
   }
   #landing .container .controller .swiper-prev .left::after {
-    content: '';
+    content: "";
     width: 15px;
     height: 2px;
     background-color: inherit;
@@ -1897,7 +1902,7 @@ button.swiper-pagination-bullet {
             transform: rotate(45deg);
   }
   #landing .container .controller .swiper-prev .left::before {
-    content: '';
+    content: "";
     width: 15px;
     height: 2px;
     background-color: inherit;
@@ -1911,7 +1916,7 @@ button.swiper-pagination-bullet {
   #landing .container .controller .swiper-prev::before {
     position: absolute;
     width: 100%;
-    content: '';
+    content: "";
     height: 100%;
     background-color: #495057;
     -webkit-transform: translateX(101%);
@@ -2042,7 +2047,7 @@ button.swiper-pagination-bullet {
     height: 100%;
     min-height: 250px;
     background-color: #f8f8f8;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
@@ -2065,11 +2070,11 @@ button.swiper-pagination-bullet {
     text-decoration: none;
     background-color: #222;
     color: white;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   #intro .container .service-items .service-item a:hover {
-    opacity: .7;
+    opacity: 0.7;
   }
   body.dark--mode #intro {
     -webkit-transition: all 200ms ease-in;
@@ -2238,7 +2243,7 @@ button.swiper-pagination-bullet {
     width: 1.5rem;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin: .2rem .5rem 0 0;
+    margin: 0.2rem 0.5rem 0 0;
   }
   #info .container .main-content ul li p {
     margin: 0;
@@ -2260,11 +2265,11 @@ button.swiper-pagination-bullet {
   }
   #info .container .main-content .btns a {
     background-color: #222;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   #info .container .main-content .btns a:hover {
-    opacity: .7;
+    opacity: 0.7;
   }
   #info .container .graphic {
     width: 100%;
@@ -2274,7 +2279,7 @@ button.swiper-pagination-bullet {
     z-index: 2;
   }
   #info .container .graphic::before {
-    content: '';
+    content: "";
     left: 2rem;
     top: 2rem;
     width: 100%;
@@ -2359,12 +2364,12 @@ button.swiper-pagination-bullet {
         grid-template-rows: 50% auto;
     background-color: #f8f8f8;
     position: relative;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   #features .container .item .header img {
-    border-radius: .5rem .5rem 0 0;
+    border-radius: 0.5rem 0.5rem 0 0;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -2450,9 +2455,9 @@ button.swiper-pagination-bullet {
     display: grid;
     -ms-grid-rows: auto 1fr;
         grid-template-rows: auto 1fr;
-    grid-gap: .5rem;
+    grid-gap: 0.5rem;
     padding-bottom: 2.2rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
@@ -2498,7 +2503,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text h3 {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text p:nth-of-type(1) {
     margin-bottom: 1rem;
@@ -2507,7 +2512,7 @@ button.swiper-pagination-bullet {
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text h4 {
     line-height: 2;
     text-transform: uppercase;
-    font-size: .7rem;
+    font-size: 0.7rem;
     color: #a4a4a4;
     letter-spacing: 2px;
   }
@@ -2518,7 +2523,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     height: 1px;
     background-color: #a4a4a4;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text .flex {
     display: -webkit-box;
@@ -2527,12 +2532,12 @@ button.swiper-pagination-bullet {
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text .flex a {
     margin: 0;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     text-decoration: none;
     color: black;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text .flex img {
-    width: .8rem;
+    width: 0.8rem;
   }
   #portfolio .container .controller {
     height: -webkit-max-content;
@@ -2542,7 +2547,7 @@ button.swiper-pagination-bullet {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    grid-gap: .5rem;
+    grid-gap: 0.5rem;
     z-index: 2;
     margin-top: -50px;
   }
@@ -2572,7 +2577,7 @@ button.swiper-pagination-bullet {
     z-index: 3;
   }
   #portfolio .container .controller .swiper-prev-port .left::after {
-    content: '';
+    content: "";
     width: 15px;
     height: 2px;
     background-color: inherit;
@@ -2584,7 +2589,7 @@ button.swiper-pagination-bullet {
             transform: rotate(45deg);
   }
   #portfolio .container .controller .swiper-prev-port .left::before {
-    content: '';
+    content: "";
     width: 15px;
     height: 2px;
     background-color: inherit;
@@ -2598,7 +2603,7 @@ button.swiper-pagination-bullet {
   #portfolio .container .controller .swiper-prev-port::before {
     position: absolute;
     width: 100%;
-    content: '';
+    content: "";
     height: 100%;
     background-color: #222;
     -webkit-transform: translateX(101%);
@@ -2640,7 +2645,7 @@ button.swiper-pagination-bullet {
     position: relative;
   }
   #portfolio .container .controller .swiper-next-port .right::after {
-    content: '';
+    content: "";
     width: 15px;
     height: 2px;
     background-color: inherit;
@@ -2652,7 +2657,7 @@ button.swiper-pagination-bullet {
             transform: rotate(45deg);
   }
   #portfolio .container .controller .swiper-next-port .right::before {
-    content: '';
+    content: "";
     width: 15px;
     height: 2px;
     background-color: inherit;
@@ -2666,7 +2671,7 @@ button.swiper-pagination-bullet {
   #portfolio .container .controller .swiper-next-port::before {
     position: absolute;
     width: 100%;
-    content: '';
+    content: "";
     height: 100%;
     background-color: black;
     -webkit-transform: translateX(-101%);
@@ -2789,7 +2794,7 @@ button.swiper-pagination-bullet {
   }
   #about .container .profile .wrap::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 101%;
     height: 101%;
     z-index: -1;
@@ -2825,7 +2830,7 @@ button.swiper-pagination-bullet {
     left: -8%;
   }
   #about .container .profile .wrap .social a {
-    padding: .5rem;
+    padding: 0.5rem;
     background-color: #ff1f1f;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2973,7 +2978,7 @@ button.swiper-pagination-bullet {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #f8f8f8;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
@@ -2982,7 +2987,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     padding: 1rem;
     color: white;
-    border-radius: .5rem .5rem 0 0;
+    border-radius: 0.5rem 0.5rem 0 0;
   }
   #packages .container .packages-grid .p-item .pricing {
     margin-bottom: 1rem;
@@ -2997,7 +3002,7 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: .6rem;
+    padding: 0.6rem;
     width: 100%;
   }
   #packages .container .packages-grid .p-item .pricing :nth-child(1) {
@@ -3011,16 +3016,16 @@ button.swiper-pagination-bullet {
     font-size: 2.5rem;
   }
   #packages .container .packages-grid .p-item .pricing-1 :nth-child(2)::before {
-    content: '$';
+    content: "$";
     position: absolute;
-    left: -.5rem;
+    left: -0.5rem;
     top: 0;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-1 :nth-child(2)::after {
-    content: '/MO';
+    content: "/MO";
     position: absolute;
-    bottom: .3rem;
+    bottom: 0.3rem;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2) {
@@ -3028,16 +3033,16 @@ button.swiper-pagination-bullet {
     font-size: 2.5rem;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2)::before {
-    content: '$';
+    content: "$";
     position: absolute;
-    left: -.5rem;
+    left: -0.5rem;
     top: 0;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2)::after {
-    content: '/YR';
+    content: "/YR";
     position: absolute;
-    bottom: .3rem;
+    bottom: 0.3rem;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2) {
@@ -3045,16 +3050,16 @@ button.swiper-pagination-bullet {
     font-size: 2.5rem;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2)::before {
-    content: '$';
+    content: "$";
     position: absolute;
-    left: -.5rem;
+    left: -0.5rem;
     top: 0;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2)::after {
-    content: '/??';
+    content: "/??";
     position: absolute;
-    bottom: .3rem;
+    bottom: 0.3rem;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .items {
@@ -3106,15 +3111,15 @@ button.swiper-pagination-bullet {
     position: relative;
     overflow: hidden;
     background-color: #222;
-    border-radius: .5rem;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    border-radius: 0.5rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     width: 80%;
     margin-bottom: 1rem;
     color: white;
   }
   #packages .container .packages-grid .p-item a:hover {
-    opacity: .7;
+    opacity: 0.7;
   }
 }
 
@@ -3328,7 +3333,7 @@ button.swiper-pagination-bullet {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-    grid-gap: .5rem;
+    grid-gap: 0.5rem;
     padding: 0 0.5rem;
     margin-bottom: 1rem;
   }
@@ -3347,7 +3352,7 @@ button.swiper-pagination-bullet {
     width: 1.3rem;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin: .2rem .5rem 0 0;
+    margin: 0.2rem 0.5rem 0 0;
   }
   #info .container .main-content ul li p {
     margin: 0;
@@ -3556,7 +3561,7 @@ button.swiper-pagination-bullet {
     left: -8%;
   }
   #about .container .profile .wrap .social a {
-    padding: .5rem;
+    padding: 0.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3672,7 +3677,7 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: .6rem;
+    padding: 0.6rem;
     width: 100%;
   }
   #packages .container .packages-grid .p-item .pricing :nth-child(1) {
@@ -3686,16 +3691,16 @@ button.swiper-pagination-bullet {
     font-size: 2.5rem;
   }
   #packages .container .packages-grid .p-item .pricing-1 :nth-child(2)::before {
-    content: '$';
+    content: "$";
     position: absolute;
-    left: -.5rem;
+    left: -0.5rem;
     top: 0;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-1 :nth-child(2)::after {
-    content: '/MO';
+    content: "/MO";
     position: absolute;
-    bottom: .3rem;
+    bottom: 0.3rem;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2) {
@@ -3703,16 +3708,16 @@ button.swiper-pagination-bullet {
     font-size: 2.5rem;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2)::before {
-    content: '$';
+    content: "$";
     position: absolute;
-    left: -.5rem;
+    left: -0.5rem;
     top: 0;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2)::after {
-    content: '/YR';
+    content: "/YR";
     position: absolute;
-    bottom: .3rem;
+    bottom: 0.3rem;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2) {
@@ -3720,16 +3725,16 @@ button.swiper-pagination-bullet {
     font-size: 2.5rem;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2)::before {
-    content: '$';
+    content: "$";
     position: absolute;
-    left: -.5rem;
+    left: -0.5rem;
     top: 0;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2)::after {
-    content: '/??';
+    content: "/??";
     position: absolute;
-    bottom: .3rem;
+    bottom: 0.3rem;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .items {
@@ -3760,7 +3765,7 @@ button.swiper-pagination-bullet {
         -ms-grid-row-align: end;
         align-self: end;
     width: 1rem;
-    margin-right: .2rem;
+    margin-right: 0.2rem;
   }
   #packages .container .packages-grid .p-item .items .item > div {
     display: -webkit-box;
@@ -3927,7 +3932,7 @@ button.swiper-pagination-bullet {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-    grid-gap: .5rem;
+    grid-gap: 0.5rem;
     padding: 0 0.5rem;
     margin-bottom: 1rem;
   }
@@ -3946,7 +3951,7 @@ button.swiper-pagination-bullet {
     width: 1.5rem;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin: 0rem .5rem 0 0;
+    margin: 0rem 0.5rem 0 0;
   }
   #info .container .main-content ul li p {
     margin: 0;
@@ -4161,7 +4166,7 @@ button.swiper-pagination-bullet {
     left: -8%;
   }
   #about .container .profile .wrap .social a {
-    padding: .5rem;
+    padding: 0.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4286,7 +4291,7 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: .6rem;
+    padding: 0.6rem;
     width: 100%;
   }
   #packages .container .packages-grid .p-item .pricing :nth-child(1) {
@@ -4300,16 +4305,16 @@ button.swiper-pagination-bullet {
     font-size: 2.5rem;
   }
   #packages .container .packages-grid .p-item .pricing-1 :nth-child(2)::before {
-    content: '$';
+    content: "$";
     position: absolute;
-    left: -.5rem;
+    left: -0.5rem;
     top: 0;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-1 :nth-child(2)::after {
-    content: '/MO';
+    content: "/MO";
     position: absolute;
-    bottom: .3rem;
+    bottom: 0.3rem;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2) {
@@ -4317,16 +4322,16 @@ button.swiper-pagination-bullet {
     font-size: 2.5rem;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2)::before {
-    content: '$';
+    content: "$";
     position: absolute;
-    left: -.5rem;
+    left: -0.5rem;
     top: 0;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2)::after {
-    content: '/YR';
+    content: "/YR";
     position: absolute;
-    bottom: .3rem;
+    bottom: 0.3rem;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2) {
@@ -4334,16 +4339,16 @@ button.swiper-pagination-bullet {
     font-size: 2.5rem;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2)::before {
-    content: '$';
+    content: "$";
     position: absolute;
-    left: -.5rem;
+    left: -0.5rem;
     top: 0;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2)::after {
-    content: '/??';
+    content: "/??";
     position: absolute;
-    bottom: .3rem;
+    bottom: 0.3rem;
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .items {
@@ -4373,7 +4378,7 @@ button.swiper-pagination-bullet {
         -ms-grid-row-align: end;
         align-self: end;
     width: 1rem;
-    margin-right: .2rem;
+    margin-right: 0.2rem;
   }
   #packages .container .packages-grid .p-item .items .item > div {
     display: -webkit-box;
@@ -4483,7 +4488,7 @@ button.swiper-pagination-bullet {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-    grid-gap: .5rem;
+    grid-gap: 0.5rem;
     padding: 0 0.5rem;
     margin-bottom: 1rem;
   }
