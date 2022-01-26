@@ -373,6 +373,12 @@
                         text-decoration: none;
                         background-color: $light-black;
                         color: white;
+                        transition: .5s;
+
+                        &:hover {
+                            opacity: .7;
+
+                        }
                     }
                 }
             }
@@ -531,6 +537,12 @@
 
                     a {
                         background-color: $light-black;
+                        transition: .5s;
+
+                        &:hover {
+                            opacity: .7;
+
+                        }
                     }
                 }
             }
@@ -831,7 +843,7 @@
                     .left {
                         width: 40px !important;
                         height: 2px;
-                        background-color: black;
+                        background-color: $light-black;
                         position: relative;
                         z-index: 3;
 
@@ -864,7 +876,7 @@
                         width: 100%;
                         content: '';
                         height: 100%;
-                        background-color: black;
+                        background-color: $light-black;
                         transform: translateX(101%);
                     }
 
@@ -1329,16 +1341,17 @@
                     a {
                         position: relative;
                         overflow: hidden;
-                        border: 2px solid black;
-                        background-color: transparent;
+                        // border: 2px solid black;
+                        // background-color: transparent;
+                        background-color: $light-black;
                         border-radius: .5rem;
                         transition: all .5s ease-in-out;
                         width: 80%;
                         margin-bottom: $margin-md;
+                        color: white;
 
                         &:hover {
-                            background-color: black;
-                            color: white;
+                            opacity: .7;
                         }
                     }
                 }

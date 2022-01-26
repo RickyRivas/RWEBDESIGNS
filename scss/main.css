@@ -422,7 +422,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: #d00000;
+  background: #ff1f1f;
 }
 
 .swiper-pagination-vertical.swiper-pagination-bullets,
@@ -856,6 +856,7 @@ button.swiper-pagination-bullet {
   }
 }
 
+/** @format */
 @media (min-width: 0px) {
   body {
     overflow-x: hidden;
@@ -890,7 +891,7 @@ button.swiper-pagination-bullet {
     border: 0;
     padding: 0.5em;
     width: 100%;
-    height: 10vh;
+    height: 7vh;
   }
   header nav p {
     color: black;
@@ -936,15 +937,15 @@ button.swiper-pagination-bullet {
             align-items: flex-end;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-color: #222;
     list-style: none;
     padding: 2rem;
   }
   header nav .nav-links li {
     opacity: 1;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     text-align: center;
     font-weight: unset;
     display: -webkit-box;
@@ -966,7 +967,7 @@ button.swiper-pagination-bullet {
     text-decoration: none;
   }
   header nav .nav-links li::after {
-    content: '';
+    content: "";
     width: 100%;
     height: 2px;
     background-color: white;
@@ -976,10 +977,10 @@ button.swiper-pagination-bullet {
             transform: translateX(-101%);
   }
   header nav .nav-links li:hover::after {
-    -webkit-transition: -webkit-transform .5s;
-    transition: -webkit-transform .5s;
-    transition: transform .5s;
-    transition: transform .5s, -webkit-transform .5s;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
     -webkit-transform: translate(0);
             transform: translate(0);
   }
@@ -1079,7 +1080,7 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 80px;
+    height: 10rem;
     width: 100vw;
   }
   header .is-active {
@@ -1139,7 +1140,7 @@ button.swiper-pagination-bullet {
   }
   header nav .nav-links li {
     opacity: 1;
-    padding: .5em;
+    padding: 0.5em;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -1168,7 +1169,7 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100px;
+    height: 5rem;
     width: 100vw;
   }
   header .is-active {
@@ -1176,9 +1177,18 @@ button.swiper-pagination-bullet {
             box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     z-index: 100;
   }
+  header nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   header nav .logo-wrapper {
-    left: 2rem;
-    top: 1rem;
+    left: unset;
+    top: unset;
+    position: relative;
+  }
+  header nav .logo-wrapper img {
+    width: 10rem;
   }
 }
 
@@ -1207,20 +1217,20 @@ button.swiper-pagination-bullet {
   width: 40px;
   height: 2px;
   position: absolute;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .hamburger .hamburger-inner::before, .hamburger .hamburger-inner::after {
-  content: '';
-  content: '';
+  content: "";
+  content: "";
   left: 0;
   position: absolute;
   width: 100%;
   height: 100%;
   background: #fff;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .hamburger .hamburger-inner:before {
@@ -1387,8 +1397,8 @@ button.swiper-pagination-bullet {
   color: white;
   text-decoration: none;
   margin: 0.5rem;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   font-size: 0.875rem;
   border-radius: .5rem;
 }
@@ -1398,7 +1408,7 @@ button.swiper-pagination-bullet {
 }
 
 .btn-primary {
-  background-color: #d00000;
+  background-color: #ff1f1f;
 }
 
 .btn-success {
@@ -1550,8 +1560,8 @@ button.swiper-pagination-bullet {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 90%;
-    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     padding: 1rem;
     background-color: white;
   }
@@ -1730,7 +1740,7 @@ button.swiper-pagination-bullet {
             flex-direction: column;
   }
   #landing .container .swiper-container .landing-content > div :nth-child(2) {
-    border: 3px solid #d00000;
+    border: 3px solid #ff1f1f;
     color: white;
     background-color: transparent;
   }
@@ -2033,8 +2043,8 @@ button.swiper-pagination-bullet {
     min-height: 250px;
     background-color: #f8f8f8;
     border-radius: .5rem;
-    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   #intro .container .service-items .service-item img {
     margin: 0;
@@ -2055,6 +2065,11 @@ button.swiper-pagination-bullet {
     text-decoration: none;
     background-color: #222;
     color: white;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  #intro .container .service-items .service-item a:hover {
+    opacity: .7;
   }
   body.dark--mode #intro {
     -webkit-transition: all 200ms ease-in;
@@ -2245,6 +2260,11 @@ button.swiper-pagination-bullet {
   }
   #info .container .main-content .btns a {
     background-color: #222;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  #info .container .main-content .btns a:hover {
+    opacity: .7;
   }
   #info .container .graphic {
     width: 100%;
@@ -2340,8 +2360,8 @@ button.swiper-pagination-bullet {
     background-color: #f8f8f8;
     position: relative;
     border-radius: .5rem;
-    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   #features .container .item .header img {
     border-radius: .5rem .5rem 0 0;
@@ -2433,8 +2453,8 @@ button.swiper-pagination-bullet {
     grid-gap: .5rem;
     padding-bottom: 2.2rem;
     border-radius: .5rem;
-    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .graphic {
     width: 100%;
@@ -2541,13 +2561,13 @@ button.swiper-pagination-bullet {
     padding: 1.5rem;
     overflow: hidden;
     position: relative;
-    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   #portfolio .container .controller .swiper-prev-port .left {
     width: 40px !important;
     height: 2px;
-    background-color: black;
+    background-color: #222;
     position: relative;
     z-index: 3;
   }
@@ -2580,7 +2600,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     content: '';
     height: 100%;
-    background-color: black;
+    background-color: #222;
     -webkit-transform: translateX(101%);
             transform: translateX(101%);
   }
@@ -2610,8 +2630,8 @@ button.swiper-pagination-bullet {
     padding: 1rem;
     position: relative;
     overflow: hidden;
-    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   #portfolio .container .controller .swiper-next-port .right {
     width: 40px !important;
@@ -2806,7 +2826,7 @@ button.swiper-pagination-bullet {
   }
   #about .container .profile .wrap .social a {
     padding: .5rem;
-    background-color: #d00000;
+    background-color: #ff1f1f;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2873,7 +2893,7 @@ button.swiper-pagination-bullet {
   body.dark--mode #packages .container a {
     -webkit-box-shadow: none;
             box-shadow: none;
-    background-color: #d00000;
+    background-color: #ff1f1f;
     color: white;
   }
   body.dark--mode #packages .container a:hover {
@@ -2954,8 +2974,8 @@ button.swiper-pagination-bullet {
             flex-direction: column;
     background-color: #f8f8f8;
     border-radius: .5rem;
-    -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   #packages .container .packages-grid .p-item .card-heading {
     background-color: #222;
@@ -3085,17 +3105,16 @@ button.swiper-pagination-bullet {
   #packages .container .packages-grid .p-item a {
     position: relative;
     overflow: hidden;
-    border: 2px solid black;
-    background-color: transparent;
+    background-color: #222;
     border-radius: .5rem;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     width: 80%;
     margin-bottom: 1rem;
+    color: white;
   }
   #packages .container .packages-grid .p-item a:hover {
-    background-color: black;
-    color: white;
+    opacity: .7;
   }
 }
 
@@ -3129,7 +3148,7 @@ button.swiper-pagination-bullet {
             flex-direction: row;
   }
   #landing .container .swiper-container .landing-content > div :nth-child(2) {
-    border: 3px solid #d00000;
+    border: 3px solid #ff1f1f;
     color: white;
     background-color: transparent;
   }
@@ -3790,7 +3809,7 @@ button.swiper-pagination-bullet {
             flex-direction: row;
   }
   #landing .container .swiper-container .landing-content > div :nth-child(2) {
-    border: 3px solid #d00000;
+    border: 3px solid #ff1f1f;
     color: white;
     background-color: transparent;
   }
