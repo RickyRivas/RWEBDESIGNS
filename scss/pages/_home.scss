@@ -83,7 +83,7 @@
     width: 100vw;
 
     .container {
-      padding: $padding-lg $padding-md;
+      padding: $padding-xl $padding-md;
       width: 100%;
       max-width: 1200px;
       margin: auto;
@@ -143,10 +143,17 @@
           background-color: #f8f8f8;
           border-radius: 0.5rem;
           box-shadow: $box-shadow;
-
-          img {
-            margin: 0;
-            margin-bottom: $margin-md;
+          & > div {
+            padding: 0.5rem;
+            background-color: $primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            img {
+              width: 1.5rem;
+            }
           }
 
           h4 {
@@ -226,8 +233,7 @@
   #info {
     width: 100%;
     overflow: hidden;
-    // background-color: $prime-gray;
-    background-color: $div-blue;
+    background-color: $prime-gray;
 
     .container {
       display: flex;
@@ -393,7 +399,7 @@
 
   #features {
     width: 100%;
-    padding: $padding-lg $padding-md;
+    padding: $padding-xl $padding-md;
 
     .heading {
       width: 100%;
@@ -1122,9 +1128,9 @@
             // border: 2px solid black;
             // background-color: transparent;
             background-color: $light-black;
-            border-radius: 0.5rem;
+            border-radius: 2rem;
             transition: all 0.5s ease-in-out;
-            width: 80%;
+            // width: 80%;
             margin-bottom: $margin-md;
             color: white;
 
@@ -2156,6 +2162,9 @@
 }
 
 @media (min-width: 1200px) {
+  #landing {
+    min-height: 70vh;
+  }
   #info {
     width: 100%;
 

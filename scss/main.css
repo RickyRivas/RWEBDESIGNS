@@ -1027,8 +1027,8 @@ button.swiper-pagination-bullet {
     text-decoration: none;
     background-color: white;
     border-radius: 2rem;
-    padding: 5px 20px;
-    color: #0f65ff;
+    padding: 8px 20px;
+    color: #222;
     margin-right: 1rem;
     font-size: 0.8rem;
   }
@@ -1124,7 +1124,7 @@ button.swiper-pagination-bullet {
     background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
-    padding: 0 1em;
+    padding: 0;
     width: 100%;
     height: 100%;
     margin: auto;
@@ -1178,7 +1178,7 @@ button.swiper-pagination-bullet {
   header nav #nav-cta {
     display: block;
     font-size: unset;
-    padding: 5px 20px;
+    padding: 8px 20px;
     font-size: 0.875rem;
   }
 }
@@ -1282,98 +1282,132 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 0em) {
-  #footer {
+  footer {
     width: 100%;
-    background: #222;
-    padding-top: 4rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    border-top: 2px solid #f1f1f1;
+    padding: 4rem 1rem;
   }
-  #footer .container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    place-items: center;
+  footer .container {
     width: 100%;
     max-width: 1200px;
-    grid-gap: 1rem;
     margin: auto;
-    margin-bottom: 1rem;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo logo" "two three" "contact contact";
+    grid-gap: 1rem;
   }
-  #footer .container .col {
+  footer .container .col {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 1rem;
-    font-weight: lighter;
-    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem 0;
   }
-  #footer .container .col p {
-    color: #adb5bd;
-    font-size: 14px;
-  }
-  #footer .container .col h2 {
+  footer .container .col h4 {
     margin-bottom: 1rem;
-    font-weight: lighter;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #fff;
+    white-space: nowrap;
   }
-  #footer .container .col ul {
+  footer .container .col ul {
     list-style: none;
   }
-  #footer .container .col ul li {
+  footer .container .col ul li {
     margin-bottom: 0.5rem;
-    color: #adb5bd;
+  }
+  footer .container .col:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: two;
+    padding: 1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .container .col:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: three;
+    padding: 1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .container .logo-contain {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: logo;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .container .logo-contain img {
+    width: 80%;
+    max-width: 500px;
+  }
+  footer .container .contact {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: contact;
+    background-color: #0f65ff;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  footer .container .contact h4 {
+    color: white;
+  }
+  footer .container .contact ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #footer .container .col ul a {
-    color: #adb5bd;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  #footer .container .col img {
-    width: 1rem;
-    height: 1rem;
-    margin-right: .5rem;
-    opacity: 60%;
-  }
-  #footer .container .col .business-hours li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  #footer .site-credit {
+  footer .container .contact ul li > div {
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .container .contact ul li > div img {
+    width: 1rem;
+  }
+  footer .container .contact ul li p {
+    color: white;
+  }
+  footer .container .contact ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .credit {
+    border-top: 2px solid #f1f1f1;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1384,43 +1418,33 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  #footer .site-credit img {
-    width: 4rem;
-    margin-bottom: 1rem;
-  }
-  #footer .site-credit p {
-    text-transform: uppercase;
-    color: #adb5bd;
-    font-size: 14px;
-  }
-  #footer .site-credit a {
-    color: #fff;
-    text-decoration: none;
+    padding: 1rem 0;
   }
 }
 
 @media (min-width: 1024px) {
-  footer {
-    padding-top: 2rem;
-    font-size: 0.875rem;
-  }
   footer .container {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+        grid-template-areas: "logo two three contact";
+  }
+  footer .container .logo-contain {
+    padding: 0;
+    height: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .container .logo-contain img {
+    width: 100%;
+  }
+  footer .container .col {
+    padding-top: 0rem !important;
   }
 }
 
 .btn {
   cursor: pointer;
-  padding: 15px 40px;
+  padding: 10px 30px;
   border: 0;
   color: white;
   text-decoration: none;
@@ -1428,11 +1452,11 @@ button.swiper-pagination-bullet {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   font-size: 0.875rem;
-  border-radius: .5rem;
+  border-radius: 2rem;
 }
 
 .btn:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .btn-primary {
@@ -1790,7 +1814,7 @@ button.swiper-pagination-bullet {
     width: 100vw;
   }
   #intro .container {
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -1824,7 +1848,7 @@ button.swiper-pagination-bullet {
     position: relative;
     text-transform: uppercase;
     font-size: 2rem;
-    background: linear-gradient(-45deg, #222, #ff1f1f, black);
+    background: linear-gradient(-45deg, #222, #0f65ff, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -1871,9 +1895,23 @@ button.swiper-pagination-bullet {
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
-  #intro .container .service-items .service-item img {
-    margin: 0;
+  #intro .container .service-items .service-item > div {
+    padding: 0.5rem;
+    background-color: #0f65ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
     margin-bottom: 1rem;
+  }
+  #intro .container .service-items .service-item > div img {
+    width: 1.5rem;
   }
   #intro .container .service-items .service-item h4 {
     margin-bottom: 1rem;
@@ -1941,7 +1979,7 @@ button.swiper-pagination-bullet {
   #info {
     width: 100%;
     overflow: hidden;
-    background-color: #f1fcff;
+    background-color: #f8f8f8;
   }
   #info .container {
     display: -webkit-box;
@@ -2010,7 +2048,7 @@ button.swiper-pagination-bullet {
     text-transform: uppercase;
     font-size: 2rem;
     margin-bottom: 1rem;
-    background: linear-gradient(-45deg, #222, #ff1f1f, black);
+    background: linear-gradient(-45deg, #222, #0f65ff, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2136,7 +2174,7 @@ button.swiper-pagination-bullet {
   }
   #features {
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
   }
   #features .heading {
     width: 100%;
@@ -2151,7 +2189,7 @@ button.swiper-pagination-bullet {
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    background: linear-gradient(-45deg, #222, #ff1f1f, black);
+    background: linear-gradient(-45deg, #222, #0f65ff, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2243,7 +2281,7 @@ button.swiper-pagination-bullet {
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    background: linear-gradient(-45deg, #222, #ff1f1f, black);
+    background: linear-gradient(-45deg, #222, #0f65ff, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2575,7 +2613,7 @@ button.swiper-pagination-bullet {
     color: white;
     font-size: 2rem;
     margin-bottom: 1rem;
-    background: linear-gradient(-45deg, #222, #ff1f1f, black);
+    background: linear-gradient(-45deg, #222, #0f65ff, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2618,7 +2656,7 @@ button.swiper-pagination-bullet {
     width: 101%;
     height: 101%;
     z-index: -1;
-    background: linear-gradient(-45deg, #222, #ff1f1f, black);
+    background: linear-gradient(-45deg, #222, #0f65ff, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 8s ease infinite;
             animation: gradient 8s ease infinite;
@@ -2761,7 +2799,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
     text-transform: uppercase;
     font-size: 2rem;
-    background: linear-gradient(-45deg, #222, #ff1f1f, black);
+    background: linear-gradient(-45deg, #222, #0f65ff, black);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
             animation: gradient 15s ease infinite;
@@ -2931,10 +2969,9 @@ button.swiper-pagination-bullet {
     position: relative;
     overflow: hidden;
     background-color: #222;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    width: 80%;
     margin-bottom: 1rem;
     color: white;
   }
@@ -4151,6 +4188,9 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 1200px) {
+  #landing {
+    min-height: 70vh;
+  }
   #info {
     width: 100%;
   }
