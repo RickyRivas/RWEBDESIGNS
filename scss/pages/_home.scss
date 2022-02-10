@@ -20,6 +20,8 @@
 
     .container {
       width: 100vw;
+      max-width: 1200px;
+      margin: auto;
       height: 100%;
       display: flex;
       justify-content: flex-end;
@@ -38,6 +40,7 @@
         }
         p {
           margin-bottom: 1rem;
+          line-height: 1.8;
         }
         .ctas {
           display: flex;
@@ -57,6 +60,10 @@
             padding: 1rem;
             margin-bottom: 1rem;
             color: black;
+          }
+          a:nth-child(2) {
+            background-color: #222;
+            color: white;
           }
         }
       }
@@ -1135,111 +1142,6 @@
   #landing {
     width: 100%;
     height: 44rem;
-
-    .container {
-      .swiper-container {
-        .landing-content {
-          h1 {
-            color: white;
-            font-size: $font-size-base * 2;
-            margin-bottom: $margin-md;
-            position: relative;
-          }
-
-          p {
-            color: $gray-200;
-            margin-bottom: $margin-md;
-            font-size: $font-size-base;
-          }
-
-          & > div {
-            display: flex;
-            justify-self: center;
-            align-items: center;
-            flex-direction: row;
-
-            & :nth-child(2) {
-              border: 3px solid $primary;
-              color: white;
-              background-color: transparent;
-            }
-
-            a {
-              width: 100%;
-            }
-          }
-        }
-
-        & .swiper-wrapper {
-          display: flex;
-          position: relative;
-          z-index: 1;
-
-          .swiper-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-          }
-        }
-      }
-
-      .controller {
-        position: unset;
-
-        .swiper-next {
-          position: absolute;
-          top: 50%;
-          right: 1rem;
-          z-index: 10;
-        }
-
-        .swiper-prev {
-          position: absolute;
-          top: 50%;
-          left: 1rem;
-          z-index: 10;
-        }
-      }
-
-      .swiper-pagination,
-      .pagination-fraction {
-        position: absolute;
-        right: 1rem;
-        bottom: 1rem;
-        width: max-content;
-        z-index: 10;
-        color: white;
-        left: unset;
-
-        .swiper-pagination-current {
-          font-weight: bolder;
-          font-size: $font-size-lg * 2;
-          color: transparent;
-          -webkit-text-stroke: 0.5px #fff;
-        }
-
-        .swiper-pagination-total {
-          font-weight: bolder;
-          font-size: $font-size-lg * 1.4;
-          color: white;
-        }
-      }
-
-      .social-media {
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-        position: absolute;
-        left: 1rem;
-        bottom: 1rem;
-        display: flex;
-
-        img {
-          width: 1.5rem;
-        }
-      }
-    }
   }
 
   #intro {
@@ -1733,50 +1635,63 @@
     height: 35rem;
 
     .container {
-      .swiper-container {
-        .landing-content {
-          h1 {
-            color: white;
-            font-size: $font-size-base * 2;
-            margin-bottom: $margin-md;
-            position: relative;
-          }
-
-          p {
-            color: $gray-200;
-            margin-bottom: $margin-md;
-            font-size: $font-size-base;
-          }
-
-          & > div {
-            display: flex;
-            justify-self: center;
-            align-items: center;
-            flex-direction: row;
-
-            & :nth-child(2) {
-              border: 3px solid $primary;
-              color: white;
-              background-color: transparent;
-            }
-
-            a {
-              width: 100%;
-            }
-          }
+      width: 100vw;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        padding: 0 1rem;
+        width: 100%;
+        // text-align: center;
+        h1 {
+          margin-bottom: 0.5rem;
         }
-
-        & .swiper-wrapper {
+        p {
+          margin-bottom: 1rem;
+        }
+        .ctas {
           display: flex;
-          position: relative;
-          z-index: 1;
-
-          .swiper-slide {
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          width: 100%;
+          a {
+            width: 100%;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 2rem;
+            background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            padding: 1rem;
+            margin-bottom: 0;
+            color: black;
           }
+          a:nth-child(1) {
+            margin-right: 1rem;
+          }
+          a:nth-child(2) {
+            background-color: #222;
+            color: white;
+          }
+        }
+      }
+      .graphic {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        img {
+          width: 50%;
         }
       }
     }
@@ -2241,17 +2156,6 @@
 }
 
 @media (min-width: 1200px) {
-  #landing {
-    .container {
-      .swiper-container {
-        .landing-content {
-          h1 {
-          }
-        }
-      }
-    }
-  }
-
   #info {
     width: 100%;
 
