@@ -2313,6 +2313,7 @@ button.swiper-pagination-bullet {
     border: 0;
     border-radius: 2rem;
     background-color: transparent;
+    color: black;
   }
   #quote .container .form-container form .submit > div {
     background-color: #0f65ff;
