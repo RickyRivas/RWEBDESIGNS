@@ -474,7 +474,84 @@
       }
     }
   }
-
+  #quote {
+    width: 100%;
+    background-color: $primary;
+    padding: $padding-xl $padding-md;
+    .container {
+      .content {
+        h2 {
+          margin-bottom: 1rem;
+        }
+        margin-bottom: 2rem;
+      }
+      .form-container {
+        form {
+          width: 100%;
+          .form-control {
+            margin-bottom: 1rem;
+            p {
+              color: white;
+              margin-bottom: 0.5rem;
+            }
+            input[type="text"] {
+              width: 100%;
+              padding: 1rem;
+              border-radius: 2rem;
+              border: 0;
+            }
+            input[type="email"] {
+              width: 100%;
+              padding: 1rem;
+              border-radius: 2rem;
+              border: 0;
+            }
+            input[type="number"] {
+              width: 100%;
+              padding: 1rem;
+              border-radius: 2rem;
+              border: 0;
+            }
+            textarea {
+              resize: none;
+              width: 100%;
+              border-radius: 2rem;
+              border: 0;
+              padding: 1rem;
+              font-family: inherit;
+            }
+          }
+          .submit {
+            background-color: white;
+            border-radius: 2rem;
+            width: max-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.2rem;
+            button[type="submit"] {
+              padding: 10px 30px;
+              border: 0;
+              border-radius: 2rem;
+              background-color: transparent;
+            }
+            & > div {
+              background-color: $primary;
+              width: 2rem;
+              height: 2rem;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   #portfolio {
     width: 100%;
     // background-color: $light-mode-div-bg;
