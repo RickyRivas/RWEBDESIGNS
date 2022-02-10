@@ -11,18 +11,21 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black: #000;
 $light-black: #222;
-$grays: ("100": $gray-100,
-    "200": $gray-200,
-    "300": $gray-300,
-    "400": $gray-400,
-    "500": $gray-500,
-    "600": $gray-600,
-    "700": $gray-700,
-    "800": $gray-800,
-    "900": $gray-900);
-$gold-gradient: linear-gradient( to right #5e3d04, #fef272);
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900,
+);
+$gold-gradient: linear-gradient(to right #5e3d04, #fef272);
 // Color pallet
-$blue: #0d6efd;
+$blue: #0f65ff;
+$div-blue: #f1fcff;
 $dark-blue: #0333a0;
 $indigo: #6610f2;
 $purple: #6f42c1;
@@ -35,23 +38,26 @@ $teal: #20c997;
 $cyan: #0dcaf0;
 $brown: #2d2d2d;
 $gold: #bc9366;
-$dark-gold: #A58861;
- $prime-gray: #f8f8f8;
-$colors: ("blue": $blue,
-    "indigo": $indigo,
-    "purple": $purple,
-    "pink": $pink,
-    "red": $red,
-    "orange": $orange,
-    "yellow": $yellow,
-    "green": $green,
-    "teal": $teal,
-    "cyan": $cyan,
-    "white": $white,
-    "gray": $gray-600,
-    "gray-dark": $gray-800);
+$dark-gold: #a58861;
+$prime-gray: #f8f8f8;
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+);
 // theme-color-variables
-$primary: #ff1f1f;
+// $primary: #ff1f1f;
+$primary: $blue;
 $primary-light: $gray-200;
 $secondary: $red;
 $success: $green;
@@ -60,31 +66,33 @@ $warning: $yellow;
 $danger: $red;
 $light: $gray-100;
 $dark: $gray-900;
-// Project Colors 
-$theme-colors: ("primary": $primary,
-    "secondary": $secondary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "light": $light,
-    "dark": $dark);
+// Project Colors
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
 // border-radius-variables
-$border-radius: .25rem;
-$border-radius-sm: .2rem;
-$border-radius-lg: .3rem;
+$border-radius: 0.25rem;
+$border-radius-sm: 0.2rem;
+$border-radius-lg: 0.3rem;
 $border-radius-pill: 50rem;
 
 // box-shadow-variables
 // $box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-$box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
-$box-shadow-sm: 0 .125rem .25rem rgba($black, .075);
-$box-shadow-lg: 0 1rem 3rem rgba($black, .175);
-$box-shadow-inset: inset 0 1px 2px rgba($black, .075);
+$box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
+$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175);
+$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
 // $font-size-base effects the font size of the body text
 $font-size-root: null;
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
-$font-size-sm: $font-size-base * .875;
+$font-size-sm: $font-size-base * 0.875;
 $font-size-lg: $font-size-base * 1.25;
 
 $font-weight-lighter: lighter;
@@ -106,11 +114,11 @@ $h4-font-size: $font-size-base * 1.5;
 $h5-font-size: $font-size-base * 1.25;
 $h6-font-size: $font-size-base;
 // Spacing
-$padding-sm: .5rem;
+$padding-sm: 0.5rem;
 $padding-md: 1rem;
 $padding-lg: 2rem;
 $padding-xl: 4rem;
-$margin-sm: .5rem;
+$margin-sm: 0.5rem;
 $margin-md: 1rem;
 $margin-lg: 2rem;
 $margin-xl: 4rem;
@@ -122,6 +130,6 @@ $brown-div-bg: #2d2d2d;
 $light-bg: #ececec;
 $light-mode-div-bg: #f8f8f8;
 // font
-$font-one: 'Boska', serif;
+$font-one: "Boska", serif;
 //
-$gradient-bg-one: linear-gradient(-45deg, $light-black, #ff1f1f, black)
+$gradient-bg-one: linear-gradient(-45deg, $light-black, #ff1f1f, black);

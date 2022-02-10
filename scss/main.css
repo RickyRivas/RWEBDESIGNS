@@ -422,7 +422,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: #ff1f1f;
+  background: #0f65ff;
 }
 
 .swiper-pagination-vertical.swiper-pagination-bullets,
@@ -890,6 +890,7 @@ button.swiper-pagination-bullet {
             box-shadow: none;
     border: 0;
     padding: 1rem;
+    max-width: 1200px;
     width: 100%;
     height: 5rem;
   }
@@ -1027,9 +1028,14 @@ button.swiper-pagination-bullet {
     background-color: white;
     border-radius: 2rem;
     padding: 5px 20px;
-    color: black;
+    color: #0f65ff;
     margin-right: 1rem;
     font-size: 0.8rem;
+  }
+  header nav .desktop-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   header .navlinks-overlay {
     position: fixed;
@@ -1171,8 +1177,9 @@ button.swiper-pagination-bullet {
   }
   header nav #nav-cta {
     display: block;
-    background-color: white;
-    color: black;
+    font-size: unset;
+    padding: 5px 20px;
+    font-size: 0.875rem;
   }
 }
 
@@ -1429,7 +1436,7 @@ button.swiper-pagination-bullet {
 }
 
 .btn-primary {
-  background-color: #ff1f1f;
+  background-color: #0f65ff;
 }
 
 .btn-success {
@@ -1679,7 +1686,7 @@ button.swiper-pagination-bullet {
   }
   #landing {
     width: 100vw;
-    height: 38rem;
+    height: 52rem;
     background-color: #0f65ff;
   }
   #landing .container {
@@ -1688,72 +1695,47 @@ button.swiper-pagination-bullet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
-  }
-  #landing .container .swiper-container {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/assets/paidimg01.jpg) 30% 50%/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/paidimg01.jpg) 30% 50%/cover;
-  }
-  #landing .container .swiper-container .landing-content {
-    position: absolute;
-    width: 100%;
-    max-width: 700px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    padding: 0 2rem;
-    z-index: 2;
   }
-  #landing .container .swiper-container .landing-content h1 {
+  #landing .container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     color: white;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    position: relative;
-    text-transform: uppercase;
+    padding: 0 1rem;
   }
-  #landing .container .swiper-container .landing-content p {
-    color: #ced4da;
+  #landing .container .content h1 {
+    margin-bottom: 0.5rem;
+  }
+  #landing .container .content p {
     margin-bottom: 1rem;
   }
-  #landing .container .swiper-container .landing-content > div {
+  #landing .container .content .ctas {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1761,130 +1743,14 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  #landing .container .swiper-container .landing-content > div :nth-child(2) {
-    border: 3px solid #ff1f1f;
-    color: white;
-    background-color: transparent;
-  }
-  #landing .container .swiper-container .landing-content > div a {
     width: 100%;
-    border: 1px solid white;
   }
-  #landing .container .swiper-container .swiper-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    z-index: 1;
-  }
-  #landing .container .swiper-container .swiper-wrapper .swiper-slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #landing .container .swiper-slide-active.swiper-slide .landing-content h1 {
-    opacity: 0;
-    -webkit-animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
-            animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
-    -webkit-animation-delay: 0.9s;
-            animation-delay: 0.9s;
-  }
-  #landing .container .swiper-slide-active.swiper-slide .landing-content p {
-    -webkit-animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
-            animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
-    opacity: 0;
-    -webkit-animation-delay: 1.4s;
-            animation-delay: 1.4s;
-  }
-  #landing .container .swiper-slide-active.swiper-slide .landing-content a {
-    opacity: 0;
-    -webkit-animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
-            animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
-    -webkit-animation-delay: 1.9s;
-            animation-delay: 1.9s;
-  }
-  #landing .container .controller {
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    z-index: 3;
-  }
-  #landing .container .controller .swiper-next {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #ffffff33;
+  #landing .container .content .ctas a {
+    width: 100%;
+    text-decoration: none;
     cursor: pointer;
-    padding: 1rem;
-    position: relative;
-    overflow: hidden;
-  }
-  #landing .container .controller .swiper-next .right {
-    width: 30px !important;
-    height: 2px;
+    border-radius: 2rem;
     background-color: white;
-    position: relative;
-  }
-  #landing .container .controller .swiper-next .right::after {
-    content: "";
-    width: 15px;
-    height: 2px;
-    background-color: inherit;
-    position: absolute;
-    right: 0;
-    -webkit-transform-origin: 100%;
-            transform-origin: 100%;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  #landing .container .controller .swiper-next .right::before {
-    content: "";
-    width: 15px;
-    height: 2px;
-    background-color: inherit;
-    position: absolute;
-    right: 0;
-    -webkit-transform-origin: 100%;
-            transform-origin: 100%;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  #landing .container .controller .swiper-next::before {
-    position: absolute;
-    width: 100%;
-    content: "";
-    height: 100%;
-    background-color: #495057;
-    -webkit-transform: translateX(-101%);
-            transform: translateX(-101%);
-  }
-  #landing .container .controller .swiper-prev {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1894,78 +1760,12 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #ffffff33;
     padding: 1rem;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    color: black;
   }
-  #landing .container .controller .swiper-prev .left {
-    width: 30px !important;
-    height: 2px;
-    background-color: #fff;
-    position: relative;
-  }
-  #landing .container .controller .swiper-prev .left::after {
-    content: "";
-    width: 15px;
-    height: 2px;
-    background-color: inherit;
-    position: absolute;
-    left: 0;
-    -webkit-transform-origin: 0%;
-            transform-origin: 0%;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  #landing .container .controller .swiper-prev .left::before {
-    content: "";
-    width: 15px;
-    height: 2px;
-    background-color: inherit;
-    position: absolute;
-    left: 0;
-    -webkit-transform-origin: 0%;
-            transform-origin: 0%;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  #landing .container .controller .swiper-prev::before {
-    position: absolute;
+  #landing .container .graphic {
     width: 100%;
-    content: "";
-    height: 100%;
-    background-color: #495057;
-    -webkit-transform: translateX(101%);
-            transform: translateX(101%);
-  }
-  #landing .container .swiper-pagination,
-  #landing .container .pagination-fraction {
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    z-index: 10;
-    color: white;
-    left: unset;
-  }
-  #landing .container .swiper-pagination .swiper-pagination-current,
-  #landing .container .pagination-fraction .swiper-pagination-current {
-    font-weight: bolder;
-    font-size: 2.5rem;
-    color: transparent;
-    -webkit-text-stroke: 0.5px #fff;
-  }
-  #landing .container .swiper-pagination .swiper-pagination-total,
-  #landing .container .pagination-fraction .swiper-pagination-total {
-    font-weight: bolder;
-    font-size: 1.75rem;
-    color: white;
-  }
-  #landing .container .social-media {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1975,14 +1775,9 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    z-index: 10;
-    position: absolute;
-    left: 1rem;
-    bottom: 1rem;
-    display: none;
   }
-  #landing .container .social-media img {
-    width: 2rem;
+  #landing .container .graphic img {
+    width: 55%;
   }
   #intro {
     width: 100vw;
@@ -2139,7 +1934,7 @@ button.swiper-pagination-bullet {
   #info {
     width: 100%;
     overflow: hidden;
-    background-color: #f8f8f8;
+    background-color: #f1fcff;
   }
   #info .container {
     display: -webkit-box;
@@ -2849,7 +2644,7 @@ button.swiper-pagination-bullet {
   }
   #about .container .profile .wrap .social a {
     padding: 0.5rem;
-    background-color: #ff1f1f;
+    background-color: #0f65ff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2916,7 +2711,7 @@ button.swiper-pagination-bullet {
   body.dark--mode #packages .container a {
     -webkit-box-shadow: none;
             box-shadow: none;
-    background-color: #ff1f1f;
+    background-color: #0f65ff;
     color: white;
   }
   body.dark--mode #packages .container a:hover {
@@ -3171,7 +2966,7 @@ button.swiper-pagination-bullet {
             flex-direction: row;
   }
   #landing .container .swiper-container .landing-content > div :nth-child(2) {
-    border: 3px solid #ff1f1f;
+    border: 3px solid #0f65ff;
     color: white;
     background-color: transparent;
   }
@@ -3832,7 +3627,7 @@ button.swiper-pagination-bullet {
             flex-direction: row;
   }
   #landing .container .swiper-container .landing-content > div :nth-child(2) {
-    border: 3px solid #ff1f1f;
+    border: 3px solid #0f65ff;
     color: white;
     background-color: transparent;
   }

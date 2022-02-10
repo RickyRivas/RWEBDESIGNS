@@ -28,6 +28,7 @@
       box-shadow: none;
       border: 0;
       padding: 1rem;
+      max-width: 1200px;
       width: 100%;
       height: 5rem;
 
@@ -132,9 +133,12 @@
         background-color: white;
         border-radius: 2rem;
         padding: 5px 20px;
-        color: black;
+        color: $primary;
         margin-right: 1rem;
         font-size: 0.8rem;
+      }
+      .desktop-flex {
+        display: flex;
       }
     }
 
@@ -254,8 +258,9 @@
       }
       #nav-cta {
         display: block;
-        background-color: white;
-        color: black;
+        font-size: unset;
+        padding: 5px 20px;
+        font-size: 0.875rem;
       }
     }
   }

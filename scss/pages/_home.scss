@@ -15,268 +15,58 @@
 
   #landing {
     width: 100vw;
-    height: 38rem;
+    height: 52rem;
     background-color: #0f65ff;
 
     .container {
       width: 100vw;
       height: 100%;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-
-      .swiper-container {
-        height: 100%;
-        width: 100%;
-        position: relative;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-direction: column;
+      .content {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-          url(/assets/paidimg01.jpg) 30% 50% / cover;
-
-        .landing-content {
-          position: absolute;
-          width: 100%;
-          max-width: 700px;
+        flex-direction: column;
+        color: white;
+        padding: 0 1rem;
+        // text-align: center;
+        h1 {
+          margin-bottom: 0.5rem;
+        }
+        p {
+          margin-bottom: 1rem;
+        }
+        .ctas {
           display: flex;
           justify-content: center;
           align-items: center;
-          text-align: center;
           flex-direction: column;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          padding: 0 $padding-lg;
-          z-index: 2;
-
-          h1 {
-            color: white;
-            font-size: $font-size-base * 2;
-            margin-bottom: $margin-md;
-            position: relative;
-            text-transform: uppercase;
-          }
-
-          p {
-            color: $gray-400;
-            margin-bottom: $margin-md;
-          }
-
-          & > div {
-            display: flex;
-            justify-self: center;
-            align-items: center;
-            flex-direction: column;
-
-            & :nth-child(2) {
-              border: 3px solid $primary;
-              color: white;
-              background-color: transparent;
-            }
-
-            a {
-              width: 100%;
-              border: 1px solid white;
-            }
-          }
-        }
-
-        & .swiper-wrapper {
-          display: flex;
-          position: relative;
-          z-index: 1;
-
-          .swiper-slide {
+          width: 100%;
+          a {
+            width: 100%;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 2rem;
+            background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-          }
-
-          // .swiper-landing-1 {
-          //     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img01L.png) 65% 50% / cover;
-          // }
-
-          // .swiper-landing-2 {
-          //     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsastock1.jpeg) center / cover;
-          // }
-
-          // .swiper-landing-3 {
-          //     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/bgimg02L.png) 40% 50% / cover;
-          // }
-        }
-      }
-
-      .swiper-slide-active.swiper-slide {
-        .landing-content {
-          h1 {
-            opacity: 0;
-            animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
-            animation-delay: 0.9s;
-          }
-
-          p {
-            animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
-            opacity: 0;
-            animation-delay: 1.4s;
-          }
-
-          a {
-            opacity: 0;
-            animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
-            animation-delay: 1.9s;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            color: black;
           }
         }
       }
-
-      .controller {
-        position: absolute;
-        bottom: 1rem;
-        left: 1rem;
+      .graphic {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 3;
-
-        .swiper-next {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: #ffffff33;
-          cursor: pointer;
-          padding: $padding-md;
-          position: relative;
-          overflow: hidden;
-
-          .right {
-            width: 30px !important;
-            height: 2px;
-            background-color: white;
-            position: relative;
-
-            &::after {
-              content: "";
-              width: 15px;
-              height: 2px;
-              background-color: inherit;
-              position: absolute;
-              right: 0;
-              transform-origin: 100%;
-              transform: rotate(45deg);
-            }
-
-            &::before {
-              content: "";
-              width: 15px;
-              height: 2px;
-              background-color: inherit;
-              position: absolute;
-              right: 0;
-              transform-origin: 100%;
-              transform: rotate(-45deg);
-            }
-          }
-
-          &::before {
-            position: absolute;
-            width: 100%;
-            content: "";
-            height: 100%;
-            background-color: $gray-700;
-            transform: translateX(-101%);
-          }
-        }
-
-        .swiper-prev {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: #ffffff33;
-          padding: $padding-md;
-          cursor: pointer;
-          overflow: hidden;
-          position: relative;
-          margin-right: $margin-sm;
-
-          .left {
-            width: 30px !important;
-            height: 2px;
-            background-color: $white;
-            position: relative;
-
-            &::after {
-              content: "";
-              width: 15px;
-              height: 2px;
-              background-color: inherit;
-              position: absolute;
-              left: 0;
-              transform-origin: 0%;
-              transform: rotate(45deg);
-            }
-
-            &::before {
-              content: "";
-              width: 15px;
-              height: 2px;
-              background-color: inherit;
-              position: absolute;
-              left: 0;
-              transform-origin: 0%;
-              transform: rotate(-45deg);
-            }
-          }
-
-          &::before {
-            position: absolute;
-            width: 100%;
-            content: "";
-            height: 100%;
-            background-color: $gray-700;
-            transform: translateX(101%);
-          }
-        }
-      }
-
-      .swiper-pagination,
-      .pagination-fraction {
-        position: absolute;
-        right: 1rem;
-        bottom: 1rem;
-        width: max-content;
-        z-index: 10;
-        color: white;
-        left: unset;
-
-        .swiper-pagination-current {
-          font-weight: bolder;
-          font-size: $font-size-lg * 2;
-          color: transparent;
-          -webkit-text-stroke: 0.5px #fff;
-        }
-
-        .swiper-pagination-total {
-          font-weight: bolder;
-          font-size: $font-size-lg * 1.4;
-          color: white;
-        }
-      }
-
-      .social-media {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-        position: absolute;
-        left: 1rem;
-        bottom: 1rem;
-        display: none;
-
         img {
-          width: 2rem;
+          width: 55%;
         }
       }
     }
@@ -429,7 +219,8 @@
   #info {
     width: 100%;
     overflow: hidden;
-    background-color: $prime-gray;
+    // background-color: $prime-gray;
+    background-color: $div-blue;
 
     .container {
       display: flex;
@@ -2605,3 +2396,257 @@
     background-position: 0% 50%;
   }
 }
+
+// .swiper-container {
+//       height: 100%;
+//       width: 100%;
+//       position: relative;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       padding: 0;
+//       background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+//         url(/assets/paidimg01.jpg) 30% 50% / cover;
+
+//       .landing-content {
+//         position: absolute;
+//         width: 100%;
+//         max-width: 700px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         text-align: center;
+//         flex-direction: column;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         padding: 0 $padding-lg;
+//         z-index: 2;
+
+//         h1 {
+//           color: white;
+//           font-size: $font-size-base * 2;
+//           margin-bottom: $margin-md;
+//           position: relative;
+//           text-transform: uppercase;
+//         }
+
+//         p {
+//           color: $gray-400;
+//           margin-bottom: $margin-md;
+//         }
+
+//         & > div {
+//           display: flex;
+//           justify-self: center;
+//           align-items: center;
+//           flex-direction: column;
+
+//           & :nth-child(2) {
+//             border: 3px solid $primary;
+//             color: white;
+//             background-color: transparent;
+//           }
+
+//           a {
+//             width: 100%;
+//             border: 1px solid white;
+//           }
+//         }
+//       }
+
+//       & .swiper-wrapper {
+//         display: flex;
+//         position: relative;
+//         z-index: 1;
+
+//         .swiper-slide {
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           flex-direction: column;
+//         }
+
+//         // .swiper-landing-1 {
+//         //     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img01L.png) 65% 50% / cover;
+//         // }
+
+//         // .swiper-landing-2 {
+//         //     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/tulsastock1.jpeg) center / cover;
+//         // }
+
+//         // .swiper-landing-3 {
+//         //     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/bgimg02L.png) 40% 50% / cover;
+//         // }
+//       }
+//     }
+
+//     .swiper-slide-active.swiper-slide {
+//       .landing-content {
+//         h1 {
+//           opacity: 0;
+//           animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
+//           animation-delay: 0.9s;
+//         }
+
+//         p {
+//           animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
+//           opacity: 0;
+//           animation-delay: 1.4s;
+//         }
+
+//         a {
+//           opacity: 0;
+//           animation: fadeInUp 0.5s cubic-bezier(0.3, 0, 0.7, 1) both;
+//           animation-delay: 1.9s;
+//         }
+//       }
+//     }
+
+//     .controller {
+//       position: absolute;
+//       bottom: 1rem;
+//       left: 1rem;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       z-index: 3;
+
+//       .swiper-next {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         background-color: #ffffff33;
+//         cursor: pointer;
+//         padding: $padding-md;
+//         position: relative;
+//         overflow: hidden;
+
+//         .right {
+//           width: 30px !important;
+//           height: 2px;
+//           background-color: white;
+//           position: relative;
+
+//           &::after {
+//             content: "";
+//             width: 15px;
+//             height: 2px;
+//             background-color: inherit;
+//             position: absolute;
+//             right: 0;
+//             transform-origin: 100%;
+//             transform: rotate(45deg);
+//           }
+
+//           &::before {
+//             content: "";
+//             width: 15px;
+//             height: 2px;
+//             background-color: inherit;
+//             position: absolute;
+//             right: 0;
+//             transform-origin: 100%;
+//             transform: rotate(-45deg);
+//           }
+//         }
+
+//         &::before {
+//           position: absolute;
+//           width: 100%;
+//           content: "";
+//           height: 100%;
+//           background-color: $gray-700;
+//           transform: translateX(-101%);
+//         }
+//       }
+
+//       .swiper-prev {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         background-color: #ffffff33;
+//         padding: $padding-md;
+//         cursor: pointer;
+//         overflow: hidden;
+//         position: relative;
+//         margin-right: $margin-sm;
+
+//         .left {
+//           width: 30px !important;
+//           height: 2px;
+//           background-color: $white;
+//           position: relative;
+
+//           &::after {
+//             content: "";
+//             width: 15px;
+//             height: 2px;
+//             background-color: inherit;
+//             position: absolute;
+//             left: 0;
+//             transform-origin: 0%;
+//             transform: rotate(45deg);
+//           }
+
+//           &::before {
+//             content: "";
+//             width: 15px;
+//             height: 2px;
+//             background-color: inherit;
+//             position: absolute;
+//             left: 0;
+//             transform-origin: 0%;
+//             transform: rotate(-45deg);
+//           }
+//         }
+
+//         &::before {
+//           position: absolute;
+//           width: 100%;
+//           content: "";
+//           height: 100%;
+//           background-color: $gray-700;
+//           transform: translateX(101%);
+//         }
+//       }
+//     }
+
+//     .swiper-pagination,
+//     .pagination-fraction {
+//       position: absolute;
+//       right: 1rem;
+//       bottom: 1rem;
+//       width: max-content;
+//       z-index: 10;
+//       color: white;
+//       left: unset;
+
+//       .swiper-pagination-current {
+//         font-weight: bolder;
+//         font-size: $font-size-lg * 2;
+//         color: transparent;
+//         -webkit-text-stroke: 0.5px #fff;
+//       }
+
+//       .swiper-pagination-total {
+//         font-weight: bolder;
+//         font-size: $font-size-lg * 1.4;
+//         color: white;
+//       }
+//     }
+
+//     .social-media {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       z-index: 10;
+//       position: absolute;
+//       left: 1rem;
+//       bottom: 1rem;
+//       display: none;
+
+//       img {
+//         width: 2rem;
+//       }
+//     }
