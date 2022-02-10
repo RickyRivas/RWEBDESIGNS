@@ -1011,8 +1011,25 @@ button.swiper-pagination-bullet {
     width: 1.5rem;
     margin-bottom: 1rem;
   }
+  header nav .mobile-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   header nav #nav-cta {
-    display: none;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 5px 20px;
+    color: black;
+    margin-right: 1rem;
+    font-size: 0.8rem;
   }
   header .navlinks-overlay {
     position: fixed;
@@ -1663,6 +1680,7 @@ button.swiper-pagination-bullet {
   #landing {
     width: 100vw;
     height: 38rem;
+    background-color: #2cb6f3;
   }
   #landing .container {
     width: 100vw;

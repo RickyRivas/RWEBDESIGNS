@@ -121,8 +121,20 @@
           }
         }
       }
+      .mobile-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       #nav-cta {
-        display: none;
+        // display: none;
+        text-decoration: none;
+        background-color: white;
+        border-radius: 2rem;
+        padding: 5px 20px;
+        color: black;
+        margin-right: 1rem;
+        font-size: 0.8rem;
       }
     }
 
