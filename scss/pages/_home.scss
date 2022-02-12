@@ -536,7 +536,11 @@
               color: white;
               margin-bottom: 0.5rem;
             }
-
+            input {
+              &::placeholder {
+                color: #222;
+              }
+            }
             input[type="text"] {
               width: 100%;
               padding: 1rem;
@@ -565,6 +569,9 @@
               border: 0;
               padding: 1rem;
               font-family: inherit;
+              &::placeholder {
+                color: #222;
+              }
             }
           }
 

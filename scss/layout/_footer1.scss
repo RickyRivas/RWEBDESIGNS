@@ -3,6 +3,7 @@
     width: 100%;
     border-top: 2px solid #f1f1f1;
     padding: $padding-xl $padding-md;
+    background-color: #222;
     .container {
       width: 100%;
       max-width: 1200px;
@@ -22,11 +23,17 @@
         h4 {
           margin-bottom: 1rem;
           white-space: nowrap;
+          color: white;
         }
         ul {
           list-style: none;
           li {
             margin-bottom: 0.5rem;
+            a {
+              text-decoration: none;
+              color: white;
+            }
+            color: white;
           }
         }
       }
@@ -90,12 +97,13 @@
     }
   }
   .credit {
-    border-top: 2px solid #f1f1f1;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
+    background-color: $primary;
+    color: white;
   }
 }
 @media (min-width: 1024px) {

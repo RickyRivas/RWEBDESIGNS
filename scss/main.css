@@ -1301,6 +1301,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     border-top: 2px solid #f1f1f1;
     padding: 4rem 1rem;
+    background-color: #222;
   }
   footer .container {
     width: 100%;
@@ -1327,12 +1328,18 @@ button.swiper-pagination-bullet {
   footer .container .col h4 {
     margin-bottom: 1rem;
     white-space: nowrap;
+    color: white;
   }
   footer .container .col ul {
     list-style: none;
   }
   footer .container .col ul li {
     margin-bottom: 0.5rem;
+    color: white;
+  }
+  footer .container .col ul li a {
+    text-decoration: none;
+    color: white;
   }
   footer .container .col:nth-child(2) {
     -ms-grid-row: 2;
@@ -1422,7 +1429,6 @@ button.swiper-pagination-bullet {
     text-decoration: none;
   }
   .credit {
-    border-top: 2px solid #f1f1f1;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1434,6 +1440,8 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
     padding: 1rem 0;
+    background-color: #0f65ff;
+    color: white;
   }
 }
 
@@ -2317,6 +2325,18 @@ button.swiper-pagination-bullet {
     color: white;
     margin-bottom: 0.5rem;
   }
+  #quote .container .form-container form .form-control input::-webkit-input-placeholder {
+    color: #222;
+  }
+  #quote .container .form-container form .form-control input:-ms-input-placeholder {
+    color: #222;
+  }
+  #quote .container .form-container form .form-control input::-ms-input-placeholder {
+    color: #222;
+  }
+  #quote .container .form-container form .form-control input::placeholder {
+    color: #222;
+  }
   #quote .container .form-container form .form-control input[type="text"] {
     width: 100%;
     padding: 1rem;
@@ -2342,6 +2362,18 @@ button.swiper-pagination-bullet {
     border: 0;
     padding: 1rem;
     font-family: inherit;
+  }
+  #quote .container .form-container form .form-control textarea::-webkit-input-placeholder {
+    color: #222;
+  }
+  #quote .container .form-container form .form-control textarea:-ms-input-placeholder {
+    color: #222;
+  }
+  #quote .container .form-container form .form-control textarea::-ms-input-placeholder {
+    color: #222;
+  }
+  #quote .container .form-container form .form-control textarea::placeholder {
+    color: #222;
   }
   #quote .container .form-container form .submit {
     background-color: white;
