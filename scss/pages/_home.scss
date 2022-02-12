@@ -330,8 +330,8 @@
             font-size: $font-size-sm;
             margin: 0 0 $margin-md 0;
             & > div {
-              width: 1.5rem;
-              height: 1.5rem;
+              width: 2rem;
+              height: 2rem;
               padding: 0.5rem;
               align-self: flex-start;
               margin: 0.2rem 0.5rem 0 0;
@@ -341,7 +341,7 @@
               justify-content: center;
               align-items: center;
               img {
-                width: 1rem;
+                width: 1.3rem;
                 margin: 0;
               }
             }
@@ -506,13 +506,16 @@
 
   #quote {
     width: 100%;
-    background-color: $primary;
+    background-color: #e6f0f6;
     padding: $padding-xl $padding-md;
 
     .container {
+      max-width: 1200px;
+      margin: auto;
       .content {
         h2 {
           margin-bottom: 1rem;
+          color: #222;
         }
 
         margin-bottom: 2rem;
@@ -544,7 +547,7 @@
               border: 0;
             }
 
-            input[type="number"] {
+            input[type="tel"] {
               width: 100%;
               padding: 1rem;
               border-radius: 2rem;
@@ -569,6 +572,7 @@
             justify-content: center;
             align-items: center;
             padding: 0.2rem;
+            transition: all 0.5s;
 
             button[type="submit"] {
               padding: 10px 30px;
@@ -576,19 +580,35 @@
               border-radius: 2rem;
               background-color: transparent;
               color: black;
+              cursor: pointer;
             }
 
             & > div {
-              background-color: $primary;
+              background-color: #e6f0f6;
               width: 2rem;
               height: 2rem;
               border-radius: 50%;
               display: flex;
               justify-content: center;
               align-items: center;
+              overflow: hidden;
+              transition: all 0.5s;
 
               img {
                 width: 1.2rem;
+                transition: all 0.5s;
+              }
+            }
+            &:hover,
+            &:active {
+              transform: translateY(-5px);
+              box-shadow: $box-shadow;
+              transition: all 0.5s;
+              & > div {
+                background-color: $primary;
+                // img {
+                //   transform: rotate(-20deg) translate(35px);
+                // }
               }
             }
           }
@@ -1986,7 +2006,97 @@
       }
     }
   }
+  #features {
+    .heading {
+      margin-bottom: $margin-xl;
+      span {
+      }
 
+      h2 {
+      }
+
+      p {
+      }
+    }
+
+    .container {
+      .item {
+        transition: all 0.5s;
+        .header {
+          img {
+          }
+        }
+
+        .body {
+          h4 {
+          }
+
+          p {
+          }
+        }
+        &:hover {
+          transform: translateY(-15px);
+        }
+      }
+      .item:nth-child(2) {
+        transform: translateY(-15px);
+      }
+    }
+  }
+  #quote {
+    width: 100%;
+    background-color: #e6f0f6;
+    padding: $padding-xl $padding-md;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .content {
+        h2 {
+        }
+      }
+
+      .form-container {
+        form {
+          .form-control {
+            p {
+            }
+
+            input[type="text"] {
+            }
+
+            input[type="email"] {
+            }
+
+            input[type="number"] {
+            }
+
+            textarea {
+            }
+          }
+
+          .submit {
+            button[type="submit"] {
+            }
+
+            & > div {
+              img {
+              }
+            }
+          }
+        }
+        .flex {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          width: 100%;
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
   #portfolio {
     .container {
       width: 100%;

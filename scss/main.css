@@ -1193,6 +1193,8 @@ button.swiper-pagination-bullet {
             transform: translateY(-5px);
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
 }
 
@@ -2123,8 +2125,8 @@ button.swiper-pagination-bullet {
     margin: 0 0 1rem 0;
   }
   #info .container .main-content ul li > div {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     padding: 0.5rem;
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -2142,7 +2144,7 @@ button.swiper-pagination-bullet {
             align-items: center;
   }
   #info .container .main-content ul li > div img {
-    width: 1rem;
+    width: 1.3rem;
     margin: 0;
   }
   #info .container .main-content ul li p {
@@ -2288,14 +2290,19 @@ button.swiper-pagination-bullet {
   }
   #quote {
     width: 100%;
-    background-color: #0f65ff;
+    background-color: #e6f0f6;
     padding: 4rem 1rem;
+  }
+  #quote .container {
+    max-width: 1200px;
+    margin: auto;
   }
   #quote .container .content {
     margin-bottom: 2rem;
   }
   #quote .container .content h2 {
     margin-bottom: 1rem;
+    color: #222;
   }
   #quote .container .form-container form {
     width: 100%;
@@ -2319,7 +2326,7 @@ button.swiper-pagination-bullet {
     border-radius: 2rem;
     border: 0;
   }
-  #quote .container .form-container form .form-control input[type="number"] {
+  #quote .container .form-container form .form-control input[type="tel"] {
     width: 100%;
     padding: 1rem;
     border-radius: 2rem;
@@ -2349,6 +2356,8 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
     padding: 0.2rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   #quote .container .form-container form .submit button[type="submit"] {
     padding: 10px 30px;
@@ -2356,9 +2365,10 @@ button.swiper-pagination-bullet {
     border-radius: 2rem;
     background-color: transparent;
     color: black;
+    cursor: pointer;
   }
   #quote .container .form-container form .submit > div {
-    background-color: #0f65ff;
+    background-color: #e6f0f6;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -2371,9 +2381,25 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   #quote .container .form-container form .submit > div img {
     width: 1.2rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #quote .container .form-container form .submit:hover, #quote .container .form-container form .submit:active {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #quote .container .form-container form .submit:hover > div, #quote .container .form-container form .submit:active > div {
+    background-color: #0f65ff;
   }
   #portfolio {
     width: 100%;
@@ -3930,6 +3956,43 @@ button.swiper-pagination-bullet {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  #features .heading {
+    margin-bottom: 4rem;
+  }
+  #features .container .item {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #features .container .item:hover {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  #features .container .item:nth-child(2) {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  #quote {
+    width: 100%;
+    background-color: #e6f0f6;
+    padding: 4rem 1rem;
+  }
+  #quote .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #quote .container .form-container .flex {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+  }
+  #quote .container .form-container .flex input {
+    width: 100%;
   }
   #portfolio .container {
     width: 100%;
