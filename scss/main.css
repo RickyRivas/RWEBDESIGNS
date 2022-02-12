@@ -2290,7 +2290,7 @@ button.swiper-pagination-bullet {
   }
   #quote {
     width: 100%;
-    background-color: #e6f0f6;
+    background-color: #0f65ff;
     padding: 4rem 1rem;
   }
   #quote .container {
@@ -2302,7 +2302,10 @@ button.swiper-pagination-bullet {
   }
   #quote .container .content h2 {
     margin-bottom: 1rem;
-    color: #222;
+    color: white;
+  }
+  #quote .container .content p {
+    color: white;
   }
   #quote .container .form-container form {
     width: 100%;
@@ -3005,7 +3008,6 @@ button.swiper-pagination-bullet {
     border-radius: 0.5rem 0.5rem 0 0;
   }
   #packages .container .packages-grid .p-item .pricing {
-    margin-bottom: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3025,6 +3027,9 @@ button.swiper-pagination-bullet {
   }
   #packages .container .packages-grid .p-item .pricing :nth-child(2) {
     margin-bottom: 1rem;
+  }
+  #packages .container .packages-grid .p-item .pricing span {
+    display: none;
   }
   #packages .container .packages-grid .p-item .pricing-1 :nth-child(2) {
     position: relative;
@@ -3082,7 +3087,7 @@ button.swiper-pagination-bullet {
     width: -moz-max-content;
     width: max-content;
     list-style: none;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   #packages .container .packages-grid .p-item .items .item {
     display: -webkit-box;
@@ -3095,7 +3100,7 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    font-size: 1rem;
+    margin-bottom: 1rem;
   }
   #packages .container .packages-grid .p-item .items .item img {
     margin: 0;
@@ -3104,7 +3109,7 @@ button.swiper-pagination-bullet {
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
-    width: 1rem;
+    width: 0.5rem;
     margin-right: 0.5rem;
   }
   #packages .container .packages-grid .p-item .items .item > div {
@@ -3122,6 +3127,33 @@ button.swiper-pagination-bullet {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #packages .container .packages-grid .p-item .items .item > div:nth-child(1) {
+    background-color: #e3f3e7;
+    border-radius: 50%;
+    margin: 0;
+    justify-self: center;
+    -ms-flex-item-align: end;
+        align-self: end;
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-right: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #packages .container .packages-grid .p-item .items .item > div:nth-child(1) img {
+    width: 1.3rem;
+    margin: 0;
+    -ms-flex-item-align: unset;
+        -ms-grid-row-align: unset;
+        align-self: unset;
+  }
   #packages .container .packages-grid .p-item a {
     position: relative;
     overflow: hidden;
@@ -3134,6 +3166,14 @@ button.swiper-pagination-bullet {
   }
   #packages .container .packages-grid .p-item a:hover {
     opacity: 0.7;
+  }
+  #packages .container .packages-grid .p-item a:hover, #packages .container .packages-grid .p-item a:active {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
 }
 
@@ -3974,7 +4014,6 @@ button.swiper-pagination-bullet {
   }
   #quote {
     width: 100%;
-    background-color: #e6f0f6;
     padding: 4rem 1rem;
   }
   #quote .container {
@@ -4292,7 +4331,7 @@ button.swiper-pagination-bullet {
     color: white;
   }
   #packages .container .packages-grid .p-item .pricing {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4306,6 +4345,7 @@ button.swiper-pagination-bullet {
             flex-direction: column;
     padding: 0.6rem;
     width: 100%;
+    padding-bottom: 0.5rem !important;
   }
   #packages .container .packages-grid .p-item .pricing :nth-child(1) {
     margin-bottom: 1rem;
@@ -4342,7 +4382,7 @@ button.swiper-pagination-bullet {
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2)::after {
-    content: "/YR";
+    content: "/once";
     position: absolute;
     bottom: 0.3rem;
     font-size: 0.875rem;
@@ -4369,7 +4409,7 @@ button.swiper-pagination-bullet {
     width: -moz-max-content;
     width: max-content;
     list-style: none;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   #packages .container .packages-grid .p-item .items .item {
     display: -webkit-box;

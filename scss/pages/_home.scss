@@ -506,7 +506,7 @@
 
   #quote {
     width: 100%;
-    background-color: #e6f0f6;
+    background-color: $primary;
     padding: $padding-xl $padding-md;
 
     .container {
@@ -515,10 +515,14 @@
       .content {
         h2 {
           margin-bottom: 1rem;
-          color: #222;
+          // color: #222;
+          color: white;
         }
 
         margin-bottom: 2rem;
+        p {
+          color: white;
+        }
       }
 
       .form-container {
@@ -1152,7 +1156,7 @@
           }
 
           .pricing {
-            margin-bottom: $margin-md;
+            // margin-bottom: $margin-md;
             display: flex;
             justify-self: center;
             align-items: center;
@@ -1166,6 +1170,9 @@
 
             & :nth-child(2) {
               margin-bottom: $margin-md;
+            }
+            span {
+              display: none;
             }
           }
 
@@ -1238,20 +1245,21 @@
           .items {
             width: max-content;
             list-style: none;
-            padding: 1rem;
+            padding: 0.5rem;
 
             .item {
               display: flex;
               justify-content: flex-start;
               align-items: center;
               width: 100%;
-              font-size: $font-size-base;
+              // font-size: $font-size-base;
+              margin-bottom: 1rem;
 
               img {
                 margin: 0;
                 justify-self: center;
                 align-self: end;
-                width: 1rem;
+                width: 0.5rem;
                 margin-right: $margin-sm;
               }
 
@@ -1260,6 +1268,24 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+              }
+              & > div:nth-child(1) {
+                background-color: #e3f3e7;
+                border-radius: 50%;
+                margin: 0;
+                justify-self: center;
+                align-self: end;
+                width: 1.7rem;
+                height: 1.7rem;
+                margin-right: $margin-sm;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                  width: 1.3rem;
+                  margin: 0;
+                  align-self: unset;
+                }
               }
             }
           }
@@ -1278,6 +1304,12 @@
 
             &:hover {
               opacity: 0.7;
+            }
+            &:hover,
+            &:active {
+              transform: translateY(-5px);
+              box-shadow: $box-shadow;
+              transition: all 0.5s;
             }
           }
         }
@@ -2045,7 +2077,8 @@
   }
   #quote {
     width: 100%;
-    background-color: #e6f0f6;
+    // background-color: #e6f0f6;
+    // background-color: $primary;
     padding: $padding-xl $padding-md;
 
     .container {
@@ -2053,6 +2086,7 @@
       grid-template-columns: 1fr 1fr;
       .content {
         h2 {
+          // color: white;
         }
       }
 
@@ -2331,13 +2365,14 @@
           }
 
           .pricing {
-            margin-bottom: $margin-md;
+            margin-bottom: 0;
             display: flex;
             justify-self: center;
             align-items: center;
             flex-direction: column;
             padding: 0.6rem;
             width: 100%;
+            padding-bottom: 0.5rem !important;
 
             & :nth-child(1) {
               margin-bottom: $margin-md;
@@ -2384,7 +2419,7 @@
               }
 
               &::after {
-                content: "/YR";
+                content: "/once";
                 position: absolute;
                 bottom: 0.3rem;
                 font-size: $font-size-sm;
@@ -2417,7 +2452,7 @@
           .items {
             width: max-content;
             list-style: none;
-            padding: 1rem;
+            padding: 0.5rem;
 
             .item {
               display: flex;
