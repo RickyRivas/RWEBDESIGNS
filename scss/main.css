@@ -1185,10 +1185,10 @@ button.swiper-pagination-bullet {
     padding: 0.6rem 1.5rem;
     font-size: 0.875rem;
     margin-right: 0;
-  }
-  header nav #nav-cta:hover, header nav #nav-cta:active {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+  }
+  header nav #nav-cta:hover, header nav #nav-cta:active {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -2122,11 +2122,28 @@ button.swiper-pagination-bullet {
     font-size: 0.875rem;
     margin: 0 0 1rem 0;
   }
-  #info .container .main-content ul li img {
+  #info .container .main-content ul li > div {
     width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5rem;
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin: 0.2rem 0.5rem 0 0;
+    background-color: #e3f3e7;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #info .container .main-content ul li > div img {
+    width: 1rem;
+    margin: 0;
   }
   #info .container .main-content ul li p {
     margin: 0;
@@ -3207,12 +3224,6 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
   }
-  #info .container .main-content ul li img {
-    width: 1.3rem;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    margin: 0.2rem 0.5rem 0 0;
-  }
   #info .container .main-content ul li p {
     margin: 0;
     color: #000;
@@ -3725,10 +3736,10 @@ button.swiper-pagination-bullet {
     padding: 0.8rem 2rem;
     margin-bottom: 0;
     color: black;
-  }
-  #landing .container .content .ctas a:hover, #landing .container .content .ctas a:active {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+  }
+  #landing .container .content .ctas a:hover, #landing .container .content .ctas a:active {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -3886,12 +3897,6 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
   }
-  #info .container .main-content ul li img {
-    width: 1.5rem;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    margin: 0rem 0.5rem 0 0;
-  }
   #info .container .main-content ul li p {
     margin: 0;
     color: #000;
@@ -3909,6 +3914,12 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #info .container .main-content .btns a:hover, #info .container .main-content .btns a:active {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   #info .container .graphic {
     width: 100%;

@@ -262,6 +262,7 @@
         padding: 0.6rem 1.5rem;
         font-size: 0.875rem;
         margin-right: 0;
+        transition: all 0.5s;
         // &::after {
         //   content: "";
         //   display: block;
@@ -272,7 +273,6 @@
         // }
         &:hover,
         &:active {
-          transition: all 0.5s;
           transform: translateY(-5px);
           box-shadow: $box-shadow;
         }
