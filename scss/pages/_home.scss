@@ -508,7 +508,7 @@
     width: 100%;
     padding: $padding-xl $padding-md;
     position: relative;
-    background: url(/assets/tulsa.jpg) 50% 40% / cover;
+    background: url(/assets/tulsaMobile.png) 50% 40% / cover;
     .blue-overlay {
       position: absolute;
       width: 100%;
@@ -1675,7 +1675,9 @@
       }
     }
   }
-
+  #quote {
+    background: url(/assets/tulsa.jpg) 50% 40% / cover;
+  }
   #packages {
     .container {
       padding: $padding-lg $padding-md;

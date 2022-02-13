@@ -2300,7 +2300,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     padding: 4rem 1rem;
     position: relative;
-    background: url(/assets/tulsa.jpg) 50% 40%/cover;
+    background: url(/assets/tulsaMobile.png) 50% 40%/cover;
   }
   #quote .blue-overlay {
     position: absolute;
@@ -3598,6 +3598,9 @@ button.swiper-pagination-bullet {
   #about .container .bio p {
     color: #ced4da;
     line-height: 1.5;
+  }
+  #quote {
+    background: url(/assets/tulsa.jpg) 50% 40%/cover;
   }
   #packages .container {
     padding: 2rem 1rem;
