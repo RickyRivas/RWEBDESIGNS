@@ -1,0 +1,243 @@
+@media (min-width: 0px) {
+    #contact {
+        padding: $padding-xl $padding-md;
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            .form-container {
+                width: 100%;
+                margin-bottom: $margin-lg;
+
+                h2 {
+                        width: 100%;
+                        position: relative;
+                        text-transform: uppercase;
+                        font-size: $font-size-base * 2;
+                        background: $gradient-bg-one;
+                        background-size: 400% 400%;
+                        animation: gradient 15s ease infinite;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        margin-bottom: $margin-sm;
+                      
+                }
+                p {
+                    margin-bottom: $margin-lg;
+                }
+
+                form {
+                    width: 100%;
+
+                    .form-control {
+                        margin-bottom: 1rem;
+
+                        p {
+                            color: white;
+                            margin-bottom: 0.5rem;
+                        }
+
+                        input {
+                            &::placeholder {
+                                color: #222;
+                            }
+                        }
+
+                        input[type="text"] {
+                            width: 100%;
+                            padding: 1rem;
+                            border-radius: 2rem;
+                            border: 0;
+                            border: 1px solid #a4a4a4;
+                            font-size: 16px;
+                        }
+
+                        input[type="email"] {
+                            width: 100%;
+                            padding: 1rem;
+                            border-radius: 2rem;
+                            border: 0;
+                            border: 1px solid #a4a4a4;
+                            font-size: 16px;
+                        }
+
+                        input[type="tel"] {
+                            width: 100%;
+                            padding: 1rem;
+                            border-radius: 2rem;
+                            border: 0;
+                            border: 1px solid #a4a4a4;
+                            font-size: 16px;
+                        }
+
+                        select {
+                            width: 100%;
+                            padding: 1rem;
+                            border-radius: 2rem;
+                            border: 0;
+                            border: 1px solid #a4a4a4;
+                            -webkit-appearance: none;
+                            background-image: url(/assets/down-chevron.svg);
+                            background-position: right 0.75em center;
+                            background-repeat: no-repeat;
+                            background-size: 10px;
+                            font-size: 16px;
+                        }
+
+                        textarea {
+                            resize: none;
+                            width: 100%;
+                            border-radius: 2rem;
+                            border: 0;
+                            padding: 1rem;
+                            font-family: inherit;
+                            border: 1px solid #a4a4a4;
+                            font-size: 16px;
+
+                            &::placeholder {
+                                color: #222;
+                            }
+                        }
+                    }
+
+                    .submit {
+                        background-color: $primary;
+                        border-radius: 2rem;
+                        width: max-content;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0.2rem;
+                        transition: all 0.5s;
+
+                        button[type="submit"] {
+                            padding: 10px 30px;
+                            border: 0;
+                            border-radius: 2rem;
+                            background-color: transparent;
+                            color: white;
+                            cursor: pointer;
+                            text-transform: uppercase;
+                        }
+
+                        &>div {
+                            background-color: white;
+                            width: 2rem;
+                            height: 2rem;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            overflow: hidden;
+                            transition: all 0.5s;
+
+                            img {
+                                width: 1.2rem;
+                                transition: all 0.5s;
+                            }
+                        }
+
+                        &:hover,
+                        &:active {
+                            transform: translateY(-5px);
+                            box-shadow: $box-shadow;
+                            transition: all 0.5s;
+
+                            &>div {
+                                background-color: $primary;
+                                // img {
+                                //   transform: rotate(-20deg) translate(35px);
+                                // }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contact-info {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: left;
+                flex-direction: column;
+                padding: 1rem 0;
+
+                p {
+                    strong {
+                        margin-right: .5rem;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    #contact {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            .form-container {
+                h2 {}
+
+                form {
+                    .form-control {
+                        width: 90%;
+                        p {}
+
+                        input {
+                            &::placeholder {}
+                        }
+
+                        input[type="text"] {}
+
+                        input[type="email"] {}
+
+                        input[type="tel"] {}
+
+                        select {}
+
+                        textarea {
+
+                            &::placeholder {}
+                        }
+                    }
+
+                    .submit {
+                        button[type="submit"] {}
+
+                        &>div {
+                            img {}
+                        }
+
+                        &:hover,
+                        &:active {
+
+                            &>div {}
+                        }
+                    }
+                }
+            }
+
+            .contact-info {
+                justify-content: flex-start;
+                margin-top: 4rem;
+                p {
+                    strong {}
+
+                    a {}
+                }
+            }
+        }
+    }
+}
