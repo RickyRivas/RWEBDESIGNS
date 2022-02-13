@@ -1491,7 +1491,7 @@ button.swiper-pagination-bullet {
 }
 
 .btn-danger {
-  background-color: #ef2e2d;
+  background-color: #d92322;
 }
 
 .btn-info {
@@ -1504,7 +1504,7 @@ button.swiper-pagination-bullet {
 }
 
 .btn-secondary {
-  background-color: #ef2e2d;
+  background-color: #d92322;
 }
 
 .btn-dark {
@@ -1864,7 +1864,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 2rem;
   }
   #intro .container .heading span {
-    color: #adb5bd;
+    color: #727272;
   }
   #intro .container .heading h2 {
     width: -webkit-max-content;
@@ -1884,7 +1884,7 @@ button.swiper-pagination-bullet {
   }
   #intro .container .heading p {
     line-height: 1.5;
-    color: #495057;
+    color: #727272;
     font-size: 1rem;
   }
   #intro .container .service-items {
@@ -1940,7 +1940,7 @@ button.swiper-pagination-bullet {
     width: 3rem;
   }
   #intro .container .service-items .service-item .tag {
-    background-color: #ef2e2d;
+    background-color: #d92322;
     border-radius: 2rem;
     padding: 0.2rem 1em;
     color: white;
@@ -1957,7 +1957,7 @@ button.swiper-pagination-bullet {
     font-size: 1.2rem;
   }
   #intro .container .service-items .service-item p {
-    color: #495057;
+    color: #727272;
     margin-bottom: 1rem;
     line-height: 1.5;
     font-size: 0.875rem;
@@ -2052,13 +2052,13 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
   }
   #info .container .line span {
-    color: #adb5bd;
+    color: #727272;
     margin-bottom: 0.5rem;
   }
   #info .container .line > div {
     width: 1px;
     height: 40px;
-    background-color: #ced4da;
+    background-color: #727272;
   }
   #info .container .main-content {
     display: -webkit-box;
@@ -2156,7 +2156,7 @@ button.swiper-pagination-bullet {
   }
   #info .container .main-content ul li p {
     margin: 0;
-    color: #495057;
+    color: #727272;
     line-height: 1.5;
     text-align: left;
   }
@@ -2233,7 +2233,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 1rem;
   }
   #features .heading span {
-    color: #adb5bd;
+    color: #727272;
     font-size: 1rem;
   }
   #features .heading h2 {
@@ -2250,7 +2250,7 @@ button.swiper-pagination-bullet {
   }
   #features .heading p {
     line-height: 1.5;
-    color: #495057;
+    color: #727272;
     font-size: 1rem;
   }
   #features .container {
@@ -2477,7 +2477,7 @@ button.swiper-pagination-bullet {
     padding: 0 1rem;
   }
   #portfolio .container .heading span {
-    color: #adb5bd;
+    color: #727272;
     font-size: 1rem;
   }
   #portfolio .container .heading h2 {
@@ -2574,7 +2574,7 @@ button.swiper-pagination-bullet {
     line-height: 2;
     text-transform: uppercase;
     font-size: 0.7rem;
-    color: #a4a4a4;
+    color: #727272;
     letter-spacing: 2px;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text p {
@@ -2998,7 +2998,7 @@ button.swiper-pagination-bullet {
     max-width: 700px;
   }
   #packages .container .heading span {
-    color: #adb5bd;
+    color: #727272;
     font-size: 1rem;
   }
   #packages .container .heading h2 {
@@ -3014,7 +3014,7 @@ button.swiper-pagination-bullet {
     -webkit-text-fill-color: transparent;
   }
   #packages .container .heading p {
-    color: #495057;
+    color: #727272;
     line-height: 1.5;
     font-size: 1rem;
   }
