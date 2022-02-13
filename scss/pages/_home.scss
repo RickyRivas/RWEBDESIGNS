@@ -308,7 +308,6 @@
         p {
           line-height: 2;
           margin-bottom: $margin-md;
-          color: $gray-700;
           font-size: $font-size-base;
           text-align: left;
         }
@@ -319,7 +318,7 @@
           justify-content: center;
           align-items: flex-start;
           flex-direction: column;
-          padding: 0 $padding-lg;
+          padding: 0;
           margin-bottom: $margin-md;
 
           li {
@@ -348,7 +347,7 @@
 
             p {
               margin: 0;
-              color: #000;
+              color: $gray-700;
               line-height: 1.5;
               text-align: left;
             }
@@ -506,17 +505,29 @@
 
   #quote {
     width: 100%;
-    background-color: $primary;
     padding: $padding-xl $padding-md;
-
+    position: relative;
+    background: url(/assets/tulsa.jpg) 50% 40% / cover;
+    .blue-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-color: $primary;
+      opacity: 0.9;
+      // z-index: 1;
+    }
     .container {
       max-width: 1200px;
       margin: auto;
+      position: relative;
       .content {
         h2 {
           margin-bottom: 1rem;
           // color: #222;
           color: white;
+          font-size: 2rem;
         }
 
         margin-bottom: 2rem;
@@ -1023,6 +1034,9 @@
                 width: 1.5rem;
               }
             }
+            &:hover {
+              border: 1px solid white;
+            }
           }
         }
       }
@@ -1219,7 +1233,7 @@
               }
 
               &::after {
-                content: "/YR";
+                content: "/once";
                 position: absolute;
                 bottom: 0.3rem;
                 font-size: $font-size-sm;
@@ -1746,7 +1760,7 @@
               }
 
               &::after {
-                content: "/YR";
+                content: "/once";
                 position: absolute;
                 bottom: 0.3rem;
                 font-size: $font-size-sm;

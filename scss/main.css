@@ -1325,7 +1325,7 @@ button.swiper-pagination-bullet {
             justify-content: center;
     padding: 1rem 0;
   }
-  footer .container .col h4 {
+  footer .container .col h3 {
     margin-bottom: 1rem;
     white-space: nowrap;
     color: white;
@@ -2094,7 +2094,6 @@ button.swiper-pagination-bullet {
   #info .container .main-content p {
     line-height: 2;
     margin-bottom: 1rem;
-    color: #495057;
     font-size: 1rem;
     text-align: left;
   }
@@ -2113,7 +2112,7 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 2rem;
+    padding: 0;
     margin-bottom: 1rem;
   }
   #info .container .main-content ul li {
@@ -2157,7 +2156,7 @@ button.swiper-pagination-bullet {
   }
   #info .container .main-content ul li p {
     margin: 0;
-    color: #000;
+    color: #495057;
     line-height: 1.5;
     text-align: left;
   }
@@ -2298,12 +2297,23 @@ button.swiper-pagination-bullet {
   }
   #quote {
     width: 100%;
-    background-color: #0f65ff;
     padding: 4rem 1rem;
+    position: relative;
+    background: url(/assets/tulsa.jpg) 50% 40%/cover;
+  }
+  #quote .blue-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #0f65ff;
+    opacity: 0.9;
   }
   #quote .container {
     max-width: 1200px;
     margin: auto;
+    position: relative;
   }
   #quote .container .content {
     margin-bottom: 2rem;
@@ -2311,6 +2321,7 @@ button.swiper-pagination-bullet {
   #quote .container .content h2 {
     margin-bottom: 1rem;
     color: white;
+    font-size: 2rem;
   }
   #quote .container .content p {
     color: white;
@@ -2895,6 +2906,9 @@ button.swiper-pagination-bullet {
   #about .container .profile .wrap .social a img {
     width: 1.5rem;
   }
+  #about .container .profile .wrap .social:hover {
+    border: 1px solid white;
+  }
   #about .container .bio {
     width: 100%;
     display: -webkit-box;
@@ -3092,7 +3106,7 @@ button.swiper-pagination-bullet {
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2)::after {
-    content: "/YR";
+    content: "/once";
     position: absolute;
     bottom: 0.3rem;
     font-size: 0.875rem;
@@ -3683,7 +3697,7 @@ button.swiper-pagination-bullet {
     font-size: 0.875rem;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2)::after {
-    content: "/YR";
+    content: "/once";
     position: absolute;
     bottom: 0.3rem;
     font-size: 0.875rem;
