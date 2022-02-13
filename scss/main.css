@@ -4869,6 +4869,8 @@ button.swiper-pagination-bullet {
     background-repeat: no-repeat;
     background-size: 10px;
     font-size: 16px;
+    background-color: white;
+    color: black;
   }
   #contact .container .form-container form .form-control textarea {
     resize: none;
