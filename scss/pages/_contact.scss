@@ -186,14 +186,13 @@
     #contact {
         .container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            grid-template-columns: 55% 40%;
+            gap: 2rem;
             .form-container {
                 h2 {}
 
                 form {
                     .form-control {
-                        width: 90%;
                         p {}
 
                         input {
