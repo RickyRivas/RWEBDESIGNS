@@ -13,7 +13,6 @@
                 h2 {
                         width: 100%;
                         position: relative;
-                        text-transform: uppercase;
                         font-size: $font-size-base * 2;
                         background: $gradient-bg-one;
                         background-size: 400% 400%;
@@ -111,7 +110,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        padding: 0.2rem;
+                        padding: 0.3rem;
                         transition: all 0.5s;
 
                         button[type="submit"] {
