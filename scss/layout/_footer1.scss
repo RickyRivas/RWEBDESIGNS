@@ -13,7 +13,7 @@
         "logo logo"
         "two three"
         "contact contact";
-grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+// grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
       grid-gap: 1rem;
       .col {
         display: flex;

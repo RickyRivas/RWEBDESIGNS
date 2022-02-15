@@ -1336,8 +1336,6 @@ button.swiper-pagination-bullet {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "logo logo" "two three" "contact contact";
-    -ms-grid-columns: (minmax(0, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
     grid-gap: 1rem;
   }
   footer .container .col {
