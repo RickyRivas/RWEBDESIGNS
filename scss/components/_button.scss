@@ -1,14 +1,14 @@
 // Regular Button
 .btn {
   cursor: pointer;
-  padding: 10px 30px;
+  padding: .6em 1.5em;
   border: 0;
   color: white;
   text-decoration: none;
   margin: $margin-sm;
   box-shadow: $box-shadow;
-  font-size: $font-size-sm;
-  border-radius: 2rem;
+  font-size: .875em;
+  border-radius: 2em;
 
   &:hover {
     opacity: 0.8;

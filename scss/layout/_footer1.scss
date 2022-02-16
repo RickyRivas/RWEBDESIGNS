@@ -111,6 +111,7 @@
   footer {
     .container {
       width: 100%;
+      max-width: 55em;
       grid-template-areas: "logo two three contact";
       .logo-contain {
         padding: 0;
