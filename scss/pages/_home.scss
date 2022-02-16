@@ -15,13 +15,13 @@
 
   #landing {
     width: 100vw;
-    height: 52rem;
+    height: 52em;
     background-color: #0f65ff;
     overflow: hidden;
 
     .container {
       width: 100vw;
-      max-width: 1200px;
+      max-width: 55em;
       margin: auto;
       height: 100%;
       display: flex;
@@ -35,15 +35,15 @@
         align-items: flex-start;
         flex-direction: column;
         color: white;
-        padding: 0 1rem;
+        padding: 0 1em;
 
         // text-align: center;
         h1 {
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.5em;
         }
 
         p {
-          margin-bottom: 1rem;
+          margin-bottom: 1em;
           line-height: 1.8;
         }
 
@@ -58,13 +58,13 @@
             width: 100%;
             text-decoration: none;
             cursor: pointer;
-            border-radius: 2rem;
+            border-radius: 2em;
             background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 1rem;
-            margin-bottom: 1rem;
+            padding: 1em;
+            margin-bottom: 1em;
             color: black;
           }
 
@@ -138,7 +138,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-        grid-gap: 1rem;
+        grid-gap: 1em;
         place-items: center;
 
         .service-item {
@@ -152,32 +152,32 @@
           height: 100%;
           min-height: 250px;
           background-color: #f8f8f8;
-          border-radius: 0.5rem;
+          border-radius: 0.5em;
           box-shadow: $box-shadow;
           position: relative;
 
           &>div {
-            padding: 1rem;
+            padding: 1em;
             background-color: #222;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            margin-bottom: 1rem;
+            margin-bottom: 1em;
 
             img {
-              width: 3rem;
+              width: 3em;
             }
           }
 
           .tag {
             background-color: $red;
-            border-radius: 2rem;
-            padding: 0.2rem 1em;
+            border-radius: 2em;
+            padding: 0.2em 1em;
             color: white;
             position: absolute;
-            top: 0.5rem;
-            right: 0.5rem;
+            top: 0.5em;
+            right: 0.5em;
             transform: rotate(10deg);
             margin: 0;
           }
@@ -185,7 +185,7 @@
           h4 {
             margin-bottom: $margin-md;
             text-transform: uppercase;
-            font-size: 1.2rem;
+            font-size: 1.2em;
           }
 
           p {
@@ -333,11 +333,11 @@
             margin: 0 0 $margin-md 0;
 
             &>div {
-              width: 2rem;
-              height: 2rem;
-              padding: 0.5rem;
+              width: 2em;
+              height: 2em;
+              padding: 0.5em;
               align-self: flex-start;
-              margin: 0.2rem 0.5rem 0 0;
+              margin: 0.2em 0.5em 0 0;
               background-color: #e3f3e7;
               border-radius: 50%;
               display: flex;
@@ -345,7 +345,7 @@
               align-items: center;
 
               img {
-                width: 1.3rem;
+                width: 1.3em;
                 margin: 0;
               }
             }
@@ -385,8 +385,8 @@
 
         &::before {
           content: "";
-          left: 2rem;
-          top: 2rem;
+          left: 2em;
+          top: 2em;
           width: 100%;
           height: 100%;
           position: absolute;
@@ -468,7 +468,7 @@
       max-width: 1200px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-      grid-gap: 1rem;
+      grid-gap: 1em;
       margin: auto;
       place-items: center;
 
@@ -479,12 +479,12 @@
         grid-template-rows: 50% auto;
         background-color: #f8f8f8;
         position: relative;
-        border-radius: 0.5rem;
+        border-radius: 0.5em;
         box-shadow: $box-shadow;
 
         .header {
           img {
-            border-radius: 0.5rem 0.5rem 0 0;
+            border-radius: 0.5em 0.5em 0 0;
             width: 100%;
             height: 100%;
             max-height: 212px;
@@ -533,13 +533,13 @@
 
       .content {
         h2 {
-          margin-bottom: 1rem;
+          margin-bottom: 1em;
           // color: #222;
           color: white;
-          font-size: 2rem;
+          font-size: 2em;
         }
 
-        margin-bottom: 2rem;
+        margin-bottom: 2em;
 
         p {
           color: white;
@@ -551,11 +551,11 @@
           width: 100%;
 
           .form-control {
-            margin-bottom: 1rem;
+            margin-bottom: 1em;
 
             p {
               color: white;
-              margin-bottom: 0.5rem;
+              margin-bottom: 0.5em;
             }
 
             input {
@@ -566,31 +566,31 @@
 
             input[type="text"] {
               width: 100%;
-              padding: 1rem;
-              border-radius: 2rem;
+              padding: 1em;
+              border-radius: 2em;
               border: 0;
             }
 
             input[type="email"] {
               width: 100%;
-              padding: 1rem;
-              border-radius: 2rem;
+              padding: 1em;
+              border-radius: 2em;
               border: 0;
             }
 
             input[type="tel"] {
               width: 100%;
-              padding: 1rem;
-              border-radius: 2rem;
+              padding: 1em;
+              border-radius: 2em;
               border: 0;
             }
 
             textarea {
               resize: none;
               width: 100%;
-              border-radius: 2rem;
+              border-radius: 2em;
               border: 0;
-              padding: 1rem;
+              padding: 1em;
               font-family: inherit;
 
               &::placeholder {
@@ -601,18 +601,18 @@
 
           .submit {
             background-color: white;
-            border-radius: 2rem;
+            border-radius: 2em;
             width: max-content;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 0.2rem;
+            padding: 0.2em;
             transition: all 0.5s;
 
             button[type="submit"] {
               padding: 10px 30px;
               border: 0;
-              border-radius: 2rem;
+              border-radius: 2em;
               background-color: transparent;
               color: black;
               cursor: pointer;
@@ -620,8 +620,8 @@
 
             &>div {
               background-color: #e6f0f6;
-              width: 2rem;
-              height: 2rem;
+              width: 2em;
+              height: 2em;
               border-radius: 50%;
               display: flex;
               justify-content: center;
@@ -630,7 +630,7 @@
               transition: all 0.5s;
 
               img {
-                width: 1.2rem;
+                width: 1.2em;
                 transition: all 0.5s;
               }
             }
@@ -673,7 +673,7 @@
         text-align: center;
         margin-bottom: $margin-md;
         max-width: 700px;
-        padding: 0 1rem;
+        padding: 0 1em;
 
         span {
           color: $gray-700;
@@ -706,7 +706,7 @@
           width: 100%;
           display: flex;
           background-color: transparent;
-          padding: 1.5rem 0;
+          padding: 1.5em 0;
 
           .swiper-slide {
             background-color: #f8f8f8;
@@ -714,9 +714,9 @@
             max-width: 500px;
             display: grid;
             grid-template-rows: auto 1fr;
-            grid-gap: 0.5rem;
-            padding-bottom: 2.2rem;
-            border-radius: 0.5rem;
+            grid-gap: 0.5em;
+            padding-bottom: 2.2em;
+            border-radius: 0.5em;
             box-shadow: $box-shadow;
 
             .graphic {
@@ -725,7 +725,7 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              padding: 1rem;
+              padding: 1em;
 
               img {
                 max-width: 100%;
@@ -746,7 +746,7 @@
               }
 
               h3 {
-                margin-bottom: 0.5rem;
+                margin-bottom: 0.5em;
               }
 
               p:nth-of-type(1) {
@@ -757,7 +757,7 @@
               h4 {
                 line-height: 2;
                 text-transform: uppercase;
-                font-size: 0.7rem;
+                font-size: 0.7em;
                 color: $gray-700;
                 letter-spacing: 2px;
               }
@@ -770,7 +770,7 @@
                 width: 100%;
                 height: 1px;
                 background-color: #a4a4a4;
-                margin: 0.5rem 0;
+                margin: 0.5em 0;
               }
 
               .flex {
@@ -778,13 +778,13 @@
 
                 a {
                   margin: 0;
-                  margin-right: 0.5rem;
+                  margin-right: 0.5em;
                   text-decoration: none;
                   color: black;
                 }
 
                 img {
-                  width: 0.8rem;
+                  width: 0.8em;
                 }
               }
             }
@@ -796,7 +796,7 @@
         height: max-content;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 0.5rem;
+        grid-gap: 0.5em;
         z-index: 2;
         margin-top: -50px;
 
@@ -806,7 +806,7 @@
           align-items: center;
           background-color: white;
           cursor: pointer;
-          padding: 1.5rem;
+          padding: 1.5em;
           overflow: hidden;
           position: relative;
           box-shadow: $box-shadow;
@@ -1039,14 +1039,14 @@
             left: -8%;
 
             a {
-              padding: 0.5rem;
+              padding: 0.5em;
               background-color: $primary;
               display: flex;
               justify-content: center;
               align-items: center;
 
               img {
-                width: 1.5rem;
+                width: 1.5em;
               }
             }
 
@@ -1169,7 +1169,7 @@
       .packages-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 1rem;
+        grid-gap: 1em;
         width: 100%;
 
         .p-item {
@@ -1181,15 +1181,15 @@
           align-items: center;
           flex-direction: column;
           background-color: $prime-gray;
-          border-radius: 0.5rem;
+          border-radius: 0.5em;
           box-shadow: $box-shadow;
 
           .card-heading {
             background-color: $light-black;
             width: 100%;
-            padding: 1rem;
+            padding: 1em;
             color: white;
-            border-radius: 0.5rem 0.5rem 0 0;
+            border-radius: 0.5em 0.5em 0 0;
           }
 
           .pricing {
@@ -1198,7 +1198,7 @@
             justify-self: center;
             align-items: center;
             flex-direction: column;
-            padding: 0.6rem;
+            padding: 0.6em;
             width: 100%;
 
             & :nth-child(1) {
@@ -1222,7 +1222,7 @@
               &::before {
                 content: "$";
                 position: absolute;
-                left: -0.5rem;
+                left: -0.5em;
                 top: 0;
                 font-size: $font-size-sm;
               }
@@ -1230,7 +1230,7 @@
               &::after {
                 content: "/MO";
                 position: absolute;
-                bottom: 0.3rem;
+                bottom: 0.3em;
                 font-size: $font-size-sm;
               }
             }
@@ -1244,7 +1244,7 @@
               &::before {
                 content: "$";
                 position: absolute;
-                left: -0.5rem;
+                left: -0.5em;
                 top: 0;
                 font-size: $font-size-sm;
               }
@@ -1252,7 +1252,7 @@
               &::after {
                 content: "/once";
                 position: absolute;
-                bottom: 0.3rem;
+                bottom: 0.3em;
                 font-size: $font-size-sm;
               }
             }
@@ -1266,7 +1266,7 @@
               &::before {
                 content: "$";
                 position: absolute;
-                left: -0.5rem;
+                left: -0.5em;
                 top: 0;
                 font-size: $font-size-sm;
               }
@@ -1274,7 +1274,7 @@
               &::after {
                 content: "/??";
                 position: absolute;
-                bottom: 0.3rem;
+                bottom: 0.3em;
                 font-size: $font-size-sm;
               }
             }
@@ -1283,7 +1283,7 @@
           .items {
             width: max-content;
             list-style: none;
-            padding: 0.5rem;
+            padding: 0.5em;
 
             .item {
               display: flex;
@@ -1291,13 +1291,13 @@
               align-items: center;
               width: 100%;
               // font-size: $font-size-base;
-              margin-bottom: 1rem;
+              margin-bottom: 1em;
 
               img {
                 margin: 0;
                 justify-self: center;
                 align-self: end;
-                width: 0.5rem;
+                width: 0.5em;
                 margin-right: $margin-sm;
               }
 
@@ -1314,15 +1314,15 @@
                 margin: 0;
                 justify-self: center;
                 align-self: end;
-                width: 1.7rem;
-                height: 1.7rem;
+                width: 1.7em;
+                height: 1.7em;
                 margin-right: $margin-sm;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 img {
-                  width: 1.3rem;
+                  width: 1.3em;
                   margin: 0;
                   align-self: unset;
                 }
@@ -1336,7 +1336,7 @@
             // border: 2px solid black;
             // background-color: transparent;
             background-color: $light-black;
-            border-radius: 2rem;
+            border-radius: 2em;
             transition: all 0.5s ease-in-out;
             // width: 80%;
             margin-bottom: $margin-md;
@@ -1362,11 +1362,11 @@
             &::before {
               content: '';
               display: block;
-              width: 2.5rem;
-              height: 2.5rem;
+              width: 2.5em;
+              height: 2.5em;
               position: absolute;
               top: 0;
-              right: 1rem;
+              right: 1em;
               background: url(/assets/bookmark.svg) center / cover;
             }
           }
@@ -1383,7 +1383,7 @@
 
 
       .content {
-        margin-top: 6rem;
+        margin-top: 6em;
         height: 100%;
         width: 100%;
         align-items: flex-start;
@@ -1391,7 +1391,7 @@
         // justify-content: flex-start;
         // text-align: center;
         h1 {
-          font-size: 2rem;
+          font-size: 2em;
         }
 
         p {
@@ -1404,12 +1404,12 @@
           justify-content: flex-start;
 
           a {
-            padding: 0.8rem 2rem;
+            padding: 0.8em 2em;
             max-width: 255px;
           }
 
           a:nth-child(1) {
-            margin-right: 1rem;
+            margin-right: 1em;
           }
         }
       }
@@ -1427,7 +1427,7 @@
 @media (min-width: 768px) {
   #landing {
     width: 100%;
-    height: 52rem;
+    height: 52em;
 
     .container {
       .content {
@@ -1449,7 +1449,7 @@
       }
 
       .service-items {
-        grid-gap: 2rem;
+        grid-gap: 2em;
 
         .service-item {
           img {}
@@ -1518,7 +1518,7 @@
           line-height: 2;
           margin-bottom: $margin-md;
           color: $gray-600;
-          font-size: 1rem;
+          font-size: 1em;
         }
 
         ul {
@@ -1526,7 +1526,7 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr;
-          grid-gap: 0.5rem;
+          grid-gap: 0.5em;
           padding: 0 $padding-sm;
           margin-bottom: $margin-md;
 
@@ -1605,7 +1605,7 @@
             width: 100%;
             max-width: unset;
             display: grid;
-            grid-gap: 1rem;
+            grid-gap: 1em;
             grid-template-rows: auto 1fr;
             padding-bottom: $padding-lg;
             padding-top: $padding-lg;
@@ -1649,7 +1649,7 @@
       padding: $padding-lg $padding-sm;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 1rem;
+      grid-gap: 1em;
       max-width: 1200px;
       margin: auto;
 
@@ -1701,13 +1701,13 @@
             left: -8%;
 
             a {
-              padding: 0.5rem;
+              padding: 0.5em;
               display: flex;
               justify-content: center;
               align-items: center;
 
               img {
-                width: 1.5rem;
+                width: 1.5em;
               }
             }
           }
@@ -1773,7 +1773,7 @@
       .packages-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-        grid-gap: 1rem;
+        grid-gap: 1em;
 
         .p-item {
           text-align: center;
@@ -1785,7 +1785,7 @@
 
           .card-heading {
             width: 100%;
-            padding: 1rem;
+            padding: 1em;
             color: white;
           }
 
@@ -1795,7 +1795,7 @@
             justify-self: center;
             align-items: center;
             flex-direction: column;
-            padding: 0.6rem;
+            padding: 0.6em;
             width: 100%;
 
             & :nth-child(1) {
@@ -1815,7 +1815,7 @@
               &::before {
                 content: "$";
                 position: absolute;
-                left: -0.5rem;
+                left: -0.5em;
                 top: 0;
                 font-size: $font-size-sm;
               }
@@ -1823,7 +1823,7 @@
               &::after {
                 content: "/MO";
                 position: absolute;
-                bottom: 0.3rem;
+                bottom: 0.3em;
                 font-size: $font-size-sm;
               }
             }
@@ -1837,7 +1837,7 @@
               &::before {
                 content: "$";
                 position: absolute;
-                left: -0.5rem;
+                left: -0.5em;
                 top: 0;
                 font-size: $font-size-sm;
               }
@@ -1845,7 +1845,7 @@
               &::after {
                 content: "/once";
                 position: absolute;
-                bottom: 0.3rem;
+                bottom: 0.3em;
                 font-size: $font-size-sm;
               }
             }
@@ -1859,7 +1859,7 @@
               &::before {
                 content: "$";
                 position: absolute;
-                left: -0.5rem;
+                left: -0.5em;
                 top: 0;
                 font-size: $font-size-sm;
               }
@@ -1867,7 +1867,7 @@
               &::after {
                 content: "/??";
                 position: absolute;
-                bottom: 0.3rem;
+                bottom: 0.3em;
                 font-size: $font-size-sm;
               }
             }
@@ -1876,7 +1876,7 @@
           .items {
             width: max-content;
             list-style: none;
-            padding: 1rem;
+            padding: 1em;
 
             .item {
               display: flex;
@@ -1889,8 +1889,8 @@
                 margin: 0;
                 justify-self: center;
                 align-self: end;
-                width: 1rem;
-                margin-right: 0.2rem;
+                width: 1em;
+                margin-right: 0.2em;
               }
 
               &>div {
@@ -1909,7 +1909,7 @@
 
 @media (min-width: 900px) {
   #landing {
-    height: 35rem;
+    height: 35em;
 
     .container {
       width: 100vw;
@@ -1925,7 +1925,7 @@
 
         // text-align: center;
         h1 {
-          font-size: 1.5rem;
+          font-size: 1.5em;
         }
 
         p {
@@ -1964,7 +1964,7 @@
 @media (min-width: 1024px) {
   #landing {
     width: 100%;
-    height: 35rem;
+    height: 35em;
 
     .container {
       width: 100vw;
@@ -1980,18 +1980,18 @@
         align-items: center;
         flex-direction: column;
         color: white;
-        padding: 0 1rem;
+        padding: 0 1em;
         width: 100%;
         padding-right: 0;
 
         // text-align: center;
         h1 {
-          margin-bottom: 0.5rem;
-          font-size: 2rem;
+          margin-bottom: 0.5em;
+          font-size: 2em;
         }
 
         p {
-          margin-bottom: 1rem;
+          margin-bottom: 1em;
         }
 
         .ctas {
@@ -2005,12 +2005,12 @@
             width: max-content;
             text-decoration: none;
             cursor: pointer;
-            border-radius: 2rem;
+            border-radius: 2em;
             background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 0.8rem 2rem;
+            padding: 0.8em 2em;
             margin-bottom: 0;
             color: black;
             transition: all 0.5s;
@@ -2023,7 +2023,7 @@
           }
 
           a:nth-child(1) {
-            margin-right: 1rem;
+            margin-right: 1em;
           }
 
           a:nth-child(2) {
@@ -2043,7 +2043,7 @@
 
         img {
           max-width: unset;
-          width: 55%;
+          width: 16em;
         }
       }
     }
@@ -2062,7 +2062,7 @@
       }
 
       .service-items {
-        grid-gap: 2rem;
+        grid-gap: 2em;
 
         .service-item {
           transition: all 0.5s;
@@ -2154,7 +2154,7 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr;
-          grid-gap: 0.5rem;
+          grid-gap: 0.5em;
           padding: 0 $padding-sm;
           margin-bottom: $margin-md;
 
@@ -2280,7 +2280,7 @@
         .flex {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 1rem;
+          gap: 1em;
           width: 100%;
 
           input {
@@ -2332,7 +2332,7 @@
             width: 100%;
             max-width: unset;
             display: grid;
-            grid-gap: 0rem;
+            grid-gap: 0em;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr;
             padding-bottom: $padding-lg;
@@ -2379,7 +2379,7 @@
       padding: $padding-xl $padding-sm;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 1rem;
+      grid-gap: 1em;
       max-width: 1200px;
       margin: auto;
 
@@ -2432,13 +2432,13 @@
             left: -8%;
 
             a {
-              padding: 0.5rem;
+              padding: 0.5em;
               display: flex;
               justify-content: center;
               align-items: center;
 
               img {
-                width: 1.5rem;
+                width: 1.5em;
               }
             }
           }
@@ -2514,7 +2514,7 @@
 
           .card-heading {
             width: 100%;
-            padding: 1rem;
+            padding: 1em;
             color: white;
           }
 
@@ -2524,9 +2524,9 @@
             justify-self: center;
             align-items: center;
             flex-direction: column;
-            padding: 0.6rem;
+            padding: 0.6em;
             width: 100%;
-            padding-bottom: 0.5rem !important;
+            padding-bottom: 0.5em !important;
 
             & :nth-child(1) {
               margin-bottom: $margin-md;
@@ -2545,7 +2545,7 @@
               &::before {
                 content: "$";
                 position: absolute;
-                left: -0.5rem;
+                left: -0.5em;
                 top: 0;
                 font-size: $font-size-sm;
               }
@@ -2553,7 +2553,7 @@
               &::after {
                 content: "/MO";
                 position: absolute;
-                bottom: 0.3rem;
+                bottom: 0.3em;
                 font-size: $font-size-sm;
               }
             }
@@ -2567,7 +2567,7 @@
               &::before {
                 content: "$";
                 position: absolute;
-                left: -0.5rem;
+                left: -0.5em;
                 top: 0;
                 font-size: $font-size-sm;
               }
@@ -2575,7 +2575,7 @@
               &::after {
                 content: "/once";
                 position: absolute;
-                bottom: 0.3rem;
+                bottom: 0.3em;
                 font-size: $font-size-sm;
               }
             }
@@ -2589,7 +2589,7 @@
               &::before {
                 content: "$";
                 position: absolute;
-                left: -0.5rem;
+                left: -0.5em;
                 top: 0;
                 font-size: $font-size-sm;
               }
@@ -2597,7 +2597,7 @@
               &::after {
                 content: "/??";
                 position: absolute;
-                bottom: 0.3rem;
+                bottom: 0.3em;
                 font-size: $font-size-sm;
               }
             }
@@ -2606,7 +2606,7 @@
           .items {
             width: max-content;
             list-style: none;
-            padding: 0.5rem;
+            padding: 0.5em;
 
             .item {
               display: flex;
@@ -2618,8 +2618,8 @@
                 margin: 0;
                 justify-self: center;
                 align-self: end;
-                width: 1rem;
-                margin-right: 0.2rem;
+                width: 1em;
+                margin-right: 0.2em;
               }
 
               &>div {
@@ -2715,7 +2715,7 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr;
-          grid-gap: 0.5rem;
+          grid-gap: 0.5em;
           padding: 0 $padding-sm;
           margin-bottom: $margin-md;
 
@@ -2794,5 +2794,13 @@
 
   100% {
     background-position: 0% 50%;
+  }
+}
+@media (min-width: 2000px){
+  body {
+    font-size: 1vw;
+  }
+  * .container {
+    max-width: unset;
   }
 }
