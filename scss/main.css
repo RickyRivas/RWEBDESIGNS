@@ -1605,7 +1605,7 @@ button.swiper-pagination-bullet {
 
 .fixed {
   position: fixed;
-  bottom: 0;
+  bottom: 1em;
   right: .5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1617,7 +1617,7 @@ button.swiper-pagination-bullet {
   z-index: 19;
 }
 
-.top-link, .fixed-contact {
+.top-link {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
@@ -1630,7 +1630,6 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 .5em 0;
   border-radius: 50%;
   padding: 1px;
   width: 2.5em;
@@ -1638,18 +1637,22 @@ button.swiper-pagination-bullet {
   background: #0f65ff;
 }
 
-.top-link.show, .fixed-contact.show {
+.top-link.show {
   visibility: visible;
   opacity: 1;
 }
 
-.top-link.hide, .fixed-contact.hide {
+.top-link.hide {
   visibility: hidden;
   opacity: 0;
 }
 
-.top-link img, .fixed-contact img {
+.top-link img {
   width: 1.5em;
+}
+
+.top-link:nth-child(1) {
+  margin-bottom: .5em;
 }
 
 .screen-reader-text {
