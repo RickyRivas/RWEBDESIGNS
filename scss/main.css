@@ -1325,9 +1325,10 @@ button.swiper-pagination-bullet {
 @media (min-width: 0em) {
   footer {
     width: 100%;
-    border-top: 2px solid #f1f1f1;
     padding: 4em 1em;
     background-color: #222;
+    z-index: 20;
+    position: relative;
   }
   footer .container {
     width: 100%;
@@ -1468,6 +1469,8 @@ button.swiper-pagination-bullet {
     padding: 1rem 0;
     background-color: #0f65ff;
     color: white;
+    z-index: 20;
+    position: relative;
   }
 }
 
