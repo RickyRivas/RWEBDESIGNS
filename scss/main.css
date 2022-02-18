@@ -1603,10 +1603,89 @@ button.swiper-pagination-bullet {
   color: black;
 }
 
-.standard-icon {
-  width: 2em;
-  height: 2em;
-  margin-right: 1em;
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 19;
+}
+
+.top-link, .fixed-contact {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 .5em 0;
+  border-radius: 50%;
+  padding: 1px;
+  width: 1.7em;
+  height: 1.7em;
+  background: #0f65ff;
+}
+
+.top-link.show, .fixed-contact.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.top-link.hide, .fixed-contact.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.top-link img, .fixed-contact img {
+  width: 1em;
+}
+
+.screen-reader-text {
+  position: absolute;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  word-wrap: normal !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.screen-reader-text:focus {
+  display: block;
+  top: 5px;
+  left: 5px;
+  z-index: 100000;
+  -webkit-clip-path: none;
+          clip-path: none;
+  background-color: #eee;
+  padding: 15px 23px 14px;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  line-height: normal;
+  color: #444;
+  font-size: 1em;
+  clip: auto !important;
+}
+
+.screen-reader-text img {
+  width: 1rem;
 }
 
 @media (min-width: 0em) {
