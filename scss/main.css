@@ -4921,7 +4921,7 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 4em 1em;
+    padding: 2em 1em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4995,8 +4995,116 @@ button.swiper-pagination-bullet {
   #services-intro .container img {
     width: 100%;
     max-width: 600px;
-    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  #all-services {
+    width: 100%;
+    padding: 4em 1em;
+  }
+  #all-services .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: 55em;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+  #all-services .container .graphic {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  #all-services .container .graphic img {
+    max-width: 100%;
+  }
+  #all-services .container .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #all-services .container .text h2 {
+    margin-bottom: 1em;
+  }
+  #all-services .container .text p {
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
+  #all-services .container .text ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+  #all-services .container .text ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    font-size: 0.875em;
+    margin: 0 0 1em 0;
+  }
+  #all-services .container .text ul li > div {
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 0.2em 0.5em 0 0;
+    background-color: #e3f3e7;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #all-services .container .text ul li > div img {
+    width: 1.3em;
+    margin: 0;
+  }
+  #all-services .container .text ul li p {
+    margin: 0;
+    color: #727272;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 1em;
   }
 }
 
@@ -5010,6 +5118,19 @@ button.swiper-pagination-bullet {
   }
   #services-intro .container > div {
     margin-bottom: 0rem;
+  }
+  #all-services .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin-bottom: 4rem;
+  }
+  #all-services .c-2 .graphic {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 /*# sourceMappingURL=main.css.map */

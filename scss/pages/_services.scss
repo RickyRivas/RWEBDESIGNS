@@ -5,7 +5,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: $padding-xl $padding-md;
+        padding: $padding-lg $padding-md;
         flex-direction: column;
         text-align: center;
 
@@ -68,7 +68,91 @@
             img {
                 width: 100%;
                 max-width: 600px;
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                // box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            }
+        }
+    }
+
+    #all-services {
+        width: 100%;
+        padding: $padding-xl $padding-md;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 55em;
+            margin: auto;
+            margin-bottom: 2em;
+
+            .graphic {
+                width: 100%;
+                margin-bottom: $margin-md;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .text {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+
+                h2 {
+                    margin-bottom: 1em;
+                }
+
+                p {
+                    line-height: 1.5;
+                    margin-bottom: 1em;
+                }
+
+                ul {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    padding: 0;
+                    margin-bottom: $margin-md;
+
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: max-content;
+                        font-size: $font-size-sm;
+                        margin: 0 0 $margin-md 0;
+
+                        &>div {
+                            width: 2em;
+                            height: 2em;
+                            padding: 0.5em;
+                            align-self: flex-start;
+                            margin: 0.2em 0.5em 0 0;
+                            background-color: #e3f3e7;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                width: 1.3em;
+                                margin: 0;
+                            }
+                        }
+
+                        p {
+                            margin: 0;
+                            color: $gray-700;
+                            line-height: 1.5;
+                            text-align: left;
+                            font-size: 1em;
+                        }
+                    }
+                }
             }
         }
     }
@@ -92,6 +176,50 @@
             }
 
             img {}
+        }
+    }
+
+    #all-services {
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+            margin-bottom: 4rem;
+
+            .graphic {
+
+                img {}
+            }
+
+            .text {
+
+
+                h2 {}
+
+                p {}
+
+                ul {
+
+
+                    li {
+
+
+                        &>div {
+
+
+                            img {}
+                        }
+
+                        p {}
+                    }
+                }
+            }
+        }
+        .c-2{
+            .graphic {
+                order: 2;
+            }
         }
     }
 }
