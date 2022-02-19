@@ -1213,6 +1213,7 @@ button.swiper-pagination-bullet {
     margin-right: 0;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    white-space: nowrap;
   }
   header nav #nav-cta:hover, header nav #nav-cta:active {
     -webkit-transform: translateY(-5px);
@@ -5216,6 +5217,12 @@ button.swiper-pagination-bullet {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  #all-services .container {
+    gap: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */

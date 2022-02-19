@@ -216,10 +216,53 @@
                 }
             }
         }
-        .c-2{
+
+        .c-2 {
             .graphic {
                 order: 2;
             }
         }
+    }
+}
+
+@media(min-width:1200px) {
+    #all-services {
+
+        .container {
+
+            gap: 2em;
+
+
+            .graphic {
+
+                img {}
+            }
+
+            .text {
+
+
+                h2 {}
+
+                p {}
+
+                ul {
+
+
+                    li {
+
+
+                        &>div {
+
+
+                            img {}
+                        }
+
+                        p {}
+                    }
+                }
+            }
+        }
+
+        .c-2 {}
     }
 }
