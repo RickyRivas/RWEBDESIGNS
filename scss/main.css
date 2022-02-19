@@ -1509,8 +1509,8 @@ button.swiper-pagination-bullet {
         -ms-flex-align: end;
             align-items: flex-end;
     height: 200px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/423.png) center/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/423.png) center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/tulsaskyview1.jpeg) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/tulsaskyview1.jpeg) center/cover;
     color: white;
     padding-bottom: 1rem;
     position: relative;
@@ -1549,8 +1549,6 @@ button.swiper-pagination-bullet {
         -ms-flex-align: end;
             align-items: flex-end;
     height: 300px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/423.png) center/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/423.png) center/cover;
     color: white;
     padding-bottom: 1rem;
   }
@@ -5082,11 +5080,23 @@ button.swiper-pagination-bullet {
     width: 100%;
     max-width: 600px;
   }
-  #all-services {
-    width: 100%;
+  #c-1,
+  #c-2,
+  #c-3 {
     padding: 4em 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #all-services .container {
+  #c-1 .container,
+  #c-2 .container,
+  #c-3 .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5096,17 +5106,21 @@ button.swiper-pagination-bullet {
             flex-direction: column;
     width: 100%;
     max-width: 55em;
-    margin: auto;
-    margin-bottom: 2em;
   }
-  #all-services .container .graphic {
+  #c-1 .container .graphic,
+  #c-2 .container .graphic,
+  #c-3 .container .graphic {
     width: 100%;
     margin-bottom: 1em;
   }
-  #all-services .container .graphic img {
+  #c-1 .container .graphic img,
+  #c-2 .container .graphic img,
+  #c-3 .container .graphic img {
     max-width: 100%;
   }
-  #all-services .container .text {
+  #c-1 .container .text,
+  #c-2 .container .text,
+  #c-3 .container .text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5121,14 +5135,20 @@ button.swiper-pagination-bullet {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #all-services .container .text h2 {
+  #c-1 .container .text h2,
+  #c-2 .container .text h2,
+  #c-3 .container .text h2 {
     margin-bottom: 1em;
   }
-  #all-services .container .text p {
+  #c-1 .container .text p,
+  #c-2 .container .text p,
+  #c-3 .container .text p {
     line-height: 1.5;
     margin-bottom: 1em;
   }
-  #all-services .container .text ul {
+  #c-1 .container .text ul,
+  #c-2 .container .text ul,
+  #c-3 .container .text ul {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5146,7 +5166,9 @@ button.swiper-pagination-bullet {
     padding: 0;
     margin-bottom: 1em;
   }
-  #all-services .container .text ul li {
+  #c-1 .container .text ul li,
+  #c-2 .container .text ul li,
+  #c-3 .container .text ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5162,7 +5184,9 @@ button.swiper-pagination-bullet {
     font-size: 0.875em;
     margin: 0 0 1em 0;
   }
-  #all-services .container .text ul li > div {
+  #c-1 .container .text ul li > div,
+  #c-2 .container .text ul li > div,
+  #c-3 .container .text ul li > div {
     width: 2em;
     height: 2em;
     padding: 0.5em;
@@ -5181,16 +5205,23 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
   }
-  #all-services .container .text ul li > div img {
+  #c-1 .container .text ul li > div img,
+  #c-2 .container .text ul li > div img,
+  #c-3 .container .text ul li > div img {
     width: 1.3em;
     margin: 0;
   }
-  #all-services .container .text ul li p {
+  #c-1 .container .text ul li p,
+  #c-2 .container .text ul li p,
+  #c-3 .container .text ul li p {
     margin: 0;
     color: #727272;
     line-height: 1.5;
     text-align: left;
     font-size: 1em;
+  }
+  #c-2 {
+    background-color: #f8f8f8;
   }
 }
 
@@ -5205,15 +5236,36 @@ button.swiper-pagination-bullet {
   #services-intro .container > div {
     margin-bottom: 0rem;
   }
-  #all-services .container {
+  #c-1 .container,
+  #c-2 .container,
+  #c-3 .container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     gap: 1em;
-    margin-bottom: 4rem;
   }
-  #all-services .c-2 .graphic {
+  #c-1 .c-2,
+  #c-2 .c-2,
+  #c-3 .c-2 {
+    position: relative;
+  }
+  #c-1 .c-2::before,
+  #c-2 .c-2::before,
+  #c-3 .c-2::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-position: center;
+  }
+  #c-1 .c-2 .graphic,
+  #c-2 .c-2 .graphic,
+  #c-3 .c-2 .graphic {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -5221,7 +5273,9 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 1200px) {
-  #all-services .container {
+  #c-1 .container,
+  #c-2 .container,
+  #c-3 .container {
     gap: 2em;
   }
 }
