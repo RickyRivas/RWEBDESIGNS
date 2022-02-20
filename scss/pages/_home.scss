@@ -16,8 +16,19 @@
   #landing {
     width: 100vw;
     height: 52em;
-    background-color: #0f65ff;
+    background: url(/assets/tulsastock1.jpeg) center / cover;
     overflow: hidden;
+    position: relative;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $primary;
+      width: 100%;
+      height: 100%;
+      opacity: 90%;
+    }
 
     .container {
       width: 100vw;
@@ -36,6 +47,7 @@
         flex-direction: column;
         color: white;
         padding: 0 1em;
+        position: relative;
 
         // text-align: center;
         h1 {
@@ -1342,6 +1354,7 @@
                   align-self: unset;
                 }
               }
+
               p {
                 font-size: 1em;
               }
@@ -1822,71 +1835,71 @@
             }
           }
 
-  //         // .pricing-1 {
-  //         //   & :nth-child(2) {
-  //         //     position: relative;
-  //         //     font-size: $font-size-lg * 2;
+          //         // .pricing-1 {
+          //         //   & :nth-child(2) {
+          //         //     position: relative;
+          //         //     font-size: $font-size-lg * 2;
 
-  //         //     &::before {
-  //         //       content: "$";
-  //         //       position: absolute;
-  //         //       left: -0.5em;
-  //         //       top: 0;
-  //         //       font-size: $font-size-sm;
-  //         //     }
+          //         //     &::before {
+          //         //       content: "$";
+          //         //       position: absolute;
+          //         //       left: -0.5em;
+          //         //       top: 0;
+          //         //       font-size: $font-size-sm;
+          //         //     }
 
-  //         //     &::after {
-  //         //       content: "/MO";
-  //         //       position: absolute;
-  //         //       bottom: 0.3em;
-  //         //       font-size: $font-size-sm;
-  //         //     }
-  //         //   }
-  //         // }
+          //         //     &::after {
+          //         //       content: "/MO";
+          //         //       position: absolute;
+          //         //       bottom: 0.3em;
+          //         //       font-size: $font-size-sm;
+          //         //     }
+          //         //   }
+          //         // }
 
-  //         // .pricing-2 {
-  //         //   & :nth-child(2) {
-  //         //     position: relative;
-  //         //     font-size: $font-size-lg * 2;
+          //         // .pricing-2 {
+          //         //   & :nth-child(2) {
+          //         //     position: relative;
+          //         //     font-size: $font-size-lg * 2;
 
-  //         //     &::before {
-  //         //       content: "$";
-  //         //       position: absolute;
-  //         //       left: -0.5em;
-  //         //       top: 0;
-  //         //       font-size: $font-size-sm;
-  //         //     }
+          //         //     &::before {
+          //         //       content: "$";
+          //         //       position: absolute;
+          //         //       left: -0.5em;
+          //         //       top: 0;
+          //         //       font-size: $font-size-sm;
+          //         //     }
 
-  //         //     &::after {
-  //         //       content: "/once";
-  //         //       position: absolute;
-  //         //       bottom: 0.3em;
-  //         //       font-size: $font-size-sm;
-  //         //     }
-  //         //   }
-  //         // }
+          //         //     &::after {
+          //         //       content: "/once";
+          //         //       position: absolute;
+          //         //       bottom: 0.3em;
+          //         //       font-size: $font-size-sm;
+          //         //     }
+          //         //   }
+          //         // }
 
-  //         // .pricing-3 {
-  //         //   & :nth-child(2) {
-  //         //     position: relative;
-  //         //     font-size: $font-size-lg * 2;
+          //         // .pricing-3 {
+          //         //   & :nth-child(2) {
+          //         //     position: relative;
+          //         //     font-size: $font-size-lg * 2;
 
-  //         //     &::before {
-  //         //       content: "$";
-  //         //       position: absolute;
-  //         //       left: -0.5em;
-  //         //       top: 0;
-  //         //       font-size: $font-size-sm;
-  //         //     }
+          //         //     &::before {
+          //         //       content: "$";
+          //         //       position: absolute;
+          //         //       left: -0.5em;
+          //         //       top: 0;
+          //         //       font-size: $font-size-sm;
+          //         //     }
 
-  //         //     &::after {
-  //         //       content: "/??";
-  //         //       position: absolute;
-  //         //       bottom: 0.3em;
-  //         //       font-size: $font-size-sm;
-  //         //     }
-  //         //   }
-  //         // }
+          //         //     &::after {
+          //         //       content: "/??";
+          //         //       position: absolute;
+          //         //       bottom: 0.3em;
+          //         //       font-size: $font-size-sm;
+          //         //     }
+          //         //   }
+          //         // }
 
           .items {
             width: max-content;
