@@ -95,6 +95,7 @@
 
         img {
           width: 55%;
+          height: 100%;
           z-index: 2;
           max-width: 250px;
         }
@@ -182,6 +183,7 @@
 
             img {
               width: 3em;
+              height: 3em;
             }
           }
 
@@ -362,6 +364,7 @@
 
               img {
                 width: 1.3em;
+                height: 1.3em;
                 margin: 0;
               }
             }
@@ -655,6 +658,7 @@
 
               img {
                 width: 1.2em;
+                height: 1.2em;
                 transition: all 0.5s;
               }
             }
@@ -744,15 +748,18 @@
             box-shadow: $box-shadow;
 
             .graphic {
-              width: 100%;
+              // width: 100%;
               height: max-content;
               display: flex;
               justify-content: center;
               align-items: center;
               padding: 1em;
+              margin: auto;
 
               img {
                 max-width: 100%;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
               }
             }
@@ -811,6 +818,8 @@
 
                 img {
                   width: 0.8em;
+                  height: .8em;
+                  margin: auto;
                 }
               }
             }
@@ -1073,6 +1082,7 @@
 
               img {
                 width: 1.5em;
+                height: 1.5em;
               }
             }
 
@@ -1350,6 +1360,7 @@
 
                 img {
                   width: 1.3em;
+                  height: 1.3em;
                   margin: 0;
                   align-self: unset;
                 }
@@ -1636,7 +1647,6 @@
             padding-top: $padding-lg;
 
             .graphic {
-              width: 100%;
               display: flex;
               justify-content: center;
               align-items: center;
@@ -1875,12 +1885,14 @@
       }
 
       .graphic {
+        display: flex;
         justify-content: center;
         align-items: flex-end;
         height: 100%;
 
         img {
           width: 100%;
+          height: max-content;
         }
       }
     }
@@ -2228,7 +2240,6 @@
       flex-direction: column;
 
       .heading {
-        width: 100%;
         text-align: center;
         margin-bottom: $margin-md;
 
@@ -2264,12 +2275,12 @@
             padding-top: $padding-md;
 
             .graphic {
-              width: 100%;
-              height: 100%;
+              // width: 100%;
+              // height: 100%;
               display: flex;
               justify-content: center;
               align-items: center;
-              padding: $padding-lg;
+              padding: $padding-md;
 
               img {}
             }

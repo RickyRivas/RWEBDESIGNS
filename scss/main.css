@@ -1407,6 +1407,7 @@ button.swiper-pagination-bullet {
   footer .container .logo-contain img {
     width: 80%;
     max-width: 500px;
+    height: 100%;
   }
   footer .container .contact {
     -ms-grid-row: 3;
@@ -1449,6 +1450,7 @@ button.swiper-pagination-bullet {
   }
   footer .container .contact ul li > div img {
     width: 1rem;
+    height: 1rem;
   }
   footer .container .contact ul li p {
     color: white;
@@ -1654,6 +1656,7 @@ button.swiper-pagination-bullet {
 
 .top-link img {
   width: 1.5em;
+  height: 1.5em;
 }
 
 .top-link:nth-child(1) {
@@ -2014,6 +2017,7 @@ button.swiper-pagination-bullet {
   }
   #landing .container .graphic img {
     width: 55%;
+    height: 100%;
     z-index: 2;
     max-width: 250px;
   }
@@ -2123,6 +2127,7 @@ button.swiper-pagination-bullet {
   }
   #intro .container .service-items .service-item > div img {
     width: 3em;
+    height: 3em;
   }
   #intro .container .service-items .service-item .tag {
     background-color: #d92322;
@@ -2338,6 +2343,7 @@ button.swiper-pagination-bullet {
   }
   #info .container .main-content ul li > div img {
     width: 1.3em;
+    height: 1.3em;
     margin: 0;
   }
   #info .container .main-content ul li p {
@@ -2629,6 +2635,7 @@ button.swiper-pagination-bullet {
   }
   #quote .container .form-container form .submit > div img {
     width: 1.2em;
+    height: 1.2em;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -2719,7 +2726,6 @@ button.swiper-pagination-bullet {
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .graphic {
-    width: 100%;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
@@ -2733,9 +2739,12 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
     padding: 1em;
+    margin: auto;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .graphic img {
     max-width: 100%;
+    width: 100%;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -2797,6 +2806,8 @@ button.swiper-pagination-bullet {
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text .flex img {
     width: 0.8em;
+    height: .8em;
+    margin: auto;
   }
   #portfolio .container .controller {
     height: -webkit-max-content;
@@ -3103,6 +3114,7 @@ button.swiper-pagination-bullet {
   }
   #about .container .profile .wrap .social a img {
     width: 1.5em;
+    height: 1.5em;
   }
   #about .container .profile .wrap .social:hover {
     border: 1px solid white;
@@ -3391,6 +3403,7 @@ button.swiper-pagination-bullet {
   }
   #packages .container .packages-grid .p-item .items .item > div:nth-child(1) img {
     width: 1.3em;
+    height: 1.3em;
     margin: 0;
     -ms-flex-item-align: unset;
         -ms-grid-row-align: unset;
@@ -3667,7 +3680,6 @@ button.swiper-pagination-bullet {
     padding-top: 2em;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .graphic {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3860,6 +3872,9 @@ button.swiper-pagination-bullet {
     white-space: nowrap;
   }
   #landing .container .graphic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3870,6 +3885,9 @@ button.swiper-pagination-bullet {
   }
   #landing .container .graphic img {
     width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
 }
 
@@ -4207,7 +4225,6 @@ button.swiper-pagination-bullet {
             flex-direction: column;
   }
   #portfolio .container .heading {
-    width: 100%;
     text-align: center;
     margin-bottom: 1em;
   }
@@ -4243,8 +4260,6 @@ button.swiper-pagination-bullet {
     padding-top: 1em;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .graphic {
-    width: 100%;
-    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4254,7 +4269,7 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 2em;
+    padding: 1em;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text {
     width: 100%;
