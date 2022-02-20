@@ -1086,6 +1086,7 @@ button.swiper-pagination-bullet {
   }
   header nav .logo-wrapper img {
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -1259,7 +1260,7 @@ button.swiper-pagination-bullet {
     position: relative;
   }
   header nav .logo-wrapper img {
-    width: 10em;
+    width: 12em;
   }
 }
 
@@ -1490,9 +1491,13 @@ button.swiper-pagination-bullet {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   footer .container .logo-contain img {
     width: 100%;
+    height: unset;
   }
   footer .container .col {
     padding-top: 0rem !important;
