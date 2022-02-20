@@ -16,7 +16,7 @@
   #landing {
     width: 100vw;
     height: 52em;
-    background: url(/assets/tulsastock1.jpeg) center / cover;
+    background: url(/assets/tulsastockMobile.webp) center / cover;
     overflow: hidden;
     position: relative;
 
@@ -197,7 +197,7 @@
             margin: 0;
           }
 
-          h4 {
+          h3 {
             margin-bottom: $margin-sm;
             text-transform: uppercase;
             font-size: 1.2em;
@@ -517,7 +517,7 @@
         .body {
           padding: $padding-lg $padding-md;
 
-          h4 {
+          h3 {
             margin-bottom: $margin-sm;
             text-transform: uppercase;
           }
@@ -535,7 +535,7 @@
     width: 100%;
     padding: $padding-xl $padding-md;
     position: relative;
-    background: url(/assets/tulsaMobile.png) 50% 40% / cover;
+    background: url(/assets/tulsaMobile.webp) 50% 40% / cover;
 
     .blue-overlay {
       position: absolute;
@@ -1457,14 +1457,10 @@
 
 @media (min-width: 768px) {
   #landing {
-    width: 100%;
-    height: 52em;
-
+    background: url(/assets/tulsastock1.webp) center / cover;
     .container {
       .content {
         height: 100%;
-        // justify-content: center;
-        // align-items: center;
       }
     }
   }
@@ -1672,104 +1668,6 @@
       }
     }
   }
-
-  // #about {
-  //   .container {
-  //     padding: $padding-lg $padding-sm;
-  //     display: grid;
-  //     grid-template-columns: 1fr 1fr 1fr;
-  //     grid-gap: 1em;
-  //     margin: auto;
-
-  //     .heading {
-  //       display: flex;
-  //       justify-content: center;
-  //       align-items: flex-start;
-  //       flex-direction: column;
-  //       text-align: left;
-  //       width: 100%;
-
-  //       p {
-  //         margin-bottom: $margin-md;
-  //       }
-
-  //       strong {
-  //         color: white;
-  //         font-size: $font-size-base * 2;
-  //         margin-bottom: $margin-md;
-  //       }
-  //     }
-
-  //     .profile {
-  //       display: flex;
-  //       justify-content: center;
-  //       align-items: center;
-  //       width: 100%;
-  //       margin-bottom: $margin-md;
-
-  //       .wrap {
-  //         width: max-content;
-  //         display: flex;
-  //         justify-content: center;
-  //         align-items: center;
-  //         position: relative;
-
-  //         img {
-  //           width: 100%;
-  //           max-width: 300px;
-  //         }
-
-  //         .social {
-  //           display: flex;
-  //           justify-content: center;
-  //           align-items: center;
-  //           flex-direction: column;
-  //           position: absolute;
-  //           width: max-content;
-  //           left: -8%;
-
-  //           a {
-  //             padding: 0.5em;
-  //             display: flex;
-  //             justify-content: center;
-  //             align-items: center;
-
-  //             img {
-  //               width: 1.5em;
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-
-  //     .bio {
-  //       width: 100%;
-  //       display: flex;
-  //       justify-content: center;
-  //       align-items: flex-start;
-  //       flex-direction: column;
-  //       text-align: left;
-
-  //       h4 {
-  //         color: white;
-  //         font-size: $font-size-base * 1.2;
-  //         margin-bottom: $margin-sm;
-  //       }
-
-  //       span {
-  //         font-size: $font-size-base * 0.8;
-  //         color: $text-color;
-  //         text-transform: uppercase;
-  //         margin-bottom: $margin-md;
-  //       }
-
-  //       p {
-  //         color: $gray-400;
-  //         line-height: 1.5;
-  //       }
-  //     }
-  //   }
-  // }
 
   #quote {
     background: url(/assets/tulsa.jpg) 50% 40% / cover;
@@ -2098,7 +1996,7 @@
 
           img {}
 
-          h4 {}
+          h3 {}
 
           p {}
 
@@ -2249,7 +2147,7 @@
         }
 
         .body {
-          h4 {}
+          h3 {}
 
           p {}
         }

@@ -1635,9 +1635,11 @@ button.swiper-pagination-bullet {
           justify-content: center;
   border-radius: 50%;
   padding: 1px;
-  width: 2.5em;
-  height: 2.5em;
+  width: 2.5rem;
+  height: 2.5rem;
   background: #0f65ff;
+  border: 0;
+  position: relative;
 }
 
 .top-link.show {
@@ -1688,10 +1690,6 @@ button.swiper-pagination-bullet {
   color: #444;
   font-size: 1em;
   clip: auto !important;
-}
-
-.screen-reader-text img {
-  width: 1rem;
 }
 
 @media (min-width: 0em) {
@@ -1906,7 +1904,7 @@ button.swiper-pagination-bullet {
   #landing {
     width: 100vw;
     height: 52em;
-    background: url(/assets/tulsastock1.jpeg) center/cover;
+    background: url(/assets/tulsastockMobile.webp) center/cover;
     overflow: hidden;
     position: relative;
   }
@@ -2138,7 +2136,7 @@ button.swiper-pagination-bullet {
             transform: rotate(10deg);
     margin: 0;
   }
-  #intro .container .service-items .service-item h4 {
+  #intro .container .service-items .service-item h3 {
     margin-bottom: 0.5em;
     text-transform: uppercase;
     font-size: 1.2em;
@@ -2483,7 +2481,7 @@ button.swiper-pagination-bullet {
   #features .container .item .body {
     padding: 2em 1em;
   }
-  #features .container .item .body h4 {
+  #features .container .item .body h3 {
     margin-bottom: 0.5em;
     text-transform: uppercase;
   }
@@ -2495,7 +2493,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     padding: 4em 1em;
     position: relative;
-    background: url(/assets/tulsaMobile.png) 50% 40%/cover;
+    background: url(/assets/tulsaMobile.webp) 50% 40%/cover;
   }
   #quote .blue-overlay {
     position: absolute;
@@ -3478,8 +3476,7 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 768px) {
   #landing {
-    width: 100%;
-    height: 52em;
+    background: url(/assets/tulsastock1.webp) center/cover;
   }
   #landing .container .content {
     height: 100%;
