@@ -142,7 +142,7 @@
         }
 
         p {
-          line-height: 1.5;
+          line-height: 1.8;
           color: $gray-700;
           font-size: .9em;
         }
@@ -208,7 +208,7 @@
           p {
             color: $gray-700;
             margin-bottom: $margin-md;
-            line-height: 1.5;
+            line-height: 1.8;
             font-size: .9em;
           }
 
@@ -371,7 +371,6 @@
 
             p {
               margin: 0;
-              color: $gray-700;
               line-height: 1.5;
               text-align: left;
               font-size: .9em;
@@ -569,7 +568,7 @@
         p {
           color: white;
           font-size: .9em;
-          line-height: 1.5;
+          line-height: 1.8;
         }
       }
 
@@ -704,7 +703,7 @@
         padding: 0 1em;
 
         span {
-          color: $gray-700;
+          color: #727272;
           font-size: $font-size-base;
         }
 
@@ -721,8 +720,9 @@
         }
 
         p {
-          line-height: 1.5;
+          line-height: 1.8;
           font-size: .9em;
+          color: #727272;
         }
       }
 
@@ -784,6 +784,7 @@
               p:nth-of-type(1) {
                 margin-bottom: $margin-md;
                 line-height: normal;
+                line-height: 1.8;
               }
 
               h4 {
@@ -1116,7 +1117,7 @@
 
         p {
           color: $gray-400;
-          line-height: 1.5;
+          line-height: 1.7;
           font-size: $font-size-base * 0.9;
           max-width: 550px;
         }
