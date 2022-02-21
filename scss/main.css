@@ -2077,7 +2077,7 @@ button.swiper-pagination-bullet {
   #intro .container .heading p {
     line-height: 1.8;
     color: #222;
-    font-size: .9em;
+    font-size: 0.9em;
   }
   #intro .container .service-items {
     width: 100%;
@@ -2155,7 +2155,7 @@ button.swiper-pagination-bullet {
     color: #727272;
     margin-bottom: 1em;
     line-height: 1.8;
-    font-size: .9em;
+    font-size: 0.9em;
   }
   #intro .container .service-items .service-item a {
     text-decoration: none;
@@ -2290,7 +2290,7 @@ button.swiper-pagination-bullet {
   #info .container .main-content p {
     line-height: 2;
     margin-bottom: 1em;
-    font-size: .9em;
+    font-size: 0.9em;
     text-align: left;
     color: #222;
   }
@@ -2356,7 +2356,7 @@ button.swiper-pagination-bullet {
     margin: 0;
     line-height: 1.5;
     text-align: left;
-    font-size: .9em;
+    font-size: 0.9em;
   }
   #info .container .main-content .btns {
     width: 100%;
@@ -2496,7 +2496,7 @@ button.swiper-pagination-bullet {
     text-transform: uppercase;
   }
   #features .container .item .body p {
-    font-size: .9em;
+    font-size: 0.9em;
     margin-bottom: 1em;
     line-height: 1.8;
   }
@@ -2530,7 +2530,7 @@ button.swiper-pagination-bullet {
   }
   #quote .container .content p {
     color: white;
-    font-size: .9em;
+    font-size: 0.9em;
     line-height: 1.8;
   }
   #quote .container .form-container form {
@@ -2702,7 +2702,7 @@ button.swiper-pagination-bullet {
   }
   #portfolio .container .heading p {
     line-height: 1.8;
-    font-size: .9em;
+    font-size: 0.9em;
     color: #222;
   }
   #portfolio .container .portSwiper {
@@ -2792,7 +2792,7 @@ button.swiper-pagination-bullet {
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text p {
     line-height: 2;
-    font-size: .9em;
+    font-size: 0.9em;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text .line {
     width: 100%;
@@ -2813,7 +2813,7 @@ button.swiper-pagination-bullet {
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text .flex img {
     width: 0.8em;
-    height: .8em;
+    height: 0.8em;
     margin: auto;
   }
   #portfolio .container .controller {
@@ -3026,7 +3026,7 @@ button.swiper-pagination-bullet {
   #about .container .heading p {
     color: #adb5bd;
     margin-bottom: 1em;
-    font-size: .9em;
+    font-size: 0.9em;
   }
   #about .container .heading strong {
     color: white;
@@ -3234,7 +3234,7 @@ button.swiper-pagination-bullet {
   #packages .container .heading p {
     color: #222;
     line-height: 1.5;
-    font-size: .9em;
+    font-size: 0.9em;
   }
   #packages .container .packages-grid {
     display: -ms-grid;
@@ -3301,13 +3301,13 @@ button.swiper-pagination-bullet {
     position: absolute;
     left: -0.8em;
     top: 0;
-    font-size: .4em;
+    font-size: 0.4em;
   }
   #packages .container .packages-grid .p-item .pricing-1 :nth-child(2)::after {
     content: "/MO";
     position: absolute;
     bottom: 0.3em;
-    font-size: .4em;
+    font-size: 0.4em;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2) {
     position: relative;
@@ -3318,13 +3318,13 @@ button.swiper-pagination-bullet {
     position: absolute;
     left: -0.8em;
     top: 0;
-    font-size: .4em;
+    font-size: 0.4em;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2)::after {
     content: "/once";
     position: absolute;
     bottom: 0.3em;
-    font-size: .4em;
+    font-size: 0.4em;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2) {
     position: relative;
@@ -3335,13 +3335,13 @@ button.swiper-pagination-bullet {
     position: absolute;
     left: -0.8em;
     top: 0;
-    font-size: .4em;
+    font-size: 0.4em;
   }
   #packages .container .packages-grid .p-item .pricing-3 :nth-child(2)::after {
     content: "/??";
     position: absolute;
     bottom: 0.3em;
-    font-size: .4em;
+    font-size: 0.4em;
   }
   #packages .container .packages-grid .p-item .items {
     width: -webkit-max-content;
@@ -3417,7 +3417,7 @@ button.swiper-pagination-bullet {
         align-self: unset;
   }
   #packages .container .packages-grid .p-item .items .item p {
-    font-size: .9em;
+    font-size: 0.9em;
   }
   #packages .container .packages-grid .p-item a {
     position: relative;
@@ -3444,7 +3444,7 @@ button.swiper-pagination-bullet {
     position: relative;
   }
   #packages .container .packages-grid .p-item-1 .card-heading::before {
-    content: '';
+    content: "";
     display: block;
     width: 2.5em;
     height: 2.5em;
@@ -3452,6 +3452,33 @@ button.swiper-pagination-bullet {
     top: 0;
     right: 1em;
     background: url(/assets/bookmark.svg) center/cover;
+  }
+  #packages .container .packages-grid .p-item-3 .card-heading {
+    position: relative;
+  }
+  #packages .container .packages-grid .p-item-3 .card-heading::before {
+    content: "Coming Soon!";
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    border-radius: 2em;
+    padding: .2em 1.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #d92322;
+    color: white;
+    top: 0;
+    right: 0;
+    position: absolute;
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
   }
 }
 
@@ -3943,7 +3970,7 @@ button.swiper-pagination-bullet {
   }
   #landing .container .content p {
     margin-bottom: 1em;
-    font-size: .9em;
+    font-size: 0.9em;
   }
   #landing .container .content .ctas {
     display: -webkit-box;

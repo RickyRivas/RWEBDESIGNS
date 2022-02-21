@@ -144,7 +144,7 @@
         p {
           line-height: 1.8;
           color: $light-black;
-          font-size: .9em;
+          font-size: 0.9em;
         }
       }
 
@@ -209,7 +209,7 @@
             color: $gray-700;
             margin-bottom: $margin-md;
             line-height: 1.8;
-            font-size: .9em;
+            font-size: 0.9em;
           }
 
           a {
@@ -329,7 +329,7 @@
         p {
           line-height: 2;
           margin-bottom: $margin-md;
-          font-size: .9em;
+          font-size: 0.9em;
           text-align: left;
           color: $light-black;
         }
@@ -374,7 +374,7 @@
               margin: 0;
               line-height: 1.5;
               text-align: left;
-              font-size: .9em;
+              font-size: 0.9em;
             }
           }
         }
@@ -525,7 +525,7 @@
           }
 
           p {
-            font-size: .9em;
+            font-size: 0.9em;
             margin-bottom: $margin-md;
             line-height: 1.8;
           }
@@ -568,7 +568,7 @@
 
         p {
           color: white;
-          font-size: .9em;
+          font-size: 0.9em;
           line-height: 1.8;
         }
       }
@@ -722,7 +722,7 @@
 
         p {
           line-height: 1.8;
-          font-size: .9em;
+          font-size: 0.9em;
           color: $light-black;
         }
       }
@@ -798,7 +798,7 @@
 
               p {
                 line-height: 2;
-                font-size: .9em;
+                font-size: 0.9em;
               }
 
               .line {
@@ -820,7 +820,7 @@
 
                 img {
                   width: 0.8em;
-                  height: .8em;
+                  height: 0.8em;
                   margin: auto;
                 }
               }
@@ -1017,7 +1017,7 @@
         p {
           color: $text-color;
           margin-bottom: $margin-md;
-          font-size: .9em;
+          font-size: 0.9em;
         }
 
         strong {
@@ -1201,7 +1201,7 @@
         p {
           color: $light-black;
           line-height: 1.5;
-          font-size: .9em;
+          font-size: 0.9em;
         }
       }
 
@@ -1263,14 +1263,14 @@
                 position: absolute;
                 left: -0.8em;
                 top: 0;
-                font-size: .4em;
+                font-size: 0.4em;
               }
 
               &::after {
                 content: "/MO";
                 position: absolute;
                 bottom: 0.3em;
-                font-size: .4em;
+                font-size: 0.4em;
               }
             }
           }
@@ -1285,14 +1285,14 @@
                 position: absolute;
                 left: -0.8em;
                 top: 0;
-                font-size: .4em;
+                font-size: 0.4em;
               }
 
               &::after {
                 content: "/once";
                 position: absolute;
                 bottom: 0.3em;
-                font-size: .4em;
+                font-size: 0.4em;
               }
             }
           }
@@ -1307,14 +1307,14 @@
                 position: absolute;
                 left: -0.8em;
                 top: 0;
-                font-size: .4em;
+                font-size: 0.4em;
               }
 
               &::after {
                 content: "/??";
                 position: absolute;
                 bottom: 0.3em;
-                font-size: .4em;
+                font-size: 0.4em;
               }
             }
           }
@@ -1369,7 +1369,7 @@
               }
 
               p {
-                font-size: .9em;
+                font-size: 0.9em;
               }
             }
           }
@@ -1404,7 +1404,7 @@
             position: relative;
 
             &::before {
-              content: '';
+              content: "";
               display: block;
               width: 2.5em;
               height: 2.5em;
@@ -1415,6 +1415,28 @@
             }
           }
         }
+
+        .p-item-3 {
+          .card-heading {
+            position: relative;
+
+            &::before {
+              content: "Coming Soon!";
+              width: max-content;
+              border-radius: 2em;
+              padding: .2em 1.5em;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: $red;
+              color: white;
+              top: 0;
+              right: 0;
+              position: absolute;
+              transform: rotate(5deg);
+            }
+          }
+        }
       }
     }
   }
@@ -1422,10 +1444,7 @@
 
 @media (min-width: 540px) {
   #landing {
-
     .container {
-
-
       .content {
         margin-top: 6em;
         height: 100%;
@@ -1459,7 +1478,6 @@
       }
 
       .graphic {
-
         img {
           max-width: 275px;
         }
@@ -1471,6 +1489,7 @@
 @media (min-width: 768px) {
   #landing {
     background: url(/assets/tulsastock1.webp) center / cover;
+
     .container {
       .content {
         height: 100%;
@@ -1869,8 +1888,6 @@
         }
 
         .ctas {
-
-
           a {
             white-space: nowrap;
 
@@ -1930,7 +1947,7 @@
 
         p {
           margin-bottom: 1em;
-          font-size: .9em;
+          font-size: 0.9em;
         }
 
         .ctas {
@@ -2688,7 +2705,6 @@
       }
     }
   }
-
 }
 
 @keyframes fadeUp {
