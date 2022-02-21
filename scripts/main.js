@@ -1,4 +1,3 @@
-
 const body = document.querySelector('body');
 const burger = document.querySelector(".hamburger");
 const navOverlay = document.querySelector('.navlinks-overlay');
@@ -12,18 +11,20 @@ const toggleEverything = () => {
 burger.addEventListener('click', toggleEverything)
 navOverlay.addEventListener('click', toggleEverything)
 const scrollToTopButton = document.getElementById("js-top");
-const sTTB2 = document.querySelector('#js-top-2')
+const sTTB2 = document.querySelector('#js-top-2');
+const header = document.querySelector('header')
 const scrollFunc = () => {
   let y = window.scrollY;
   if (y > 0) {
     scrollToTopButton.className = "top-link show";
     sTTB2.className = "top-link show";
+    header.classList.add('scroll-fixed')
   } else {
     scrollToTopButton.className = "top-link hide";
     sTTB2.className = "top-link hide";
+    header.classList.remove('scroll-fixed')
   }
 };
-
 window.addEventListener("scroll", scrollFunc);
 
 const scrollToTop = () => {
@@ -39,24 +40,25 @@ scrollToTopButton.onclick = function (e) {
   scrollToTop();
 };
 
+
 var swiper = new Swiper(" .portSwiper", {
   spaceBetween: 30,
   speed: 1000,
   loop: true,
   autoplay: true,
-   slidesPerView: 'auto',
+  slidesPerView: 'auto',
   disableOnInteraction: true,
   centeredSlides: true,
   pagination: false,
   navigation: {
-      nextEl: ".swiper-next-port",
-      prevEl: ".swiper-prev-port"
+    nextEl: ".swiper-next-port",
+    prevEl: ".swiper-prev-port"
   },
 });
 let swiperPortControls = document.querySelectorAll('.control');
 swiperPortControls.forEach(control => {
   control.addEventListener('click', () => {
-      document.querySelector('.controller .pressedControl').classList.remove('pressedControl')
-      control.classList.add('pressedControl')
+    document.querySelector('.controller .pressedControl').classList.remove('pressedControl')
+    control.classList.add('pressedControl')
   })
 })

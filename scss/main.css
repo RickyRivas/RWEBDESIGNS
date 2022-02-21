@@ -917,6 +917,8 @@ button.swiper-pagination-bullet {
     position: absolute;
     top: 1em;
     left: 1em;
+    -webkit-transition: all .5s;
+    transition: all .5s;
   }
   header nav .logo-wrapper img {
     width: 90%;
@@ -1056,6 +1058,36 @@ button.swiper-pagination-bullet {
             transform: translate(0%);
     -webkit-animation: fadeIn 0.3s ease-in;
             animation: fadeIn 0.3s ease-in;
+  }
+  header.scroll-fixed {
+    position: fixed;
+    background-color: #0f65ff;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  header.scroll-fixed nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.scroll-fixed nav .logo-wrapper {
+    position: relative;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    top: unset;
+    left: unset;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  header.scroll-fixed nav .logo-wrapper img {
+    position: relative;
   }
   @-webkit-keyframes fadeIn {
     from {
@@ -1224,6 +1256,33 @@ button.swiper-pagination-bullet {
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+  }
+  header.scroll-fixed {
+    position: fixed;
+    background-color: #0f65ff;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    height: unset;
+  }
+  header.scroll-fixed nav {
+    padding: .5em 1em;
+  }
+  header.scroll-fixed nav .logo-wrapper {
+    position: relative;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    top: unset;
+    left: unset;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  header.scroll-fixed nav .logo-wrapper img {
+    position: relative;
+    width: 200px;
   }
 }
 
@@ -1559,6 +1618,12 @@ button.swiper-pagination-bullet {
     height: 300px;
     color: white;
     padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #page-header {
+    background-attachment: fixed;
   }
 }
 
@@ -4608,6 +4673,9 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 1200px) {
+  #landing {
+    background-attachment: fixed;
+  }
   #info {
     width: 100%;
   }
@@ -4737,6 +4805,10 @@ button.swiper-pagination-bullet {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  #quote {
+    width: 100%;
+    background-attachment: fixed;
   }
 }
 

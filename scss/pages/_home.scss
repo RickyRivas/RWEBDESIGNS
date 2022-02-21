@@ -2604,9 +2604,10 @@
 
 @media (min-width: 1200px) {
 
-  // #landing {
-  //   min-height: 70vh;
-  // }
+  #landing {
+    background-attachment: fixed;
+  }
+
   #info {
     width: 100%;
 
@@ -2704,6 +2705,11 @@
         }
       }
     }
+  }
+
+  #quote {
+    width: 100%;
+    background-attachment: fixed;
   }
 }
 
