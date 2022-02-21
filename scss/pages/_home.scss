@@ -144,7 +144,7 @@
         p {
           line-height: 1.5;
           color: $gray-700;
-          font-size: 1em;
+          font-size: .9em;
         }
       }
 
@@ -159,7 +159,7 @@
 
         .service-item {
           width: 100%;
-          padding: $padding-lg;
+          padding: $padding-md;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -209,7 +209,7 @@
             color: $gray-700;
             margin-bottom: $margin-md;
             line-height: 1.5;
-            font-size: 1em;
+            font-size: .9em;
           }
 
           a {
@@ -329,7 +329,7 @@
         p {
           line-height: 2;
           margin-bottom: $margin-md;
-          font-size: 1em;
+          font-size: .9em;
           text-align: left;
         }
 
@@ -374,7 +374,7 @@
               color: $gray-700;
               line-height: 1.5;
               text-align: left;
-              font-size: 1em;
+              font-size: .9em;
             }
           }
         }
@@ -526,7 +526,7 @@
           }
 
           p {
-            font-size: $font-size-sm;
+            font-size: .9em;
             margin-bottom: $margin-md;
           }
         }
@@ -568,7 +568,7 @@
 
         p {
           color: white;
-          font-size: 1em;
+          font-size: .9em;
           line-height: 1.5;
         }
       }
@@ -722,7 +722,7 @@
 
         p {
           line-height: 1.5;
-          font-size: 1em;
+          font-size: .9em;
         }
       }
 
@@ -796,7 +796,7 @@
 
               p {
                 line-height: 2;
-                font-size: 1em;
+                font-size: .9em;
               }
 
               .line {
@@ -1015,7 +1015,7 @@
         p {
           color: $text-color;
           margin-bottom: $margin-md;
-          font-size: 1em;
+          font-size: .9em;
         }
 
         strong {
@@ -1199,7 +1199,7 @@
         p {
           color: $gray-700;
           line-height: 1.5;
-          font-size: $font-size-base;
+          font-size: .9em;
         }
       }
 
@@ -1367,7 +1367,7 @@
               }
 
               p {
-                font-size: 1em;
+                font-size: .9em;
               }
             }
           }
@@ -1553,8 +1553,6 @@
         p {
           line-height: 2;
           margin-bottom: $margin-md;
-          color: $gray-600;
-          font-size: 1em;
         }
 
         ul {
@@ -1930,6 +1928,7 @@
 
         p {
           margin-bottom: 1em;
+          font-size: .9em;
         }
 
         .ctas {
@@ -2082,7 +2081,6 @@
         p {
           line-height: 2;
           margin-bottom: $margin-md;
-          color: $gray-600;
         }
 
         ul {
@@ -2184,6 +2182,7 @@
     .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      gap: 2em;
 
       .content {
         h2 {
@@ -2405,7 +2404,6 @@
           color: $gray-400;
           line-height: 1.5;
           max-width: unset;
-          font-size: 1em;
         }
       }
     }
@@ -2641,7 +2639,6 @@
         p {
           line-height: 2;
           margin-bottom: $margin-md;
-          color: $gray-600;
         }
 
         ul {

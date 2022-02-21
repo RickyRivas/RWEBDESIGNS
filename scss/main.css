@@ -2077,7 +2077,7 @@ button.swiper-pagination-bullet {
   #intro .container .heading p {
     line-height: 1.5;
     color: #727272;
-    font-size: 1em;
+    font-size: .9em;
   }
   #intro .container .service-items {
     width: 100%;
@@ -2092,7 +2092,7 @@ button.swiper-pagination-bullet {
   }
   #intro .container .service-items .service-item {
     width: 100%;
-    padding: 2em;
+    padding: 1em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2155,7 +2155,7 @@ button.swiper-pagination-bullet {
     color: #727272;
     margin-bottom: 1em;
     line-height: 1.5;
-    font-size: 1em;
+    font-size: .9em;
   }
   #intro .container .service-items .service-item a {
     text-decoration: none;
@@ -2290,7 +2290,7 @@ button.swiper-pagination-bullet {
   #info .container .main-content p {
     line-height: 2;
     margin-bottom: 1em;
-    font-size: 1em;
+    font-size: .9em;
     text-align: left;
   }
   #info .container .main-content ul {
@@ -2356,7 +2356,7 @@ button.swiper-pagination-bullet {
     color: #727272;
     line-height: 1.5;
     text-align: left;
-    font-size: 1em;
+    font-size: .9em;
   }
   #info .container .main-content .btns {
     width: 100%;
@@ -2497,7 +2497,7 @@ button.swiper-pagination-bullet {
     text-transform: uppercase;
   }
   #features .container .item .body p {
-    font-size: 0.875em;
+    font-size: .9em;
     margin-bottom: 1em;
   }
   #quote {
@@ -2530,7 +2530,7 @@ button.swiper-pagination-bullet {
   }
   #quote .container .content p {
     color: white;
-    font-size: 1em;
+    font-size: .9em;
     line-height: 1.5;
   }
   #quote .container .form-container form {
@@ -2702,7 +2702,7 @@ button.swiper-pagination-bullet {
   }
   #portfolio .container .heading p {
     line-height: 1.5;
-    font-size: 1em;
+    font-size: .9em;
   }
   #portfolio .container .portSwiper {
     width: 100%;
@@ -2790,7 +2790,7 @@ button.swiper-pagination-bullet {
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text p {
     line-height: 2;
-    font-size: 1em;
+    font-size: .9em;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .text .line {
     width: 100%;
@@ -3024,7 +3024,7 @@ button.swiper-pagination-bullet {
   #about .container .heading p {
     color: #adb5bd;
     margin-bottom: 1em;
-    font-size: 1em;
+    font-size: .9em;
   }
   #about .container .heading strong {
     color: white;
@@ -3232,7 +3232,7 @@ button.swiper-pagination-bullet {
   #packages .container .heading p {
     color: #727272;
     line-height: 1.5;
-    font-size: 1em;
+    font-size: .9em;
   }
   #packages .container .packages-grid {
     display: -ms-grid;
@@ -3415,7 +3415,7 @@ button.swiper-pagination-bullet {
         align-self: unset;
   }
   #packages .container .packages-grid .p-item .items .item p {
-    font-size: 1em;
+    font-size: .9em;
   }
   #packages .container .packages-grid .p-item a {
     position: relative;
@@ -3578,8 +3578,6 @@ button.swiper-pagination-bullet {
   #info .container .main-content p {
     line-height: 2;
     margin-bottom: 1em;
-    color: #6c757d;
-    font-size: 1em;
   }
   #info .container .main-content ul {
     width: 100%;
@@ -3943,6 +3941,7 @@ button.swiper-pagination-bullet {
   }
   #landing .container .content p {
     margin-bottom: 1em;
+    font-size: .9em;
   }
   #landing .container .content .ctas {
     display: -webkit-box;
@@ -4114,7 +4113,6 @@ button.swiper-pagination-bullet {
   #info .container .main-content p {
     line-height: 2;
     margin-bottom: 1em;
-    color: #6c757d;
   }
   #info .container .main-content ul {
     width: 100%;
@@ -4198,6 +4196,7 @@ button.swiper-pagination-bullet {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    gap: 2em;
   }
   #quote .container .form-container .flex {
     display: -ms-grid;
@@ -4434,7 +4433,6 @@ button.swiper-pagination-bullet {
     color: #ced4da;
     line-height: 1.5;
     max-width: unset;
-    font-size: 1em;
   }
   #packages .container {
     padding: 2em 1em;
@@ -4657,7 +4655,6 @@ button.swiper-pagination-bullet {
   #info .container .main-content p {
     line-height: 2;
     margin-bottom: 1em;
-    color: #6c757d;
   }
   #info .container .main-content ul {
     width: 100%;
