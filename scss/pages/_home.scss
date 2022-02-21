@@ -143,7 +143,7 @@
 
         p {
           line-height: 1.8;
-          color: $gray-700;
+          color: $light-black;
           font-size: .9em;
         }
       }
@@ -331,6 +331,7 @@
           margin-bottom: $margin-md;
           font-size: .9em;
           text-align: left;
+          color: $light-black;
         }
 
         ul {
@@ -476,7 +477,6 @@
       }
 
       p {
-        line-height: 1.5;
         color: $gray-700;
         font-size: 1em;
       }
@@ -527,6 +527,7 @@
           p {
             font-size: .9em;
             margin-bottom: $margin-md;
+            line-height: 1.8;
           }
         }
       }
@@ -722,7 +723,7 @@
         p {
           line-height: 1.8;
           font-size: .9em;
-          color: #727272;
+          color: $light-black;
         }
       }
 
@@ -1177,7 +1178,7 @@
         width: 100%;
         text-align: center;
         margin-bottom: $margin-lg;
-        padding: 0 $padding-sm;
+        padding: 0 $padding-md;
         max-width: 700px;
 
         span {
@@ -1198,7 +1199,7 @@
         }
 
         p {
-          color: $gray-700;
+          color: $light-black;
           line-height: 1.5;
           font-size: .9em;
         }

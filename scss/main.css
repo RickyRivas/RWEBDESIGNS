@@ -2076,7 +2076,7 @@ button.swiper-pagination-bullet {
   }
   #intro .container .heading p {
     line-height: 1.8;
-    color: #727272;
+    color: #222;
     font-size: .9em;
   }
   #intro .container .service-items {
@@ -2292,6 +2292,7 @@ button.swiper-pagination-bullet {
     margin-bottom: 1em;
     font-size: .9em;
     text-align: left;
+    color: #222;
   }
   #info .container .main-content ul {
     width: 100%;
@@ -2446,7 +2447,6 @@ button.swiper-pagination-bullet {
     -webkit-text-fill-color: transparent;
   }
   #features .heading p {
-    line-height: 1.5;
     color: #727272;
     font-size: 1em;
   }
@@ -2498,6 +2498,7 @@ button.swiper-pagination-bullet {
   #features .container .item .body p {
     font-size: .9em;
     margin-bottom: 1em;
+    line-height: 1.8;
   }
   #quote {
     width: 100%;
@@ -2702,7 +2703,7 @@ button.swiper-pagination-bullet {
   #portfolio .container .heading p {
     line-height: 1.8;
     font-size: .9em;
-    color: #727272;
+    color: #222;
   }
   #portfolio .container .portSwiper {
     width: 100%;
@@ -3211,7 +3212,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     text-align: center;
     margin-bottom: 2em;
-    padding: 0 0.5em;
+    padding: 0 1em;
     max-width: 700px;
   }
   #packages .container .heading span {
@@ -3231,7 +3232,7 @@ button.swiper-pagination-bullet {
     -webkit-text-fill-color: transparent;
   }
   #packages .container .heading p {
-    color: #727272;
+    color: #222;
     line-height: 1.5;
     font-size: .9em;
   }
@@ -4828,6 +4829,7 @@ button.swiper-pagination-bullet {
   }
   #contact .container .form-container p {
     margin-bottom: 2em;
+    line-height: 1.8;
   }
   #contact .container .form-container form {
     width: 100%;
@@ -5120,6 +5122,7 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100vw;
   }
   #c-1 .container,
   #c-2 .container,
@@ -5131,7 +5134,7 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    width: 100vw;
     max-width: 55em;
   }
   #c-1 .container .graphic,
@@ -5170,8 +5173,9 @@ button.swiper-pagination-bullet {
   #c-1 .container .text p,
   #c-2 .container .text p,
   #c-3 .container .text p {
-    line-height: 1.5;
+    line-height: 1.8;
     margin-bottom: 1em;
+    font-size: .9em;
   }
   #c-1 .container .text ul,
   #c-2 .container .text ul,
@@ -5243,7 +5247,7 @@ button.swiper-pagination-bullet {
   #c-3 .container .text ul li p {
     margin: 0;
     color: #727272;
-    line-height: 1.5;
+    line-height: 1.8;
     text-align: left;
     font-size: 1em;
   }
