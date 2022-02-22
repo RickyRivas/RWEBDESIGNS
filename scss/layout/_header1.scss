@@ -47,6 +47,7 @@
           width: auto;
           height: 100%;
           max-width: 250px;
+          z-index: 2;
         }
       }
 
@@ -178,7 +179,6 @@
       nav {
         height: 4em;
         padding: 1em;
-        transition: all .5s;
         .logo-wrapper {
           img {
           }
@@ -397,10 +397,9 @@
       nav {
         height: 5em;
         padding: 1em;
-        flex-wrap: inherit;
         .logo-wrapper {
           img {
-            width: unset;
+            width: auto;
           }
         }
       }

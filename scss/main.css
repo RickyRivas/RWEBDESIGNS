@@ -919,6 +919,7 @@ button.swiper-pagination-bullet {
     width: auto;
     height: 100%;
     max-width: 250px;
+    z-index: 2;
   }
   header nav .nav-links {
     margin: 0;
@@ -1076,8 +1077,6 @@ button.swiper-pagination-bullet {
   header.scroll-fixed nav {
     height: 4em;
     padding: 1em;
-    -webkit-transition: all .5s;
-    transition: all .5s;
   }
   @-webkit-keyframes fadeIn {
     from {
@@ -1311,11 +1310,9 @@ button.swiper-pagination-bullet {
   header.scroll-fixed nav {
     height: 5em;
     padding: 1em;
-    -ms-flex-wrap: inherit;
-        flex-wrap: inherit;
   }
   header.scroll-fixed nav .logo-wrapper img {
-    width: unset;
+    width: auto;
   }
 }
 
