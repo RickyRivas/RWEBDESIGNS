@@ -5,7 +5,7 @@ const nav = document.querySelector(".nav-links");
 const toggleEverything = () => {
   nav.classList.toggle('is-active');
   burger.classList.toggle('is-active');
-  body.classList.toggle('body-fixed');
+  // body.classList.toggle('body-fixed');
   navOverlay.classList.toggle('is-active');
 }
 burger.addEventListener('click', toggleEverything)
