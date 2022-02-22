@@ -906,15 +906,6 @@ button.swiper-pagination-bullet {
   header nav .logo-wrapper {
     -webkit-transition: all .5s;
     transition: all .5s;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     height: 100%;
   }
   header nav .logo-wrapper img {
