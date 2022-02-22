@@ -23,7 +23,6 @@
     & nav {
       display: flex;
       justify-content: space-between;
-      // align-items: center;
       background-color: transparent;
       box-shadow: none;
       border: 0;
@@ -40,9 +39,9 @@
 
       .logo-wrapper {
         transition: all .5s;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100%;
         width: max-content;
         img {

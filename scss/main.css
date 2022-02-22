@@ -903,6 +903,15 @@ button.swiper-pagination-bullet {
   header nav .logo-wrapper {
     -webkit-transition: all .5s;
     transition: all .5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100%;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -3966,9 +3975,7 @@ button.swiper-pagination-bullet {
   }
   #landing .container .graphic img {
     width: 100%;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    height: auto;
   }
 }
 
