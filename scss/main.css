@@ -1725,10 +1725,6 @@ button.swiper-pagination-bullet {
   height: 1.5em;
 }
 
-.top-link:nth-child(1) {
-  margin-bottom: .5em;
-}
-
 .screen-reader-text {
   position: absolute;
   -webkit-clip-path: inset(50%);

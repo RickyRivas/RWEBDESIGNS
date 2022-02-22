@@ -10,35 +10,35 @@ const toggleEverything = () => {
 }
 burger.addEventListener('click', toggleEverything)
 navOverlay.addEventListener('click', toggleEverything)
-const scrollToTopButton = document.getElementById("js-top");
+// const scrollToTopButton = document.getElementById("js-top");
 const sTTB2 = document.querySelector('#js-top-2');
 const header = document.querySelector('header')
 const scrollFunc = () => {
   let y = window.scrollY;
   if (y > 0) {
-    scrollToTopButton.className = "top-link show";
+    // scrollToTopButton.className = "top-link show";
     sTTB2.className = "top-link show";
     header.classList.add('scroll-fixed')
   } else {
-    scrollToTopButton.className = "top-link hide";
+    // scrollToTopButton.className = "top-link hide";
     sTTB2.className = "top-link hide";
     header.classList.remove('scroll-fixed')
   }
 };
 window.addEventListener("scroll", scrollFunc);
 
-const scrollToTop = () => {
-  const c = document.documentElement.scrollTop || document.body.scrollTop;
-  if (c > 0) {
-    window.requestAnimationFrame(scrollToTop);
-    window.scrollTo(0, c - c / 10);
-  }
-};
+// const scrollToTop = () => {
+//   const c = document.documentElement.scrollTop || document.body.scrollTop;
+//   if (c > 0) {
+//     window.requestAnimationFrame(scrollToTop);
+//     window.scrollTo(0, c - c / 10);
+//   }
+// };
 
-scrollToTopButton.onclick = function (e) {
-  e.preventDefault();
-  scrollToTop();
-};
+// scrollToTopButton.onclick = function (e) {
+//   e.preventDefault();
+//   scrollToTop();
+// };
 
 
 var swiper = new Swiper(" .portSwiper", {
