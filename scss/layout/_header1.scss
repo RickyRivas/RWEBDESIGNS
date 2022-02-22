@@ -145,11 +145,12 @@
         font-size: 0.8em;
         z-index: 2;
         transition: all .5s;
-        white-space: nowrap;
       }
 
       .desktop-flex {
         display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
 

@@ -1032,12 +1032,17 @@ button.swiper-pagination-bullet {
     z-index: 2;
     -webkit-transition: all .5s;
     transition: all .5s;
-    white-space: nowrap;
   }
   header nav .desktop-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header .navlinks-overlay {
     position: fixed;
