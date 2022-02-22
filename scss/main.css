@@ -890,8 +890,6 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
     background-color: transparent;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 0;
@@ -1038,6 +1036,8 @@ button.swiper-pagination-bullet {
     margin-right: 1em;
     font-size: 0.8em;
     z-index: 2;
+    -webkit-transition: all .5s;
+    transition: all .5s;
   }
   header nav .desktop-flex {
     display: -webkit-box;
