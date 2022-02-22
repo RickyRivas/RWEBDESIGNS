@@ -901,8 +901,6 @@ button.swiper-pagination-bullet {
     font-size: 1.2em;
   }
   header nav .logo-wrapper {
-    -webkit-transition: all .5s;
-    transition: all .5s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1068,16 +1066,18 @@ button.swiper-pagination-bullet {
             animation: fadeIn 0.3s ease-in;
   }
   header.scroll-fixed {
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s;
-    background-color: black;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    background-color: #222;
     position: fixed;
+    -webkit-transition: all .5s;
+    transition: all .5s;
   }
   header.scroll-fixed nav {
     height: 4em;
     padding: 1em;
-    -ms-flex-wrap: inherit;
-        flex-wrap: inherit;
+    -webkit-transition: all .5s;
+    transition: all .5s;
   }
   @-webkit-keyframes fadeIn {
     from {
