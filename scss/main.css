@@ -907,6 +907,9 @@ button.swiper-pagination-bullet {
     -webkit-transition: all .5s;
     transition: all .5s;
     height: 100%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
   header nav .logo-wrapper img {
     width: 100%;
@@ -1029,6 +1032,7 @@ button.swiper-pagination-bullet {
     z-index: 2;
     -webkit-transition: all .5s;
     transition: all .5s;
+    white-space: nowrap;
   }
   header nav .desktop-flex {
     display: -webkit-box;
