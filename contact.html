@@ -71,8 +71,8 @@
             <div class="container">
                 <div class="form-container">
                     <h2>Tell us about your project.</h2>
-                    <p>Please fill out our form below and we will schedule a call to discuss your project.</p>
-                    <form name="contact" method="POST" data-netlify="true">
+                    <p>Please fill out our form below and we'll be in touch with you.</p>
+                    <form name="contact" method="POST" id='contact-form' data-netlify="true">
                         <div class="form-control">
                             <label name="name">
                                 <input type="text" name='Client Name' placeholder="Your Name *" required />
@@ -80,21 +80,21 @@
                         </div>
                         <div class="form-control">
                             <label for="">
-                                <input type="text" name="company name" placeholder="Company Name *" required />
+                                <input type="text" name="Company Name" placeholder="Company Name *" required />
                             </label>
                         </div>
                         <div class="form-control">
                             <label for="">
-                                <input type="email" name="email" placeholder="Your Email *" required />
+                                <input type="email" name="Client Email" placeholder="Your Email *" required />
                             </label>
                         </div>
                         <div class="form-control">
                             <label for="">
-                                <input type="tel" name="phone" placeholder="Phone Number *" required />
+                                <input type="tel" name="Client Number" placeholder="Phone Number *" required />
                             </label>
                         </div>
                         <div class="form-control">
-                            <select name="subject" required>
+                            <select name="Contact Reason" form="contact-form" required>
                                 <option value="" disabled="" selected="">What can we help you with?</option>
                                 <option value="catering">Need to redesign my website.</option>
                                 <option value="contact">Need to design or develop a new website. </option>
