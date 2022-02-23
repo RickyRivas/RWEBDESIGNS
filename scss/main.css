@@ -1035,8 +1035,6 @@ button.swiper-pagination-bullet {
     margin-right: 1em;
     font-size: 0.8em;
     z-index: 2;
-    -webkit-transition: all .5s;
-    transition: all .5s;
   }
   header nav .desktop-flex {
     display: -webkit-box;
@@ -2620,18 +2618,6 @@ button.swiper-pagination-bullet {
     color: white;
     margin-bottom: 0.5em;
   }
-  #quote .container .form-container form .form-control input::-webkit-input-placeholder {
-    color: #222;
-  }
-  #quote .container .form-container form .form-control input:-ms-input-placeholder {
-    color: #222;
-  }
-  #quote .container .form-container form .form-control input::-ms-input-placeholder {
-    color: #222;
-  }
-  #quote .container .form-container form .form-control input::placeholder {
-    color: #222;
-  }
   #quote .container .form-container form .form-control input[type="text"] {
     width: 100%;
     padding: 1em;
@@ -2657,18 +2643,6 @@ button.swiper-pagination-bullet {
     border: 0;
     padding: 1em;
     font-family: inherit;
-  }
-  #quote .container .form-container form .form-control textarea::-webkit-input-placeholder {
-    color: #222;
-  }
-  #quote .container .form-container form .form-control textarea:-ms-input-placeholder {
-    color: #222;
-  }
-  #quote .container .form-container form .form-control textarea::-ms-input-placeholder {
-    color: #222;
-  }
-  #quote .container .form-container form .form-control textarea::placeholder {
-    color: #222;
   }
   #quote .container .form-container form button[type="submit"] {
     background-color: white;
@@ -4951,6 +4925,7 @@ button.swiper-pagination-bullet {
     padding: 1rem;
     border-radius: 2rem;
     border: 0;
+    background-color: white;
     font-size: 16px;
     -webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
             box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
@@ -4979,6 +4954,7 @@ button.swiper-pagination-bullet {
     padding: 1rem;
     font-family: inherit;
     font-size: 16px;
+    background-color: white;
     -webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
             box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   }

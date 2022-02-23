@@ -586,9 +586,6 @@
             }
 
             input {
-              &::placeholder {
-                color: #222;
-              }
             }
 
             input[type="text"] {
@@ -619,10 +616,6 @@
               border: 0;
               padding: 1em;
               font-family: inherit;
-
-              &::placeholder {
-                color: #222;
-              }
             }
           }
 
