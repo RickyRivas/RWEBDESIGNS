@@ -2,25 +2,29 @@ const body = document.querySelector('body');
 const burger = document.querySelector(".hamburger");
 const navOverlay = document.querySelector('.navlinks-overlay');
 const nav = document.querySelector(".nav-links");
+
+nav.addEventListener('click', e => {
+  if (e.target instanceof HTMLAnchorElement) {
+    toggleEverything()
+  }
+})
+
 const toggleEverything = () => {
   nav.classList.toggle('is-active');
   burger.classList.toggle('is-active');
-  // body.classList.toggle('body-fixed');
   navOverlay.classList.toggle('is-active');
 }
 burger.addEventListener('click', toggleEverything)
 navOverlay.addEventListener('click', toggleEverything)
-// const scrollToTopButton = document.getElementById("js-top");
 const sTTB2 = document.querySelector('#js-top-2');
 const header = document.querySelector('header')
+
 const scrollFunc = () => {
   let y = window.scrollY;
   if (y > 0) {
-    // scrollToTopButton.className = "top-link show";
     sTTB2.className = "top-link show";
     header.classList.add('scroll-fixed')
   } else {
-    // scrollToTopButton.className = "top-link hide";
     sTTB2.className = "top-link hide";
     header.classList.remove('scroll-fixed')
   }
