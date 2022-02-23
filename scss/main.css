@@ -1568,6 +1568,7 @@ button.swiper-pagination-bullet {
     color: white;
     z-index: 20;
     position: relative;
+    text-align: center;
   }
 }
 
