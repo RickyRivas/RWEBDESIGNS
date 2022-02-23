@@ -264,7 +264,7 @@
     width: 100vw;
 
     & .is-active {
-      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      box-shadow: none;
       z-index: 100;
     }
 
@@ -365,7 +365,6 @@
     width: 100vw;
 
     & .is-active {
-      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
       z-index: 100;
     }
 

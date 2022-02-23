@@ -5,9 +5,14 @@ const nav = document.querySelector(".nav-links");
 
 nav.addEventListener('click', e => {
   if (e.target instanceof HTMLAnchorElement) {
-    toggleEverything()
+    if (screen.width = 1024) {
+      return
+    } else {
+      toggleEverything()
+    }
   }
 })
+
 
 const toggleEverything = () => {
   nav.classList.toggle('is-active');
@@ -28,6 +33,7 @@ const scrollFunc = () => {
     sTTB2.className = "top-link hide";
     header.classList.remove('scroll-fixed')
   }
+
 };
 window.addEventListener("scroll", scrollFunc);
 
