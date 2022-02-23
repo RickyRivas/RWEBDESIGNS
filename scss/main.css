@@ -876,13 +876,13 @@ button.swiper-pagination-bullet {
   }
   header {
     position: absolute;
-    z-index: 9998;
+    z-index: 9999;
     width: 100vw;
   }
   header.is-active {
     -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
             box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    z-index: 9998;
+    z-index: 9999;
   }
   header nav {
     display: -webkit-box;
@@ -2716,8 +2716,6 @@ button.swiper-pagination-bullet {
   #portfolio {
     width: 100%;
     background-color: white;
-    position: relative;
-    z-index: 9999;
   }
   #portfolio .container {
     width: 100%;
@@ -3579,9 +3577,6 @@ button.swiper-pagination-bullet {
   }
   #landing .container .graphic img {
     max-width: 275px;
-  }
-  #portfolio {
-    z-index: 1;
   }
 }
 

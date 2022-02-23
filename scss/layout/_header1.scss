@@ -5,11 +5,9 @@
     overflow-x: hidden;
     // position: relative;
   }
-
-  .body-fixed {
-    overflow: hidden;
-  }
-
+.body-fixed {
+  overflow: hidden;
+}
   main {
     position: relative;
   }
@@ -21,13 +19,13 @@
   header {
     position: absolute;
     // X
-    z-index: 9998;
+    z-index: 9999;
     width: 100vw;
 
     &.is-active {
       box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
       // x
-      z-index: 9998;
+      z-index: 9999;
     }
 
     & nav {
@@ -79,7 +77,6 @@
         background-color: $light-black;
         list-style: none;
         padding: 2em;
-
         & li {
           opacity: 1;
           padding: 0.5em 1em;
