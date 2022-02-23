@@ -1071,8 +1071,8 @@ button.swiper-pagination-bullet {
     transition: all 1s;
     background-color: #222;
     position: fixed;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-animation: fadeInDown .5s forwards ease-in;
+            animation: fadeInDown .5s forwards ease-in;
   }
   header.scroll-fixed nav {
     height: 4em;
@@ -1375,6 +1375,32 @@ button.swiper-pagination-bullet {
 .hamburger.is-active .hamburger-inner::after {
   -webkit-transform: rotate(45deg) translate(0px, 0px);
           transform: rotate(45deg) translate(0px, 0px);
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
 @media (min-width: 0em) {
@@ -2644,12 +2670,9 @@ button.swiper-pagination-bullet {
   #quote .container .form-container form .form-control textarea::placeholder {
     color: #222;
   }
-  #quote .container .form-container form .submit {
+  #quote .container .form-container form button[type="submit"] {
     background-color: white;
     border-radius: 2em;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2659,22 +2682,17 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0.2em;
+    padding: .9em 3.5em .9em 2em;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-  }
-  #quote .container .form-container form .submit button[type="submit"] {
-    padding: 10px 30px;
-    border: 0;
-    border-radius: 2em;
-    background-color: transparent;
-    color: black;
     cursor: pointer;
+    border: 0;
+    position: relative;
   }
-  #quote .container .form-container form .submit > div {
+  #quote .container .form-container form button[type="submit"] > div {
     background-color: #e6f0f6;
-    width: 1.8em;
-    height: 1.8em;
+    width: 2.5em;
+    height: 2.5em;
     border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2688,14 +2706,16 @@ button.swiper-pagination-bullet {
     overflow: hidden;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    position: absolute;
+    right: .3em;
   }
-  #quote .container .form-container form .submit > div img {
-    width: 1.2em;
-    height: 1.2em;
+  #quote .container .form-container form button[type="submit"] > div img {
+    width: 1.5em;
+    height: 1.5em;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
-  #quote .container .form-container form .submit:hover, #quote .container .form-container form .submit:active {
+  #quote .container .form-container form button[type="submit"]:hover {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -2703,7 +2723,7 @@ button.swiper-pagination-bullet {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
-  #quote .container .form-container form .submit:hover > div, #quote .container .form-container form .submit:active > div {
+  #quote .container .form-container form button[type="submit"]:hover > div {
     background-color: #0f65ff;
   }
   #portfolio {
@@ -4924,48 +4944,21 @@ button.swiper-pagination-bullet {
     color: white;
     margin-bottom: 0.5rem;
   }
-  #contact .container .form-container form .form-control input::-webkit-input-placeholder {
-    color: #222;
-  }
-  #contact .container .form-container form .form-control input:-ms-input-placeholder {
-    color: #222;
-  }
-  #contact .container .form-container form .form-control input::-ms-input-placeholder {
-    color: #222;
-  }
-  #contact .container .form-container form .form-control input::placeholder {
-    color: #222;
-  }
-  #contact .container .form-container form .form-control input[type="text"] {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 2rem;
-    border: 0;
-    border: 1px solid #a4a4a4;
-    font-size: 16px;
-  }
-  #contact .container .form-container form .form-control input[type="email"] {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 2rem;
-    border: 0;
-    border: 1px solid #a4a4a4;
-    font-size: 16px;
-  }
+  #contact .container .form-container form .form-control input[type="text"],
+  #contact .container .form-container form .form-control input[type="email"],
   #contact .container .form-container form .form-control input[type="tel"] {
     width: 100%;
     padding: 1rem;
     border-radius: 2rem;
     border: 0;
-    border: 1px solid #a4a4a4;
     font-size: 16px;
+    -webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   }
   #contact .container .form-container form .form-control select {
     width: 100%;
     padding: 1rem;
     border-radius: 2rem;
-    border: 0;
-    border: 1px solid #a4a4a4;
     -webkit-appearance: none;
     background-image: url(/assets/down-chevron.svg);
     background-position: right 0.75em center;
@@ -4973,7 +4966,10 @@ button.swiper-pagination-bullet {
     background-size: 10px;
     font-size: 16px;
     background-color: white;
-    color: black;
+    border: 0;
+    color: gray;
+    -webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   }
   #contact .container .form-container form .form-control textarea {
     resize: none;
@@ -4982,27 +4978,13 @@ button.swiper-pagination-bullet {
     border: 0;
     padding: 1rem;
     font-family: inherit;
-    border: 1px solid #a4a4a4;
     font-size: 16px;
+    -webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   }
-  #contact .container .form-container form .form-control textarea::-webkit-input-placeholder {
-    color: #222;
-  }
-  #contact .container .form-container form .form-control textarea:-ms-input-placeholder {
-    color: #222;
-  }
-  #contact .container .form-container form .form-control textarea::-ms-input-placeholder {
-    color: #222;
-  }
-  #contact .container .form-container form .form-control textarea::placeholder {
-    color: #222;
-  }
-  #contact .container .form-container form .submit {
+  #contact .container .form-container form button[type="submit"] {
     background-color: #0f65ff;
-    border-radius: 2rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    border-radius: 2em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5012,23 +4994,24 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0.3rem;
+    padding: .9em 3.8em .9em 2em;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-  }
-  #contact .container .form-container form .submit button[type="submit"] {
-    padding: 10px 30px;
-    border: 0;
-    border-radius: 2rem;
-    background-color: transparent;
-    color: white;
     cursor: pointer;
+    border: 0;
+    position: relative;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  #contact .container .form-container form button[type="submit"] p {
+    margin: 0;
+    color: white;
     text-transform: uppercase;
   }
-  #contact .container .form-container form .submit > div {
-    background-color: white;
-    width: 2rem;
-    height: 2rem;
+  #contact .container .form-container form button[type="submit"] > div {
+    background-color: #e6f0f6;
+    width: 2.8em;
+    height: 2.8em;
     border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5042,13 +5025,16 @@ button.swiper-pagination-bullet {
     overflow: hidden;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    position: absolute;
+    right: .3em;
   }
-  #contact .container .form-container form .submit > div img {
-    width: 1.2rem;
+  #contact .container .form-container form button[type="submit"] > div img {
+    width: 1.5em;
+    height: 1.5em;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
-  #contact .container .form-container form .submit:hover, #contact .container .form-container form .submit:active {
+  #contact .container .form-container form button[type="submit"]:hover {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -5056,7 +5042,7 @@ button.swiper-pagination-bullet {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
-  #contact .container .form-container form .submit:hover > div, #contact .container .form-container form .submit:active > div {
+  #contact .container .form-container form button[type="submit"]:hover > div {
     background-color: #0f65ff;
   }
   #contact .container .contact-info {

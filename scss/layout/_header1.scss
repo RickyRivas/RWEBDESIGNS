@@ -175,7 +175,7 @@
       transition: all 1s;
       background-color: $light-black;
       position: fixed;
-      transition: all .5s;
+      animation: fadeInDown .5s forwards ease-in;
       nav {
         height: 4em;
         padding: 1em;
@@ -458,5 +458,19 @@
         transform: rotate(45deg) translate(0px, 0px);
       }
     }
+  }
+}
+// animate 
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      -webkit-transform: translate3d(0,-100%,0);
+      transform: translate3d(0,-100%,0)
+  }
+
+  100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none
   }
 }

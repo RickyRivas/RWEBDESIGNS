@@ -27,19 +27,6 @@ const scrollFunc = () => {
 };
 window.addEventListener("scroll", scrollFunc);
 
-// const scrollToTop = () => {
-//   const c = document.documentElement.scrollTop || document.body.scrollTop;
-//   if (c > 0) {
-//     window.requestAnimationFrame(scrollToTop);
-//     window.scrollTo(0, c - c / 10);
-//   }
-// };
-
-// scrollToTopButton.onclick = function (e) {
-//   e.preventDefault();
-//   scrollToTop();
-// };
-
 
 var swiper = new Swiper(" .portSwiper", {
   spaceBetween: 30,
