@@ -55,8 +55,7 @@
                             border: 0;
                             background-color: white;
                             font-size: 16px;
-                            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-                            // box-shadow: rgb(17,100,255) -5px 5px, rgb(140, 180, 253) -10px 10px;
+                            border: 1px solid #222;
                         }
 
                         select {
@@ -72,7 +71,8 @@
                             background-color: white;
                             border: 0;
                             color: gray;
-                            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+                            border: 1px solid #222;
+
                         }
 
                         textarea {
@@ -84,7 +84,7 @@
                             font-family: inherit;
                             font-size: 16px;
                             background-color: white;
-                            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+                            border: 1px solid #222;
                         }
                     }
 

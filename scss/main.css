@@ -4927,8 +4927,7 @@ button.swiper-pagination-bullet {
     border: 0;
     background-color: white;
     font-size: 16px;
-    -webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border: 1px solid #222;
   }
   #contact .container .form-container form .form-control select {
     width: 100%;
@@ -4943,8 +4942,7 @@ button.swiper-pagination-bullet {
     background-color: white;
     border: 0;
     color: gray;
-    -webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border: 1px solid #222;
   }
   #contact .container .form-container form .form-control textarea {
     resize: none;
@@ -4955,8 +4953,7 @@ button.swiper-pagination-bullet {
     font-family: inherit;
     font-size: 16px;
     background-color: white;
-    -webkit-box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border: 1px solid #222;
   }
   #contact .container .form-container form button[type="submit"] {
     background-color: #0f65ff;
