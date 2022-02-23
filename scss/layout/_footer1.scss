@@ -34,6 +34,10 @@
               text-decoration: none;
               color: white;
               overflow: auto;
+              &:hover, &:active{
+                color: white;
+                text-decoration: 1px underline white;
+              }
             }
             color: white;
           }
@@ -94,6 +98,9 @@
             a {
               color: white;
               text-decoration: none;
+              &:hover, &:active{
+                color: white;
+              }
             }
           }
         }
@@ -124,7 +131,25 @@
         justify-content: flex-start;
         align-items: flex-start;
         img {
-          width: 100%;
+          width: 200px;
+          height: unset;
+        }
+      }
+
+      .col {
+        padding-top: 0rem !important;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    .container {
+
+      .logo-contain {
+
+        img {
+          width: 250px;
           height: unset;
         }
       }

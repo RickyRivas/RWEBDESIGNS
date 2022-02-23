@@ -1455,6 +1455,11 @@ button.swiper-pagination-bullet {
     color: white;
     overflow: auto;
   }
+  footer .container .col ul li a:hover, footer .container .col ul li a:active {
+    color: white;
+    -webkit-text-decoration: 1px underline white;
+            text-decoration: 1px underline white;
+  }
   footer .container .col:nth-child(2) {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
@@ -1544,6 +1549,9 @@ button.swiper-pagination-bullet {
     color: white;
     text-decoration: none;
   }
+  footer .container .contact ul li a:hover, footer .container .contact ul li a:active {
+    color: white;
+  }
   .credit {
     width: 100%;
     display: -webkit-box;
@@ -1580,7 +1588,17 @@ button.swiper-pagination-bullet {
             align-items: flex-start;
   }
   footer .container .logo-contain img {
-    width: 100%;
+    width: 200px;
+    height: unset;
+  }
+  footer .container .col {
+    padding-top: 0rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer .container .logo-contain img {
+    width: 250px;
     height: unset;
   }
   footer .container .col {
