@@ -676,7 +676,9 @@
 
   #portfolio {
     width: 100%;
-    // background-color: $light-mode-div-bg;
+    background-color: white;
+    position: relative;
+    z-index: 9999;
 
     .container {
       width: 100%;
@@ -1475,6 +1477,9 @@
         }
       }
     }
+  }
+  #portfolio {
+    z-index: 1;
   }
 }
 
