@@ -3,9 +3,14 @@
 @media (min-width: 0px) {
   body {
     overflow-x: hidden;
-    position: relative;
+    // position: relative;
   }
-
+  .body-fixed {
+  overflow: hidden;
+  }
+main {
+  position: relative;
+}
   .hamburger {
     z-index: 9999;
   }
@@ -77,7 +82,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 1.3em;
+          font-size: 22px;
           position: relative;
           text-transform: uppercase;
 
@@ -100,11 +105,6 @@
             }
           }
         }
-
-        & li:nth-child(1) {
-          margin-top: -3em;
-        }
-
         &.is-active {
           transform: translate(0%);
         }
@@ -112,18 +112,17 @@
         .social-media {
           position: absolute;
           left: 1em;
-          top: 45%;
+          top: 50vh;
           padding: 0;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
 
-          img {
-            width: 1.5em;
-            height: 1.5em;
-            margin-bottom: $margin-md;
-          }
+         img {
+           width: 1.5em;
+           height: 1.5em;
+         }
         }
       }
 
@@ -201,7 +200,6 @@
   header {
     nav {
       .nav-links{
-        height: 52em;
       }
       .logo-wrapper {
         img {
@@ -221,8 +219,9 @@
 
       .nav-links {
         width: 50%;
+        height: 100vh;
         li {
-          font-size: $font-size-base * 1.5;
+          // font-size: $font-size-base * 1.5;
         }
       }
 
@@ -352,7 +351,9 @@
         }
       }
     }
-
+.navlinks-overlay{
+  display: none;
+}
   }
 }
 
