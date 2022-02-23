@@ -5,7 +5,7 @@ const nav = document.querySelector(".nav-links");
 
 nav.addEventListener('click', e => {
   if (e.target instanceof HTMLAnchorElement) {
-    if (screen.width = 1024) {
+    if (screen.width >= 1024) {
       return
     } else {
       toggleEverything()

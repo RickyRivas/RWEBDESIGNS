@@ -1095,6 +1095,9 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 600px) {
+  header nav .nav-links {
+    height: 52em;
+  }
   header nav .logo-wrapper img {
     width: unset;
   }
@@ -1105,6 +1108,9 @@ button.swiper-pagination-bullet {
     height: 7em;
     padding: 1em;
     width: 100%;
+  }
+  header nav .nav-links {
+    width: 50%;
   }
   header nav .nav-links li {
     font-size: 1.5em;

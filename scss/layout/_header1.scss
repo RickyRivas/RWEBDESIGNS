@@ -200,7 +200,9 @@
 @media (min-width: 600px) {
   header {
     nav {
-
+      .nav-links{
+        height: 52em;
+      }
       .logo-wrapper {
         img {
           width: unset;
@@ -218,6 +220,7 @@
       width: 100%;
 
       .nav-links {
+        width: 50%;
         li {
           font-size: $font-size-base * 1.5;
         }
