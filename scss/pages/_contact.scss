@@ -55,7 +55,8 @@
                             border: 0;
                             background-color: white;
                             font-size: 16px;
-                            border: 1px solid #222;
+                            border: 1px solid #a4a4a4;
+                            box-shadow: $box-shadow;
                         }
 
                         select {
@@ -71,8 +72,8 @@
                             background-color: white;
                             border: 0;
                             color: gray;
-                            border: 1px solid #222;
-
+                            border: 1px solid #a4a4a4;
+                            box-shadow: $box-shadow;
                         }
 
                         textarea {
@@ -84,7 +85,8 @@
                             font-family: inherit;
                             font-size: 16px;
                             background-color: white;
-                            border: 1px solid #222;
+                            border: 1px solid #a4a4a4;
+                            box-shadow: $box-shadow;
                         }
                     }
 

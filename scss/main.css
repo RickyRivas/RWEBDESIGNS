@@ -1264,8 +1264,8 @@ button.swiper-pagination-bullet {
   header nav #nav-cta:hover, header nav #nav-cta:active {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -1678,8 +1678,8 @@ button.swiper-pagination-bullet {
   color: white;
   text-decoration: none;
   margin: 0.5em;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   font-size: .875em;
   border-radius: 2em;
 }
@@ -1918,8 +1918,8 @@ button.swiper-pagination-bullet {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 90%;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 1em;
     background-color: white;
   }
@@ -2213,8 +2213,8 @@ button.swiper-pagination-bullet {
     min-height: 250px;
     background-color: #f8f8f8;
     border-radius: 0.5em;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     position: relative;
   }
   #intro .container .service-items .service-item > div {
@@ -2573,8 +2573,8 @@ button.swiper-pagination-bullet {
     background-color: #f8f8f8;
     position: relative;
     border-radius: 0.5em;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   #features .container .item .header {
     position: relative;
@@ -2724,8 +2724,8 @@ button.swiper-pagination-bullet {
   #quote .container .form-container form button[type="submit"]:hover {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -2806,8 +2806,8 @@ button.swiper-pagination-bullet {
     grid-gap: 0.5em;
     padding-bottom: 2.2em;
     border-radius: 0.5em;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   #portfolio .container .portSwiper .swiper-wrapper .swiper-slide .graphic {
     height: -webkit-max-content;
@@ -2921,8 +2921,8 @@ button.swiper-pagination-bullet {
     padding: 1.5em;
     overflow: hidden;
     position: relative;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   #portfolio .container .controller .swiper-prev-port .left {
     width: 40px !important;
@@ -2990,8 +2990,8 @@ button.swiper-pagination-bullet {
     padding: 1em;
     position: relative;
     overflow: hidden;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   #portfolio .container .controller .swiper-next-port .right {
     width: 40px !important;
@@ -3339,8 +3339,8 @@ button.swiper-pagination-bullet {
             flex-direction: column;
     background-color: #f8f8f8;
     border-radius: 0.5em;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   #packages .container .packages-grid .p-item .card-heading {
     background-color: #222;
@@ -3513,8 +3513,8 @@ button.swiper-pagination-bullet {
   #packages .container .packages-grid .p-item a:hover, #packages .container .packages-grid .p-item a:active {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -4090,8 +4090,8 @@ button.swiper-pagination-bullet {
   #landing .container .content .ctas a:hover, #landing .container .content .ctas a:active {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   #landing .container .content .ctas a:nth-child(1) {
     margin-right: 1em;
@@ -4263,8 +4263,8 @@ button.swiper-pagination-bullet {
   #info .container .main-content .btns a:hover, #info .container .main-content .btns a:active {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   #info .container .graphic {
     width: 100%;
@@ -4960,7 +4960,9 @@ button.swiper-pagination-bullet {
     border: 0;
     background-color: white;
     font-size: 16px;
-    border: 1px solid #222;
+    border: 1px solid #a4a4a4;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   #contact .container .form-container form .form-control select {
     width: 100%;
@@ -4975,7 +4977,9 @@ button.swiper-pagination-bullet {
     background-color: white;
     border: 0;
     color: gray;
-    border: 1px solid #222;
+    border: 1px solid #a4a4a4;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   #contact .container .form-container form .form-control textarea {
     resize: none;
@@ -4986,7 +4990,9 @@ button.swiper-pagination-bullet {
     font-family: inherit;
     font-size: 16px;
     background-color: white;
-    border: 1px solid #222;
+    border: 1px solid #a4a4a4;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   #contact .container .form-container form button[type="submit"] {
     background-color: #0f65ff;
@@ -5006,8 +5012,8 @@ button.swiper-pagination-bullet {
     cursor: pointer;
     border: 0;
     position: relative;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
   #contact .container .form-container form button[type="submit"] p {
     margin: 0;
@@ -5043,8 +5049,8 @@ button.swiper-pagination-bullet {
   #contact .container .form-container form button[type="submit"]:hover {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
