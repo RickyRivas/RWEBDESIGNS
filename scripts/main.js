@@ -43,7 +43,7 @@ var swiper = new Swiper(" .portSwiper", {
   spaceBetween: 30,
   speed: 1000,
   loop: true,
-  autoplay: true,
+  autoplay: false,
   slidesPerView: 'auto',
   disableOnInteraction: true,
   centeredSlides: true,
