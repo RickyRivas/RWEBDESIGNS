@@ -39,7 +39,7 @@
 
             .contact-info {
                 width: 100%;
-                padding: 1em;
+                padding: 0em;
                 border-radius: 1.5em;
 
                 img {
@@ -95,8 +95,9 @@
                             border: 0;
                             color: #222;
                             font-size: 16px;
-                            border-bottom: 1px solid #adb5bd;
+                            border-bottom: 1px solid #222;
                             background-color: #fafafa;
+                            border-radius: 0;
 
                             &::placeholder {
                                 color: #adb5bd;
@@ -118,8 +119,9 @@
                             color: inherit;
                             font-size: inherit;
                             font-weight: inherit;
-                            border-bottom: 1px solid #adb5bd;
+                            border-bottom: 1px solid #222;
                             background-color: #fafafa;
+                            border-radius: 0;
 
                             &::placeholder {
                                 color: #adb5bd;
@@ -143,7 +145,7 @@
                             background-color: white;
                             border: 0;
                             color: #222;
-                            border-bottom: 1px solid #adb5bd;
+                            border-bottom: 1px solid #222;
                             background-color: #fafafa;
 
                             &::placeholder {
@@ -244,7 +246,7 @@
             border-radius: 1em;
             display: grid;
             grid-template-columns: 60% 40%;
-            grid-gap: 1em;
+            grid-gap: 2em;
             padding: .5em;
 
             .contact-info {

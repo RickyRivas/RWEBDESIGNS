@@ -4962,7 +4962,7 @@ button.swiper-pagination-bullet {
   }
   #contact .container .contact-info {
     width: 100%;
-    padding: 1em;
+    padding: 0em;
     border-radius: 1.5em;
   }
   #contact .container .contact-info img {
@@ -5010,8 +5010,9 @@ button.swiper-pagination-bullet {
     border: 0;
     color: #222;
     font-size: 16px;
-    border-bottom: 1px solid #adb5bd;
+    border-bottom: 1px solid #222;
     background-color: #fafafa;
+    border-radius: 0;
   }
   #contact .container .form-container form .form-control input[type="text"]::-webkit-input-placeholder,
   #contact .container .form-container form .form-control input[type="email"]::-webkit-input-placeholder,
@@ -5049,8 +5050,9 @@ button.swiper-pagination-bullet {
     color: inherit;
     font-size: inherit;
     font-weight: inherit;
-    border-bottom: 1px solid #adb5bd;
+    border-bottom: 1px solid #222;
     background-color: #fafafa;
+    border-radius: 0;
   }
   #contact .container .form-container form .form-control textarea::-webkit-input-placeholder {
     color: #adb5bd;
@@ -5079,7 +5081,7 @@ button.swiper-pagination-bullet {
     background-color: white;
     border: 0;
     color: #222;
-    border-bottom: 1px solid #adb5bd;
+    border-bottom: 1px solid #222;
     background-color: #fafafa;
   }
   #contact .container .form-container form .form-control select::-webkit-input-placeholder {
@@ -5174,7 +5176,7 @@ button.swiper-pagination-bullet {
     display: grid;
     -ms-grid-columns: 60% 40%;
         grid-template-columns: 60% 40%;
-    grid-gap: 1em;
+    grid-gap: 2em;
     padding: .5em;
   }
 }
