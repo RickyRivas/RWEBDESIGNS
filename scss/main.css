@@ -4950,7 +4950,7 @@ button.swiper-pagination-bullet {
   }
   #contact .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     border-radius: 1em;
     display: -ms-grid;
@@ -5115,7 +5115,7 @@ button.swiper-pagination-bullet {
     cursor: pointer;
     border: 0;
     position: relative;
-    color: #222;
+    color: white;
   }
   #contact .container .form-container form button[type="submit"] > div {
     background-color: #e6f0f6;
@@ -5156,6 +5156,16 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (min-width: 768px) {
+  #contact .container .form-container form .flex {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+}
+
 @media (min-width: 1024px) {
   #contact .container {
     width: 100%;
@@ -5166,13 +5176,6 @@ button.swiper-pagination-bullet {
         grid-template-columns: 60% 40%;
     grid-gap: 1em;
     padding: .5em;
-  }
-  #contact .container .form-container form .flex {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
   }
 }
 
