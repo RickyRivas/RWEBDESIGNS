@@ -68,57 +68,64 @@
             <h1>Contact Us</h1>
         </section>
         <section id="contact">
+            <div class="heading">
+                <h2>Tell us about your project.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga repellat animi reprehenderit tempore
+                    fugit ratione quis libero numquam quo et.</p>
+            </div>
             <div class="container">
                 <div class="form-container">
-                    <h2>Tell us about your project.</h2>
-                    <p>Please fill out our form below and we'll be in touch with you.</p>
-                    <form name="Contact Form" method="POST" id='client-form' data-netlify="true">
-                        <div class="form-control">
-                            <label name="name">
-                                <input type="text" name='Client Name' placeholder="Your Name *" required />
-                            </label>
+                    <form name="Home Contact" method="POST" data-netlify="true">
+                        <div class="flex">
+                            <div class="form-control">
+                                <!-- -->
+                                <label for="fname">Your Name:</label>
+                                <input id='fname' type="text" name='Client Name' placeholder="Jane Doe" required />
+                            </div>
+                            <div class="form-control">
+                                <label for="email-input">Your Email:</label>
+                                <input id='email-input' type="email" name="Email" placeholder="Your Email *" required />
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="form-control">
+                                <!-- -->
+                                <label for="company-name">Company Name:</label>
+                                <input id='company-name' type="text" name='Client Name' placeholder="Rivas Web Designs"
+                                    required />
+                            </div>
+                            <div class="form-control">
+                                <label for="contact-reason">Subject:</label>
+                                <select id='contact-reason' name="Contact Reason" form="client-form" required>
+                                    <option value="" disabled="" selected="">What can we help you with? *</option>
+                                    <option value="Redesign My Website">Need to redesign my website.</option>
+                                    <option value="Need to design or develope a new website">Need a new website.
+                                    </option>
+                                    <option value="logo design">Logo Design </option>
+                                    <option value="Other Reason">Other</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="form-control">
-                            <label for="">
-                                <input type="text" name="Company Name" placeholder="Company Name *" required />
-                            </label>
+                            <label for="message-input">Tell us about your project.</label>
+                            <textarea id='message-input' name="message" cols="20" rows="5"
+                                placeholder="I need a website..."></textarea>
                         </div>
-                        <div class="form-control">
-                            <label for="">
-                                <input type="email" name="Client Email" placeholder="Your Email *" required />
-                            </label>
-                        </div>
-                        <div class="form-control">
-                            <label for="">
-                                <input type="tel" name="Client Number" placeholder="Phone Number *" required />
-                            </label>
-                        </div>
-                        <div class="form-control">
-                            <select name="Contact Reason" form="client-form" required>
-                                <option value="" disabled="" selected="">What can we help you with?</option>
-                                <option value="Redesign My Website">Need to redesign my website.</option>
-                                <option value="Need to design or develope a new website">Need to design or develop a new website. </option>
-                                <option value="Other Reason">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-control">
-                            <textarea name="message" id="" cols="20" rows="5"
-                                placeholder="Please, tell us about your project."></textarea>
-                        </div>
-
                         <button type="submit">
-                            <p>Submit Your Request</p>
-                            <div>
+                            Submit Form
+                            <div aria-hidden='true' role="decoration">
                                 <img src="/assets/paper-plane.svg" alt="message icon" width='22' height='22'>
                             </div>
                         </button>
+                        <!-- -->
                     </form>
                 </div>
                 <div class="contact-info">
+                    <img src="/assets/contactillustration.png" alt="" width="100" height="100">
                     <p><strong>Business Phone:</strong><a href="tel:">(918) 312 - 7266</a></p>
                     <p><strong>Email:</strong><a href="mailto:rivaswebdesigns@gmail.com">RivasWebDesigns@gmail.com</a>
                     </p>
-                    <p><strong>Website:</strong><a href="https://RivasWebDesigns.com">https://RivasWebDesigns.com</a>
+                    <p><strong>Website:</strong><a href="https://RivasWebDesigns.com">RivasWebDesigns.com</a>
                     </p>
                     <p><strong>Business Hours:</strong>Mon - Fri | 9am - 5pm CST</p>
                 </div>
@@ -130,9 +137,9 @@
                 <span class="screen-reader-text">Contact</span>
             </a>
             <button class="top-link hide" href="" id="js-top">
-                <img src="assets/up-chevron.svg" alt="up arrow" class="" width='22' height='22'/>
+                <img src="assets/up-chevron.svg" alt="up arrow" class="" width='22' height='22' />
                 <span class="screen-reader-text">Back to top</span>
-            </button> 
+            </button>
         </div>
     </main>
     <!-- Footer -->
@@ -187,7 +194,7 @@
         </div>
     </footer>
     <div class="credit">
-        <p>&copy Rivas Web Designs 2022 | All Rights Reserved.</p>
+        <p> &#169; Rivas Web Designs 2022 | All Rights Reserved.</p>
     </div>
     <!-- Footer -->
 </body>

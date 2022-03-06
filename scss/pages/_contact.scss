@@ -2,66 +2,135 @@
     #contact {
         padding: $padding-xl $padding-md;
 
+        .heading {
+            width: 100%;
+            max-width: 650px;
+            margin: auto;
+            margin-bottom: $margin-lg;
+
+
+            h2 {
+                position: relative;
+                text-transform: uppercase;
+                font-size: 2em;
+                background: $gradient-bg-one;
+                background-size: 400% 400%;
+                animation: gradient 15s ease infinite;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: $margin-sm;
+            }
+
+            p {
+                line-height: 1.5;
+            }
+        }
+
         .container {
             width: 100%;
             max-width: 1000px;
             margin: auto;
+            border-radius: 1em;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 2em;
+            padding: .5em;
 
-            .form-container {
+            .contact-info {
                 width: 100%;
-                margin-bottom: $margin-lg;
+                padding: 1em;
+                border-radius: 1.5em;
 
-                h2 {
+                img {
                     width: 100%;
-                    position: relative;
-                    font-size: $font-size-base * 2;
-                    background: $gradient-bg-one;
-                    background-size: 400% 400%;
-                    animation: gradient 15s ease infinite;
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    margin-bottom: $margin-sm;
+                    height: auto;
+                    max-width: 300px;
+                    margin-bottom: 2em;
+                }
 
+                h3 {
+                    font-size: 1.5em;
+                    margin-bottom: .1em;
                 }
 
                 p {
-                    margin-bottom: $margin-lg;
-                    line-height: 1.8;
-                }
+                    strong {
+                        margin-right: .5rem;
+                    }
 
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    margin-bottom: .5rem;
+                }
+            }
+
+            .form-container {
                 form {
                     width: 100%;
+                    padding: 1.5em;
+                    box-shadow: $box-shadow;
+                    border-radius: 1em;
 
                     .form-control {
-                        margin-bottom: 1rem; 
+                        margin-bottom: 1em;
 
                         p {
                             color: white;
-                            margin-bottom: 0.5rem;
+                            margin-bottom: 0.5em;
                         }
-
-                        input {
-                            &::placeholder {
-                            }
+                        label {
+                            margin-bottom: .3em;
                         }
-
                         input[type="text"],
                         input[type="email"],
                         input[type="tel"] {
                             width: 100%;
-                            padding: 1rem;
-                            border-radius: 2rem;
+                            padding: 1em;
                             border: 0;
-                            background-color: white;
+                            color: #222;
                             font-size: 16px;
-                            border: 1px solid #a4a4a4;
+                            border-bottom: 1px solid #adb5bd;
+                            background-color: #fafafa;
+
+                            &::placeholder {
+                                color: #adb5bd;
+                            }
+
+                            &:active,
+                            &:hover {
+                                border-bottom: 1px solid $primary;
+                            }
+                        }
+
+
+                        textarea {
+                            resize: none;
+                            width: 100%;
+                            border: 0;
+                            padding: 1em;
+                            font-family: inherit;
+                            color: inherit;
+                            font-size: inherit;
+                            font-weight: inherit;
+                            border-bottom: 1px solid #adb5bd;
+                            background-color: #fafafa;
+                            &::placeholder {
+                                color: #adb5bd;
+                            }
+
+                            &:active,
+                            &:hover {
+                                border-bottom: 1px solid $primary;
+                            }
                         }
 
                         select {
                             width: 100%;
-                            padding: 1rem;
-                            border-radius: 2rem;
+                            padding: 1em;
                             -webkit-appearance: none;
                             background-image: url(/assets/down-chevron.svg);
                             background-position: right 0.75em center;
@@ -70,22 +139,24 @@
                             font-size: 16px;
                             background-color: white;
                             border: 0;
-                            color: gray;
-                            border: 1px solid #a4a4a4;
+                            color: #222;
+                            border-bottom: 1px solid #adb5bd;
+                            background-color: #fafafa;
+
+                            &::placeholder {
+                                color: #adb5bd;
+                            }
+
+                            &:active,
+                            &:hover {
+                                border-bottom: 1px solid $primary;
+                            }
                         }
 
-                        textarea {
-                            resize: none;
-                            width: 100%;
-                            border-radius: 2rem;
-                            border: 0;
-                            padding: 1rem;
-                            font-family: inherit;
-                            font-size: 16px;
-                            background-color: white;
-                            border: 1px solid #a4a4a4;
-                        }
+
                     }
+
+
 
                     button[type="submit"] {
                         background-color: $primary;
@@ -93,23 +164,18 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        padding: .9em 3.8em .9em 2em;
+                        padding: .9em 3.5em .9em 2em;
                         transition: all 0.5s;
                         cursor: pointer;
                         border: 0;
                         position: relative;
-                        box-shadow: $box-shadow;
+                        color: #222;
 
-                        p {
-                            margin: 0;
-                            color: white;
-                            text-transform: uppercase;
-                        }
 
                         &>div {
                             background-color: #e6f0f6;
-                            width: 2.8em;
-                            height: 2.8em;
+                            width: 2.5em;
+                            height: 2.5em;
                             border-radius: 50%;
                             display: flex;
                             justify-content: center;
@@ -140,88 +206,101 @@
                     }
                 }
             }
-
-            .contact-info {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: left;
-                flex-direction: column;
-                padding: 1rem 0;
-
-                p {
-                    strong {
-                        margin-right: .5rem;
-                    }
-
-                    a {
-                        text-decoration: none;
-                        color: black;
-                    }
-
-                    margin-bottom: .5rem;
-                }
-            }
         }
     }
 }
 
 @media (min-width: 1024px) {
     #contact {
+
+        .heading {
+
+            h2 {}
+
+            p {}
+        }
+
         .container {
+            width: 100%;
+            border-radius: 1em;
             display: grid;
-            grid-template-columns: 55% 40%;
-            gap: 2rem;
-
-            .form-container {
-                h2 {}
-
-                form {
-                    .form-control {
-                        p {}
-
-                        input {
-                            &::placeholder {}
-                        }
-
-                        input[type="text"] {}
-
-                        input[type="email"] {}
-
-                        input[type="tel"] {}
-
-                        select {}
-
-                        textarea {
-
-                            &::placeholder {}
-                        }
-                    }
-
-                    .submit {
-                        button[type="submit"] {}
-
-                        &>div {
-                            img {}
-                        }
-
-                        &:hover,
-                        &:active {
-
-                            &>div {}
-                        }
-                    }
-                }
-            }
+            grid-template-columns: 60% 40%;
+            grid-gap: 1em;
+            padding: .5em;
 
             .contact-info {
-                justify-content: flex-start;
-                margin-top: 4rem;
+
+                img {}
 
                 p {
                     strong {}
 
                     a {}
+
+                }
+            }
+
+            .form-container {
+                form {
+
+                    .form-control {
+
+
+                        p {}
+
+                        input[type="text"],
+                        input[type="email"],
+                        input[type="tel"] {
+
+
+                            &::placeholder {}
+
+                            &:active,
+                            &:hover {}
+                        }
+
+
+                        textarea {}
+
+                        select {
+
+                            option {
+
+
+                                [disabled] {}
+                            }
+
+                        }
+
+
+                    }
+
+
+
+                    button[type="submit"] {
+
+
+
+                        &>div {
+
+                            img {}
+                        }
+
+                        &:hover {
+
+
+                            &>div {
+
+
+                                img {}
+                            }
+                        }
+                    }
+                    .flex {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 1em;
+                    }
                 }
             }
         }
