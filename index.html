@@ -251,32 +251,32 @@
             <div class="flex">
               <div class="form-control">
                 <!-- -->
-                <label name="Name" class="sr-only">Your Name</label>
-                  <input type="text" name='Client Name' placeholder="Your Name *" required />
+                <label name="fname" class="sr-only">Your Name</label>
+                  <input id='fname' type="text" name='Client Name' placeholder="Your Name *" required />
               </div>
               <div class="form-control">
-                <label for="Company" class="sr-only">Company Name</label>
-                  <input type="text" name="company name" placeholder="Company Name *" required />
+                <label for="companyname" class="sr-only">Company Name</label>
+                  <input id='companyname' type="text" name="company name" placeholder="Company Name *" required />
               </div>
             </div>
             <div class="flex">
               <div class="form-control">
-                <label for="Email" class="sr-only">Your Email</label>
-                  <input type="email" name="email" placeholder="Your Email *" required />
+                <label for="email-input" class="sr-only">Your Email</label>
+                  <input id='email-input' type="email" name="email" placeholder="Your Email *" required />
               </div>
               <div class="form-control">
-                <label for="Phone" class="sr-only">Your Phone</label>
-                  <input type="tel" name="phone" placeholder="Phone Number *" required />
+                <label for="phone-input" class="sr-only">Your Phone</label>
+                  <input id='phone-input' type="tel" name="phone" placeholder="Phone Number *" required />
               </div>
             </div>
             <div class="form-control">
-              <label for="ContactReason" class="sr-only">Tell us about your project</label>
-              <textarea name="message" id="" cols="20" rows="5"
+              <label id='message-input' for="ContactReason" class="sr-only">Tell us about your project</label>
+              <textarea id='message-input' name="message" cols="20" rows="5"
                 placeholder="Please, tell us about your project."></textarea>
             </div>
             <button type="submit">
-              <p>Submit Form</p>
-              <div>
+              Submit Form
+              <div aria-hidden="true">
                 <img src="/assets/paper-plane.svg" alt="message icon" width='22' height='22'>
               </div>
             </button>
@@ -664,7 +664,7 @@
     </div>
   </footer>
   <div class="credit">
-    <p>&copy Rivas Web Designs 2022 | All Rights Reserved.</p>
+    <p>	&#169; Rivas Web Designs 2022 | All Rights Reserved.</p>
   </div>
   <!-- Footer -->
   <!-- Scripts -->
