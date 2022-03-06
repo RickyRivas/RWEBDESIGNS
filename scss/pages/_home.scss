@@ -581,8 +581,7 @@
               margin-bottom: 0.5em;
             }
 
-            input {
-            }
+            input {}
 
             input[type="text"] {
               width: 100%;
@@ -654,14 +653,16 @@
                 transition: all 0.5s;
               }
             }
-            &:hover{
-                transform: translateY(-5px);
-                box-shadow: $box-shadow;
-                transition: all 0.5s;
+
+            &:hover {
+              transform: translateY(-5px);
+              box-shadow: $box-shadow;
+              transition: all 0.5s;
+
               &>div {
                 background-color: $primary;
-                img {
-                }
+
+                img {}
               }
             }
           }
@@ -2753,4 +2754,16 @@
   body {
     font-size: 1vw;
   }
+}
+
+// input accesibilit
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }
