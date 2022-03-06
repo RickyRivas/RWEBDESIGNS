@@ -2922,6 +2922,7 @@ button.swiper-pagination-bullet {
     position: relative;
     -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: .5em;
   }
   #portfolio .container .controller .swiper-prev-port .left {
     width: 40px !important;
@@ -2991,6 +2992,7 @@ button.swiper-pagination-bullet {
     overflow: hidden;
     -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: .5em;
   }
   #portfolio .container .controller .swiper-next-port .right {
     width: 40px !important;
@@ -3398,7 +3400,7 @@ button.swiper-pagination-bullet {
     font-size: 0.4em;
   }
   #packages .container .packages-grid .p-item .pricing-2 :nth-child(2)::after {
-    content: "/once";
+    content: "/MO";
     position: absolute;
     bottom: 0.3em;
     font-size: 0.4em;
@@ -5085,18 +5087,6 @@ button.swiper-pagination-bullet {
     background-color: #fafafa;
     border-radius: 0;
   }
-  #contact .container .form-container form .form-control select::-webkit-input-placeholder {
-    color: #adb5bd;
-  }
-  #contact .container .form-container form .form-control select:-ms-input-placeholder {
-    color: #adb5bd;
-  }
-  #contact .container .form-container form .form-control select::-ms-input-placeholder {
-    color: #adb5bd;
-  }
-  #contact .container .form-container form .form-control select::placeholder {
-    color: #adb5bd;
-  }
   #contact .container .form-container form .form-control select:active, #contact .container .form-container form .form-control select:hover {
     border-bottom: 1px solid #0f65ff;
   }
@@ -5160,6 +5150,9 @@ button.swiper-pagination-bullet {
 }
 
 @media (min-width: 768px) {
+  #contact .heading {
+    text-align: center;
+  }
   #contact .container .form-container form .flex {
     display: -ms-grid;
     display: grid;

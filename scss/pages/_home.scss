@@ -836,6 +836,7 @@
           overflow: hidden;
           position: relative;
           box-shadow: $box-shadow;
+          border-radius: .5em;
 
           .left {
             width: 40px !important;
@@ -899,6 +900,7 @@
           position: relative;
           overflow: hidden;
           box-shadow: $box-shadow;
+          border-radius: .5em;
 
           .right {
             width: 40px !important;
@@ -1278,7 +1280,7 @@
               }
 
               &::after {
-                content: "/once";
+                content: "/MO";
                 position: absolute;
                 bottom: 0.3em;
                 font-size: 0.4em;

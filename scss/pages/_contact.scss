@@ -149,10 +149,6 @@
                             background-color: #fafafa;
                             border-radius: 0;
 
-                            &::placeholder {
-                                color: #adb5bd;
-                            }
-
                             &:active,
                             &:hover {
                                 border-bottom: 1px solid $primary;
@@ -218,6 +214,9 @@
 
 @media(min-width: 768px) {
     #contact {
+        .heading{
+            text-align: center;
+        }
         .container {
             .form-container {
                 form {
