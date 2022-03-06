@@ -248,42 +248,41 @@
                     </p>
                 </div>
                 <div class="form-container">
-                    <form name="Services Contact" method="POST" data-netlify="true">
+                    <form name="Home Contact" method="POST" data-netlify="true">
                         <div class="flex">
                             <div class="form-control">
-                                <label name="name">
-                                    <input type="text" name='Client Name' placeholder="Your Name *" required />
-                                </label>
+                                <!-- -->
+                                <label for="fname" class="sr-only">Your Name</label>
+                                <input id='fname' type="text" name='Client Name' placeholder="Your Name *" required />
                             </div>
                             <div class="form-control">
-                                <label for="">
-                                    <input type="text" name="company name" placeholder="Company Name *" required />
-                                </label>
+                                <label for="companyname" class="sr-only">Company Name</label>
+                                <input id='companyname' type="text" name="company name" placeholder="Company Name *"
+                                    required />
                             </div>
                         </div>
                         <div class="flex">
                             <div class="form-control">
-                                <label for="">
-                                    <input type="email" name="email" placeholder="Your Email *" required />
-                                </label>
+                                <label for="email-input" class="sr-only">Your Email</label>
+                                <input id='email-input' type="email" name="email" placeholder="Your Email *" required />
                             </div>
                             <div class="form-control">
-                                <label for="">
-                                    <input type="tel" name="phone" placeholder="Phone Number *" required />
-                                </label>
+                                <label for="phone-input" class="sr-only">Your Phone</label>
+                                <input id='phone-input' type="tel" name="phone" placeholder="Phone Number *" required />
                             </div>
                         </div>
                         <div class="form-control">
-                            <textarea name="message" id="" cols="20" rows="5"
+                            <label for="ContactReason" class="sr-only">Tell us about your project</label>
+                            <textarea id='message-input' name="message" cols="20" rows="5"
                                 placeholder="Please, tell us about your project."></textarea>
                         </div>
-
                         <button type="submit">
-                            <p>Submit Form</p>
-                            <div>
+                            Submit Form
+                            <div aria-hidden='true' role="decoration">
                                 <img src="/assets/paper-plane.svg" alt="message icon" width='22' height='22'>
                             </div>
                         </button>
+                        <!-- -->
                     </form>
                 </div>
             </div>

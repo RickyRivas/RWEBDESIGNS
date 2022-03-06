@@ -251,7 +251,7 @@
             <div class="flex">
               <div class="form-control">
                 <!-- -->
-                <label name="fname" class="sr-only">Your Name</label>
+                <label for="fname" class="sr-only">Your Name</label>
                   <input id='fname' type="text" name='Client Name' placeholder="Your Name *" required />
               </div>
               <div class="form-control">
@@ -270,13 +270,13 @@
               </div>
             </div>
             <div class="form-control">
-              <label id='message-input' for="ContactReason" class="sr-only">Tell us about your project</label>
+              <label for="ContactReason" class="sr-only">Tell us about your project</label>
               <textarea id='message-input' name="message" cols="20" rows="5"
                 placeholder="Please, tell us about your project."></textarea>
             </div>
             <button type="submit">
               Submit Form
-              <div aria-hidden="true">
+              <div aria-hidden='true' role="decoration">
                 <img src="/assets/paper-plane.svg" alt="message icon" width='22' height='22'>
               </div>
             </button>
