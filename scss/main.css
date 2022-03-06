@@ -4928,7 +4928,7 @@ button.swiper-pagination-bullet {
   }
   #contact .heading {
     width: 100%;
-    max-width: 650px;
+    max-width: 700px;
     margin: auto;
     margin-bottom: 2em;
   }
@@ -4965,7 +4965,7 @@ button.swiper-pagination-bullet {
     padding: 0em;
     border-radius: 1.5em;
   }
-  #contact .container .contact-info img {
+  #contact .container .contact-info embed {
     width: 100%;
     height: auto;
     max-width: 300px;
@@ -5083,6 +5083,7 @@ button.swiper-pagination-bullet {
     color: #222;
     border-bottom: 1px solid #222;
     background-color: #fafafa;
+    border-radius: 0;
   }
   #contact .container .form-container form .form-control select::-webkit-input-placeholder {
     color: #adb5bd;
