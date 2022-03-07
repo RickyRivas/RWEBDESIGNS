@@ -1078,6 +1078,14 @@ button.swiper-pagination-bullet {
     height: 4em;
     padding: 1em;
   }
+  header.scroll-fixed nav .logo-wrapper {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  header.scroll-fixed nav .logo-wrapper img {
+    width: 5em;
+  }
   @-webkit-keyframes fadeIn {
     from {
       opacity: 0;
