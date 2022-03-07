@@ -33,6 +33,18 @@
     <script src="scripts/main.js" defer></script>
     <!-- Title -->
     <title>Rivas Web Designs | Our Services</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYXY69GY6W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RYXY69GY6W');
+    </script>
 </head>
 
 <body>
@@ -84,8 +96,9 @@
                         are different because we hand code our websites as opposed to utilizing Wordpress, Wix,
                         Squarespace, etc. There are many benefits we gain because of this. Page-builders add a sludge of
                         messy code that can drastically slow down a
-                        website and in some cases, limit your design. With that said, There are no limits to our designs
-                        and <span style="color: blue; text-decoration: underline;">will
+                        website and in some cases, limit your design. They are a one-size-fits-all solution.
+                        Fortunately, There are no limits to our designs
+                        and <span style="color: blue; text-decoration: underline;">our websites will
                             outperform most Wordpress and page-builder built websites. </span>Here are some other
                         benefits of our products:</p>
                     <ul>
@@ -124,13 +137,13 @@
                 </div>
                 <div class="text">
                     <h2>Search Engine Optimization</h2>
-                    <p>Google’s search engine algorithms determine which websites rank higher than others, based on a
-                        number of factors. We keep up to
+                    <p>Google’s search engine algorithms determine which websites rank higher than others. We keep up to
                         date on this so we can continue to implement the best methods of handling on-site search engine
                         optimization. Many agencies promise instant SEO benefits that just aren’t doable, such as
                         getting your website on top of Google results within a few months. In reality it
-                        can take years to rank number one. Aside from this, our websites are always optimized for
-                        on-page SEO- Included in all packages. Below are a few techniques we use for better SEO results:
+                        can take years to rank number one. Fortunately for you, ALL of our websites are always optimized
+                        for
+                        on-page SEO. Below are a few techniques we use for better SEO results:
                     </p>
                     <ul>
                         <li>
@@ -156,7 +169,7 @@
                             <div>
                                 <img src="assets/check-mark.svg" alt="check mark" width='22' height='22' class="" />
                             </div>
-                            <p>Professional copywriting.
+                            <p>Professional copywriting for better results.
                             </p>
                         </li>
                     </ul>
@@ -170,15 +183,15 @@
                 </div>
                 <div class="text">
                     <h2>Branding, Logos, and Graphic Design</h2>
-                    <p>At Rivas Web Designs, we also offer graphic design services. Whether you already have a logo that
-                        needs a touch-up or need custom social media graphics, we can help you build your business
+                    <p>At Rivas Web Designs, we also offer graphic design services. Whether you need a new logo or
+                        custom social media graphics, we can help you build your business
                         brand identity. Contact us for any graphic design services.</p>
                     <ul>
                         <li>
                             <div>
                                 <img src="assets/check-mark.svg" alt="check mark" width='22' height='22' class="" />
                             </div>
-                            <p>New logos start at $250 and go up in price based on complexity and time.</p>
+                            <p>New logos start at $350 and go up in price based on complexity and time.</p>
                         </li>
                         <li>
                             <div>
@@ -256,39 +269,41 @@
                 <div class="form-container">
                     <form name="Home Contact" method="POST" data-netlify="true">
                         <div class="flex">
-                          <div class="form-control">
-                            <!-- -->
-                            <label for="fname" class="sr-only">Your Name</label>
-                              <input id='fname' type="text" name='Client Name' placeholder="Your Name *" required />
-                          </div>
-                          <div class="form-control">
-                            <label for="companyname" class="sr-only">Company Name</label>
-                              <input id='companyname' type="text" name="Company name" placeholder="Company Name *" required />
-                          </div>
+                            <div class="form-control">
+                                <!-- -->
+                                <label for="fname" class="sr-only">Your Name</label>
+                                <input id='fname' type="text" name='Client Name' placeholder="Your Name *" required />
+                            </div>
+                            <div class="form-control">
+                                <label for="companyname" class="sr-only">Company Name</label>
+                                <input id='companyname' type="text" name="Company name" placeholder="Company Name *"
+                                    required />
+                            </div>
                         </div>
                         <div class="flex">
-                          <div class="form-control">
-                            <label for="email-input" class="sr-only">Your Email</label>
-                              <input id='email-input' type="email" name="Email" placeholder="Your Email *" required />
-                          </div>
-                          <div class="form-control">
-                            <label for="phone-input" class="sr-only">Your Phone</label>
-                              <input id='phone-input' type="tel" name="Phone Number" placeholder="Phone Number *" required />
-                          </div>
+                            <div class="form-control">
+                                <label for="email-input" class="sr-only">Your Email</label>
+                                <input id='email-input' type="email" name="Email" placeholder="Your Email *" required />
+                            </div>
+                            <div class="form-control">
+                                <label for="phone-input" class="sr-only">Your Phone</label>
+                                <input id='phone-input' type="tel" name="Phone Number" placeholder="Phone Number *"
+                                    required />
+                            </div>
                         </div>
                         <div class="form-control">
-                          <label for="message-input" class="sr-only">Tell us about your project</label>
-                          <textarea id='message-input' name="message" cols="20" rows="5"
-                            placeholder="Please, tell us about your project."></textarea>
+                            <label for="message-input" class="sr-only">Tell us about your project</label>
+                            <textarea id='message-input' name="message" cols="20" rows="5"
+                                placeholder="Please, tell us about your project."></textarea>
                         </div>
                         <button type="submit">
-                          Submit Form
-                          <div aria-hidden='true' role="decoration">
-                            <img src="/assets/paper-plane.svg" alt="message icon" width='22' height='22'>
-                          </div>
+                            Submit Form
+                            <div aria-hidden='true' role="decoration">
+                                <img src="/assets/paper-plane.svg" alt="message icon" width='22' height='22'>
+                            </div>
                         </button>
                         <!-- -->
-                      </form>
+                    </form>
                 </div>
             </div>
         </section>
@@ -356,7 +371,7 @@
         </div>
     </footer>
     <div class="credit">
-        <p>	&#169; Rivas Web Designs 2022 | All Rights Reserved.</p>
+        <p> &#169; Rivas Web Designs 2022 | All Rights Reserved.</p>
     </div>
     <!-- Footer -->
 </body>

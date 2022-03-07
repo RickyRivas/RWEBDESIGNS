@@ -33,6 +33,18 @@
     <script src="scripts/main.js" defer></script>
     <!-- Title -->
     <title>Rivas Web Designs | Contact Us</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYXY69GY6W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RYXY69GY6W');
+    </script>
 </head>
 
 <body>
@@ -85,7 +97,7 @@
                             <div class="form-control">
                                 <!-- -->
                                 <label for="fname">Your Name:</label>
-                                <input id='fname' type="text" name='Client Name' placeholder="Jane Doe" required />
+                                <input id='fname' type="text" name='Client Name' placeholder="Jane Doe *" required />
                             </div>
                             <div class="form-control">
                                 <label for="email-input">Your Email:</label>
@@ -96,8 +108,8 @@
                             <div class="form-control">
                                 <!-- -->
                                 <label for="company-name">Company Name:</label>
-                                <input id='company-name' type="text" name='Client Name' placeholder="Rivas Web Designs"
-                                    required />
+                                <input id='company-name' type="text" name='Client Name'
+                                    placeholder="Rivas Web Designs *" required />
                             </div>
                             <div class="form-control">
                                 <label for="contact-reason">Subject:</label>
