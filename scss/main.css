@@ -914,13 +914,9 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 100%;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
   }
   header nav .logo-wrapper img {
-    width: auto;
+    width: 100%;
     height: 100%;
     max-width: 250px;
     z-index: 2;
