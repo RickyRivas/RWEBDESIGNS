@@ -2932,7 +2932,7 @@ button.swiper-pagination-bullet {
     position: relative;
     -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: .5em;
+    border-radius: 0;
   }
   #portfolio .container .controller .swiper-prev-port .left {
     width: 40px !important;
@@ -3002,7 +3002,7 @@ button.swiper-pagination-bullet {
     overflow: hidden;
     -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: .5em;
+    border-radius: 0;
   }
   #portfolio .container .controller .swiper-next-port .right {
     width: 40px !important;

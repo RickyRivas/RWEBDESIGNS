@@ -836,7 +836,7 @@
           overflow: hidden;
           position: relative;
           box-shadow: $box-shadow;
-          border-radius: .5em;
+          border-radius: 0;
 
           .left {
             width: 40px !important;
@@ -900,7 +900,7 @@
           position: relative;
           overflow: hidden;
           box-shadow: $box-shadow;
-          border-radius: .5em;
+          border-radius: 0;
 
           .right {
             width: 40px !important;
