@@ -2933,6 +2933,7 @@ button.swiper-pagination-bullet {
     -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 0;
+    border-bottom: 3px solid #222;
   }
   #portfolio .container .controller .swiper-prev-port .left {
     width: 40px !important;
@@ -2974,17 +2975,6 @@ button.swiper-pagination-bullet {
     -webkit-transform: translateX(101%);
             transform: translateX(101%);
   }
-  #portfolio .container .controller .swiper-prev-port.pressedControl .left {
-    -webkit-transition: all 1000ms;
-    transition: all 1000ms;
-    background-color: white;
-  }
-  #portfolio .container .controller .swiper-prev-port.pressedControl::before {
-    -webkit-transition: all 1000ms;
-    transition: all 1000ms;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
   #portfolio .container .controller .swiper-next-port {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3003,6 +2993,7 @@ button.swiper-pagination-bullet {
     -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 0;
+    border-bottom: 3px solid #222;
   }
   #portfolio .container .controller .swiper-next-port .right {
     width: 40px !important;
@@ -3042,17 +3033,6 @@ button.swiper-pagination-bullet {
     background-color: black;
     -webkit-transform: translateX(-101%);
             transform: translateX(-101%);
-  }
-  #portfolio .container .controller .swiper-next-port.pressedControl .right {
-    -webkit-transition: all 1000ms;
-    transition: all 1000ms;
-    background-color: white;
-  }
-  #portfolio .container .controller .swiper-next-port.pressedControl::before {
-    -webkit-transition: all 1000ms;
-    transition: all 1000ms;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
   }
   body.dark--mode #portfolio {
     background-color: #1e1e1e;

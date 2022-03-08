@@ -837,6 +837,7 @@
           position: relative;
           box-shadow: $box-shadow;
           border-radius: 0;
+          border-bottom: 3px solid #222;
 
           .left {
             width: 40px !important;
@@ -877,17 +878,6 @@
             transform: translateX(101%);
           }
 
-          &.pressedControl {
-            .left {
-              transition: all 1000ms;
-              background-color: white;
-            }
-
-            &::before {
-              transition: all 1000ms;
-              transform: translateX(0);
-            }
-          }
         }
 
         .swiper-next-port {
@@ -901,6 +891,7 @@
           overflow: hidden;
           box-shadow: $box-shadow;
           border-radius: 0;
+          border-bottom: 3px solid #222;
 
           .right {
             width: 40px !important;
@@ -940,17 +931,17 @@
             transform: translateX(-101%);
           }
 
-          &.pressedControl {
-            .right {
-              transition: all 1000ms;
-              background-color: white;
-            }
+          // &.pressedControl {
+          //   .right {
+          //     transition: all 1000ms;
+          //     background-color: white;
+          //   }
 
-            &::before {
-              transition: all 1000ms;
-              transform: translateX(0);
-            }
-          }
+          //   &::before {
+          //     transition: all 1000ms;
+          //     transform: translateX(0);
+          //   }
+          // }
         }
       }
     }
