@@ -11,7 +11,7 @@
         border: 2px solid #474755;
         background: linear-gradient(180deg, #2D2F39 0%, #1F2027 100%);
         transition: all .2s ease;
-        margin-right: $margin-sm;
+        margin-right:   var(--margin-sm);
 
         &::after {
             content: '';
@@ -32,7 +32,7 @@
         }
     }
     body.dark--mode #theme--switch {
-            border-color: $gold;
+            border-color: var(--gold);
 
             &::after {
                 transform: translatex(20px);

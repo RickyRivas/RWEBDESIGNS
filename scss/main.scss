@@ -1,18 +1,15 @@
 @charset "UTF-8";
 
 // 1. Configuration and helpers
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins',
-  'abstracts/dark-mode';
+// @import
+//   'abstracts/functions',
+//   'abstracts/mixins',
+//   'abstracts/dark-mode';
 
 // 3. Base stuff                  
 @import
   'base/base',
-  'base/fonts',
-  'swiper/swiper-bundle.min',
-  'components/dark-toggle';
+  'base/fonts';
 
 // 4. Layout-related sections
 @import
@@ -30,4 +27,4 @@
   'pages/contact',
   'pages/services';
 
-      
+  

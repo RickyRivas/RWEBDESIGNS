@@ -1,25 +1,25 @@
 @media (min-width: 0px) {
     #contact {
-        padding: $padding-xl $padding-md;
+        padding: var(--padding-xl) var(--padding-md);
 
         .heading {
             width: 100%;
             max-width: 700px;
             margin: auto;
-            margin-bottom: $margin-lg;
+            margin-bottom: var(--margin-lg);
 
 
             h2 {
                 position: relative;
                 text-transform: uppercase;
                 font-size: 2em;
-                background: $gradient-bg-one;
+                background: var(--main-custom-gradient);
                 background-size: 400% 400%;
                 animation: gradient 15s ease infinite;
                 -webkit-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
-                margin-bottom: $margin-sm;
+                margin-bottom: var(--margin-sm);
             }
 
             p {
@@ -72,7 +72,7 @@
                 form {
                     width: 100%;
                     padding: 1.5em;
-                    box-shadow: $box-shadow;
+                    box-shadow: var(--box-shadow);
                     border-radius: 1em;
 
                     .form-control {
@@ -105,7 +105,7 @@
 
                             &:active,
                             &:hover {
-                                border-bottom: 1px solid $primary;
+                                border-bottom: 1px solid --main-primary-color;
                             }
                         }
 
@@ -129,7 +129,7 @@
 
                             &:active,
                             &:hover {
-                                border-bottom: 1px solid $primary;
+                                border-bottom: 1px solid --main-primary-color;
                             }
                         }
 
@@ -151,7 +151,7 @@
 
                             &:active,
                             &:hover {
-                                border-bottom: 1px solid $primary;
+                                border-bottom: 1px solid --main-primary-color;
                             }
                         }
 
@@ -161,7 +161,7 @@
 
 
                     button[type="submit"] {
-                        background-color: $primary;
+                        background-color: var(--main-primary-color);
                         border-radius: 2em;
                         display: flex;
                         justify-content: center;
@@ -196,11 +196,11 @@
 
                         &:hover {
                             transform: translateY(-5px);
-                            box-shadow: $box-shadow;
+                            box-shadow: var(--box-shadow);
                             transition: all 0.5s;
 
                             &>div {
-                                background-color: $primary;
+                                background-color: --main-primary-color;
 
                                 img {}
                             }
@@ -214,9 +214,10 @@
 
 @media(min-width: 768px) {
     #contact {
-        .heading{
+        .heading {
             text-align: center;
         }
+
         .container {
             .form-container {
                 form {

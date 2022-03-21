@@ -5,8 +5,8 @@
   border: 0;
   color: white;
   text-decoration: none;
-  margin: $margin-sm;
-  box-shadow: $box-shadow;
+  margin:   var(--margin-sm);
+  box-shadow: var(--box-shadow);
   font-size: .875em;
   border-radius: 2em;
 
@@ -19,36 +19,36 @@
 
 // Button Link
 .btn-primary {
-  background-color: $primary;
+  background-color: var(--main-primary-color);
 }
 
-.btn-success {
-  background-color: $success;
-}
+// .btn-success {
+//   background-color: var(--green) ;
+// }
 
-.btn-danger {
-  background-color: $danger;
-}
+// .btn-danger {
+//   background-color: $danger;
+// }
 
-.btn-info {
-  background-color: $info;
-}
+// .btn-info {
+//   background-color: $info;
+// }
 
-.btn-warning {
-  background-color: $warning;
-  color: black;
-}
+// .btn-warning {
+//   background-color: $warning;
+//   color: black;
+// }
 
 .btn-secondary {
-  background-color: $secondary;
+  background-color: var(--secondary-clr);
 }
 
 .btn-dark {
-  background-color: $dark;
+  background-color: var(--dark-grey);
 }
 
 .btn-light {
-  background-color: $light;
+  background-color: var(--light-grey);
   color: black;
 }
 
@@ -70,7 +70,7 @@
   padding: 1px;
   width: 2.5rem;
   height: 2.5rem;
-  background: $primary;
+  background: var(--main-primary-color);
   border: 0;
   position: relative;
 

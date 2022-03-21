@@ -38,12 +38,12 @@
                 align-items: center;
                 width: 100%;
                 height: 100%;
-                padding: $padding-md $padding-sm;
-                background-color: $gray-100;
+                padding: var(--padding-md) var(--padding-sm) ;
+                background-color: var(--light-grey);
 
                 #close-modal-uno {
                     width: max-content;
-                    padding: $padding-sm;
+                    padding: var(--padding-sm) ;
                 }
             }
 
@@ -54,11 +54,11 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                padding: $padding-sm;
+                padding: var(--padding-sm) ;
                 text-align: center;
                 p {
-                    margin-bottom: $margin-md;
-                    color: $text-color;
+                    margin-bottom: var(--margin-md);
+                    color: var(--para-clr);
                 }
 
                 form {
@@ -67,48 +67,48 @@
                     align-items: center;
                     flex-direction: column;
                     width: 90%;
-                    box-shadow: $box-shadow;
-                    padding: $padding-md;
+                    box-shadow: var(--box-shadow);
+                    padding: var(--padding-md);
                     background-color: white;
 
                     .form-heading {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background-color: $gray-100;
+                        background-color: var(--light-grey);
                         width: 100%;
-                        padding: $padding-sm;
-                        margin-bottom: $margin-sm;
+                        padding: var(--padding-sm) ;
+                        margin-bottom:   var(--margin-sm);
                     }
 
                     label {
                         width: 100%;
-                        margin-bottom: $margin-sm;
+                        margin-bottom:   var(--margin-sm);
 
                         p {
-                            margin-bottom: $margin-sm;
+                            margin-bottom:   var(--margin-sm);
                         }
 
                         input[type='text'] {
                             width: 100%;
                             border-radius: unset;
-                            padding: $padding-sm;
-                            border: 1px solid $gray-200;
+                            padding: var(--padding-sm) ;
+                            border: 1px solid #e9ecef;
                         }
 
                         textarea {
                             width: 100%;
                             width: 100%;
                             border-radius: unset;
-                            padding: $padding-sm;
-                            border: 1px solid $gray-200;
+                            padding: var(--padding-sm) ;
+                            border: 1px solid #e9ecef;
                             resize: none
                         }
 
                         select {
                             width: 100%;
-                            padding: $padding-sm;
-                            border: 1px solid $gray-200;
+                            padding: var(--padding-sm) ;
+                            border: 1px solid #e9ecef;
                             // A reset of styles, including removing the default dropdown arrow
                             appearance: none;
                             // Additional resets for further consistency
@@ -130,8 +130,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: $padding-sm 0;
-                background-color: $gray-100;
+                padding: var(--padding-sm)  0;
+                background-color: var(--light-grey);
             }
         }
     }

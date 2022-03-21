@@ -1,11 +1,9 @@
-
 @media (min-width: 0em) {
-
   #intro {
     width: 100vw;
 
     .container {
-      padding: $padding-xl $padding-md;
+      padding: var(--padding-xl) var(--padding-md);
       width: 100%;
       max-width: 1200px;
       margin: auto;
@@ -18,10 +16,10 @@
         flex-direction: column;
         max-width: 700px;
         margin: auto;
-        margin-bottom: $margin-lg;
+        margin-bottom: var(--margin-lg);
 
         span {
-          color: $gray-700;
+          color: #727272;
           font-size: 1em;
         }
 
@@ -30,18 +28,18 @@
           position: relative;
           text-transform: uppercase;
           font-size: 2em;
-          background: $gradient-bg-one;
+          background: var(--main-custom-gradient);
           background-size: 400% 400%;
           animation: gradient 15s ease infinite;
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
-          margin-bottom: $margin-sm;
+          margin-bottom: var(--margin-sm);
         }
 
         p {
           line-height: 1.8;
-          color: $light-black;
+          color: var(--light-blk);
           font-size: 0.9em;
         }
       }
@@ -57,7 +55,7 @@
 
         .service-item {
           width: 100%;
-          padding: $padding-md;
+          padding: var(--padding-md);
           display: flex;
           justify-content: center;
           align-items: center;
@@ -67,10 +65,10 @@
           min-height: 250px;
           background-color: #f8f8f8;
           border-radius: 0.5em;
-          box-shadow: $box-shadow;
+          box-shadow: var(--box-shadow);
           position: relative;
 
-          &>div {
+          & > div {
             padding: 1em;
             background-color: #222;
             display: flex;
@@ -86,7 +84,7 @@
           }
 
           .tag {
-            background-color: $red;
+            background-color:var(--secondary-clr);
             border-radius: 2em;
             padding: 0.2em 1em;
             color: white;
@@ -98,21 +96,21 @@
           }
 
           h3 {
-            margin-bottom: $margin-sm;
+            margin-bottom: var(--margin-sm);
             text-transform: uppercase;
             font-size: 1.2em;
           }
 
           p {
-            color: $gray-700;
-            margin-bottom: $margin-md;
+            color: #727272;
+            margin-bottom: var(--margin-md);
             line-height: 1.8;
             font-size: 0.9em;
           }
 
           a {
             text-decoration: none;
-            background-color: $light-black;
+            background-color: var(--light-blk);
             color: white;
             transition: 0.5s;
           }
@@ -123,15 +121,15 @@
 
   body.dark--mode #intro {
     transition: all 200ms ease-in;
-    background-color: $dark-background-lg-one;
+    background-color: var(--light-blk);
 
     span,
     p {
-      color: $dark-mode-para-text !important;
+      color: white !important;
     }
 
     .service-item {
-      background-color: $dark-mode-background-sm !important;
+      background-color: #212121 !important;
       transition: all 200ms ease-in;
 
       h4 {
@@ -143,7 +141,7 @@
         box-shadow: none;
 
         &:hover {
-          background-color: $dark-button-hover-bg;
+          background-color: rgba(255, 255, 255, 0.1);
           transition: all 200ms ease-in;
         }
       }
@@ -151,18 +149,18 @@
   }
 
   body.dark--mode #info {
-    background-color: $dark-background-lg-two;
+    background-color: #1e1e1e;
 
     span,
     p {
-      color: $dark-mode-para-text !important;
+      color: white !important;
     }
 
     a {
       box-shadow: none;
 
       &:hover {
-        background-color: $dark-button-hover-bg;
+        background-color: rgba(255, 255, 255, 0.1);
       }
     }
   }
@@ -170,14 +168,14 @@
   #info {
     width: 100%;
     overflow: hidden;
-    background-color: $prime-gray;
+    background-color: #f8f8f8;
 
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      padding: $padding-lg $padding-md;
+      padding: var(--padding-lg) var(--padding-md);
       width: 100%;
       max-width: 55em;
       margin: auto;
@@ -187,18 +185,18 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-bottom: $margin-md;
+        margin-bottom: var(--margin-md);
 
         span {
-          color: $gray-700;
-          margin-bottom: $margin-sm;
+          color: #727272;
+          margin-bottom: var(--margin-sm);
           font-size: 1em;
         }
 
-        &>div {
+        & > div {
           width: 1px;
           height: 40px;
-          background-color: $gray-700;
+          background-color: #727272;
         }
       }
 
@@ -209,14 +207,14 @@
         flex-direction: column;
         text-align: center;
         width: 100%;
-        margin-bottom: $margin-md;
+        margin-bottom: var(--margin-md);
 
         h2 {
           text-align: left;
           text-transform: uppercase;
           font-size: 2em;
-          margin-bottom: $margin-md;
-          background: $gradient-bg-one;
+          margin-bottom: var(--margin-md);
+          background: var(--main-custom-gradient);
           background-size: 400% 400%;
           animation: gradient 15s ease infinite;
           -webkit-background-clip: text;
@@ -226,10 +224,10 @@
 
         p {
           line-height: 2;
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
           font-size: 0.9em;
           text-align: left;
-          color: $light-black;
+          color: var(--light-blk);
         }
 
         ul {
@@ -239,17 +237,17 @@
           align-items: flex-start;
           flex-direction: column;
           padding: 0;
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
 
           li {
             display: flex;
             justify-content: center;
             align-items: center;
             height: max-content;
-            font-size: $font-size-sm;
-            margin: 0 0 $margin-md 0;
+            font-size: var(--font-sz-sm);
+            margin: 0 0 var(--margin-md) 0;
 
-            &>div {
+            & > div {
               width: 2em;
               height: 2em;
               padding: 0.5em;
@@ -284,7 +282,7 @@
           align-items: center;
 
           a {
-            background-color: $light-black;
+            background-color: var(--light-blk);
             transition: 0.5s;
 
             &:hover {
@@ -322,16 +320,16 @@
   }
 
   body.dark--mode #features {
-    background-color: $dark-background-lg-one;
+    background-color: var(--light-blk);
 
     span,
     p {
-      color: $dark-mode-para-text !important;
+      color: white !important;
     }
 
     .container {
       .item {
-        background-color: $dark-mode-background-sm !important;
+        background-color: #212121 !important;
 
         h4 {
           color: white !important;
@@ -341,7 +339,7 @@
           box-shadow: none;
 
           &:hover {
-            background-color: $dark-button-hover-bg;
+            background-color: rgba(255, 255, 255, 0.1);
           }
         }
       }
@@ -350,23 +348,23 @@
 
   #features {
     width: 100%;
-    padding: $padding-xl $padding-md;
+    padding: var(--padding-xl) var(--padding-md);
 
     .heading {
       width: 100%;
       text-align: center;
-      margin-bottom: $margin-md;
+      margin-bottom: var(--margin-md);
 
       span {
-        color: $gray-700;
-        font-size: $font-size-base;
+        color: #727272;
+        font-size: var(--font-sz-base);
       }
 
       h2 {
-        font-size: $font-size-base * 2;
+        font-size: 2em;
         text-transform: uppercase;
-        margin-bottom: $margin-md;
-        background: $gradient-bg-one;
+        margin-bottom: var(--margin-md);
+        background: var(--main-custom-gradient);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
         -webkit-background-clip: text;
@@ -375,7 +373,7 @@
       }
 
       p {
-        color: $gray-700;
+        color: #727272;
         font-size: 1em;
       }
     }
@@ -397,7 +395,7 @@
         background-color: #f8f8f8;
         position: relative;
         border-radius: 0.5em;
-        box-shadow: $box-shadow;
+        box-shadow: var(--box-shadow);
 
         .header {
           position: relative;
@@ -415,16 +413,16 @@
         }
 
         .body {
-          padding: $padding-lg $padding-md;
+          padding: var(--padding-lg) var(--padding-md);
 
           h3 {
-            margin-bottom: $margin-sm;
+            margin-bottom: var(--margin-sm);
             text-transform: uppercase;
           }
 
           p {
             font-size: 0.9em;
-            margin-bottom: $margin-md;
+            margin-bottom: var(--margin-md);
             line-height: 1.8;
           }
         }
@@ -434,7 +432,7 @@
 
   #quote {
     width: 100%;
-    padding: $padding-xl $padding-md;
+    padding: var(--padding-xl) var(--padding-md);
     position: relative;
     background: url(/assets/tulsaMobile.webp) 50% 40% / cover;
 
@@ -444,7 +442,7 @@
       height: 100%;
       top: 0;
       right: 0;
-      background-color: $primary;
+      background-color: var(--main-primary-color);
       opacity: 0.9;
       // z-index: 1;
     }
@@ -483,7 +481,8 @@
               margin-bottom: 0.5em;
             }
 
-            input {}
+            input {
+            }
 
             input[type="text"] {
               width: 100%;
@@ -520,23 +519,20 @@
             }
           }
 
-
-
           button[type="submit"] {
             background-color: white;
             border-radius: 2em;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: .9em 3.5em .9em 2em;
+            padding: 0.9em 3.5em 0.9em 2em;
             transition: all 0.5s;
             cursor: pointer;
             border: 0;
             position: relative;
             color: #222;
 
-
-            &>div {
+            & > div {
               background-color: #e6f0f6;
               width: 2.5em;
               height: 2.5em;
@@ -547,7 +543,7 @@
               overflow: hidden;
               transition: all 0.5s;
               position: absolute;
-              right: .3em;
+              right: 0.3em;
 
               img {
                 width: 1.5em;
@@ -558,13 +554,14 @@
 
             &:hover {
               transform: translateY(-5px);
-              box-shadow: $box-shadow;
+              box-shadow: var(--box-shadow);
               transition: all 0.5s;
 
-              &>div {
-                background-color: $primary;
+              & > div {
+                background-color: var(--main-primary-color);
 
-                img {}
+                img {
+                }
               }
             }
           }
@@ -581,7 +578,7 @@
       width: 100%;
       max-width: 1200px;
       margin: auto;
-      padding: $padding-lg 0;
+      padding: var(--padding-lg) 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -590,20 +587,20 @@
       .heading {
         width: 100%;
         text-align: center;
-        margin-bottom: $margin-md;
+        margin-bottom: var(--margin-md);
         max-width: 700px;
         padding: 0 1em;
 
         span {
           color: #727272;
-          font-size: $font-size-base;
+          font-size: var(--font-sz-base);
         }
 
         h2 {
           font-size: 2em;
           text-transform: uppercase;
-          margin-bottom: $margin-md;
-          background: $gradient-bg-one;
+          margin-bottom: var(--margin-md);
+          background: var(--main-custom-gradient);
           background-size: 400% 400%;
           animation: gradient 15s ease infinite;
           -webkit-background-clip: text;
@@ -614,7 +611,7 @@
         p {
           line-height: 1.8;
           font-size: 0.9em;
-          color: $light-black;
+          color: var(--light-blk);
         }
       }
 
@@ -637,7 +634,7 @@
             grid-gap: 0.5em;
             padding-bottom: 2.2em;
             border-radius: 0.5em;
-            box-shadow: $box-shadow;
+            box-shadow: var(--box-shadow);
 
             .graphic {
               // width: 100%;
@@ -662,10 +659,10 @@
               justify-content: center;
               align-items: flex-start;
               flex-direction: column;
-              padding: 0 $padding-md;
+              padding: 0 var(--padding-md);
 
               h2 {
-                margin-bottom: $margin-md;
+                margin-bottom: var(--margin-md);
                 font-size: 1em;
               }
 
@@ -674,7 +671,7 @@
               }
 
               p:nth-of-type(1) {
-                margin-bottom: $margin-md;
+                margin-bottom: var(--margin-md);
                 line-height: normal;
                 line-height: 1.8;
               }
@@ -683,7 +680,7 @@
                 line-height: 2;
                 text-transform: uppercase;
                 font-size: 0.7em;
-                color: $gray-700;
+                color: #727272;
                 letter-spacing: 2px;
               }
 
@@ -737,14 +734,14 @@
           padding: 1.5em;
           overflow: hidden;
           position: relative;
-          box-shadow: $box-shadow;
+          box-shadow: var(--box-shadow);
           border-radius: 0;
           border-bottom: 3px solid #222;
 
           .left {
             width: 40px !important;
             height: 2px;
-            background-color: $light-black;
+            background-color: var(--light-blk);
             position: relative;
             z-index: 3;
 
@@ -776,10 +773,9 @@
             width: 100%;
             content: "";
             height: 100%;
-            background-color: $light-black;
+            background-color: var(--light-blk);
             transform: translateX(101%);
           }
-
         }
 
         .swiper-next-port {
@@ -788,10 +784,10 @@
           align-items: center;
           background-color: white;
           cursor: pointer;
-          padding: $padding-md;
+          padding: var(--padding-md);
           position: relative;
           overflow: hidden;
-          box-shadow: $box-shadow;
+          box-shadow: var(--box-shadow);
           border-radius: 0;
           border-bottom: 3px solid #222;
 
@@ -850,25 +846,25 @@
   }
 
   body.dark--mode #portfolio {
-    background-color: $dark-background-lg-two;
+    background-color: #1e1e1e;
 
     span,
     p {
-      color: $dark-mode-para-text !important;
+      color: white !important;
     }
 
     a {
       box-shadow: none;
 
       &:hover {
-        background-color: $dark-button-hover-bg;
+        background-color: rgba(255, 255, 255, 0.1);
       }
     }
 
     .portSwiper {
       .swiper-wrapper {
         .swiper-slide {
-          background-color: $dark-mode-background-sm;
+          background-color: #212121;
 
           h3 {
             color: white;
@@ -880,10 +876,10 @@
 
   #about {
     width: 100%;
-    background-color: $light-black;
+    background-color: var(--light-blk);
 
     .container {
-      padding: $padding-lg;
+      padding: var(--padding-lg);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -899,16 +895,16 @@
         width: 100%;
 
         p {
-          color: $text-color;
-          margin-bottom: $margin-md;
+          color: var(--para-clr);
+          margin-bottom: var(--margin-md);
           font-size: 0.9em;
         }
 
         strong {
           color: white;
           font-size: 2rem;
-          margin-bottom: $margin-md;
-          background: $gradient-bg-one;
+          margin-bottom: var(--margin-md);
+          background: var(--main-custom-gradient);
           background-size: 400% 400%;
           animation: gradient 15s ease infinite;
           -webkit-background-clip: text;
@@ -922,7 +918,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-bottom: $margin-md;
+        margin-bottom: var(--margin-md);
 
         .wrap {
           width: max-content;
@@ -938,7 +934,7 @@
             width: 101%;
             height: 101%;
             z-index: -1;
-            background: $gradient-bg-one;
+            background: var(--main-custom-gradient);
             background-size: 400% 400%;
 
             animation: gradient 8s ease infinite;
@@ -961,7 +957,7 @@
 
             a {
               padding: 0.5em;
-              background-color: $primary;
+              background-color: var(--main-primary-color);
               display: flex;
               justify-content: center;
               align-items: center;
@@ -989,21 +985,21 @@
 
         h4 {
           color: white;
-          font-size: $font-size-base * 1.2;
-          margin-bottom: $margin-sm;
+          font-size: var(--font-sz-lg);
+          margin-bottom: var(--margin-sm);
         }
 
         span {
-          font-size: $font-size-base * 0.8;
-          color: $text-color;
+          font-size: var(--font-sz-sm);
+          color: var(--para-clr);
           text-transform: uppercase;
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
         }
 
         p {
-          color: $gray-400;
+          color: #ced4da;
           line-height: 1.7;
-          font-size: $font-size-base * 0.9;
+          font-size: .9em ;
           max-width: 550px;
         }
       }
@@ -1011,23 +1007,23 @@
   }
 
   body.dark--mode #packages {
-    background-color: $dark-background-lg-one;
+    background-color: var(--light-blk);
 
     span,
     p {
-      color: $dark-mode-para-text !important;
+      color: white !important;
     }
 
     .container {
       .packages-grid {
         .p-item {
-          background-color: $dark-mode-background-sm;
+          background-color: #212121;
 
           a {
             box-shadow: none;
 
             &:hover {
-              background-color: $dark-button-hover-bg;
+              background-color: rgba(255, 255, 255, 0.1);
             }
           }
         }
@@ -1035,11 +1031,11 @@
 
       a {
         box-shadow: none;
-        background-color: $primary;
+        background-color: var(--main-primary-color);
         color: white;
 
         &:hover {
-          background-color: $dark-button-hover-bg;
+          background-color: rgba(255, 255, 255, 0.1);
         }
       }
     }
@@ -1049,7 +1045,7 @@
     width: 100vw;
 
     .container {
-      padding: $padding-lg 0;
+      padding: var(--padding-lg) 0;
       width: 100%;
       max-width: 55em;
       margin: auto;
@@ -1061,20 +1057,20 @@
       .heading {
         width: 100%;
         text-align: center;
-        margin-bottom: $margin-lg;
-        padding: 0 $padding-md;
+        margin-bottom: var(--margin-lg);
+        padding: 0 var(--padding-md);
         max-width: 700px;
 
         span {
-          color: $gray-700;
-          font-size: $font-size-base;
+          color: #727272;
+          font-size: var(--font-sz-base);
         }
 
         h2 {
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
           text-transform: uppercase;
-          font-size: $font-size-base * 2;
-          background: $gradient-bg-one;
+          font-size: 2em;
+          background: var(--main-custom-gradient);
           background-size: 400% 400%;
           animation: gradient 15s ease infinite;
           -webkit-background-clip: text;
@@ -1083,7 +1079,7 @@
         }
 
         p {
-          color: $light-black;
+          color: var(--light-blk);
           line-height: 1.5;
           font-size: 0.9em;
         }
@@ -1103,12 +1099,12 @@
           justify-self: center;
           align-items: center;
           flex-direction: column;
-          background-color: $prime-gray;
+          background-color: #f8f8f8;
           border-radius: 0.5em;
-          box-shadow: $box-shadow;
+          box-shadow: var(--box-shadow);
 
           .card-heading {
-            background-color: $light-black;
+            background-color: var(--light-blk);
             width: 100%;
             padding: 1em;
             color: white;
@@ -1116,7 +1112,7 @@
           }
 
           .pricing {
-            // margin-bottom: $margin-md;
+            // margin-bottom: var(--margin-md);
             display: flex;
             justify-self: center;
             align-items: center;
@@ -1125,11 +1121,11 @@
             width: 100%;
 
             & :nth-child(1) {
-              margin-bottom: $margin-md;
+              margin-bottom: var(--margin-md);
             }
 
             & :nth-child(2) {
-              // margin-bottom: $margin-md;
+              // margin-bottom: var(--margin-md);
             }
 
             span {
@@ -1140,7 +1136,7 @@
           .pricing-1 {
             & :nth-child(2) {
               position: relative;
-              font-size: $font-size-lg * 2;
+              font-size: 3em;
 
               &::before {
                 content: "$";
@@ -1162,7 +1158,7 @@
           .pricing-2 {
             & :nth-child(2) {
               position: relative;
-              font-size: $font-size-lg * 2;
+              font-size: 3em;
 
               &::before {
                 content: "$";
@@ -1184,7 +1180,7 @@
           .pricing-3 {
             & :nth-child(2) {
               position: relative;
-              font-size: $font-size-lg * 2;
+              font-size: 3em;
 
               &::before {
                 content: "$";
@@ -1213,7 +1209,7 @@
               justify-content: flex-start;
               align-items: center;
               width: 100%;
-              // font-size: $font-size-base;
+              // font-size: var(--font-sz-base);
               margin-bottom: 1em;
 
               img {
@@ -1221,17 +1217,17 @@
                 justify-self: center;
                 align-self: end;
                 width: 0.5em;
-                margin-right: $margin-sm;
+                margin-right: var(--margin-sm);
               }
 
-              &>div {
+              & > div {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
               }
 
-              &>div:nth-child(1) {
+              & > div:nth-child(1) {
                 background-color: #e3f3e7;
                 border-radius: 50%;
                 margin: 0;
@@ -1239,7 +1235,7 @@
                 align-self: end;
                 width: 1.7em;
                 height: 1.7em;
-                margin-right: $margin-sm;
+                margin-right: var(--margin-sm);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1263,11 +1259,11 @@
             overflow: hidden;
             // border: 2px solid black;
             // background-color: transparent;
-            background-color: $light-black;
+            background-color: var(--light-blk);
             border-radius: 2em;
             transition: all 0.5s ease-in-out;
             // width: 80%;
-            margin-bottom: $margin-md;
+            margin-bottom: var(--margin-md);
             color: white;
 
             &:hover {
@@ -1277,7 +1273,7 @@
             &:hover,
             &:active {
               transform: translateY(-5px);
-              box-shadow: $box-shadow;
+              box-shadow: var(--box-shadow);
               transition: all 0.5s;
             }
           }
@@ -1308,11 +1304,11 @@
               content: "Coming Soon!";
               width: max-content;
               border-radius: 2em;
-              padding: .2em 1.5em;
+              padding: 0.2em 1.5em;
               display: flex;
               justify-content: center;
               align-items: center;
-              background-color: $red;
+              background-color:var(--secondary-clr);
               color: white;
               top: 0;
               right: 0;
@@ -1326,32 +1322,35 @@
   }
 }
 
-
-
 @media (min-width: 768px) {
-
-
   #intro {
     .container {
       .heading {
-        span {}
+        span {
+        }
 
-        h2 {}
+        h2 {
+        }
 
-        p {}
+        p {
+        }
       }
 
       .service-items {
         grid-gap: 2em;
 
         .service-item {
-          img {}
+          img {
+          }
 
-          h4 {}
+          h4 {
+          }
 
-          p {}
+          p {
+          }
 
-          a {}
+          a {
+          }
         }
       }
     }
@@ -1365,7 +1364,7 @@
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: row;
-      padding: $padding-xl $padding-md;
+      padding: var(--padding-xl) var(--padding-md);
       width: 100%;
       height: max-content;
       margin: auto;
@@ -1379,14 +1378,14 @@
         margin-bottom: unset;
 
         span {
-          margin-bottom: $margin-sm;
+          margin-bottom: var(--margin-sm);
           text-align: center;
         }
 
-        &>div {
+        & > div {
           width: 1px;
           height: 550px;
-          background-color: $gray-400;
+          background-color: #ced4da;
         }
       }
 
@@ -1398,16 +1397,16 @@
         text-align: left;
         width: 100%;
         height: 100%;
-        margin: 0 $margin-md;
+        margin: 0 var(--margin-md);
 
         h2 {
           text-transform: uppercase;
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
         }
 
         p {
           line-height: 2;
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
         }
 
         ul {
@@ -1416,8 +1415,8 @@
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr;
           grid-gap: 0.5em;
-          padding: 0 $padding-sm;
-          margin-bottom: $margin-md;
+          padding: 0 var(--padding-sm);
+          margin-bottom: var(--margin-md);
 
           li {
             display: flex;
@@ -1458,7 +1457,7 @@
       width: 100%;
       max-width: 1200px;
       margin: auto;
-      padding: $padding-lg $padding-md;
+      padding: var(--padding-lg) var(--padding-md);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1467,14 +1466,15 @@
       .heading {
         width: 100%;
         text-align: center;
-        margin-bottom: $margin-md;
+        margin-bottom: var(--margin-md);
 
-        span {}
+        span {
+        }
 
         h2 {
-          font-size: $font-size-base * 2;
+          font-size: 2em;
           text-transform: uppercase;
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
         }
 
         p {
@@ -1496,15 +1496,16 @@
             display: grid;
             grid-gap: 1em;
             grid-template-rows: auto 1fr;
-            padding-bottom: $padding-lg;
-            padding-top: $padding-lg;
+            padding-bottom: var(--padding-lg);
+            padding-top: var(--padding-lg);
 
             .graphic {
               display: flex;
               justify-content: center;
               align-items: center;
 
-              img {}
+              img {
+              }
             }
 
             .text {
@@ -1513,14 +1514,15 @@
               justify-content: center;
               align-items: flex-start;
               flex-direction: column;
-              padding: $padding-md;
+              padding: var(--padding-md);
 
               h3 {
-                font-size: $font-size-base * 1.3;
+                font-size: var(--font-sz-sm) ;
                 text-transform: uppercase;
               }
 
-              p {}
+              p {
+              }
 
               a {
                 margin: 0;
@@ -1538,7 +1540,7 @@
 
   #packages {
     .container {
-      padding: $padding-lg $padding-md;
+      padding: var(--padding-lg) var(--padding-md);
       width: 100%;
       display: flex;
       justify-content: center;
@@ -1548,14 +1550,15 @@
       .heading {
         width: 100%;
         text-align: center;
-        margin-bottom: $margin-lg;
+        margin-bottom: var(--margin-lg);
 
-        span {}
+        span {
+        }
 
         h2 {
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
           text-transform: uppercase;
-          font-size: $font-size-base * 2;
+          font-size: 2em;
         }
       }
 
@@ -1579,7 +1582,7 @@
           }
 
           .pricing {
-            margin-bottom: $margin-md;
+            margin-bottom: var(--margin-md);
             display: flex;
             justify-self: center;
             align-items: center;
@@ -1588,79 +1591,15 @@
             width: 100%;
 
             & :nth-child(1) {
-              margin-bottom: $margin-md;
+              margin-bottom: var(--margin-md);
             }
 
             & :nth-child(2) {
-              // margin-bottom: $margin-md;
+              // margin-bottom: var(--margin-md);
             }
           }
 
-          //         // .pricing-1 {
-          //         //   & :nth-child(2) {
-          //         //     position: relative;
-          //         //     font-size: $font-size-lg * 2;
 
-          //         //     &::before {
-          //         //       content: "$";
-          //         //       position: absolute;
-          //         //       left: -0.5em;
-          //         //       top: 0;
-          //         //       font-size: $font-size-sm;
-          //         //     }
-
-          //         //     &::after {
-          //         //       content: "/MO";
-          //         //       position: absolute;
-          //         //       bottom: 0.3em;
-          //         //       font-size: $font-size-sm;
-          //         //     }
-          //         //   }
-          //         // }
-
-          //         // .pricing-2 {
-          //         //   & :nth-child(2) {
-          //         //     position: relative;
-          //         //     font-size: $font-size-lg * 2;
-
-          //         //     &::before {
-          //         //       content: "$";
-          //         //       position: absolute;
-          //         //       left: -0.5em;
-          //         //       top: 0;
-          //         //       font-size: $font-size-sm;
-          //         //     }
-
-          //         //     &::after {
-          //         //       content: "/once";
-          //         //       position: absolute;
-          //         //       bottom: 0.3em;
-          //         //       font-size: $font-size-sm;
-          //         //     }
-          //         //   }
-          //         // }
-
-          //         // .pricing-3 {
-          //         //   & :nth-child(2) {
-          //         //     position: relative;
-          //         //     font-size: $font-size-lg * 2;
-
-          //         //     &::before {
-          //         //       content: "$";
-          //         //       position: absolute;
-          //         //       left: -0.5em;
-          //         //       top: 0;
-          //         //       font-size: $font-size-sm;
-          //         //     }
-
-          //         //     &::after {
-          //         //       content: "/??";
-          //         //       position: absolute;
-          //         //       bottom: 0.3em;
-          //         //       font-size: $font-size-sm;
-          //         //     }
-          //         //   }
-          //         // }
 
           .items {
             width: max-content;
@@ -1672,7 +1611,7 @@
               justify-content: flex-start;
               align-items: center;
               width: 100%;
-              font-size: $font-size-sm;
+              font-size: var(--font-sz-sm);
 
               img {
                 margin: 0;
@@ -1682,7 +1621,7 @@
                 margin-right: 0.2em;
               }
 
-              &>div {
+              & > div {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1696,19 +1635,20 @@
   }
 }
 
-
 @media (min-width: 1024px) {
-
   #intro {
     .container {
       .heading {
-        margin-bottom: $margin-xl;
+        margin-bottom: var(--margin-xl);
 
-        span {}
+        span {
+        }
 
-        h2 {}
+        h2 {
+        }
 
-        p {}
+        p {
+        }
       }
 
       .service-items {
@@ -1718,13 +1658,17 @@
           transition: all 0.5s;
           max-width: 17em;
 
-          img {}
+          img {
+          }
 
-          h3 {}
+          h3 {
+          }
 
-          p {}
+          p {
+          }
 
-          a {}
+          a {
+          }
 
           &:hover {
             transform: translateY(-15px);
@@ -1751,7 +1695,7 @@
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: row;
-      padding: $padding-xl $padding-md;
+      padding: var(--padding-xl) var(--padding-md);
       width: 100%;
       height: max-content;
       margin: auto;
@@ -1765,14 +1709,14 @@
         margin-bottom: unset;
 
         span {
-          margin-bottom: $margin-sm;
+          margin-bottom: var(--margin-sm);
           text-align: center;
         }
 
-        &>div {
+        & > div {
           width: 1px;
           height: 550px;
-          background-color: $gray-400;
+          background-color: #ced4da;
         }
       }
 
@@ -1784,16 +1728,16 @@
         text-align: left;
         width: 100%;
         // height: 100%;
-        margin: 0 $margin-md;
+        margin: 0 var(--margin-md);
 
         h2 {
           text-transform: uppercase;
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
         }
 
         p {
           line-height: 2;
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
         }
 
         ul {
@@ -1802,8 +1746,8 @@
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr;
           grid-gap: 0.5em;
-          padding: 0 $padding-sm;
-          margin-bottom: $margin-md;
+          padding: 0 var(--padding-sm);
+          margin-bottom: var(--margin-md);
 
           li {
             display: flex;
@@ -1826,11 +1770,10 @@
           align-items: center;
 
           a {
-
             &:hover,
             &:active {
               transform: translateY(-5px);
-              box-shadow: $box-shadow;
+              box-shadow: var(--box-shadow);
             }
           }
         }
@@ -1851,13 +1794,16 @@
 
   #features {
     .heading {
-      margin-bottom: $margin-xl;
+      margin-bottom: var(--margin-xl);
 
-      span {}
+      span {
+      }
 
-      h2 {}
+      h2 {
+      }
 
-      p {}
+      p {
+      }
     }
 
     .container {
@@ -1866,13 +1812,16 @@
         max-width: 17em;
 
         .header {
-          img {}
+          img {
+          }
         }
 
         .body {
-          h3 {}
+          h3 {
+          }
 
-          p {}
+          p {
+          }
         }
 
         &:hover {
@@ -1889,8 +1838,8 @@
   #quote {
     width: 100%;
     // background-color: #e6f0f6;
-    // background-color: $primary;
-    padding: $padding-xl $padding-md;
+    // background-color:   var(--main-primary-color);
+    padding: var(--padding-xl) var(--padding-md);
 
     .container {
       display: grid;
@@ -1906,22 +1855,29 @@
       .form-container {
         form {
           .form-control {
-            p {}
+            p {
+            }
 
-            input[type="text"] {}
+            input[type="text"] {
+            }
 
-            input[type="email"] {}
+            input[type="email"] {
+            }
 
-            input[type="number"] {}
+            input[type="number"] {
+            }
 
-            textarea {}
+            textarea {
+            }
           }
 
           .submit {
-            button[type="submit"] {}
+            button[type="submit"] {
+            }
 
-            &>div {
-              img {}
+            & > div {
+              img {
+              }
             }
           }
         }
@@ -1945,7 +1901,7 @@
       width: 100%;
       max-width: 55em;
       margin: auto;
-      padding: $padding-lg $padding-md;
+      padding: var(--padding-lg) var(--padding-md);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1953,14 +1909,15 @@
 
       .heading {
         text-align: center;
-        margin-bottom: $margin-md;
+        margin-bottom: var(--margin-md);
 
-        span {}
+        span {
+        }
 
         h2 {
-          font-size: $font-size-base * 2;
+          font-size: 2em;
           text-transform: uppercase;
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
         }
 
         p {
@@ -1983,8 +1940,8 @@
             grid-gap: 0em;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr;
-            padding-bottom: $padding-lg;
-            padding-top: $padding-md;
+            padding-bottom: var(--padding-lg);
+            padding-top: var(--padding-md);
 
             .graphic {
               // width: 100%;
@@ -1992,9 +1949,10 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              padding: $padding-md;
+              padding: var(--padding-md);
 
-              img {}
+              img {
+              }
             }
 
             .text {
@@ -2003,14 +1961,15 @@
               justify-content: flex-start;
               align-items: flex-start;
               flex-direction: column;
-              padding: $padding-md;
+              padding: var(--padding-md);
 
               h3 {
-                font-size: $font-size-base * 1.3;
+                font-size: var(--font-sz-sm) ;
                 text-transform: uppercase;
               }
 
-              p {}
+              p {
+              }
 
               a {
                 margin: 0;
@@ -2024,7 +1983,7 @@
 
   #about {
     .container {
-      padding: $padding-xl $padding-sm;
+      padding: var(--padding-xl) var(--padding-sm);
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 1em;
@@ -2039,14 +1998,14 @@
         width: 100%;
 
         p {
-          color: $text-color;
-          margin-bottom: $margin-md;
+          color: var(--para-clr);
+          margin-bottom: var(--margin-md);
         }
 
         strong {
           color: white;
-          font-size: $font-size-base * 2;
-          margin-bottom: $margin-md;
+          font-size: 2em;
+          margin-bottom: var(--margin-md);
         }
       }
 
@@ -2055,7 +2014,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-bottom: $margin-md;
+        margin-bottom: var(--margin-md);
 
         .wrap {
           width: max-content;
@@ -2103,18 +2062,18 @@
         h4 {
           color: white;
           font-size: 1.5em;
-          margin-bottom: $margin-sm;
+          margin-bottom: var(--margin-sm);
         }
 
         span {
           font-size: 1em;
-          color: $text-color;
+          color: var(--para-clr);
           text-transform: uppercase;
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
         }
 
         p {
-          color: $gray-400;
+          color: #ced4da;
           line-height: 1.5;
           max-width: unset;
         }
@@ -2124,7 +2083,7 @@
 
   #packages {
     .container {
-      padding: $padding-lg $padding-md;
+      padding: var(--padding-lg) var(--padding-md);
       width: 100%;
       display: flex;
       justify-content: center;
@@ -2134,14 +2093,15 @@
       .heading {
         width: 100%;
         text-align: center;
-        margin-bottom: $margin-lg;
+        margin-bottom: var(--margin-lg);
 
-        span {}
+        span {
+        }
 
         h2 {
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
           text-transform: uppercase;
-          font-size: $font-size-base * 2;
+          font-size: 2em;
         }
       }
 
@@ -2177,79 +2137,14 @@
             padding-bottom: 0.5em !important;
 
             & :nth-child(1) {
-              margin-bottom: $margin-md;
+              margin-bottom: var(--margin-md);
             }
 
             & :nth-child(2) {
-              // margin-bottom: $margin-md;
+              // margin-bottom: var(--margin-md);
             }
           }
 
-          // .pricing-1 {
-          //   & :nth-child(2) {
-          //     position: relative;
-          //     font-size: $font-size-lg * 2;
-
-          //     &::before {
-          //       content: "$";
-          //       position: absolute;
-          //       left: -0.5em;
-          //       top: 0;
-          //       font-size: $font-size-sm;
-          //     }
-
-          //     &::after {
-          //       content: "/MO";
-          //       position: absolute;
-          //       bottom: 0.3em;
-          //       font-size: $font-size-sm;
-          //     }
-          //   }
-          // }
-
-          // .pricing-2 {
-          //   & :nth-child(2) {
-          //     position: relative;
-          //     font-size: $font-size-lg * 2;
-
-          //     &::before {
-          //       content: "$";
-          //       position: absolute;
-          //       left: -0.5em;
-          //       top: 0;
-          //       font-size: $font-size-sm;
-          //     }
-
-          //     &::after {
-          //       content: "/once";
-          //       position: absolute;
-          //       bottom: 0.3em;
-          //       font-size: $font-size-sm;
-          //     }
-          //   }
-          // }
-
-          // .pricing-3 {
-          //   & :nth-child(2) {
-          //     position: relative;
-          //     font-size: $font-size-lg * 2;
-
-          //     &::before {
-          //       content: "$";
-          //       position: absolute;
-          //       left: -0.5em;
-          //       top: 0;
-          //       font-size: $font-size-sm;
-          //     }
-
-          //     &::after {
-          //       content: "/??";
-          //       position: absolute;
-          //       bottom: 0.3em;
-          //       font-size: $font-size-sm;
-          //     }
-          //   }
-          // }
 
           .items {
             width: max-content;
@@ -2270,7 +2165,7 @@
                 margin-right: 0.2em;
               }
 
-              &>div {
+              & > div {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -2297,7 +2192,6 @@
 }
 
 @media (min-width: 1200px) {
-
   #info {
     width: 100%;
 
@@ -2306,7 +2200,7 @@
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: row;
-      padding: $padding-xl $padding-md;
+      padding: var(--padding-xl) var(--padding-md);
       width: 100%;
       height: max-content;
       margin: auto;
@@ -2320,14 +2214,14 @@
         margin-bottom: unset;
 
         span {
-          margin-bottom: $margin-sm;
+          margin-bottom: var(--margin-sm);
           text-align: center;
         }
 
-        &>div {
+        & > div {
           width: 1px;
           height: 550px;
-          background-color: $gray-400;
+          background-color: #ced4da;
         }
       }
 
@@ -2339,16 +2233,16 @@
         text-align: left;
         width: 100%;
         height: 100%;
-        margin: 0 $margin-md;
+        margin: 0 var(--margin-md);
 
         h2 {
           text-transform: uppercase;
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
         }
 
         p {
           line-height: 2;
-          margin-bottom: $margin-md;
+          margin-bottom: var(--margin-md);
         }
 
         ul {
@@ -2357,8 +2251,8 @@
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr;
           grid-gap: 0.5em;
-          padding: 0 $padding-sm;
-          margin-bottom: $margin-md;
+          padding: 0 var(--padding-sm);
+          margin-bottom: var(--margin-md);
 
           li {
             display: flex;

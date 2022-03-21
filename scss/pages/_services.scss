@@ -5,27 +5,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: $padding-lg $padding-md;
+        padding: var(--padding-lg) var(--padding-md);
         flex-direction: column;
         text-align: center;
 
         h2 {
             width: 100%;
             position: relative;
-            font-size: $font-size-base * 2;
-            background: $gradient-bg-one;
+            font-size: 2em;
+            background: var(--main-custom-gradient);
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: $margin-sm;
+            margin-bottom: var(--margin-sm);
         }
     }
 
     #services-intro {
         width: 100vw;
-        padding: $padding-xl $padding-md;
+        padding: var(--padding-xl) var(--padding-md);
 
         .container {
             width: 100%;
@@ -37,7 +37,7 @@
                 justify-content: center;
                 align-items: flex-start;
                 flex-direction: column;
-                margin-bottom: $margin-lg;
+                margin-bottom: var(--margin-lg);
 
                 h2 {
                     margin-bottom: 1rem;
@@ -76,7 +76,7 @@
     #c-1,
     #c-2,
     #c-3 {
-        padding: $padding-xl $padding-md;
+        padding: var(--padding-xl) var(--padding-md);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -90,7 +90,7 @@
 
             .graphic {
                 width: 100%;
-                margin-bottom: $margin-md;
+                margin-bottom: var(--margin-md);
 
                 img {
                     max-width: 100%;
@@ -121,15 +121,15 @@
                     align-items: flex-start;
                     flex-direction: column;
                     padding: 0;
-                    margin-bottom: $margin-md;
+                    margin-bottom: var(--margin-md);
 
                     li {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         height: max-content;
-                        font-size: $font-size-sm;
-                        margin: 0 0 $margin-md 0;
+                        font-size: var(--font-sz-sm);
+                        margin: 0 0 var(--margin-md) 0;
 
                         &>div {
                             width: 2em;
@@ -163,7 +163,7 @@
     }
 
     #c-2 {
-        background-color: $light-mode-div-bg;
+        background-color: #f8f8f8;
     }
 }
 
