@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'General Sans';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-display: swap;
   src: local(""), url("/fonts/GeneralSans-Light.woff2") format("woff2"), url("/fonts/GeneralSans-Light.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
@@ -19,7 +19,7 @@
 @font-face {
   font-family: 'General Sans';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-display: swap;
   src: local(""), url("/fonts/GeneralSans-Regular.woff2") format("woff2"), url("/fonts/GeneralSans-Regular.woff2") format("woff");
 }
