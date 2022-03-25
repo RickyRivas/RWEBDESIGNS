@@ -1731,7 +1731,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding: 0 1em;
+    padding: 0 2em;
   }
   #quote .container .graphic-contain picture {
     vertical-align: top;
