@@ -4160,7 +4160,7 @@ body {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    font-size: var(--font-sz-sm);
+    font-size: .8em;
     margin: 0 0 var(--margin-md) 0;
   }
   #c-1 .container .text ul li > div,
