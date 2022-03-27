@@ -200,7 +200,7 @@
                             transition: all 0.5s;
 
                             &>div {
-                                background-color: --main-primary-color;
+                                background-color: var(--main-primary-color);
 
                                 img {}
                             }

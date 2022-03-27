@@ -3938,7 +3938,7 @@ body {
     transition: all 0.5s;
   }
   #contact .container .form-container form button[type="submit"]:hover > div {
-    background-color: --main-primary-color;
+    background-color: var(--main-primary-color);
   }
 }
 
