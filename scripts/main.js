@@ -29,10 +29,10 @@ const scrollFunc = () => {
   let y = window.scrollY;
   if (y > 0) {
     sTTB2.className = "top-link show";
-    header.classList.add('scroll-fixed')
+    // header.classList.add('scroll-fixed')
   } else {
     sTTB2.className = "top-link hide";
-    header.classList.remove('scroll-fixed')
+    // header.classList.remove('scroll-fixed')
   }
 
 };
