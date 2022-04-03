@@ -105,7 +105,7 @@
 
                             &:active,
                             &:hover {
-                                border-bottom: 1px solid --main-primary-color;
+                                border-bottom: 1px solid var(--main-primary-color);
                             }
                         }
 
@@ -129,7 +129,7 @@
 
                             &:active,
                             &:hover {
-                                border-bottom: 1px solid --main-primary-color;
+                                border-bottom: 1px solid var(--main-primary-color);
                             }
                         }
 
