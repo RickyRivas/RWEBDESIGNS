@@ -835,8 +835,8 @@ body {
         -ms-flex-align: end;
             align-items: flex-end;
     height: 200px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/tulsaskyview1.webp) center/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/tulsaskyview1.webp) center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(/assets/tulsaskyview1.webp) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/assets/tulsaskyview1.webp) center/cover;
     color: white;
     padding-bottom: 1rem;
     position: relative;
@@ -845,7 +845,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--main-primary-color);
+    background-color: black;
     opacity: .80;
     top: 0;
     left: 0;
