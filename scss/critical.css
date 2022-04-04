@@ -1,40 +1,72 @@
 @media (min-width: 0em) {
   #landing {
-    width: 100vw;
-    height: 52em;
-    background: url(/assets/tulsastockMobile.webp) center/cover;
+    height: 35em;
+    width: 100%;
+    background-color: black;
     overflow: hidden;
     position: relative;
   }
   #landing .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--main-primary-color);
-    width: 100%;
-    height: 100%;
-    opacity: 90%;
-  }
-  #landing .container {
     width: 100vw;
-    max-width: 55em;
-    margin: auto;
-    height: 100%;
+    height: 35em;
+    -webkit-filter: blur(70px);
+            filter: blur(70px);
+    z-index: 3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    overflow: hidden;
   }
-  #landing .container .content {
+  #landing .overlay::before {
+    content: "";
+    width: 15em;
+    height: 15em;
+    background-color: blue;
+    position: absolute;
+    border-radius: 50%;
+    top: -10%;
+    left: -10%;
+    z-index: 1;
+  }
+  #landing .overlay::after {
+    content: "";
+    width: 15em;
+    height: 15em;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -20%;
+    right: -20%;
+    z-index: 1;
+  }
+  #landing .text {
+    position: absolute;
+    width: 100vw;
+    height: 35em;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 8em;
+    z-index: 10;
+  }
+  #landing .text .content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -51,15 +83,20 @@
     color: white;
     padding: 0 1em;
     position: relative;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
   }
-  #landing .container .content h1 {
+  #landing .text .content h1 {
     margin-bottom: 0.5em;
+    font-size: 1.5em;
   }
-  #landing .container .content p {
+  #landing .text .content p {
     margin-bottom: 1em;
     line-height: 1.8;
+    font-size: .8em;
   }
-  #landing .container .content .ctas {
+  #landing .text .content .ctas {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -69,13 +106,10 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    gap: 1em;
     width: 100%;
   }
-  #landing .container .content .ctas a {
+  #landing .text .content .ctas a {
     width: 100%;
     text-decoration: none;
     cursor: pointer;
@@ -93,13 +127,17 @@
     padding: 1em;
     margin-bottom: 1em;
     color: black;
+    max-width: 200px;
   }
-  #landing .container .content .ctas a:nth-child(2) {
-    background-color: #222;
+  #landing .text .content .ctas a:nth-child(2) {
+    background-color: transparent;
     color: white;
   }
-  #landing .container .graphic {
+  .graphic-over {
     width: 100%;
+    padding: 0 1em;
+    z-index: 10;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -110,69 +148,72 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  #landing .container .graphic img {
-    width: 55%;
-    height: 100%;
-    z-index: 2;
-    max-width: 250px;
-  }
-}
-
-@media (min-width: 540px) {
-  #landing .container .content {
-    margin-top: 6em;
-    height: 100%;
+  .graphic-over::before {
+    content: "";
+    background-color: white;
     width: 100%;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    height: 300px;
+    top: 0;
+    left: 0;
+    position: absolute;
   }
-  #landing .container .content h1 {
-    font-size: 2em;
-  }
-  #landing .container .content p {
-    max-width: 80%;
-  }
-  #landing .container .content .ctas {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  #landing .container .content .ctas a {
-    padding: 0.8em 2em;
-    max-width: 255px;
-  }
-  #landing .container .content .ctas a:nth-child(1) {
-    margin-right: 1em;
-  }
-  #landing .container .graphic img {
-    max-width: 275px;
+  .graphic-over img {
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    position: relative;
+    margin-top: -8em;
+    max-width: 600px;
   }
 }
 
 @media (min-width: 768px) {
   #landing {
-    background: url(/assets/tulsastock1.webp) center/cover;
-  }
-  #landing .container .content {
-    height: 100%;
-  }
-}
-
-@media (min-width: 900px) {
-  #landing {
     height: 35em;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
   }
-  #landing .container {
-    width: 100vw;
-    height: 100%;
+  #landing .overlay::before {
+    content: "";
+    width: 15em;
+    height: 15em;
+    background-color: blue;
+    position: absolute;
+    border-radius: 50%;
+    top: -10%;
+    left: -10%;
+    z-index: 1;
+  }
+  #landing .overlay::after {
+    content: "";
+    width: 15em;
+    height: 15em;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -20%;
+    right: -20%;
+    z-index: 1;
+  }
+  #landing .text .content h1 {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+  }
+  #landing .text .content p {
+    margin-bottom: 1em;
+    line-height: 1.8;
+  }
+  #landing .text .content .ctas a:nth-child(2) {
+    background-color: transparent;
+    color: white;
+  }
+  .graphic-over {
+    width: 100%;
+    padding: 0 1em;
+    z-index: 10;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -182,115 +223,60 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
-  #landing .container .content {
-    padding-right: 0;
-    margin: unset;
-  }
-  #landing .container .content h1 {
-    font-size: 1.5em;
-  }
-  #landing .container .content p {
-    max-width: unset;
-  }
-  #landing .container .content .ctas a {
-    white-space: nowrap;
-  }
-  #landing .container .graphic {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    height: 100%;
-  }
-  #landing .container .graphic img {
+  .graphic-over::before {
+    content: "";
+    background-color: white;
     width: 100%;
-    height: auto;
+    height: 300px;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  .graphic-over img {
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    position: relative;
+    margin-top: -12em;
+    max-width: 600px;
   }
 }
 
 @media (min-width: 1024px) {
-  #landing {
-    width: 100%;
-    height: 35em;
+  #landing .overlay {
+    -webkit-filter: blur(68px);
+            filter: blur(68px);
   }
-  #landing .container {
-    width: 100vw;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  #landing .overlay::before {
+    content: "";
+    width: 17em;
+    height: 17em;
+    background-color: blue;
+    position: absolute;
+    border-radius: 50%;
+    top: 20%;
+    left: -50px;
+    z-index: 1;
+    opacity: .8;
   }
-  #landing .container .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    color: white;
-    padding: 0 1em;
-    width: 100%;
-    padding-right: 0;
-  }
-  #landing .container .content h1 {
-    margin-bottom: 0.5em;
-    font-size: 2em;
-  }
-  #landing .container .content p {
-    margin-bottom: 1em;
-    font-size: 0.9em;
-  }
-  #landing .container .content .ctas {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 100%;
-  }
-  #landing .container .content .ctas a {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 2em;
+  #landing .overlay::after {
+    content: "";
+    width: 13em;
+    height: 13em;
     background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 10%;
+    right: -20px;
+    z-index: 1;
+    opacity: .7;
+  }
+  .graphic-over {
+    width: 100%;
+    padding: 0 1em;
+    z-index: 10;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -300,48 +286,23 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0.8em 2em;
-    margin-bottom: 0;
-    color: black;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
   }
-  #landing .container .content .ctas a:hover, #landing .container .content .ctas a:active {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-    -webkit-box-shadow: var(--box-shadow);
-            box-shadow: var(--box-shadow);
+  .graphic-over::before {
+    content: "";
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    position: absolute;
   }
-  #landing .container .content .ctas a:nth-child(1) {
-    margin-right: 1em;
-  }
-  #landing .container .content .ctas a:nth-child(2) {
-    background-color: #222;
-    color: white;
-  }
-  #landing .container .graphic {
+  .graphic-over img {
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    z-index: 20;
     position: relative;
-  }
-  #landing .container .graphic img {
-    max-width: unset;
-    width: 16em;
-  }
-}
-
-@media (min-width: 1200px) {
-  #landing {
-    background-attachment: fixed;
+    margin-top: -12em;
+    max-width: 600px;
   }
 }
 /*# sourceMappingURL=critical.css.map */

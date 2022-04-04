@@ -2,6 +2,8 @@
   #intro {
     width: 100vw;
     padding-top: 0em;
+    position: relative;
+    z-index: 10;
     .container {
       padding: var(--padding-xl) var(--padding-md);
       width: 100%;
